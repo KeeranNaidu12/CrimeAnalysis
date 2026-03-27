@@ -7,8 +7,60 @@ from tqdm import tqdm
 # For visualizations
 from plotnine import ggplot, aes, geom_bar, geom_tile, geom_text, theme, element_text, labs, coord_flip, scale_fill_gradient
 
-def read_csv_file(filepath):
-    """Read the CSV file and return a pandas DataFrame"""
+def parse_date(date_str):
+    """Parse date string to datetime object"""
+    if pd.isna(date_str) or date_str == '':
+        return None
+    try:
+        # Parse the Toronto date format: MM/DD/YYYY H:MM:SS AM/PM
+        return pd.to_datetime(date_str, format='%m/%d/%Y %I:%M:%S %p')
+    except:
+        try:
+            # Fallback for edge cases
+            return pd.to_datetime(date_str, errors='coerce')
+        except:
+            return None
+
+def filter_by_date(df, min_year=2014):
+    """Filter dataframe to only include rows with dates >= min_year"""
+    print(f"\n📅 Filtering data from {min_year} onwards...")
+    
+    # Parse dates
+    print("   Parsing dates...")
+    df['OCC_DATE_PARSED'] = df['OCC_DATE'].apply(parse_date)
+    
+    # Count rows before filtering
+    initial_count = len(df)
+    print(f"   Total rows before filtering: {initial_count:,}")
+    
+    # Filter rows with valid dates and year >= min_year
+    df_filtered = df[
+        df['OCC_DATE_PARSED'].notna() & 
+        (df['OCC_DATE_PARSED'].dt.year >= min_year)
+    ].copy()
+    
+    # Remove the temporary parsed date column
+    df_filtered = df_filtered.drop(columns=['OCC_DATE_PARSED'])
+    
+    filtered_count = len(df_filtered)
+    filtered_out = initial_count - filtered_count
+    
+    print(f"   Rows after filtering: {filtered_count:,}")
+    print(f"   Rows removed (before {min_year}): {filtered_out:,} ({filtered_out/initial_count*100:.1f}%)")
+    
+    # Show date range of filtered data
+    if filtered_count > 0:
+        # Parse dates again for the filtered data to get min/max
+        filtered_dates = df_filtered['OCC_DATE'].apply(parse_date)
+        min_date = filtered_dates.min()
+        max_date = filtered_dates.max()
+        if min_date and max_date:
+            print(f"   Date range of filtered data: {min_date.strftime('%Y-%m-%d')} to {max_date.strftime('%Y-%m-%d')}")
+    
+    return df_filtered
+
+def read_csv_file(filepath, min_year=2014):
+    """Read the CSV file and filter by date"""
     try:
         # Get file size for progress indication
         file_size = os.path.getsize(filepath)
@@ -18,6 +70,9 @@ def read_csv_file(filepath):
         with tqdm(total=100, desc="Reading CSV file", unit="%") as pbar:
             df = pd.read_csv(filepath)
             pbar.update(100)
+        
+        # Filter by date
+        df = filter_by_date(df, min_year)
         
         return df
     except FileNotFoundError:
@@ -45,7 +100,7 @@ def get_unique_values_and_counts(df):
             pbar.update(1)
             
             for category in unique_csi:
-                print(f"  {category}: {csi_counts[category]} occurrences")
+                print(f"  {category}: {csi_counts[category]:,} occurrences")
         else:
             print("  No CSI_CATEGORY data found")
             unique_csi = []
@@ -67,7 +122,7 @@ def get_unique_values_and_counts(df):
             pbar.update(1)
             
             for offence in unique_offence:
-                print(f"  {offence}: {offence_counts[offence]} occurrences")
+                print(f"  {offence}: {offence_counts[offence]:,} occurrences")
         else:
             print("  No OFFENCE data found")
             unique_offence = []
@@ -115,8 +170,8 @@ def get_intersection_counts(df, min_threshold=15):
             filtered_counts[pair] = count
     
     print(f"\nFiltering pairs with less than {min_threshold} instances...")
-    print(f"Original number of unique pairs: {len(pair_counts)}")
-    print(f"Pairs after filtering (>= {min_threshold}): {len(filtered_counts)}")
+    print(f"Original number of unique pairs: {len(pair_counts):,}")
+    print(f"Pairs after filtering (>= {min_threshold}): {len(filtered_counts):,}")
     
     # Convert to DataFrame for easier plotting
     print("\nCreating DataFrame...")
@@ -138,7 +193,7 @@ def get_intersection_counts(df, min_threshold=15):
     sorted_pairs = sorted(filtered_counts.items(), key=lambda x: x[1], reverse=True)
     
     for (csi, offence), count in sorted_pairs:
-        print(f"  ({csi}, {offence}): {count} occurrences")
+        print(f"  ({csi}, {offence}): {count:,} occurrences")
     
     return pair_counts, pair_df, (unique_csi, unique_offence)
 
@@ -163,7 +218,7 @@ def create_ggplot_visualizations(csi_counts, offence_counts, pair_df, min_thresh
                   + geom_bar(stat='identity')
                   + geom_text(aes(label='COUNT_LABEL'), size=10, va='bottom', ha='center', nudge_y=0.5)
                   + theme(axis_text_x=element_text(rotation=45, ha='right'), figure_size=(12, 6))
-                  + labs(title='CSI Categories Distribution',
+                  + labs(title='CSI Categories Distribution (2014 onwards)',
                          x='CSI Category',
                          y='Count')
                   + theme(legend_position='none')
@@ -191,7 +246,7 @@ def create_ggplot_visualizations(csi_counts, offence_counts, pair_df, min_thresh
                   + geom_text(aes(label='COUNT_LABEL'), size=10, ha='left', va='center', nudge_x=0.5)
                   + coord_flip()
                   + theme(figure_size=(10, max(6, len(offence_df) * 0.3)))
-                  + labs(title='Offence Distribution',
+                  + labs(title='Offence Distribution (2014 onwards)',
                          x='Offence',
                          y='Count')
                   + theme(legend_position='none')
@@ -220,7 +275,7 @@ def create_ggplot_visualizations(csi_counts, offence_counts, pair_df, min_thresh
                   + coord_flip()
                   + theme(figure_size=(12, max(8, len(pair_df) * 0.5)), 
                           axis_text_y=element_text(size=10))
-                  + labs(title=f'CSI Category - Offence Pairs (≥ {min_threshold} instances)',
+                  + labs(title=f'CSI Category - Offence Pairs (≥ {min_threshold} instances, 2014 onwards)',
                          x='Pair (CSI Category - Offence)',
                          y='Count')
                   + theme(legend_position='none')
@@ -262,7 +317,7 @@ def create_ggplot_visualizations(csi_counts, offence_counts, pair_df, min_thresh
                           figure_size=(12, 8),
                           panel_grid_major=element_blank(),
                           panel_grid_minor=element_blank())
-                  + labs(title=f'CSI Category vs Offence Intersection Heatmap (≥ {min_threshold} instances)',
+                  + labs(title=f'CSI Category vs Offence Intersection Heatmap (≥ {min_threshold} instances, 2014 onwards)',
                          x='Offence',
                          y='CSI Category',
                          fill='Count')
@@ -282,7 +337,7 @@ def create_ggplot_visualizations(csi_counts, offence_counts, pair_df, min_thresh
                   + coord_flip()
                   + theme(figure_size=(12, max(6, len(top_pairs) * 0.5)), 
                           axis_text_y=element_text(size=10))
-                  + labs(title=f'Top {len(top_pairs)} Most Common CSI Category - Offence Pairs',
+                  + labs(title=f'Top {len(top_pairs)} Most Common CSI Category - Offence Pairs (2014 onwards)',
                          x='Pair (CSI Category - Offence)',
                          y='Count')
                   + theme(legend_position='none')
@@ -299,13 +354,17 @@ def create_ggplot_visualizations(csi_counts, offence_counts, pair_df, min_thresh
 
 def main():
     # File path
-    filepath = r"project\DB_csv\Open_Consolidated_Data.csv"
+    filepath = r"project\DB_csv\Open_Consolidated_Data_updated_deduplicated.csv"
+    
+    # Set minimum year for data filtering
+    MIN_YEAR = 2014
     
     # Set minimum threshold for pairs
     MIN_PAIR_THRESHOLD = 15
     
     print("=" * 60)
     print("STARTING DATA ANALYSIS")
+    print(f"Filtering: Data from {MIN_YEAR} onwards only")
     print("=" * 60)
     
     # Check if file exists
@@ -314,14 +373,15 @@ def main():
         print("Please ensure the file path is correct.")
         return
     
-    # Read the CSV file
+    # Read the CSV file and filter by date
     print(f"\nReading file: {filepath}")
-    df = read_csv_file(filepath)
+    df = read_csv_file(filepath, MIN_YEAR)
     
-    if df is None:
+    if df is None or len(df) == 0:
+        print("No data available after filtering. Exiting...")
         return
     
-    print(f"\nTotal rows in dataset: {len(df):,}")
+    print(f"\nTotal rows in filtered dataset: {len(df):,}")
     print(f"Columns: {list(df.columns)}")
     
     # Function 1: Get unique values and counts
@@ -334,6 +394,8 @@ def main():
     print("\n" + "=" * 60)
     print("SUMMARY:")
     print("=" * 60)
+    print(f"Data period: {MIN_YEAR} onwards")
+    print(f"Total records in analysis: {len(df):,}")
     print(f"Total unique CSI_CATEGORY: {len(unique_csi):,}")
     print(f"Total unique OFFENCE: {len(unique_offence):,}")
     print(f"Total unique pairs (all): {len(pair_counts) if pair_counts else 0:,}")
