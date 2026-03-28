@@ -148,13 +148,13 @@ def plot_neighbourhood_crime_histogram(conn, show_all=True):
 def plot_offence_histogram(conn, show_all=True):
     try:
         df = pd.read_sql_query("""
-            SELECT offence, COUNT(*) as count FROM open_consolidated_data
-            WHERE offence IS NOT NULL AND offence != ''
-            GROUP BY offence ORDER BY count DESC
+            SELECT csi_category, COUNT(*) as count FROM open_consolidated_data
+            WHERE csi_category IS NOT NULL AND csi_category != ''
+            GROUP BY csi_category ORDER BY count DESC
         """, conn)
         
         if df.empty:
-            print("No offence data available for plotting")
+            print("No csi_category data available for plotting")
             return
         
         plot_df = df if show_all else df.head(20)
@@ -163,12 +163,12 @@ def plot_offence_histogram(conn, show_all=True):
         plt.barh(range(len(plot_df)), plot_df['count'], 
                 color=sns.color_palette("flare", len(plot_df)))
         labels = ['\n'.join(wrap(str(o), 45)) if len(str(o))>45 else str(o) 
-                 for o in plot_df['offence']]
+                 for o in plot_df['csi_category']]
         plt.yticks(range(len(plot_df)), labels, fontsize=7, ha='right')
         
         plt.xlabel('Number of Occurrences', fontsize=10, fontweight='bold')
-        plt.ylabel('Offence Type', fontsize=10, fontweight='bold')
-        plt.title(f'Crime Offences by Frequency {"(All)" if show_all else "(Top 20)"}', 
+        plt.ylabel('csi_category Type', fontsize=10, fontweight='bold')
+        plt.title(f'Crime csi_category by Frequency {"(All)" if show_all else "(Top 20)"}', 
                  fontsize=12, fontweight='bold', pad=10)
         
         if len(plot_df) <= 30:
@@ -177,10 +177,10 @@ def plot_offence_histogram(conn, show_all=True):
         
         plt.tight_layout()
         plt.show()
-        print(f"\nDisplayed {'all' if show_all else f'top {len(plot_df)}'} offence categories")
+        print(f"\nDisplayed {'all' if show_all else f'top {len(plot_df)}'} csi_category categories")
         
     except Exception as e:
-        print(f"Error plotting offence histogram: {e}")
+        print(f"Error plotting csi_category histogram: {e}")
 
 
 def plot_event_type_histogram(conn, show_all=True):
@@ -446,7 +446,7 @@ def consolidated_crime_menu(conn):
         print("  1. Search by exact event_unique_id")
         print("  2. Search by partial event_unique_id")
         print("  3. Plot: Neighbourhoods by crime count (split view)")
-        print("  4. Plot: Offence types by frequency")
+        print("  4. Plot: csi_category types by frequency")
         print("  5. Plot: Event types by frequency")
         print("  6. Plot: Neighbourhood vs Year heatmap (separate pages)")
         print("  0. Back to main menu")
@@ -461,7 +461,7 @@ def consolidated_crime_menu(conn):
         elif choice == '3':
             plot_neighbourhood_crime_histogram(conn, ask_show_all("Show ALL neighbourhoods in histogram?"))
         elif choice == '4':
-            plot_offence_histogram(conn, ask_show_all("Show ALL offence types?"))
+            plot_offence_histogram(conn, ask_show_all("Show ALL csi_category types?"))
         elif choice == '5':
             plot_event_type_histogram(conn, ask_show_all("Show ALL event types?"))
         elif choice == '6':
