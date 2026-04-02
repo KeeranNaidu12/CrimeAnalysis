@@ -1,0 +1,8 @@
+psycopg2-binary
+python-dotenv
+tqdm
+pandas
+numpy
+matplotlib
+seaborn
+plotnine
