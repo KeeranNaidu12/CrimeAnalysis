@@ -81,6 +81,84 @@ ORDER BY neighbourhood_158, occ_year;
 """
 
 
+CREATE_SCORES_TABLE = """
+DROP TABLE IF EXISTS traffic_neighbourhood_safety_scores;
+CREATE TABLE traffic_neighbourhood_safety_scores (
+    neighbourhood_158         TEXT PRIMARY KEY,
+    safety_index              REAL,
+    safety_category           TEXT,
+    safety_rank               INTEGER,
+    total_collisions          INTEGER,
+    fatalities                INTEGER,
+    injury_collisions         INTEGER,
+    pd_collisions             INTEGER,
+    ftr_collisions            INTEGER,
+    pedestrian_collisions     INTEGER,
+    bicycle_collisions        INTEGER,
+    motorcycle_collisions     INTEGER,
+    fatal_rate                REAL,
+    injury_rate               REAL,
+    pd_rate                   REAL,
+    ftr_rate                  REAL,
+    vulnerable_rate           REAL,
+    years_active              INTEGER
+);
+"""
+
+CREATE_DETAIL_TABLE = """
+DROP TABLE IF EXISTS traffic_neighbourhood_details;
+CREATE TABLE traffic_neighbourhood_details (
+    neighbourhood_158         TEXT,
+    occ_year                  INTEGER,
+    total_collisions          INTEGER,
+    fatalities                INTEGER,
+    injury_collisions         INTEGER,
+    pd_collisions             INTEGER,
+    ftr_collisions            INTEGER,
+    pedestrian_collisions     INTEGER,
+    bicycle_collisions        INTEGER,
+    motorcycle_collisions     INTEGER,
+    automobile_collisions     INTEGER
+);
+"""
+
+INSERT_SCORES = """
+INSERT INTO traffic_neighbourhood_safety_scores
+    (neighbourhood_158, safety_index, safety_category, safety_rank,
+     total_collisions, fatalities, injury_collisions,
+     pd_collisions, ftr_collisions,
+     pedestrian_collisions, bicycle_collisions, motorcycle_collisions,
+     fatal_rate, injury_rate, pd_rate, ftr_rate, vulnerable_rate,
+     years_active)
+VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s);
+"""
+
+INSERT_DETAIL = """
+INSERT INTO traffic_neighbourhood_details
+    (neighbourhood_158, occ_year, total_collisions, fatalities,
+     injury_collisions, pd_collisions, ftr_collisions,
+     pedestrian_collisions, bicycle_collisions, motorcycle_collisions,
+     automobile_collisions)
+VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s);
+"""
+
+
+def write_to_db(conn, detail_df, scores_df):
+    """Write both DataFrames into PostgreSQL tables."""
+    cur = conn.cursor()
+    cur.execute(CREATE_SCORES_TABLE)
+    cur.execute(CREATE_DETAIL_TABLE)
+
+    for row in scores_df.itertuples(index=False):
+        cur.execute(INSERT_SCORES, tuple(row))
+
+    for row in detail_df.itertuples(index=False):
+        cur.execute(INSERT_DETAIL, tuple(row))
+
+    conn.commit()
+    cur.close()
+
+
 def fetch_detail(conn):
     """Return per-neighbourhood / per-year detail as a DataFrame."""
     print("Querying traffic data (2020–2025, excl. NSA) …")
@@ -183,7 +261,7 @@ def main():
         scores = compute_scores(detail)
 
         # ── Save detail CSV ───────────────────────────────────────────────
-        detail_path = os.path.join(OUTPUT_DIR, 'neighbourhood_collisions_detail.csv')
+        detail_path = os.path.join(OUTPUT_DIR, 'Traffic_Collisions_Neighbourhood_details.csv')
         detail.to_csv(detail_path, index=False)
         print(f"\n✓ Detail CSV saved:  {detail_path}  ({len(detail)} rows)")
 
@@ -196,9 +274,14 @@ def main():
             'fatal_rate', 'injury_rate', 'pd_rate', 'ftr_rate', 'vulnerable_rate',
             'years_active',
         ]
-        scores_path = os.path.join(OUTPUT_DIR, 'neighbourhood_safety_scores.csv')
+        scores_path = os.path.join(OUTPUT_DIR, 'Traffic_Collisions_Neighbourhood_Safety_Scores.csv')
         scores[score_cols].to_csv(scores_path, index=False)
         print(f"✓ Scores CSV saved:  {scores_path}  ({len(scores)} rows)")
+
+        # ── Write to PostgreSQL tables ────────────────────────────────────
+        write_to_db(conn, detail, scores[score_cols])
+        print(f"✓ DB table saved:    traffic_neighbourhood_details  ({len(detail)} rows)")
+        print(f"✓ DB table saved:    traffic_neighbourhood_safety_scores  ({len(scores)} rows)")
 
         # ── Print top / bottom 10 ────────────────────────────────────────
         print(f"\n{'─' * 60}")
