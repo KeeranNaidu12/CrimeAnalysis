@@ -24,8 +24,8 @@ SEVERITY_WEIGHTS = {
     'Robbery' : 5,
     'Break and Enter' : 4,
     'Auto Theft': 3,
-    'NonMCI' : 2,
-    'Theft Over' : 1,
+    'Theft Over' : 2,
+    'NonMCI' : 1,
 }
 
 # Since cirmes will be geenralized if we are going by CSI numbers, we also need to consider the offence types.
@@ -61,43 +61,40 @@ OFFENCE_WEIGHTS = {
     'Assault - Force/Thrt/Impede'      : 0.60,
 
     # Robbery — firearm acquisition
-    'Robbery To Steal Firearm'         : 2.0,
+    'Robbery To Steal Firearm'         : 1.7,
     # Robbery — severe (invasion / carjacking / weapon)
     'Robbery - Home Invasion'          : 1.8,
-    'Robbery - Vehicle Jacking'        : 1.7,
-    'Robbery With Weapon'              : 1.6,
+    'Robbery - Vehicle Jacking'        : 1.4,
+    'Robbery With Weapon'              : 2.0,
     # Robbery — high (organised / institutional / group)
     'Robbery - Financial Institute'    : 1.4,
     'Robbery - Armoured Car'           : 1.4,
     'Robbery - Swarming'               : 1.4,
     # Robbery — medium (confrontational / targeted)
     'Robbery - Business'               : 1.2,
-    'Robbery - Mugging'                : 1.1,
-    'Robbery - Delivery Person'        : 1.1,
-    'Robbery - Taxi'                   : 1.0,
+    'Robbery - Mugging'                : 1.5,
+    'Robbery - Delivery Person'        : 1.2,
+    'Robbery - Taxi'                   : 1.5,
     'Robbery - Other'                  : 1.0,
     # Robbery — lower (opportunistic)
     'Robbery - Purse Snatch'           : 0.8,
     'Robbery - Atm'                    : 0.7,
 
     # Break and Enter
-    'B&E - To Steal Firearm'           : 2.0,
+    'B&E - To Steal Firearm'           : 1.7,
     'B&E - M/Veh To Steal Firearm'     : 1.7,
-    'B&E W\'Intent'                    : 1.1,
-    'Unlawfully In Dwelling-House'     : 0.8,
-    'B&E Out'                          : 0.6,
+    'B&E W\'Intent'                    : 1.2,
+    'Unlawfully In Dwelling-House'     : 1.0,
+    'B&E Out'                          : 1.0,
 
     # Theft Over
     'Theft From Motor Vehicle Over'    : 2.0,
     'Theft From Mail / Bag / Key'      : 1.3,
     'Theft Over - Distraction'         : 0.5,
     'Theft Over - Shoplifting'         : 0.6,
-    'Theft Over - Bicycle'             : 0.4,
-    'Theft - Misapprop Funds Over'     : 0.3,
-    'Theft Of Utilities Over'          : 0.3,
-
-    # NonMCI
-    'Theft From Motor Vehicle Under'   : 0.7,
+    'Theft Over - Bicycle'             : 1.0,
+    'Theft - Misapprop Funds Over'     : 1.2,
+    'Theft Of Utilities Over'          : 0.5,
 }
 DEFAULT_OFFENCE = 1.0
 
@@ -215,7 +212,7 @@ def fetch_crime_category_breakdown(conn) -> list[tuple[str, str, int]]:
 def export_category_breakdown(
     rows: list[tuple[str, str, int]],
     ranked: list[tuple[str, float]],
-    path: str = "Open_Consolidated_Data_Crime_Category_Breakdown.csv",
+    path: str = "DB_csv/Open_Consolidated_Data_Crime_Category_Breakdown.csv",
 ) -> None:
     categories = ['Assault', 'Auto Theft', 'Break and Enter', 'NonMCI', 'Robbery', 'Theft Over']
 
