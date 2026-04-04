@@ -87,14 +87,46 @@ def print_rankings(ranked: list[tuple[str, float]]) -> None:
         print(f"{rank:<6} {neighbourhood:<50} {score:.2f}")
 
 
-# Exports the ranked results to a CSV file.
+# Returns the safety zone label for a given score.
+def _zone(score: float) -> str:
+    if score < 34:
+        return 'Dangerous'
+    if score < 67:
+        return 'Neutral'
+    return 'Safe'
+
+# Exports the ranked results with zone labels to a CSV file.
 def export_rankings(ranked: list[tuple[str, float]], path: str = "Open_Consolidated_Data_Safety_score_ranking.csv") -> None:
     with open(path, 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
-        writer.writerow(['Rank', 'Neighbourhood', 'Safety Score (0-100)'])
+        writer.writerow(['Rank', 'Neighbourhood', 'Safety Score (0-100)', 'Zone'])
         for rank, (neighbourhood, score) in enumerate(ranked, start=1):
-            writer.writerow([rank, neighbourhood, score])
+            writer.writerow([rank, neighbourhood, score, _zone(score)])
     print(f"Rankings exported to {path}")
+
+# Fetches incident counts per neighbourhood and crime category.
+def fetch_crime_category_breakdown(conn) -> list[tuple[str, str, int]]:
+    cursor = conn.cursor()
+    cursor.execute("""
+        SELECT neighbourhood_158, csi_category, COUNT(*) AS incident_count
+        FROM open_consolidated_data
+        WHERE neighbourhood_158 IS NOT NULL
+          AND neighbourhood_158 <> 'NSA'
+          AND csi_category IS NOT NULL
+        GROUP BY neighbourhood_158, csi_category
+        ORDER BY neighbourhood_158, csi_category
+    """)
+    rows = cursor.fetchall()
+    cursor.close()
+    return rows
+
+# Exports the crime category breakdown to a CSV file.
+def export_category_breakdown(rows: list[tuple[str, str, int]], path: str = "Open_Consolidated_Data_Crime_Category_Breakdown.csv") -> None:
+    with open(path, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerow(['Neighbourhood', 'Crime Category', 'Incident Count'])
+        writer.writerows(rows)
+    print(f"Category breakdown exported to {path}")
 
 
 # Plots top 15 safest, top 15 most dangerous, and all neighbourhoods as separate charts.
@@ -161,6 +193,11 @@ def main():
         print(f"\nTotal neighbourhoods ranked: {len(ranked)}")
         print_rankings(ranked)
         export_rankings(ranked)
+
+        print("Fetching crime category breakdown…")
+        breakdown = fetch_crime_category_breakdown(conn)
+        export_category_breakdown(breakdown)
+
         plot_rankings(ranked)
     finally:
         conn.close()

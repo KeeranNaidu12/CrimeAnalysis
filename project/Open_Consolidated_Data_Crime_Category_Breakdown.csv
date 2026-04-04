@@ -1,0 +1,949 @@
+Neighbourhood,Crime Category,Incident Count
+Agincourt North (129),Assault,833
+Agincourt North (129),Auto Theft,635
+Agincourt North (129),Break and Enter,485
+Agincourt North (129),NonMCI,613
+Agincourt North (129),Robbery,272
+Agincourt North (129),Theft Over,71
+Agincourt South-Malvern West (128),Assault,1513
+Agincourt South-Malvern West (128),Auto Theft,632
+Agincourt South-Malvern West (128),Break and Enter,848
+Agincourt South-Malvern West (128),NonMCI,817
+Agincourt South-Malvern West (128),Robbery,259
+Agincourt South-Malvern West (128),Theft Over,137
+Alderwood (20),Assault,465
+Alderwood (20),Auto Theft,315
+Alderwood (20),Break and Enter,327
+Alderwood (20),NonMCI,374
+Alderwood (20),Robbery,65
+Alderwood (20),Theft Over,92
+Annex (95),Assault,3473
+Annex (95),Auto Theft,440
+Annex (95),Break and Enter,1824
+Annex (95),NonMCI,1646
+Annex (95),Robbery,492
+Annex (95),Theft Over,470
+Avondale (153),Assault,527
+Avondale (153),Auto Theft,189
+Avondale (153),Break and Enter,160
+Avondale (153),NonMCI,257
+Avondale (153),Robbery,51
+Avondale (153),Theft Over,50
+Banbury-Don Mills (42),Assault,1060
+Banbury-Don Mills (42),Auto Theft,537
+Banbury-Don Mills (42),Break and Enter,814
+Banbury-Don Mills (42),NonMCI,660
+Banbury-Don Mills (42),Robbery,151
+Banbury-Don Mills (42),Theft Over,141
+Bathurst Manor (34),Assault,794
+Bathurst Manor (34),Auto Theft,458
+Bathurst Manor (34),Break and Enter,342
+Bathurst Manor (34),NonMCI,503
+Bathurst Manor (34),Robbery,123
+Bathurst Manor (34),Theft Over,62
+Bay-Cloverhill (169),Assault,1441
+Bay-Cloverhill (169),Auto Theft,121
+Bay-Cloverhill (169),Break and Enter,700
+Bay-Cloverhill (169),NonMCI,371
+Bay-Cloverhill (169),Robbery,221
+Bay-Cloverhill (169),Theft Over,160
+Bayview Village (52),Assault,1018
+Bayview Village (52),Auto Theft,441
+Bayview Village (52),Break and Enter,509
+Bayview Village (52),NonMCI,603
+Bayview Village (52),Robbery,110
+Bayview Village (52),Theft Over,122
+Bayview Woods-Steeles (49),Assault,432
+Bayview Woods-Steeles (49),Auto Theft,202
+Bayview Woods-Steeles (49),Break and Enter,341
+Bayview Woods-Steeles (49),NonMCI,258
+Bayview Woods-Steeles (49),Robbery,44
+Bayview Woods-Steeles (49),Theft Over,33
+Bedford Park-Nortown (39),Assault,547
+Bedford Park-Nortown (39),Auto Theft,882
+Bedford Park-Nortown (39),Break and Enter,1001
+Bedford Park-Nortown (39),NonMCI,795
+Bedford Park-Nortown (39),Robbery,149
+Bedford Park-Nortown (39),Theft Over,128
+Beechborough-Greenbrook (112),Assault,756
+Beechborough-Greenbrook (112),Auto Theft,181
+Beechborough-Greenbrook (112),Break and Enter,173
+Beechborough-Greenbrook (112),NonMCI,169
+Beechborough-Greenbrook (112),Robbery,126
+Beechborough-Greenbrook (112),Theft Over,33
+Bendale-Glen Andrew (156),Assault,1856
+Bendale-Glen Andrew (156),Auto Theft,725
+Bendale-Glen Andrew (156),Break and Enter,368
+Bendale-Glen Andrew (156),NonMCI,692
+Bendale-Glen Andrew (156),Robbery,474
+Bendale-Glen Andrew (156),Theft Over,136
+Bendale South (157),Assault,765
+Bendale South (157),Auto Theft,196
+Bendale South (157),Break and Enter,217
+Bendale South (157),NonMCI,320
+Bendale South (157),Robbery,111
+Bendale South (157),Theft Over,19
+Birchcliffe-Cliffside (122),Assault,1907
+Birchcliffe-Cliffside (122),Auto Theft,388
+Birchcliffe-Cliffside (122),Break and Enter,687
+Birchcliffe-Cliffside (122),NonMCI,894
+Birchcliffe-Cliffside (122),Robbery,196
+Birchcliffe-Cliffside (122),Theft Over,70
+Black Creek (24),Assault,2653
+Black Creek (24),Auto Theft,690
+Black Creek (24),Break and Enter,332
+Black Creek (24),NonMCI,629
+Black Creek (24),Robbery,340
+Black Creek (24),Theft Over,124
+Blake-Jones (69),Assault,680
+Blake-Jones (69),Auto Theft,76
+Blake-Jones (69),Break and Enter,262
+Blake-Jones (69),NonMCI,202
+Blake-Jones (69),Robbery,112
+Blake-Jones (69),Theft Over,28
+Briar Hill-Belgravia (108),Assault,1008
+Briar Hill-Belgravia (108),Auto Theft,346
+Briar Hill-Belgravia (108),Break and Enter,447
+Briar Hill-Belgravia (108),NonMCI,488
+Briar Hill-Belgravia (108),Robbery,196
+Briar Hill-Belgravia (108),Theft Over,76
+Bridle Path-Sunnybrook-York Mills (41),Assault,378
+Bridle Path-Sunnybrook-York Mills (41),Auto Theft,274
+Bridle Path-Sunnybrook-York Mills (41),Break and Enter,603
+Bridle Path-Sunnybrook-York Mills (41),NonMCI,226
+Bridle Path-Sunnybrook-York Mills (41),Robbery,40
+Bridle Path-Sunnybrook-York Mills (41),Theft Over,60
+Broadview North (57),Assault,707
+Broadview North (57),Auto Theft,104
+Broadview North (57),Break and Enter,222
+Broadview North (57),NonMCI,257
+Broadview North (57),Robbery,52
+Broadview North (57),Theft Over,28
+Brookhaven-Amesbury (30),Assault,1272
+Brookhaven-Amesbury (30),Auto Theft,531
+Brookhaven-Amesbury (30),Break and Enter,404
+Brookhaven-Amesbury (30),NonMCI,524
+Brookhaven-Amesbury (30),Robbery,203
+Brookhaven-Amesbury (30),Theft Over,92
+Cabbagetown-South St.James Town (71),Assault,1388
+Cabbagetown-South St.James Town (71),Auto Theft,151
+Cabbagetown-South St.James Town (71),Break and Enter,745
+Cabbagetown-South St.James Town (71),NonMCI,843
+Cabbagetown-South St.James Town (71),Robbery,229
+Cabbagetown-South St.James Town (71),Theft Over,68
+Caledonia-Fairbank (109),Assault,665
+Caledonia-Fairbank (109),Auto Theft,165
+Caledonia-Fairbank (109),Break and Enter,150
+Caledonia-Fairbank (109),NonMCI,208
+Caledonia-Fairbank (109),Robbery,80
+Caledonia-Fairbank (109),Theft Over,25
+Casa Loma (96),Assault,560
+Casa Loma (96),Auto Theft,167
+Casa Loma (96),Break and Enter,387
+Casa Loma (96),NonMCI,237
+Casa Loma (96),Robbery,69
+Casa Loma (96),Theft Over,58
+Centennial Scarborough (133),Assault,489
+Centennial Scarborough (133),Auto Theft,196
+Centennial Scarborough (133),Break and Enter,208
+Centennial Scarborough (133),NonMCI,407
+Centennial Scarborough (133),Robbery,60
+Centennial Scarborough (133),Theft Over,31
+Church-Wellesley (167),Assault,3589
+Church-Wellesley (167),Auto Theft,221
+Church-Wellesley (167),Break and Enter,929
+Church-Wellesley (167),NonMCI,786
+Church-Wellesley (167),Robbery,506
+Church-Wellesley (167),Theft Over,216
+Clairlea-Birchmount (120),Assault,3005
+Clairlea-Birchmount (120),Auto Theft,718
+Clairlea-Birchmount (120),Break and Enter,931
+Clairlea-Birchmount (120),NonMCI,1275
+Clairlea-Birchmount (120),Robbery,322
+Clairlea-Birchmount (120),Theft Over,149
+Clanton Park (33),Assault,1009
+Clanton Park (33),Auto Theft,766
+Clanton Park (33),Break and Enter,543
+Clanton Park (33),NonMCI,675
+Clanton Park (33),Robbery,129
+Clanton Park (33),Theft Over,102
+Cliffcrest (123),Assault,1367
+Cliffcrest (123),Auto Theft,343
+Cliffcrest (123),Break and Enter,461
+Cliffcrest (123),NonMCI,790
+Cliffcrest (123),Robbery,210
+Cliffcrest (123),Theft Over,64
+Corso Italia-Davenport (92),Assault,1126
+Corso Italia-Davenport (92),Auto Theft,237
+Corso Italia-Davenport (92),Break and Enter,364
+Corso Italia-Davenport (92),NonMCI,361
+Corso Italia-Davenport (92),Robbery,205
+Corso Italia-Davenport (92),Theft Over,59
+Danforth (66),Assault,1141
+Danforth (66),Auto Theft,173
+Danforth (66),Break and Enter,423
+Danforth (66),NonMCI,470
+Danforth (66),Robbery,218
+Danforth (66),Theft Over,44
+Danforth East York (59),Assault,790
+Danforth East York (59),Auto Theft,254
+Danforth East York (59),Break and Enter,293
+Danforth East York (59),NonMCI,584
+Danforth East York (59),Robbery,63
+Danforth East York (59),Theft Over,47
+Don Valley Village (47),Assault,1502
+Don Valley Village (47),Auto Theft,641
+Don Valley Village (47),Break and Enter,527
+Don Valley Village (47),NonMCI,808
+Don Valley Village (47),Robbery,297
+Don Valley Village (47),Theft Over,134
+Dorset Park (126),Assault,1975
+Dorset Park (126),Auto Theft,753
+Dorset Park (126),Break and Enter,832
+Dorset Park (126),NonMCI,955
+Dorset Park (126),Robbery,329
+Dorset Park (126),Theft Over,130
+Dovercourt Village (172),Assault,1124
+Dovercourt Village (172),Auto Theft,220
+Dovercourt Village (172),Break and Enter,490
+Dovercourt Village (172),NonMCI,515
+Dovercourt Village (172),Robbery,206
+Dovercourt Village (172),Theft Over,46
+Downsview (155),Assault,1625
+Downsview (155),Auto Theft,694
+Downsview (155),Break and Enter,441
+Downsview (155),NonMCI,692
+Downsview (155),Robbery,217
+Downsview (155),Theft Over,121
+Downtown Yonge East (168),Assault,5531
+Downtown Yonge East (168),Auto Theft,380
+Downtown Yonge East (168),Break and Enter,1359
+Downtown Yonge East (168),NonMCI,1848
+Downtown Yonge East (168),Robbery,1032
+Downtown Yonge East (168),Theft Over,281
+Dufferin Grove (83),Assault,1129
+Dufferin Grove (83),Auto Theft,145
+Dufferin Grove (83),Break and Enter,432
+Dufferin Grove (83),NonMCI,400
+Dufferin Grove (83),Robbery,197
+Dufferin Grove (83),Theft Over,75
+East End-Danforth (62),Assault,2091
+East End-Danforth (62),Auto Theft,351
+East End-Danforth (62),Break and Enter,801
+East End-Danforth (62),NonMCI,917
+East End-Danforth (62),Robbery,312
+East End-Danforth (62),Theft Over,101
+East L'Amoreaux (148),Assault,867
+East L'Amoreaux (148),Auto Theft,282
+East L'Amoreaux (148),Break and Enter,388
+East L'Amoreaux (148),NonMCI,356
+East L'Amoreaux (148),Robbery,170
+East L'Amoreaux (148),Theft Over,51
+East Willowdale (152),Assault,577
+East Willowdale (152),Auto Theft,356
+East Willowdale (152),Break and Enter,622
+East Willowdale (152),NonMCI,492
+East Willowdale (152),Robbery,185
+East Willowdale (152),Theft Over,84
+Edenbridge-Humber Valley (9),Assault,418
+Edenbridge-Humber Valley (9),Auto Theft,452
+Edenbridge-Humber Valley (9),Break and Enter,504
+Edenbridge-Humber Valley (9),NonMCI,447
+Edenbridge-Humber Valley (9),Robbery,53
+Edenbridge-Humber Valley (9),Theft Over,61
+Eglinton East (138),Assault,2052
+Eglinton East (138),Auto Theft,398
+Eglinton East (138),Break and Enter,557
+Eglinton East (138),NonMCI,846
+Eglinton East (138),Robbery,356
+Eglinton East (138),Theft Over,85
+Elms-Old Rexdale (5),Assault,711
+Elms-Old Rexdale (5),Auto Theft,378
+Elms-Old Rexdale (5),Break and Enter,138
+Elms-Old Rexdale (5),NonMCI,321
+Elms-Old Rexdale (5),Robbery,147
+Elms-Old Rexdale (5),Theft Over,24
+Englemount-Lawrence (32),Assault,1138
+Englemount-Lawrence (32),Auto Theft,410
+Englemount-Lawrence (32),Break and Enter,450
+Englemount-Lawrence (32),NonMCI,587
+Englemount-Lawrence (32),Robbery,186
+Englemount-Lawrence (32),Theft Over,82
+Eringate-Centennial-West Deane (11),Assault,670
+Eringate-Centennial-West Deane (11),Auto Theft,593
+Eringate-Centennial-West Deane (11),Break and Enter,294
+Eringate-Centennial-West Deane (11),NonMCI,505
+Eringate-Centennial-West Deane (11),Robbery,117
+Eringate-Centennial-West Deane (11),Theft Over,51
+Etobicoke City Centre (159),Assault,2013
+Etobicoke City Centre (159),Auto Theft,1521
+Etobicoke City Centre (159),Break and Enter,853
+Etobicoke City Centre (159),NonMCI,1403
+Etobicoke City Centre (159),Robbery,285
+Etobicoke City Centre (159),Theft Over,483
+Etobicoke West Mall (13),Assault,610
+Etobicoke West Mall (13),Auto Theft,254
+Etobicoke West Mall (13),Break and Enter,182
+Etobicoke West Mall (13),NonMCI,308
+Etobicoke West Mall (13),Robbery,57
+Etobicoke West Mall (13),Theft Over,42
+Fenside-Parkwoods (150),Assault,1210
+Fenside-Parkwoods (150),Auto Theft,361
+Fenside-Parkwoods (150),Break and Enter,325
+Fenside-Parkwoods (150),NonMCI,548
+Fenside-Parkwoods (150),Robbery,147
+Fenside-Parkwoods (150),Theft Over,43
+Flemingdon Park (44),Assault,1563
+Flemingdon Park (44),Auto Theft,252
+Flemingdon Park (44),Break and Enter,229
+Flemingdon Park (44),NonMCI,484
+Flemingdon Park (44),Robbery,144
+Flemingdon Park (44),Theft Over,51
+Forest Hill North (102),Assault,492
+Forest Hill North (102),Auto Theft,270
+Forest Hill North (102),Break and Enter,386
+Forest Hill North (102),NonMCI,338
+Forest Hill North (102),Robbery,95
+Forest Hill North (102),Theft Over,43
+Forest Hill South (101),Assault,268
+Forest Hill South (101),Auto Theft,363
+Forest Hill South (101),Break and Enter,484
+Forest Hill South (101),NonMCI,261
+Forest Hill South (101),Robbery,40
+Forest Hill South (101),Theft Over,69
+Fort York-Liberty Village (163),Assault,1505
+Fort York-Liberty Village (163),Auto Theft,213
+Fort York-Liberty Village (163),Break and Enter,490
+Fort York-Liberty Village (163),NonMCI,428
+Fort York-Liberty Village (163),Robbery,84
+Fort York-Liberty Village (163),Theft Over,152
+Glenfield-Jane Heights (25),Assault,3394
+Glenfield-Jane Heights (25),Auto Theft,954
+Glenfield-Jane Heights (25),Break and Enter,458
+Glenfield-Jane Heights (25),NonMCI,864
+Glenfield-Jane Heights (25),Robbery,430
+Glenfield-Jane Heights (25),Theft Over,147
+Golfdale-Cedarbrae-Woburn (141),Assault,2147
+Golfdale-Cedarbrae-Woburn (141),Auto Theft,467
+Golfdale-Cedarbrae-Woburn (141),Break and Enter,458
+Golfdale-Cedarbrae-Woburn (141),NonMCI,713
+Golfdale-Cedarbrae-Woburn (141),Robbery,382
+Golfdale-Cedarbrae-Woburn (141),Theft Over,77
+Greenwood-Coxwell (65),Assault,1240
+Greenwood-Coxwell (65),Auto Theft,261
+Greenwood-Coxwell (65),Break and Enter,465
+Greenwood-Coxwell (65),NonMCI,674
+Greenwood-Coxwell (65),Robbery,166
+Greenwood-Coxwell (65),Theft Over,66
+Guildwood (140),Assault,451
+Guildwood (140),Auto Theft,89
+Guildwood (140),Break and Enter,133
+Guildwood (140),NonMCI,393
+Guildwood (140),Robbery,67
+Guildwood (140),Theft Over,22
+Harbourfront-CityPlace (165),Assault,2323
+Harbourfront-CityPlace (165),Auto Theft,268
+Harbourfront-CityPlace (165),Break and Enter,699
+Harbourfront-CityPlace (165),NonMCI,748
+Harbourfront-CityPlace (165),Robbery,172
+Harbourfront-CityPlace (165),Theft Over,189
+Henry Farm (53),Assault,885
+Henry Farm (53),Auto Theft,311
+Henry Farm (53),Break and Enter,315
+Henry Farm (53),NonMCI,556
+Henry Farm (53),Robbery,77
+Henry Farm (53),Theft Over,81
+High Park-Swansea (87),Assault,1014
+High Park-Swansea (87),Auto Theft,331
+High Park-Swansea (87),Break and Enter,555
+High Park-Swansea (87),NonMCI,534
+High Park-Swansea (87),Robbery,156
+High Park-Swansea (87),Theft Over,88
+High Park North (88),Assault,1393
+High Park North (88),Auto Theft,246
+High Park North (88),Break and Enter,549
+High Park North (88),NonMCI,432
+High Park North (88),Robbery,222
+High Park North (88),Theft Over,57
+Highland Creek (134),Assault,619
+Highland Creek (134),Auto Theft,310
+Highland Creek (134),Break and Enter,269
+Highland Creek (134),NonMCI,378
+Highland Creek (134),Robbery,109
+Highland Creek (134),Theft Over,36
+Hillcrest Village (48),Assault,674
+Hillcrest Village (48),Auto Theft,311
+Hillcrest Village (48),Break and Enter,405
+Hillcrest Village (48),NonMCI,411
+Hillcrest Village (48),Robbery,181
+Hillcrest Village (48),Theft Over,76
+Humber Bay Shores (161),Assault,1107
+Humber Bay Shores (161),Auto Theft,341
+Humber Bay Shores (161),Break and Enter,282
+Humber Bay Shores (161),NonMCI,359
+Humber Bay Shores (161),Robbery,75
+Humber Bay Shores (161),Theft Over,103
+Humber Heights-Westmount (8),Assault,417
+Humber Heights-Westmount (8),Auto Theft,265
+Humber Heights-Westmount (8),Break and Enter,222
+Humber Heights-Westmount (8),NonMCI,330
+Humber Heights-Westmount (8),Robbery,71
+Humber Heights-Westmount (8),Theft Over,37
+Humber Summit (21),Assault,1393
+Humber Summit (21),Auto Theft,1141
+Humber Summit (21),Break and Enter,604
+Humber Summit (21),NonMCI,830
+Humber Summit (21),Robbery,278
+Humber Summit (21),Theft Over,265
+Humbermede (22),Assault,1450
+Humbermede (22),Auto Theft,799
+Humbermede (22),Break and Enter,403
+Humbermede (22),NonMCI,466
+Humbermede (22),Robbery,229
+Humbermede (22),Theft Over,100
+Humewood-Cedarvale (106),Assault,550
+Humewood-Cedarvale (106),Auto Theft,298
+Humewood-Cedarvale (106),Break and Enter,398
+Humewood-Cedarvale (106),NonMCI,514
+Humewood-Cedarvale (106),Robbery,57
+Humewood-Cedarvale (106),Theft Over,52
+Ionview (125),Assault,1118
+Ionview (125),Auto Theft,141
+Ionview (125),Break and Enter,252
+Ionview (125),NonMCI,329
+Ionview (125),Robbery,108
+Ionview (125),Theft Over,33
+Islington (158),Assault,1023
+Islington (158),Auto Theft,660
+Islington (158),Break and Enter,651
+Islington (158),NonMCI,750
+Islington (158),Robbery,174
+Islington (158),Theft Over,96
+Junction-Wallace Emerson (171),Assault,1966
+Junction-Wallace Emerson (171),Auto Theft,333
+Junction-Wallace Emerson (171),Break and Enter,834
+Junction-Wallace Emerson (171),NonMCI,919
+Junction-Wallace Emerson (171),Robbery,236
+Junction-Wallace Emerson (171),Theft Over,91
+Junction Area (90),Assault,1308
+Junction Area (90),Auto Theft,388
+Junction Area (90),Break and Enter,584
+Junction Area (90),NonMCI,571
+Junction Area (90),Robbery,159
+Junction Area (90),Theft Over,92
+Keelesdale-Eglinton West (110),Assault,812
+Keelesdale-Eglinton West (110),Auto Theft,268
+Keelesdale-Eglinton West (110),Break and Enter,243
+Keelesdale-Eglinton West (110),NonMCI,308
+Keelesdale-Eglinton West (110),Robbery,171
+Keelesdale-Eglinton West (110),Theft Over,31
+Kennedy Park (124),Assault,2524
+Kennedy Park (124),Auto Theft,345
+Kennedy Park (124),Break and Enter,480
+Kennedy Park (124),NonMCI,737
+Kennedy Park (124),Robbery,379
+Kennedy Park (124),Theft Over,100
+Kensington-Chinatown (78),Assault,4631
+Kensington-Chinatown (78),Auto Theft,381
+Kensington-Chinatown (78),Break and Enter,1674
+Kensington-Chinatown (78),NonMCI,3469
+Kensington-Chinatown (78),Robbery,618
+Kensington-Chinatown (78),Theft Over,374
+Kingsview Village-The Westway (6),Assault,1340
+Kingsview Village-The Westway (6),Auto Theft,730
+Kingsview Village-The Westway (6),Break and Enter,343
+Kingsview Village-The Westway (6),NonMCI,773
+Kingsview Village-The Westway (6),Robbery,182
+Kingsview Village-The Westway (6),Theft Over,70
+Kingsway South (15),Assault,372
+Kingsway South (15),Auto Theft,320
+Kingsway South (15),Break and Enter,307
+Kingsway South (15),NonMCI,242
+Kingsway South (15),Robbery,107
+Kingsway South (15),Theft Over,52
+L'Amoreaux West (147),Assault,1059
+L'Amoreaux West (147),Auto Theft,306
+L'Amoreaux West (147),Break and Enter,388
+L'Amoreaux West (147),NonMCI,422
+L'Amoreaux West (147),Robbery,212
+L'Amoreaux West (147),Theft Over,42
+Lambton Baby Point (114),Assault,353
+Lambton Baby Point (114),Auto Theft,116
+Lambton Baby Point (114),Break and Enter,137
+Lambton Baby Point (114),NonMCI,149
+Lambton Baby Point (114),Robbery,28
+Lambton Baby Point (114),Theft Over,15
+Lansing-Westgate (38),Assault,875
+Lansing-Westgate (38),Auto Theft,488
+Lansing-Westgate (38),Break and Enter,421
+Lansing-Westgate (38),NonMCI,522
+Lansing-Westgate (38),Robbery,120
+Lansing-Westgate (38),Theft Over,90
+Lawrence Park North (105),Assault,398
+Lawrence Park North (105),Auto Theft,401
+Lawrence Park North (105),Break and Enter,335
+Lawrence Park North (105),NonMCI,435
+Lawrence Park North (105),Robbery,53
+Lawrence Park North (105),Theft Over,50
+Lawrence Park South (103),Assault,281
+Lawrence Park South (103),Auto Theft,471
+Lawrence Park South (103),Break and Enter,582
+Lawrence Park South (103),NonMCI,367
+Lawrence Park South (103),Robbery,70
+Lawrence Park South (103),Theft Over,67
+Leaside-Bennington (56),Assault,390
+Leaside-Bennington (56),Auto Theft,512
+Leaside-Bennington (56),Break and Enter,444
+Leaside-Bennington (56),NonMCI,496
+Leaside-Bennington (56),Robbery,63
+Leaside-Bennington (56),Theft Over,66
+Little Portugal (84),Assault,1153
+Little Portugal (84),Auto Theft,202
+Little Portugal (84),Break and Enter,507
+Little Portugal (84),NonMCI,398
+Little Portugal (84),Robbery,116
+Little Portugal (84),Theft Over,84
+Long Branch (19),Assault,815
+Long Branch (19),Auto Theft,245
+Long Branch (19),Break and Enter,334
+Long Branch (19),NonMCI,381
+Long Branch (19),Robbery,105
+Long Branch (19),Theft Over,35
+Malvern East (146),Assault,1754
+Malvern East (146),Auto Theft,441
+Malvern East (146),Break and Enter,283
+Malvern East (146),NonMCI,483
+Malvern East (146),Robbery,252
+Malvern East (146),Theft Over,51
+Malvern West (145),Assault,1090
+Malvern West (145),Auto Theft,389
+Malvern West (145),Break and Enter,225
+Malvern West (145),NonMCI,425
+Malvern West (145),Robbery,205
+Malvern West (145),Theft Over,60
+Maple Leaf (29),Assault,412
+Maple Leaf (29),Auto Theft,266
+Maple Leaf (29),Break and Enter,161
+Maple Leaf (29),NonMCI,219
+Maple Leaf (29),Robbery,44
+Maple Leaf (29),Theft Over,30
+Markland Wood (12),Assault,333
+Markland Wood (12),Auto Theft,240
+Markland Wood (12),Break and Enter,247
+Markland Wood (12),NonMCI,352
+Markland Wood (12),Robbery,94
+Markland Wood (12),Theft Over,39
+Milliken (130),Assault,904
+Milliken (130),Auto Theft,1157
+Milliken (130),Break and Enter,1076
+Milliken (130),NonMCI,836
+Milliken (130),Robbery,332
+Milliken (130),Theft Over,208
+Mimico-Queensway (160),Assault,4170
+Mimico-Queensway (160),Auto Theft,454
+Mimico-Queensway (160),Break and Enter,467
+Mimico-Queensway (160),NonMCI,553
+Mimico-Queensway (160),Robbery,112
+Mimico-Queensway (160),Theft Over,126
+Morningside (135),Assault,1472
+Morningside (135),Auto Theft,330
+Morningside (135),Break and Enter,199
+Morningside (135),NonMCI,446
+Morningside (135),Robbery,134
+Morningside (135),Theft Over,26
+Morningside Heights (144),Assault,1141
+Morningside Heights (144),Auto Theft,743
+Morningside Heights (144),Break and Enter,408
+Morningside Heights (144),NonMCI,614
+Morningside Heights (144),Robbery,212
+Morningside Heights (144),Theft Over,122
+Moss Park (73),Assault,6142
+Moss Park (73),Auto Theft,414
+Moss Park (73),Break and Enter,1735
+Moss Park (73),NonMCI,1726
+Moss Park (73),Robbery,1173
+Moss Park (73),Theft Over,225
+Mount Dennis (115),Assault,1134
+Mount Dennis (115),Auto Theft,303
+Mount Dennis (115),Break and Enter,260
+Mount Dennis (115),NonMCI,364
+Mount Dennis (115),Robbery,179
+Mount Dennis (115),Theft Over,41
+Mount Olive-Silverstone-Jamestown (2),Assault,2857
+Mount Olive-Silverstone-Jamestown (2),Auto Theft,927
+Mount Olive-Silverstone-Jamestown (2),Break and Enter,323
+Mount Olive-Silverstone-Jamestown (2),NonMCI,1027
+Mount Olive-Silverstone-Jamestown (2),Robbery,619
+Mount Olive-Silverstone-Jamestown (2),Theft Over,87
+Mount Pleasant East (99),Assault,513
+Mount Pleasant East (99),Auto Theft,297
+Mount Pleasant East (99),Break and Enter,374
+Mount Pleasant East (99),NonMCI,358
+Mount Pleasant East (99),Robbery,70
+Mount Pleasant East (99),Theft Over,53
+New Toronto (18),Assault,1318
+New Toronto (18),Auto Theft,226
+New Toronto (18),Break and Enter,350
+New Toronto (18),NonMCI,390
+New Toronto (18),Robbery,156
+New Toronto (18),Theft Over,59
+Newtonbrook East (50),Assault,990
+Newtonbrook East (50),Auto Theft,399
+Newtonbrook East (50),Break and Enter,503
+Newtonbrook East (50),NonMCI,439
+Newtonbrook East (50),Robbery,139
+Newtonbrook East (50),Theft Over,101
+Newtonbrook West (36),Assault,1896
+Newtonbrook West (36),Auto Theft,951
+Newtonbrook West (36),Break and Enter,578
+Newtonbrook West (36),NonMCI,899
+Newtonbrook West (36),Robbery,265
+Newtonbrook West (36),Theft Over,144
+North Riverdale (68),Assault,665
+North Riverdale (68),Auto Theft,176
+North Riverdale (68),Break and Enter,422
+North Riverdale (68),NonMCI,440
+North Riverdale (68),Robbery,148
+North Riverdale (68),Theft Over,40
+North St.James Town (74),Assault,2405
+North St.James Town (74),Auto Theft,190
+North St.James Town (74),Break and Enter,649
+North St.James Town (74),NonMCI,908
+North St.James Town (74),Robbery,307
+North St.James Town (74),Theft Over,95
+North Toronto (173),Assault,991
+North Toronto (173),Auto Theft,98
+North Toronto (173),Break and Enter,461
+North Toronto (173),NonMCI,210
+North Toronto (173),Robbery,112
+North Toronto (173),Theft Over,49
+O'Connor-Parkview (54),Assault,1582
+O'Connor-Parkview (54),Auto Theft,315
+O'Connor-Parkview (54),Break and Enter,437
+O'Connor-Parkview (54),NonMCI,676
+O'Connor-Parkview (54),Robbery,131
+O'Connor-Parkview (54),Theft Over,81
+Oakdale-Beverley Heights (154),Assault,3261
+Oakdale-Beverley Heights (154),Auto Theft,1019
+Oakdale-Beverley Heights (154),Break and Enter,620
+Oakdale-Beverley Heights (154),NonMCI,1032
+Oakdale-Beverley Heights (154),Robbery,401
+Oakdale-Beverley Heights (154),Theft Over,157
+Oakridge (121),Assault,2011
+Oakridge (121),Auto Theft,196
+Oakridge (121),Break and Enter,575
+Oakridge (121),NonMCI,623
+Oakridge (121),Robbery,293
+Oakridge (121),Theft Over,64
+Oakwood Village (107),Assault,1436
+Oakwood Village (107),Auto Theft,369
+Oakwood Village (107),Break and Enter,400
+Oakwood Village (107),NonMCI,484
+Oakwood Village (107),Robbery,215
+Oakwood Village (107),Theft Over,46
+Old East York (58),Assault,592
+Old East York (58),Auto Theft,141
+Old East York (58),Break and Enter,184
+Old East York (58),NonMCI,313
+Old East York (58),Robbery,82
+Old East York (58),Theft Over,33
+Palmerston-Little Italy (80),Assault,879
+Palmerston-Little Italy (80),Auto Theft,194
+Palmerston-Little Italy (80),Break and Enter,503
+Palmerston-Little Italy (80),NonMCI,553
+Palmerston-Little Italy (80),Robbery,150
+Palmerston-Little Italy (80),Theft Over,72
+Parkwoods-O'Connor Hills (149),Assault,633
+Parkwoods-O'Connor Hills (149),Auto Theft,300
+Parkwoods-O'Connor Hills (149),Break and Enter,328
+Parkwoods-O'Connor Hills (149),NonMCI,411
+Parkwoods-O'Connor Hills (149),Robbery,88
+Parkwoods-O'Connor Hills (149),Theft Over,43
+Pelmo Park-Humberlea (23),Assault,779
+Pelmo Park-Humberlea (23),Auto Theft,652
+Pelmo Park-Humberlea (23),Break and Enter,275
+Pelmo Park-Humberlea (23),NonMCI,444
+Pelmo Park-Humberlea (23),Robbery,120
+Pelmo Park-Humberlea (23),Theft Over,75
+Playter Estates-Danforth (67),Assault,850
+Playter Estates-Danforth (67),Auto Theft,143
+Playter Estates-Danforth (67),Break and Enter,381
+Playter Estates-Danforth (67),NonMCI,408
+Playter Estates-Danforth (67),Robbery,125
+Playter Estates-Danforth (67),Theft Over,34
+Pleasant View (46),Assault,469
+Pleasant View (46),Auto Theft,235
+Pleasant View (46),Break and Enter,220
+Pleasant View (46),NonMCI,440
+Pleasant View (46),Robbery,106
+Pleasant View (46),Theft Over,57
+Princess-Rosethorn (10),Assault,283
+Princess-Rosethorn (10),Auto Theft,386
+Princess-Rosethorn (10),Break and Enter,373
+Princess-Rosethorn (10),NonMCI,464
+Princess-Rosethorn (10),Robbery,92
+Princess-Rosethorn (10),Theft Over,53
+Regent Park (72),Assault,1594
+Regent Park (72),Auto Theft,141
+Regent Park (72),Break and Enter,389
+Regent Park (72),NonMCI,484
+Regent Park (72),Robbery,211
+Regent Park (72),Theft Over,58
+Rexdale-Kipling (4),Assault,746
+Rexdale-Kipling (4),Auto Theft,452
+Rexdale-Kipling (4),Break and Enter,222
+Rexdale-Kipling (4),NonMCI,431
+Rexdale-Kipling (4),Robbery,182
+Rexdale-Kipling (4),Theft Over,34
+Rockcliffe-Smythe (111),Assault,1659
+Rockcliffe-Smythe (111),Auto Theft,550
+Rockcliffe-Smythe (111),Break and Enter,442
+Rockcliffe-Smythe (111),NonMCI,723
+Rockcliffe-Smythe (111),Robbery,266
+Rockcliffe-Smythe (111),Theft Over,96
+Roncesvalles (86),Assault,1401
+Roncesvalles (86),Auto Theft,211
+Roncesvalles (86),Break and Enter,682
+Roncesvalles (86),NonMCI,474
+Roncesvalles (86),Robbery,222
+Roncesvalles (86),Theft Over,69
+Rosedale-Moore Park (98),Assault,1832
+Rosedale-Moore Park (98),Auto Theft,566
+Rosedale-Moore Park (98),Break and Enter,932
+Rosedale-Moore Park (98),NonMCI,608
+Rosedale-Moore Park (98),Robbery,254
+Rosedale-Moore Park (98),Theft Over,147
+Runnymede-Bloor West Village (89),Assault,465
+Runnymede-Bloor West Village (89),Auto Theft,259
+Runnymede-Bloor West Village (89),Break and Enter,271
+Runnymede-Bloor West Village (89),NonMCI,267
+Runnymede-Bloor West Village (89),Robbery,140
+Runnymede-Bloor West Village (89),Theft Over,32
+Rustic (28),Assault,870
+Rustic (28),Auto Theft,246
+Rustic (28),Break and Enter,164
+Rustic (28),NonMCI,269
+Rustic (28),Robbery,94
+Rustic (28),Theft Over,25
+Scarborough Village (139),Assault,1733
+Scarborough Village (139),Auto Theft,330
+Scarborough Village (139),Break and Enter,428
+Scarborough Village (139),NonMCI,635
+Scarborough Village (139),Robbery,233
+Scarborough Village (139),Theft Over,54
+South Eglinton-Davisville (174),Assault,967
+South Eglinton-Davisville (174),Auto Theft,126
+South Eglinton-Davisville (174),Break and Enter,521
+South Eglinton-Davisville (174),NonMCI,287
+South Eglinton-Davisville (174),Robbery,95
+South Eglinton-Davisville (174),Theft Over,51
+South Parkdale (85),Assault,2749
+South Parkdale (85),Auto Theft,272
+South Parkdale (85),Break and Enter,775
+South Parkdale (85),NonMCI,588
+South Parkdale (85),Robbery,242
+South Parkdale (85),Theft Over,133
+South Riverdale (70),Assault,2725
+South Riverdale (70),Auto Theft,547
+South Riverdale (70),Break and Enter,1304
+South Riverdale (70),NonMCI,1541
+South Riverdale (70),Robbery,394
+South Riverdale (70),Theft Over,273
+St Lawrence-East Bayfront-The Islands (166),Assault,3446
+St Lawrence-East Bayfront-The Islands (166),Auto Theft,262
+St Lawrence-East Bayfront-The Islands (166),Break and Enter,1063
+St Lawrence-East Bayfront-The Islands (166),NonMCI,1117
+St Lawrence-East Bayfront-The Islands (166),Robbery,332
+St Lawrence-East Bayfront-The Islands (166),Theft Over,278
+St.Andrew-Windfields (40),Assault,713
+St.Andrew-Windfields (40),Auto Theft,514
+St.Andrew-Windfields (40),Break and Enter,860
+St.Andrew-Windfields (40),NonMCI,506
+St.Andrew-Windfields (40),Robbery,114
+St.Andrew-Windfields (40),Theft Over,112
+Steeles (116),Assault,480
+Steeles (116),Auto Theft,371
+Steeles (116),Break and Enter,515
+Steeles (116),NonMCI,332
+Steeles (116),Robbery,90
+Steeles (116),Theft Over,40
+Stonegate-Queensway (16),Assault,1109
+Stonegate-Queensway (16),Auto Theft,675
+Stonegate-Queensway (16),Break and Enter,676
+Stonegate-Queensway (16),NonMCI,805
+Stonegate-Queensway (16),Robbery,158
+Stonegate-Queensway (16),Theft Over,103
+Tam O'Shanter-Sullivan (118),Assault,1289
+Tam O'Shanter-Sullivan (118),Auto Theft,494
+Tam O'Shanter-Sullivan (118),Break and Enter,608
+Tam O'Shanter-Sullivan (118),NonMCI,760
+Tam O'Shanter-Sullivan (118),Robbery,243
+Tam O'Shanter-Sullivan (118),Theft Over,69
+Taylor-Massey (61),Assault,1291
+Taylor-Massey (61),Auto Theft,166
+Taylor-Massey (61),Break and Enter,410
+Taylor-Massey (61),NonMCI,484
+Taylor-Massey (61),Robbery,214
+Taylor-Massey (61),Theft Over,54
+The Beaches (63),Assault,1141
+The Beaches (63),Auto Theft,348
+The Beaches (63),Break and Enter,550
+The Beaches (63),NonMCI,719
+The Beaches (63),Robbery,151
+The Beaches (63),Theft Over,95
+Thistletown-Beaumond Heights (3),Assault,683
+Thistletown-Beaumond Heights (3),Auto Theft,395
+Thistletown-Beaumond Heights (3),Break and Enter,206
+Thistletown-Beaumond Heights (3),NonMCI,427
+Thistletown-Beaumond Heights (3),Robbery,151
+Thistletown-Beaumond Heights (3),Theft Over,45
+Thorncliffe Park (55),Assault,1229
+Thorncliffe Park (55),Auto Theft,310
+Thorncliffe Park (55),Break and Enter,405
+Thorncliffe Park (55),NonMCI,405
+Thorncliffe Park (55),Robbery,133
+Thorncliffe Park (55),Theft Over,86
+Trinity-Bellwoods (81),Assault,1452
+Trinity-Bellwoods (81),Auto Theft,237
+Trinity-Bellwoods (81),Break and Enter,824
+Trinity-Bellwoods (81),NonMCI,634
+Trinity-Bellwoods (81),Robbery,187
+Trinity-Bellwoods (81),Theft Over,97
+University (79),Assault,1399
+University (79),Auto Theft,131
+University (79),Break and Enter,710
+University (79),NonMCI,678
+University (79),Robbery,214
+University (79),Theft Over,107
+Victoria Village (43),Assault,1252
+Victoria Village (43),Auto Theft,337
+Victoria Village (43),Break and Enter,421
+Victoria Village (43),NonMCI,483
+Victoria Village (43),Robbery,115
+Victoria Village (43),Theft Over,69
+Wellington Place (164),Assault,4541
+Wellington Place (164),Auto Theft,462
+Wellington Place (164),Break and Enter,1542
+Wellington Place (164),NonMCI,1209
+Wellington Place (164),Robbery,402
+Wellington Place (164),Theft Over,286
+West Hill (136),Assault,4301
+West Hill (136),Auto Theft,517
+West Hill (136),Break and Enter,848
+West Hill (136),NonMCI,1184
+West Hill (136),Robbery,581
+West Hill (136),Theft Over,123
+West Humber-Clairville (1),Assault,3275
+West Humber-Clairville (1),Auto Theft,5262
+West Humber-Clairville (1),Break and Enter,1667
+West Humber-Clairville (1),NonMCI,3623
+West Humber-Clairville (1),Robbery,789
+West Humber-Clairville (1),Theft Over,727
+West Queen West (162),Assault,1222
+West Queen West (162),Auto Theft,137
+West Queen West (162),Break and Enter,502
+West Queen West (162),NonMCI,574
+West Queen West (162),Robbery,99
+West Queen West (162),Theft Over,64
+West Rouge (143),Assault,811
+West Rouge (143),Auto Theft,461
+West Rouge (143),Break and Enter,330
+West Rouge (143),NonMCI,551
+West Rouge (143),Robbery,152
+West Rouge (143),Theft Over,51
+Westminster-Branson (35),Assault,1164
+Westminster-Branson (35),Auto Theft,516
+Westminster-Branson (35),Break and Enter,403
+Westminster-Branson (35),NonMCI,722
+Westminster-Branson (35),Robbery,115
+Westminster-Branson (35),Theft Over,75
+Weston-Pelham Park (91),Assault,1109
+Weston-Pelham Park (91),Auto Theft,205
+Weston-Pelham Park (91),Break and Enter,276
+Weston-Pelham Park (91),NonMCI,298
+Weston-Pelham Park (91),Robbery,101
+Weston-Pelham Park (91),Theft Over,39
+Weston (113),Assault,2215
+Weston (113),Auto Theft,696
+Weston (113),Break and Enter,560
+Weston (113),NonMCI,850
+Weston (113),Robbery,366
+Weston (113),Theft Over,70
+Wexford/Maryvale (119),Assault,2665
+Wexford/Maryvale (119),Auto Theft,1136
+Wexford/Maryvale (119),Break and Enter,1011
+Wexford/Maryvale (119),NonMCI,1416
+Wexford/Maryvale (119),Robbery,365
+Wexford/Maryvale (119),Theft Over,201
+Willowdale West (37),Assault,1047
+Willowdale West (37),Auto Theft,288
+Willowdale West (37),Break and Enter,316
+Willowdale West (37),NonMCI,484
+Willowdale West (37),Robbery,168
+Willowdale West (37),Theft Over,88
+Willowridge-Martingrove-Richview (7),Assault,1017
+Willowridge-Martingrove-Richview (7),Auto Theft,729
+Willowridge-Martingrove-Richview (7),Break and Enter,433
+Willowridge-Martingrove-Richview (7),NonMCI,690
+Willowridge-Martingrove-Richview (7),Robbery,202
+Willowridge-Martingrove-Richview (7),Theft Over,68
+Woburn North (142),Assault,2086
+Woburn North (142),Auto Theft,589
+Woburn North (142),Break and Enter,565
+Woburn North (142),NonMCI,907
+Woburn North (142),Robbery,318
+Woburn North (142),Theft Over,123
+Woodbine-Lumsden (60),Assault,453
+Woodbine-Lumsden (60),Auto Theft,91
+Woodbine-Lumsden (60),Break and Enter,160
+Woodbine-Lumsden (60),NonMCI,337
+Woodbine-Lumsden (60),Robbery,42
+Woodbine-Lumsden (60),Theft Over,30
+Woodbine Corridor (64),Assault,976
+Woodbine Corridor (64),Auto Theft,147
+Woodbine Corridor (64),Break and Enter,346
+Woodbine Corridor (64),NonMCI,463
+Woodbine Corridor (64),Robbery,107
+Woodbine Corridor (64),Theft Over,46
+Wychwood (94),Assault,859
+Wychwood (94),Auto Theft,222
+Wychwood (94),Break and Enter,424
+Wychwood (94),NonMCI,303
+Wychwood (94),Robbery,133
+Wychwood (94),Theft Over,39
+Yonge-Bay Corridor (170),Assault,5310
+Yonge-Bay Corridor (170),Auto Theft,291
+Yonge-Bay Corridor (170),Break and Enter,1256
+Yonge-Bay Corridor (170),NonMCI,1135
+Yonge-Bay Corridor (170),Robbery,669
+Yonge-Bay Corridor (170),Theft Over,483
+Yonge-Doris (151),Assault,904
+Yonge-Doris (151),Auto Theft,260
+Yonge-Doris (151),Break and Enter,178
+Yonge-Doris (151),NonMCI,580
+Yonge-Doris (151),Robbery,179
+Yonge-Doris (151),Theft Over,121
+Yonge-Eglinton (100),Assault,942
+Yonge-Eglinton (100),Auto Theft,187
+Yonge-Eglinton (100),Break and Enter,355
+Yonge-Eglinton (100),NonMCI,262
+Yonge-Eglinton (100),Robbery,124
+Yonge-Eglinton (100),Theft Over,95
+Yonge-St.Clair (97),Assault,391
+Yonge-St.Clair (97),Auto Theft,134
+Yonge-St.Clair (97),Break and Enter,350
+Yonge-St.Clair (97),NonMCI,183
+Yonge-St.Clair (97),Robbery,34
+Yonge-St.Clair (97),Theft Over,43
+York University Heights (27),Assault,3948
+York University Heights (27),Auto Theft,1759
+York University Heights (27),Break and Enter,1505
+York University Heights (27),NonMCI,1915
+York University Heights (27),Robbery,697
+York University Heights (27),Theft Over,494
+Yorkdale-Glen Park (31),Assault,1942
+Yorkdale-Glen Park (31),Auto Theft,1037
+Yorkdale-Glen Park (31),Break and Enter,870
+Yorkdale-Glen Park (31),NonMCI,1089
+Yorkdale-Glen Park (31),Robbery,384
+Yorkdale-Glen Park (31),Theft Over,370
