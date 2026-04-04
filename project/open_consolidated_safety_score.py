@@ -2,6 +2,8 @@ import csv
 import os
 
 import matplotlib.pyplot as plt
+from matplotlib.colors import LinearSegmentedColormap
+import mplcursors
 import psycopg2
 import seaborn as sns
 from dotenv import load_dotenv
@@ -303,21 +305,48 @@ def plot_rankings(ranked: list[tuple[str, float]]) -> None:
     print('Chart saved to safety_top15_dangerous.png')
     plt.show()
 
-    # Zone breakdown: how many neighbourhoods are in each safety zone
-    red    = sum(1 for s in scores if s < 34)
-    yellow = sum(1 for s in scores if 34 <= s < 67)
-    green  = sum(1 for s in scores if s >= 67)
+    # Heatmap: all neighbourhoods ranked by safety score, red → orange → yellow → green
+    cmap = LinearSegmentedColormap.from_list(
+        'rg', [
+            (0.00, '#d73027'),  # 0   — deep red
+            (0.50, '#d73027'),  # 50  — deep red (red holds to 50)
+            (0.51, '#fc8d59'),  # 51  — orange
+            (0.70, '#fc8d59'),  # 70  — orange (orange holds to 70)
+            (0.71, '#fee08b'),  # 71  — yellow
+            (0.89, '#fee08b'),  # 89  — yellow (yellow holds to 89)
+            (0.90, '#a6d96a'),  # 90  — light green
+            (1.00, '#1a9850'),  # 100 — deep green
+        ]
+    )
+    colours = [cmap(s / 100) for s in scores]
 
-    fig, ax = plt.subplots(figsize=(8, 6))
-    ax.bar(['Dangerous\n(0–33)', 'Neutral\n(34–66)', 'Safe\n(67–100)'],
-           [red, yellow, green],
-           color=['firebrick', 'gold', 'seagreen'])
-    ax.set_title('Neighbourhoods by Safety Zone')
-    ax.set_ylabel('Number of Neighbourhoods')
-    for i, count in enumerate([red, yellow, green]):
-        ax.text(i, count + 0.5, str(count), ha='center', fontweight='bold')
-    fig.tight_layout()
-    fig.savefig('safety_all_neighbourhoods.png', dpi=150)
+    fig, ax = plt.subplots(figsize=(12, 40))
+    bars = ax.barh(range(len(names)), scores, color=colours, height=0.8)
+    step = 10
+    ax.set_yticks(range(len(names)))
+    ax.set_yticklabels(
+        [str(i + 1) if i % step == 0 or i == len(names) - 1 else '' for i in range(len(names))],
+        fontsize=8
+    )
+    ax.invert_yaxis()   # rank 1 at top
+    ax.set_xlabel('Safety Score (0–100)', fontsize=11)
+    ax.set_xlim(0, 100)
+    ax.set_title('All Neighbourhoods — Safety Score Heatmap', fontsize=13, pad=12)
+    sm = plt.cm.ScalarMappable(cmap=cmap, norm=plt.Normalize(0, 100))
+    fig.colorbar(sm, ax=ax, label='Safety Score', shrink=0.3)
+    fig.tight_layout(pad=2.0)
+    fig.savefig('safety_all_neighbourhoods.png', dpi=120, bbox_inches='tight')
+
+    # Hover tooltip: show rank, neighbourhood name and safety score
+    cursor = mplcursors.cursor(bars, hover=True)
+    @cursor.connect('add')
+    def on_add(sel):
+        idx = sel.index
+        sel.annotation.set_text(
+            f"Rank {idx + 1}\n{names[idx]}\nScore: {scores[idx]:.2f}"
+        )
+        sel.annotation.get_bbox_patch().set(fc='white', alpha=0.85)
+
     print('Chart saved to safety_all_neighbourhoods.png')
     plt.show()
 
