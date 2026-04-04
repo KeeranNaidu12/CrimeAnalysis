@@ -86,7 +86,7 @@ def print_rankings(ranked: list[tuple[str, float]]) -> None:
 
 
 # Exports the ranked results to a CSV file.
-def export_rankings(ranked: list[tuple[str, float]], path: str = "safety_rankings.csv") -> None:
+def export_rankings(ranked: list[tuple[str, float]], path: str = "Open_Consolidated_Data_Safety_score_ranking.csv") -> None:
     with open(path, 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
         writer.writerow(['Rank', 'Neighbourhood', 'Safety Score (0-100)'])
