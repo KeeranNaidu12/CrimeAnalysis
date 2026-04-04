@@ -5,7 +5,7 @@ import os
 from tqdm import tqdm
 
 # For visualizations
-from plotnine import ggplot, aes, geom_bar, geom_tile, geom_text, theme, element_text, labs, coord_flip, scale_fill_gradient
+from plotnine import ggplot, aes, geom_bar, geom_tile, geom_text, theme, element_text, element_blank, labs, coord_flip, scale_fill_gradient
 
 def parse_date(date_str):
     """Parse date string to datetime object"""
