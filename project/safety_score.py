@@ -1,7 +1,9 @@
 import csv
 import os
 
+import matplotlib.pyplot as plt
 import psycopg2
+import seaborn as sns
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -95,6 +97,53 @@ def export_rankings(ranked: list[tuple[str, float]], path: str = "Open_Consolida
     print(f"Rankings exported to {path}")
 
 
+# Plots top 15 safest, top 15 most dangerous, and all neighbourhoods as separate charts.
+def plot_rankings(ranked: list[tuple[str, float]]) -> None:
+    sns.set_theme(style='whitegrid')
+    names  = [n for n, _ in ranked]
+    scores = [s for _, s in ranked]
+
+    # Top 15 safest
+    plt.figure(figsize=(10, 6))
+    plt.barh(names[:15][::-1], scores[:15][::-1], color='steelblue')
+    plt.title('Top 15 Safest Neighbourhoods')
+    plt.xlabel('Safety Score (0–100)')
+    plt.xlim(0, 100)
+    plt.tight_layout()
+    plt.savefig('safety_top15_safest.png', dpi=150)
+    print('Chart saved to safety_top15_safest.png')
+    plt.show()
+
+    # Top 15 most dangerous
+    plt.figure(figsize=(10, 6))
+    plt.barh(names[-15:][::-1], scores[-15:][::-1], color='firebrick')
+    plt.title('Top 15 Most Dangerous Neighbourhoods')
+    plt.xlabel('Safety Score (0–100)')
+    plt.xlim(0, 100)
+    plt.tight_layout()
+    plt.savefig('safety_top15_dangerous.png', dpi=150)
+    print('Chart saved to safety_top15_dangerous.png')
+    plt.show()
+
+    # Zone breakdown: how many neighbourhoods are in each safety zone
+    red    = sum(1 for s in scores if s < 34)
+    yellow = sum(1 for s in scores if 34 <= s < 67)
+    green  = sum(1 for s in scores if s >= 67)
+
+    fig, ax = plt.subplots(figsize=(8, 6))
+    ax.bar(['Dangerous\n(0–33)', 'Neutral\n(34–66)', 'Safe\n(67–100)'],
+           [red, yellow, green],
+           color=['firebrick', 'gold', 'seagreen'])
+    ax.set_title('Neighbourhoods by Safety Zone')
+    ax.set_ylabel('Number of Neighbourhoods')
+    for i, count in enumerate([red, yellow, green]):
+        ax.text(i, count + 0.5, str(count), ha='center', fontweight='bold')
+    fig.tight_layout()
+    fig.savefig('safety_all_neighbourhoods.png', dpi=150)
+    print('Chart saved to safety_all_neighbourhoods.png')
+    plt.show()
+
+
 def main():
     print("Connecting to database…")
     conn = get_db_connection()
@@ -112,6 +161,7 @@ def main():
         print(f"\nTotal neighbourhoods ranked: {len(ranked)}")
         print_rankings(ranked)
         export_rankings(ranked)
+        plot_rankings(ranked)
     finally:
         conn.close()
 
