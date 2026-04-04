@@ -19,12 +19,85 @@ DB_CONFIG = {
 # Higher weights indicates that the crime is more dangerous and a lower score indicates that a crime is less dangerous.
 SEVERITY_WEIGHTS = {
     'Assault' : 6,
-    'NonMCI' : 5,
+    'Robbery' : 5,
     'Break and Enter' : 4,
     'Auto Theft': 3,
-    'Robbery' : 2,
+    'NonMCI' : 2,
     'Theft Over' : 1,
 }
+
+# Since cirmes will be geenralized if we are going by CSI numbers, we also need to consider the offence types.
+# The range for this weighting is 0-2. 0 being less severe to 2 being extremely severe
+OFFENCE_WEIGHTS = {
+    # Assault (most severe) - firearms and lethal force
+    'Discharge Firearm With Intent'    : 2.0,
+    'Discharge Firearm - Recklessly'   : 2.0,
+    'Use Firearm / Immit Commit Off'   : 2.0,
+    'Pointing A Firearm'               : 2.0,
+    'Aggravated Assault'               : 2.0,
+    'Aggravated Aslt Peace Officer'    : 2.0,
+
+    # Assault - severe - weapons/bodily harm
+    'Hoax Terrorism Causing Bodily'    : 1.8,
+    'Set/Place Trap/Intend Death/Bh'   : 1.8,
+    'Traps Likely Cause Bodily Harm'   : 1.6,
+    'Assault With Weapon'              : 1.6,
+    'Assault Bodily Harm'              : 1.6,
+    'Aggravated Assault Avails Pros'   : 1.6,
+    'Air Gun Or Pistol: Bodily Harm'   : 1.6,
+
+    # Assault — concerning
+    'Assault Peace Officer Wpn/Cbh'    : 1.5,
+    'Crim Negligence Bodily Harm'      : 1.4,
+    'Unlawfully Causing Bodily Harm'   : 1.4,
+    'Administering Noxious Thing'      : 1.3,
+
+    # Assault — lower severity variants
+    'Assault Peace Officer'            : 1.1,
+    'Disarming Peace/Public Officer'   : 1.0,
+    'Assault - Resist/ Prevent Seiz'   : 0.70,
+    'Assault - Force/Thrt/Impede'      : 0.60,
+
+    # Robbery — firearm acquisition
+    'Robbery To Steal Firearm'         : 2.0,
+    # Robbery — severe (invasion / carjacking / weapon)
+    'Robbery - Home Invasion'          : 1.8,
+    'Robbery - Vehicle Jacking'        : 1.7,
+    'Robbery With Weapon'              : 1.6,
+    # Robbery — high (organised / institutional / group)
+    'Robbery - Financial Institute'    : 1.4,
+    'Robbery - Armoured Car'           : 1.4,
+    'Robbery - Swarming'               : 1.4,
+    # Robbery — medium (confrontational / targeted)
+    'Robbery - Business'               : 1.2,
+    'Robbery - Mugging'                : 1.1,
+    'Robbery - Delivery Person'        : 1.1,
+    'Robbery - Taxi'                   : 1.0,
+    'Robbery - Other'                  : 1.0,
+    # Robbery — lower (opportunistic)
+    'Robbery - Purse Snatch'           : 0.8,
+    'Robbery - Atm'                    : 0.7,
+
+    # Break and Enter
+    'B&E - To Steal Firearm'           : 2.0,
+    'B&E - M/Veh To Steal Firearm'     : 1.7,
+    'B&E W\'Intent'                    : 1.1,
+    'Unlawfully In Dwelling-House'     : 0.8,
+    'B&E Out'                          : 0.6,
+
+    # Theft Over
+    'Theft From Motor Vehicle Over'    : 2.0,
+    'Theft From Mail / Bag / Key'      : 1.3,
+    'Theft Over - Distraction'         : 0.5,
+    'Theft Over - Shoplifting'         : 0.6,
+    'Theft Over - Bicycle'             : 0.4,
+    'Theft - Misapprop Funds Over'     : 0.3,
+    'Theft Of Utilities Over'          : 0.3,
+
+    # NonMCI
+    'Theft From Motor Vehicle Under'   : 0.7,
+}
+DEFAULT_OFFENCE = 1.0
 
 # Recency weights by year band
 RECENCY_WEIGHTS = {
@@ -42,27 +115,59 @@ def get_db_connection():
         print(f"Error connecting to database: {e}")
         return None
 
-# Calculates a weighted danger score per neighbourhood using severity and recency.
+# Calculates a weighted danger score per neighbourhood using severity, offence sub-weight, recency and year frequency.
 def fetch_crime_scores(conn) -> dict[str, float]:
     case_severity = ' '.join(
         f"WHEN '{cat}' THEN {w}" for cat, w in SEVERITY_WEIGHTS.items()
+    )
+    case_offence = ' '.join(
+        "WHEN '{}' THEN {}".format(off.replace("'", "''"), w) for off, w in OFFENCE_WEIGHTS.items()
     )
     case_recency = ' '.join(
         f"WHEN {year} THEN {w}" for year, w in RECENCY_WEIGHTS.items()
     )
     cursor = conn.cursor()
     cursor.execute(f"""
-        SELECT neighbourhood_158,
+        WITH offence_year_counts AS (
+            SELECT offence,
+                   EXTRACT(YEAR FROM occ_date)::INT AS yr,
+                   COUNT(*) AS cnt
+            FROM open_consolidated_data
+            WHERE neighbourhood_158 IS NOT NULL
+              AND neighbourhood_158 <> 'NSA'
+              AND csi_category IS NOT NULL
+              AND occ_date IS NOT NULL
+            GROUP BY offence, yr
+        ),
+        offence_year_weighted AS (
+            -- Apply recency weight to raw count before normalising
+            SELECT offence, yr,
+                   cnt::FLOAT * CASE yr {case_recency} ELSE {DEFAULT_RECENCY} END AS weighted_cnt
+            FROM offence_year_counts
+        ),
+        offence_year_freq AS (
+            -- Normalise recency-weighted count 0-1 globally across all offence-year pairs
+            SELECT offence, yr,
+                   (weighted_cnt - MIN(weighted_cnt) OVER ())
+                   / NULLIF(MAX(weighted_cnt) OVER () - MIN(weighted_cnt) OVER (), 0)
+                   AS norm_freq
+            FROM offence_year_weighted
+        )
+        SELECT o.neighbourhood_158,
                SUM(
-                   CASE csi_category {case_severity} ELSE 1 END
-                   * CASE EXTRACT(YEAR FROM occ_date)::INT {case_recency} ELSE {DEFAULT_RECENCY} END
+                   CASE o.csi_category {case_severity} ELSE 1 END
+                   * CASE o.offence {case_offence} ELSE {DEFAULT_OFFENCE} END
+                   * COALESCE(oyf.norm_freq, 0)
                ) AS score
-        FROM open_consolidated_data
-        WHERE neighbourhood_158 IS NOT NULL
-          AND neighbourhood_158 <> 'NSA'
-          AND csi_category IS NOT NULL
-          AND occ_date IS NOT NULL
-        GROUP BY neighbourhood_158
+        FROM open_consolidated_data o
+        LEFT JOIN offence_year_freq oyf
+               ON o.offence = oyf.offence
+              AND EXTRACT(YEAR FROM o.occ_date)::INT = oyf.yr
+        WHERE o.neighbourhood_158 IS NOT NULL
+          AND o.neighbourhood_158 <> 'NSA'
+          AND o.csi_category IS NOT NULL
+          AND o.occ_date IS NOT NULL
+        GROUP BY o.neighbourhood_158
     """)
     rows = cursor.fetchall()
     cursor.close()
@@ -87,24 +192,7 @@ def print_rankings(ranked: list[tuple[str, float]]) -> None:
         print(f"{rank:<6} {neighbourhood:<50} {score:.2f}")
 
 
-# Returns the safety zone label for a given score.
-def _zone(score: float) -> str:
-    if score < 34:
-        return 'Dangerous'
-    if score < 67:
-        return 'Neutral'
-    return 'Safe'
-
-# Exports the ranked results with zone labels to a CSV file.
-def export_rankings(ranked: list[tuple[str, float]], path: str = "Open_Consolidated_Data_Safety_score_ranking.csv") -> None:
-    with open(path, 'w', newline='', encoding='utf-8') as f:
-        writer = csv.writer(f)
-        writer.writerow(['Rank', 'Neighbourhood', 'Safety Score (0-100)', 'Zone'])
-        for rank, (neighbourhood, score) in enumerate(ranked, start=1):
-            writer.writerow([rank, neighbourhood, score, _zone(score)])
-    print(f"Rankings exported to {path}")
-
-# Fetches incident counts per neighbourhood and crime category.
+# Fetches incident counts per neighbourhood and crime category (all years).
 def fetch_crime_category_breakdown(conn) -> list[tuple[str, str, int]]:
     cursor = conn.cursor()
     cursor.execute("""
@@ -120,13 +208,71 @@ def fetch_crime_category_breakdown(conn) -> list[tuple[str, str, int]]:
     cursor.close()
     return rows
 
-# Exports the crime category breakdown to a CSV file.
-def export_category_breakdown(rows: list[tuple[str, str, int]], path: str = "Open_Consolidated_Data_Crime_Category_Breakdown.csv") -> None:
+# Exports a wide-format CSV: one row per neighbourhood with rank, safety score,
+# per-category incident counts (all years), and total incidents (all years).
+def export_category_breakdown(
+    rows: list[tuple[str, str, int]],
+    ranked: list[tuple[str, float]],
+    path: str = "Open_Consolidated_Data_Crime_Category_Breakdown.csv",
+) -> None:
+    categories = ['Assault', 'Auto Theft', 'Break and Enter', 'NonMCI', 'Robbery', 'Theft Over']
+
+    # Build lookup: neighbourhood -> {category: count}
+    counts: dict[str, dict[str, int]] = {}
+    for neighbourhood, category, count in rows:
+        counts.setdefault(neighbourhood, {})[category] = count
+
     with open(path, 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
-        writer.writerow(['Neighbourhood', 'Crime Category', 'Incident Count'])
-        writer.writerows(rows)
+        writer.writerow(['Neighbourhood', 'Rank', 'Safety Score'] + categories + ['Total Incidents'])
+        for rank, (neighbourhood, score) in enumerate(ranked, start=1):
+            cat_counts = counts.get(neighbourhood, {})
+            row_counts = [cat_counts.get(cat, 0) for cat in categories]
+            total = sum(row_counts)
+            writer.writerow([neighbourhood, rank, round(score, 2)] + row_counts + [total])
+
     print(f"Category breakdown exported to {path}")
+
+
+# Fetches and prints each offence's recency-weighted frequency total and its normalised 0–1 value
+# (this is the freq factor used in the scoring formula).
+def print_offence_year_table(conn) -> None:
+    cursor = conn.cursor()
+    case_recency = ' '.join(
+        f"WHEN {year} THEN {w}" for year, w in RECENCY_WEIGHTS.items()
+    )
+    cursor.execute(f"""
+        WITH offence_year_counts AS (
+            SELECT offence,
+                   EXTRACT(YEAR FROM occ_date)::INT AS yr,
+                   COUNT(*) AS cnt
+            FROM open_consolidated_data
+            WHERE offence IS NOT NULL
+            GROUP BY offence, yr
+        ),
+        offence_weighted_freq AS (
+            SELECT offence,
+                   SUM(cnt * CASE yr {case_recency} ELSE {DEFAULT_RECENCY} END) AS weighted_total
+            FROM offence_year_counts
+            GROUP BY offence
+        )
+        SELECT offence,
+               ROUND(weighted_total::NUMERIC, 2) AS weighted_total,
+               ROUND(
+                   ((weighted_total - MIN(weighted_total) OVER ())
+                   / NULLIF(MAX(weighted_total) OVER () - MIN(weighted_total) OVER (), 0))::NUMERIC
+               , 4) AS norm_freq
+        FROM offence_weighted_freq
+        ORDER BY weighted_total DESC
+    """)
+    rows = cursor.fetchall()
+    cursor.close()
+
+    print('\nOffence Recency-Weighted Frequency (used as freq factor in scoring formula)')
+    print(f"{'Offence':<45} {'WeightedTotal':>14} {'NormFreq (0–1)':>15}")
+    print('-' * 76)
+    for offence, weighted_total, norm_freq in rows:
+        print(f"{str(offence):<45} {float(weighted_total):>14.2f} {float(norm_freq):>15.4f}")
 
 
 # Plots top 15 safest, top 15 most dangerous, and all neighbourhoods as separate charts.
@@ -175,6 +321,31 @@ def plot_rankings(ranked: list[tuple[str, float]]) -> None:
     print('Chart saved to safety_all_neighbourhoods.png')
     plt.show()
 
+# querying all offences per csi   
+
+def print_offences_by_csi(conn) -> None:
+    cursor = conn.cursor()
+    cursor.execute("""
+        SELECT csi_category, offence, COUNT(*) AS total
+        FROM open_consolidated_data
+        WHERE csi_category IS NOT NULL
+          AND offence IS NOT NULL
+        GROUP BY csi_category, offence
+        ORDER BY csi_category, COUNT(*) DESC
+    """)
+    rows = cursor.fetchall()
+    cursor.close()
+
+    current_category = None
+    print('\nAll Offences by CSI Category')
+    print('=' * 70)
+    for csi_category, offence, total in rows:
+        if csi_category != current_category:
+            current_category = csi_category
+            print(f'\n[{csi_category}]')
+            print('-' * 70)
+        print(f"  {str(offence):<50} {total:>8,}")
+
 
 def main():
     print("Connecting to database…")
@@ -183,6 +354,9 @@ def main():
         return
 
     try:
+        print("Fetching all offences by CSI category…")
+        print_offences_by_csi(conn)
+
         print("Fetching crime data…")
         crime_scores = fetch_crime_scores(conn)
         print(f"  {len(crime_scores)} neighbourhoods with crime data.")
@@ -192,11 +366,13 @@ def main():
 
         print(f"\nTotal neighbourhoods ranked: {len(ranked)}")
         print_rankings(ranked)
-        export_rankings(ranked)
 
         print("Fetching crime category breakdown…")
         breakdown = fetch_crime_category_breakdown(conn)
-        export_category_breakdown(breakdown)
+        export_category_breakdown(breakdown, ranked)
+
+        print("Fetching offence frequency by year…")
+        print_offence_year_table(conn)
 
         plot_rankings(ranked)
     finally:
