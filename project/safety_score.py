@@ -1,3 +1,4 @@
+import csv
 import os
 
 import psycopg2
@@ -84,6 +85,16 @@ def print_rankings(ranked: list[tuple[str, float]]) -> None:
         print(f"{rank:<6} {neighbourhood:<50} {score:.2f}")
 
 
+# Exports the ranked results to a CSV file.
+def export_rankings(ranked: list[tuple[str, float]], path: str = "safety_rankings.csv") -> None:
+    with open(path, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerow(['Rank', 'Neighbourhood', 'Safety Score (0-100)'])
+        for rank, (neighbourhood, score) in enumerate(ranked, start=1):
+            writer.writerow([rank, neighbourhood, score])
+    print(f"Rankings exported to {path}")
+
+
 def main():
     print("Connecting to database…")
     conn = get_db_connection()
@@ -100,6 +111,7 @@ def main():
 
         print(f"\nTotal neighbourhoods ranked: {len(ranked)}")
         print_rankings(ranked)
+        export_rankings(ranked)
     finally:
         conn.close()
 
