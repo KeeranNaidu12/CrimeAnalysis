@@ -3,7 +3,7 @@ Traffic Collision Prediction — LightGBM + SHAP (Priority: Collision Recall)
 ============================================================================
 Just edit the CONFIG section below, then run:
 
-    pip install lightgbm joblib
+    pip install lightgbm joblib psycopg2-binary python-dotenv
     python collision_prediction_lgbm.py
 """
 
@@ -22,15 +22,20 @@ from sklearn.metrics import (
 from sklearn.preprocessing import LabelEncoder
 from scipy import stats
 import shap
-import lightgbm as lgb       # ← LightGBM replaces XGBoost
+import lightgbm as lgb
 import joblib
 from pathlib import Path
+from sqlalchemy import create_engine, text
+from dotenv import load_dotenv
 
 # ═══════════════════════════════════════════════════════════════════════════════
 #  CONFIG  ← edit everything here, then just run the script
 # ═══════════════════════════════════════════════════════════════════════════════
 
-CSV_PATH = Path("project/DB_csv/Traffic_Collisions_Data_enhanced.csv")
+# Database configuration (loaded from .env)
+ENV_PATH = Path("project/.env")
+TABLE_NAME = "traffic_collisions_data"  # Note: lowercase as in your schema
+
 OUT_DIR  = Path("project/outputs")
 
 PREDICT_START = None
@@ -43,22 +48,22 @@ VALIDATION_YEARS  = [2025]
 # ── LightGBM base hyper-parameters ───────────────────────────────────────────
 LGB_N_ESTIMATORS     = 500
 LGB_LEARNING_RATE    = 0.05
-LGB_NUM_LEAVES       = 63        # LightGBM uses num_leaves instead of max_depth
-LGB_MAX_DEPTH        = -1        # -1 = no limit; num_leaves controls complexity
-LGB_MIN_CHILD_SAMPLES = 20       # LightGBM equivalent of XGB min_child_weight
-LGB_SUBSAMPLE        = 0.8       # row subsampling (bagging_fraction)
-LGB_COLSAMPLE_BYTREE = 0.8       # feature subsampling (feature_fraction)
-LGB_REG_ALPHA        = 0.1       # L1 regularisation
-LGB_REG_LAMBDA       = 1.0       # L2 regularisation
+LGB_NUM_LEAVES       = 31
+LGB_MAX_DEPTH        = -1
+LGB_MIN_CHILD_SAMPLES = 50
+LGB_SUBSAMPLE        = 0.8
+LGB_COLSAMPLE_BYTREE = 0.8
+LGB_REG_ALPHA        = 0.1
+LGB_REG_LAMBDA       = 1.0
 LGB_RANDOM_STATE     = 42
-COLLISION_BOOST      = 1.5       # Multiplier on scale_pos_weight to force higher collision recall
+COLLISION_BOOST      = 1.25
 
 # ── Hyperparameter Tuning & Optimization ─────────────────────────────────────
 TUNE_ENABLED    = True
-TUNE_ITERATIONS = 30
-TUNE_OBJECTIVE  = "recall_1"   # "recall_1", "f1_1", or "composite"
-MIN_RECALL_0    = 0.25         # Minimum acceptable non-collision recall floor
-TUNE_THRESHOLD  = 0.35         # Threshold used during tuning (biases toward collision)
+TUNE_ITERATIONS = 50
+TUNE_OBJECTIVE  = "composite"
+MIN_RECALL_0    = 0.55
+TUNE_THRESHOLD  = 0.45
 
 # ── SHAP sample sizes ────────────────────────────────────────────────────────
 SHAP_BG_SAMPLES  = 500
@@ -93,6 +98,46 @@ FEATURE_DISPLAY_NAMES = [
 ]
 
 
+def get_db_engine():
+    """Create database engine from .env configuration"""
+    if not ENV_PATH.exists():
+        raise FileNotFoundError(
+            f"\n.env file not found at '{ENV_PATH}'.\n"
+            "Please ensure the .env file exists with database configuration."
+        )
+    
+    load_dotenv(ENV_PATH)
+    
+    db_config = {
+        "dbname": os.getenv("DB_NAME"),
+        "user": os.getenv("DB_USER"),
+        "password": os.getenv("DB_PASSWORD"),
+        "host": os.getenv("DB_HOST", "localhost"),
+        "port": os.getenv("DB_PORT", "5432")
+    }
+    
+    # Check if all required configs are present
+    missing = [k for k, v in db_config.items() if not v and k != "port"]
+    if missing:
+        raise ValueError(f"Missing database configuration in .env: {missing}")
+    
+    # Create connection string
+    connection_string = (
+        f"postgresql://{db_config['user']}:{db_config['password']}"
+        f"@{db_config['host']}:{db_config['port']}/{db_config['dbname']}"
+    )
+    
+    print(f"    Connecting to database: {db_config['dbname']} at {db_config['host']}:{db_config['port']}")
+    engine = create_engine(connection_string)
+    
+    # Test connection
+    with engine.connect() as conn:
+        result = conn.execute(text("SELECT version()")).fetchone()
+        print(f"    Connected to PostgreSQL: {result[0].split(',')[0]}")
+    
+    return engine
+
+
 def _date_to_season(dt):
     m = dt.month
     if m in (12, 1, 2): return 0
@@ -115,34 +160,73 @@ def _save(filename):
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# 1. LOAD & PREPROCESS
+# 1. LOAD & PREPROCESS (from PostgreSQL)
 # ─────────────────────────────────────────────────────────────────────────────
 
-def load_and_preprocess(csv_path):
-    print(f"\n[1/8] Loading data from: {csv_path}")
-    if not csv_path.exists():
-        raise FileNotFoundError(
-            f"\nCSV not found at '{csv_path}'.\n"
-            "Please update CSV_PATH in the CONFIG section at the top of this script."
-        )
-
-    df = pd.read_csv(csv_path, low_memory=False)
-    df.columns = df.columns.str.strip().str.upper()
-
-    df["OCC_DATE"] = pd.to_datetime(df["OCC_DATE"], errors="coerce")
-    df = df.dropna(subset=["OCC_DATE"])
+def load_and_preprocess(engine):
+    print(f"\n[1/8] Loading data from PostgreSQL table: {TABLE_NAME}")
+    
+    # Query to load data
+    query = text(f"""
+        SELECT 
+            event_unique_id,
+            occ_date,
+            fatalities,
+            injury_collisions,
+            automobile,
+            motorcycle,
+            passenger,
+            bicycle,
+            pedestrian,
+            neighbourhood_158,
+            ftr_collisions,
+            pd_collisions,
+            week_day,
+            season,
+            holiday
+        FROM {TABLE_NAME}
+        WHERE occ_date IS NOT NULL
+        ORDER BY occ_date
+    """)
+    
+    with engine.connect() as conn:
+        df = pd.read_sql(query, conn)
+    
+    print(f"    Loaded {len(df):,} records")
+    
+    # Convert boolean columns (handle PostgreSQL boolean type)
+    bool_cols = ['injury_collisions', 'automobile', 'motorcycle', 'passenger', 
+                 'bicycle', 'pedestrian', 'ftr_collisions', 'pd_collisions', 'holiday']
+    
+    for col in bool_cols:
+        if col in df.columns:
+            df[col] = df[col].astype(bool).astype(int)
+    
+    # Clean neighbourhood names
+    df["NEIGHBOURHOOD_158"] = df["neighbourhood_158"].str.strip()
+    
+    # Create DATE column from occ_date
+    df["OCC_DATE"] = pd.to_datetime(df["occ_date"])
     df["DATE"] = df["OCC_DATE"].dt.normalize()
-
-    df = df[["DATE", "NEIGHBOURHOOD_158", "WEEK_DAY", "SEASON", "HOLIDAY"]].copy()
-    df["NEIGHBOURHOOD_158"] = df["NEIGHBOURHOOD_158"].str.strip()
-    df["HOLIDAY"] = (
-        df["HOLIDAY"].astype(str).str.strip().str.lower()
-        .map({"true": 1, "false": 0, "yes": 1, "no": 0})
-        .fillna(0).astype(int)
-    )
-
-    print(f"    {len(df):,} records  ({df['DATE'].min().date()} -> {df['DATE'].max().date()})")
-    return df
+    
+    # Map week_day to numeric if needed
+    if "week_day" in df.columns:
+        df["WEEK_DAY"] = df["week_day"]
+    
+    # Map season if needed
+    if "season" in df.columns:
+        df["SEASON"] = df["season"]
+    
+    # Ensure holiday is integer
+    if "holiday" in df.columns:
+        df["HOLIDAY"] = df["holiday"].astype(int)
+    
+    print(f"    Date range: {df['DATE'].min().date()} -> {df['DATE'].max().date()}")
+    
+    # Return only needed columns
+    result_df = df[["DATE", "NEIGHBOURHOOD_158", "WEEK_DAY", "SEASON", "HOLIDAY"]].copy()
+    
+    return result_df
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -285,18 +369,17 @@ def encode_and_split(windows_enriched):
 def tune_lgbm(X_train, y_train, X_val, y_val):
     print(f"[5/8] Hyperparameter Tuning ({TUNE_ITERATIONS} iterations, objective='{TUNE_OBJECTIVE}') ...")
 
-    # LightGBM-specific param space
     param_space = {
         'n_estimators':      stats.randint(100, 800),
         'learning_rate':     stats.uniform(0.01, 0.15),
-        'num_leaves':        stats.randint(15, 255),   # key LightGBM complexity knob
+        'num_leaves':        stats.randint(15, 63),
         'max_depth':         stats.randint(3, 12),
-        'min_child_samples': stats.randint(5, 100),    # LightGBM name for min_child_weight
+        'min_child_samples': stats.randint(30, 150),
         'subsample':         stats.uniform(0.6, 0.4),
         'colsample_bytree':  stats.uniform(0.6, 0.4),
         'reg_alpha':         stats.uniform(0, 5),
         'reg_lambda':        stats.uniform(0, 5),
-        'min_split_gain':    stats.uniform(0, 1),      # LightGBM-specific regularisation
+        'min_split_gain':    stats.uniform(0, 1),
     }
 
     n_neg = (y_train == 0).sum()
@@ -313,7 +396,7 @@ def tune_lgbm(X_train, y_train, X_val, y_val):
         params['scale_pos_weight']  = scale_w
         params['random_state']      = LGB_RANDOM_STATE
         params['n_jobs']            = -1
-        params['verbose']           = -1           # LightGBM uses verbose=-1 for silence
+        params['verbose']           = -1
 
         clf = lgb.LGBMClassifier(**params)
         clf.fit(X_train, y_train)
@@ -407,7 +490,7 @@ def evaluate(clf, X_val, y_val):
         rec0 = recall_score(y_val, pred, pos_label=0, zero_division=0)
 
         if rec0 >= MIN_RECALL_0:
-            score = rec1
+            score = 0.6 * rec1 + 0.4 * rec0
         else:
             score = rec1 * (rec0 / MIN_RECALL_0)
 
@@ -456,7 +539,6 @@ def evaluate(clf, X_val, y_val):
         plt.tight_layout()
         _save("roc_curve.png")
 
-    # LightGBM feature importances (gain) — same API as XGBoost
     importances = pd.Series(clf.feature_importances_, index=FEATURE_DISPLAY_NAMES).sort_values(ascending=True)
     fig3, ax3 = plt.subplots(figsize=(9, 6))
     importances.plot(kind="barh", ax=ax3, color="#4C72B0", edgecolor="white")
@@ -477,11 +559,9 @@ def run_shap(clf, X_train, X_val):
     bg_sample  = X_train.sample(min(SHAP_BG_SAMPLES,  len(X_train)), random_state=42)
     val_sample = X_val.sample(  min(SHAP_VAL_SAMPLES, len(X_val)),   random_state=42)
 
-    # shap.TreeExplainer works natively with LightGBM — no API change needed
     explainer   = shap.TreeExplainer(clf, bg_sample)
     shap_values = explainer.shap_values(val_sample, check_additivity=False)
 
-    # LightGBM TreeExplainer returns a list [shap_class0, shap_class1]
     if isinstance(shap_values, list):
         shap_pos = shap_values[1]
     elif shap_values.ndim == 3:
@@ -590,53 +670,63 @@ def predict_window(clf, le, start_date, windows_enriched, threshold=0.5):
 
 def main():
     OUT_DIR.mkdir(parents=True, exist_ok=True)
+    
+    # Create database connection
+    engine = get_db_engine()
+    
+    try:
+        # Load data from database
+        df               = load_and_preprocess(engine)
+        windows          = build_windows(df)
+        windows_enriched = engineer_features(windows)
+        X_train, y_train, X_val, y_val, le, windows_enriched = encode_and_split(windows_enriched)
 
-    df               = load_and_preprocess(CSV_PATH)
-    windows          = build_windows(df)
-    windows_enriched = engineer_features(windows)
-    X_train, y_train, X_val, y_val, le, windows_enriched = encode_and_split(windows_enriched)
+        best_params = None
+        if TUNE_ENABLED:
+            best_params, _ = tune_lgbm(X_train, y_train, X_val, y_val)
 
-    best_params = None
-    if TUNE_ENABLED:
-        best_params, _ = tune_lgbm(X_train, y_train, X_val, y_val)
+        clf = train_model(X_train, y_train, best_params)
+        y_pred, y_prob, threshold = evaluate(clf, X_val, y_val)
+        run_shap(clf, X_train, X_val)
 
-    clf = train_model(X_train, y_train, best_params)
-    y_pred, y_prob, threshold = evaluate(clf, X_val, y_val)
-    run_shap(clf, X_train, X_val)
+        # ── SAVE MODEL BUNDLE FOR REUSE ──────────────────────────────────────────
+        model_bundle = {
+            "model": clf,
+            "label_encoder": le,
+            "threshold": threshold,
+            "feature_cols": FEATURE_COLS,
+            "feature_display_names": FEATURE_DISPLAY_NAMES,
+            "window_days": WINDOW_DAYS,
+            "train_years_up_to": TRAIN_YEARS_UP_TO,
+            "validation_years": VALIDATION_YEARS
+        }
+        model_path = OUT_DIR / "collision_model_bundle.joblib"
+        joblib.dump(model_bundle, model_path)
+        print(f"\n✅ Model bundle saved to: {model_path}")
+        print("   To load in another app:")
+        print("   >>> import joblib")
+        print("   >>> from pathlib import Path")
+        print("   >>> bundle = joblib.load(Path('path/to/collision_model_bundle.joblib'))")
+        print("   >>> clf, le, thresh = bundle['model'], bundle['label_encoder'], bundle['threshold']")
 
-    # ── SAVE MODEL BUNDLE FOR REUSE ──────────────────────────────────────────
-    model_bundle = {
-        "model": clf,
-        "label_encoder": le,
-        "threshold": threshold,
-        "feature_cols": FEATURE_COLS,
-        "feature_display_names": FEATURE_DISPLAY_NAMES,
-        "window_days": WINDOW_DAYS,
-        "train_years_up_to": TRAIN_YEARS_UP_TO,
-        "validation_years": VALIDATION_YEARS
-    }
-    model_path = OUT_DIR / "collision_model_bundle.joblib"
-    joblib.dump(model_bundle, model_path)
-    print(f"\n✅ Model bundle saved to: {model_path}")
-    print("   To load in another app:")
-    print("   >>> import joblib")
-    print("   >>> from pathlib import Path")
-    print("   >>> bundle = joblib.load(Path('path/to/collision_model_bundle.joblib'))")
-    print("   >>> clf, le, thresh = bundle['model'], bundle['label_encoder'], bundle['threshold']")
+        if PREDICT_START:
+            start_date = PREDICT_START
+        else:
+            val_mask   = windows_enriched["year"].isin(VALIDATION_YEARS)
+            first_val  = windows_enriched[val_mask]["window_start"].min()
+            start_date = str(first_val.date()) if not pd.isnull(first_val) else f"{VALIDATION_YEARS[0]}-01-01"
 
-    if PREDICT_START:
-        start_date = PREDICT_START
-    else:
-        val_mask   = windows_enriched["year"].isin(VALIDATION_YEARS)
-        first_val  = windows_enriched[val_mask]["window_start"].min()
-        start_date = str(first_val.date()) if not pd.isnull(first_val) else f"{VALIDATION_YEARS[0]}-01-01"
+        predict_window(clf, le, start_date, windows_enriched, threshold)
 
-    predict_window(clf, le, start_date, windows_enriched, threshold)
-
-    print(f"\nDone. All outputs saved to: {OUT_DIR.absolute()}/")
-    print("  collision_model_bundle.joblib  ← Load this in other apps!")
-    print("  confusion_matrix.png | roc_curve.png | feature_importances.png")
-    print("  shap_summary.png | shap_bar.png | shap_dependence_top.png | shap_waterfall.png")
+        print(f"\nDone. All outputs saved to: {OUT_DIR.absolute()}/")
+        print("  collision_model_bundle.joblib  ← Load this in other apps!")
+        print("  confusion_matrix.png | roc_curve.png | feature_importances.png")
+        print("  shap_summary.png | shap_bar.png | shap_dependence_top.png | shap_waterfall.png")
+        
+    finally:
+        # Dispose of the database engine
+        engine.dispose()
+        print("\n    Database connection closed.")
 
 
 if __name__ == "__main__":
