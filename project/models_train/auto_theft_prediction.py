@@ -36,7 +36,7 @@ from dotenv import load_dotenv
 ENV_PATH = Path("project/.env")
 TABLE_NAME = "csi_auto_theft"  # Changed to auto theft table
 
-OUT_DIR  = Path("project/outputs_auto_theft")  # Separate output directory for auto theft
+OUT_DIR  = Path("project/outputs")  # Separate output directory for auto theft
 
 PREDICT_START = None
 WINDOW_DAYS   = 7
