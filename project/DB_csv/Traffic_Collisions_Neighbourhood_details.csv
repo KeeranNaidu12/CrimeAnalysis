@@ -1,946 +1,1894 @@
 neighbourhood_158,occ_year,total_collisions,fatalities,injury_collisions,pd_collisions,ftr_collisions,pedestrian_collisions,bicycle_collisions,motorcycle_collisions,automobile_collisions
+Agincourt North (129),2014,510,0,77,364,71,15,5,2,507
+Agincourt North (129),2015,561,1,94,392,85,24,5,1,556
+Agincourt North (129),2016,549,1,109,375,70,17,6,0,546
+Agincourt North (129),2017,567,0,113,384,82,16,6,3,563
+Agincourt North (129),2018,600,1,112,400,97,18,6,5,586
+Agincourt North (129),2019,620,1,108,431,88,18,5,1,611
 Agincourt North (129),2020,310,0,46,245,25,7,5,0,309
 Agincourt North (129),2021,289,0,52,203,47,8,6,1,289
 Agincourt North (129),2022,432,1,53,348,49,10,4,5,428
 Agincourt North (129),2023,481,0,69,336,91,13,8,0,477
 Agincourt North (129),2024,490,0,66,329,102,9,5,2,488
 Agincourt North (129),2025,492,1,78,313,104,14,4,2,491
+Agincourt South-Malvern West (128),2014,832,1,104,600,131,24,4,5,827
+Agincourt South-Malvern West (128),2015,934,0,144,666,140,30,6,6,930
+Agincourt South-Malvern West (128),2016,906,1,137,621,153,21,5,7,905
+Agincourt South-Malvern West (128),2017,947,0,178,653,128,22,7,2,940
+Agincourt South-Malvern West (128),2018,932,0,165,668,115,28,5,8,908
+Agincourt South-Malvern West (128),2019,968,1,115,702,166,17,2,1,961
 Agincourt South-Malvern West (128),2020,473,2,56,372,53,13,3,1,471
 Agincourt South-Malvern West (128),2021,460,0,89,332,51,18,2,2,459
 Agincourt South-Malvern West (128),2022,602,0,92,483,51,12,5,0,599
 Agincourt South-Malvern West (128),2023,670,0,103,428,158,14,11,4,664
 Agincourt South-Malvern West (128),2024,711,0,103,484,132,12,4,1,706
 Agincourt South-Malvern West (128),2025,760,0,120,486,159,11,6,2,754
+Alderwood (20),2014,128,0,29,86,13,5,2,1,128
+Alderwood (20),2015,156,0,22,112,27,4,0,0,156
+Alderwood (20),2016,184,0,35,124,30,5,2,2,183
+Alderwood (20),2017,160,0,24,112,29,3,4,0,159
+Alderwood (20),2018,199,0,32,135,37,5,2,1,190
+Alderwood (20),2019,172,0,22,136,19,3,0,0,172
 Alderwood (20),2020,104,0,16,79,13,3,5,1,103
 Alderwood (20),2021,86,0,12,61,15,2,1,0,86
 Alderwood (20),2022,128,0,16,104,8,2,4,0,124
 Alderwood (20),2023,180,2,27,117,35,5,3,3,180
 Alderwood (20),2024,145,0,12,107,27,2,0,1,145
 Alderwood (20),2025,136,0,22,82,32,2,4,1,134
+Annex (95),2014,861,0,116,583,167,40,41,7,859
+Annex (95),2015,833,1,125,568,150,30,40,10,826
+Annex (95),2016,970,0,145,671,172,29,41,11,959
+Annex (95),2017,919,0,112,650,183,26,25,8,909
+Annex (95),2018,974,2,114,702,182,32,34,7,933
+Annex (95),2019,961,0,77,786,152,30,14,8,941
 Annex (95),2020,505,1,53,404,65,16,23,2,501
 Annex (95),2021,529,1,62,408,85,18,24,5,524
 Annex (95),2022,670,0,56,567,60,17,27,3,659
 Annex (95),2023,847,0,98,607,158,28,44,3,826
 Annex (95),2024,916,2,115,604,198,22,54,3,893
 Annex (95),2025,829,0,123,554,154,26,60,5,805
+Avondale (153),2014,142,1,10,101,30,4,1,0,142
+Avondale (153),2015,143,0,11,104,31,1,0,1,141
+Avondale (153),2016,183,0,16,132,39,6,1,0,183
+Avondale (153),2017,173,0,22,125,29,6,2,2,166
+Avondale (153),2018,169,1,21,127,26,8,1,0,166
+Avondale (153),2019,131,0,11,107,22,5,0,0,130
 Avondale (153),2020,90,0,13,71,9,3,1,1,87
 Avondale (153),2021,72,0,9,58,10,2,1,0,72
 Avondale (153),2022,121,0,4,109,9,3,1,1,119
 Avondale (153),2023,134,0,14,97,24,3,0,0,134
 Avondale (153),2024,138,0,24,86,28,7,0,0,137
 Avondale (153),2025,119,0,13,84,24,3,1,0,118
+Banbury-Don Mills (42),2014,850,1,92,656,104,11,2,7,848
+Banbury-Don Mills (42),2015,1190,1,167,914,117,12,5,9,1184
+Banbury-Don Mills (42),2016,1076,1,174,773,140,19,3,6,1074
+Banbury-Don Mills (42),2017,1076,0,174,791,127,25,2,5,1073
+Banbury-Don Mills (42),2018,894,0,121,678,104,10,0,3,880
+Banbury-Don Mills (42),2019,912,1,117,683,123,7,0,3,897
 Banbury-Don Mills (42),2020,459,1,48,376,44,6,3,2,456
 Banbury-Don Mills (42),2021,467,1,59,351,75,9,4,3,465
 Banbury-Don Mills (42),2022,726,1,75,608,72,5,3,4,726
 Banbury-Don Mills (42),2023,990,1,113,710,188,16,6,6,985
 Banbury-Don Mills (42),2024,1035,0,153,686,202,13,7,8,1029
 Banbury-Don Mills (42),2025,969,0,148,618,210,10,5,5,965
+Bathurst Manor (34),2014,454,0,67,322,68,14,5,2,451
+Bathurst Manor (34),2015,559,1,91,394,75,8,5,1,558
+Bathurst Manor (34),2016,580,1,110,409,71,17,8,5,575
+Bathurst Manor (34),2017,528,1,95,367,72,16,5,1,521
+Bathurst Manor (34),2018,455,0,56,331,76,7,1,4,434
+Bathurst Manor (34),2019,508,1,56,399,76,6,3,3,500
 Bathurst Manor (34),2020,272,0,41,211,30,6,8,1,270
 Bathurst Manor (34),2021,228,0,29,185,25,6,1,1,228
 Bathurst Manor (34),2022,384,1,47,315,24,9,2,0,381
 Bathurst Manor (34),2023,594,0,93,430,74,9,6,3,589
 Bathurst Manor (34),2024,584,0,143,345,96,14,4,3,580
 Bathurst Manor (34),2025,505,1,99,336,69,10,10,2,502
+Bay-Cloverhill (169),2014,252,0,38,179,38,7,24,3,249
+Bay-Cloverhill (169),2015,235,0,35,163,41,6,19,3,229
+Bay-Cloverhill (169),2016,288,0,46,194,61,11,19,5,286
+Bay-Cloverhill (169),2017,296,0,45,202,55,6,16,1,290
+Bay-Cloverhill (169),2018,321,0,27,248,50,4,13,4,315
+Bay-Cloverhill (169),2019,296,0,37,233,43,12,11,1,294
 Bay-Cloverhill (169),2020,142,0,18,112,16,4,4,3,138
 Bay-Cloverhill (169),2021,156,1,18,120,20,5,9,2,153
 Bay-Cloverhill (169),2022,171,1,17,145,16,7,12,1,166
 Bay-Cloverhill (169),2023,250,0,45,164,46,9,22,2,242
 Bay-Cloverhill (169),2024,213,0,34,136,45,8,13,1,208
 Bay-Cloverhill (169),2025,203,0,27,141,35,3,13,1,199
+Bayview Village (52),2014,502,0,40,354,109,11,4,1,500
+Bayview Village (52),2015,511,0,71,355,87,11,3,1,507
+Bayview Village (52),2016,622,0,84,414,129,10,3,3,617
+Bayview Village (52),2017,562,1,76,394,95,10,3,2,558
+Bayview Village (52),2018,486,0,58,340,92,11,1,3,477
+Bayview Village (52),2019,466,0,46,353,90,12,1,2,461
 Bayview Village (52),2020,286,1,27,236,31,3,3,1,286
 Bayview Village (52),2021,239,0,23,185,38,5,1,0,236
 Bayview Village (52),2022,355,0,31,306,28,2,5,1,353
 Bayview Village (52),2023,520,0,45,356,127,7,2,2,518
 Bayview Village (52),2024,504,0,75,322,109,13,4,4,503
 Bayview Village (52),2025,517,0,65,334,118,8,3,1,517
+Bayview Woods-Steeles (49),2014,187,0,26,135,26,5,3,0,185
+Bayview Woods-Steeles (49),2015,226,0,36,174,19,1,5,0,226
+Bayview Woods-Steeles (49),2016,202,0,34,143,26,2,2,0,201
+Bayview Woods-Steeles (49),2017,212,1,40,149,25,4,0,2,209
+Bayview Woods-Steeles (49),2018,194,0,28,149,20,2,1,0,190
+Bayview Woods-Steeles (49),2019,196,0,23,165,12,4,0,0,193
 Bayview Woods-Steeles (49),2020,113,0,11,94,9,2,0,0,112
 Bayview Woods-Steeles (49),2021,90,0,16,69,11,3,1,0,90
 Bayview Woods-Steeles (49),2022,167,0,17,143,12,7,0,0,167
 Bayview Woods-Steeles (49),2023,188,1,20,146,24,1,1,1,185
 Bayview Woods-Steeles (49),2024,204,0,28,139,37,3,0,0,203
 Bayview Woods-Steeles (49),2025,196,0,25,137,35,7,0,0,194
+Bedford Park-Nortown (39),2014,612,0,85,448,84,20,3,3,606
+Bedford Park-Nortown (39),2015,648,2,97,466,88,20,6,4,648
+Bedford Park-Nortown (39),2016,601,1,95,439,76,29,4,4,596
+Bedford Park-Nortown (39),2017,592,0,90,427,82,19,6,4,588
+Bedford Park-Nortown (39),2018,501,1,60,387,62,14,1,6,482
+Bedford Park-Nortown (39),2019,511,0,51,419,63,11,2,2,503
 Bedford Park-Nortown (39),2020,240,0,32,198,18,6,5,0,238
 Bedford Park-Nortown (39),2021,242,0,27,202,25,10,3,0,241
 Bedford Park-Nortown (39),2022,330,0,35,287,13,7,2,0,328
 Bedford Park-Nortown (39),2023,448,0,53,339,58,8,3,3,444
 Bedford Park-Nortown (39),2024,402,1,60,276,67,9,5,4,399
 Bedford Park-Nortown (39),2025,416,0,71,280,65,11,9,0,412
+Beechborough-Greenbrook (112),2014,223,0,29,156,39,6,1,1,222
+Beechborough-Greenbrook (112),2015,241,0,34,177,34,5,0,2,240
+Beechborough-Greenbrook (112),2016,284,1,49,188,59,10,2,2,282
+Beechborough-Greenbrook (112),2017,250,0,51,163,49,6,2,2,244
+Beechborough-Greenbrook (112),2018,254,0,33,178,50,3,2,1,249
+Beechborough-Greenbrook (112),2019,252,0,25,204,41,6,2,1,248
 Beechborough-Greenbrook (112),2020,156,0,15,115,33,1,2,1,152
 Beechborough-Greenbrook (112),2021,153,0,20,116,27,4,2,3,152
 Beechborough-Greenbrook (112),2022,145,1,24,109,13,6,2,2,143
 Beechborough-Greenbrook (112),2023,194,0,33,125,37,6,2,0,193
 Beechborough-Greenbrook (112),2024,233,0,49,139,45,5,2,2,230
 Beechborough-Greenbrook (112),2025,207,1,39,128,40,6,2,0,205
+Bendale-Glen Andrew (156),2014,582,0,72,372,141,14,4,0,581
+Bendale-Glen Andrew (156),2015,665,1,95,392,187,17,5,3,662
+Bendale-Glen Andrew (156),2016,674,1,105,405,172,18,2,1,669
+Bendale-Glen Andrew (156),2017,748,0,117,456,190,18,1,3,742
+Bendale-Glen Andrew (156),2018,784,1,110,477,212,12,1,3,765
+Bendale-Glen Andrew (156),2019,806,1,104,545,168,21,1,1,791
 Bendale-Glen Andrew (156),2020,398,0,38,298,74,4,2,2,397
 Bendale-Glen Andrew (156),2021,397,0,50,292,71,7,2,1,395
 Bendale-Glen Andrew (156),2022,602,1,68,474,115,12,3,5,594
 Bendale-Glen Andrew (156),2023,845,1,105,557,218,12,10,4,840
 Bendale-Glen Andrew (156),2024,975,1,130,621,228,20,9,2,968
 Bendale-Glen Andrew (156),2025,843,0,126,502,218,23,1,3,839
+Bendale South (157),2014,239,0,36,170,36,8,3,2,239
+Bendale South (157),2015,246,0,46,174,33,4,5,1,246
+Bendale South (157),2016,263,1,57,174,35,9,1,2,259
+Bendale South (157),2017,286,0,54,192,47,7,2,3,282
+Bendale South (157),2018,289,0,49,201,45,4,2,1,285
+Bendale South (157),2019,320,0,72,213,40,3,0,1,312
 Bendale South (157),2020,194,0,34,145,18,3,3,1,193
 Bendale South (157),2021,187,0,25,148,18,3,3,0,187
 Bendale South (157),2022,226,1,39,174,23,5,3,1,224
 Bendale South (157),2023,107,0,16,61,34,3,2,1,107
 Bendale South (157),2024,124,0,15,73,36,2,0,2,122
 Bendale South (157),2025,143,0,24,85,34,5,0,0,143
+Birchcliffe-Cliffside (122),2014,278,0,35,196,50,13,3,4,277
+Birchcliffe-Cliffside (122),2015,342,0,53,240,55,6,9,6,337
+Birchcliffe-Cliffside (122),2016,356,0,58,229,78,6,6,1,356
+Birchcliffe-Cliffside (122),2017,414,3,79,269,75,10,4,6,408
+Birchcliffe-Cliffside (122),2018,365,1,50,265,59,9,5,3,355
+Birchcliffe-Cliffside (122),2019,431,0,63,295,81,7,4,5,422
 Birchcliffe-Cliffside (122),2020,231,1,42,169,24,8,3,5,227
 Birchcliffe-Cliffside (122),2021,229,2,33,172,28,10,3,2,228
 Birchcliffe-Cliffside (122),2022,272,0,23,232,34,4,2,1,272
 Birchcliffe-Cliffside (122),2023,355,0,45,240,87,11,3,2,351
 Birchcliffe-Cliffside (122),2024,364,0,47,236,88,12,4,3,364
 Birchcliffe-Cliffside (122),2025,387,0,40,264,88,5,4,3,385
+Black Creek (24),2014,332,1,55,215,65,18,3,0,330
+Black Creek (24),2015,395,1,60,247,103,13,7,1,395
+Black Creek (24),2016,401,0,90,239,85,12,8,1,400
+Black Creek (24),2017,429,0,64,278,98,13,6,1,424
+Black Creek (24),2018,448,0,62,293,108,13,2,1,429
+Black Creek (24),2019,408,1,55,318,70,13,2,1,401
 Black Creek (24),2020,253,1,27,198,35,10,3,3,250
 Black Creek (24),2021,186,0,26,142,27,4,4,1,183
 Black Creek (24),2022,267,0,35,215,21,10,0,0,267
 Black Creek (24),2023,390,0,62,247,83,13,4,1,390
 Black Creek (24),2024,330,0,61,201,68,5,4,0,328
 Black Creek (24),2025,356,0,61,217,78,15,2,0,351
+Blake-Jones (69),2014,84,0,13,50,22,7,6,0,82
+Blake-Jones (69),2015,87,0,18,49,23,7,3,0,87
+Blake-Jones (69),2016,79,0,14,48,21,3,4,1,79
+Blake-Jones (69),2017,67,0,14,43,12,4,5,0,65
+Blake-Jones (69),2018,77,0,16,48,15,0,4,1,76
+Blake-Jones (69),2019,84,0,9,50,29,1,4,0,84
 Blake-Jones (69),2020,70,0,8,58,5,3,6,0,68
 Blake-Jones (69),2021,69,0,12,47,12,4,6,1,69
 Blake-Jones (69),2022,65,0,8,50,10,2,3,1,64
 Blake-Jones (69),2023,56,0,8,33,16,3,4,0,55
 Blake-Jones (69),2024,57,0,5,36,16,1,2,1,56
 Blake-Jones (69),2025,54,0,9,26,21,4,4,0,53
+Briar Hill-Belgravia (108),2014,219,1,29,148,42,8,3,2,216
+Briar Hill-Belgravia (108),2015,286,0,50,188,55,8,4,1,285
+Briar Hill-Belgravia (108),2016,217,0,37,153,34,8,1,1,216
+Briar Hill-Belgravia (108),2017,257,0,40,177,49,11,5,2,256
+Briar Hill-Belgravia (108),2018,226,2,28,166,41,6,1,3,221
+Briar Hill-Belgravia (108),2019,204,1,22,160,37,5,1,0,201
 Briar Hill-Belgravia (108),2020,131,0,13,100,21,6,1,1,128
 Briar Hill-Belgravia (108),2021,130,0,28,88,22,10,5,1,130
 Briar Hill-Belgravia (108),2022,151,1,12,122,18,8,1,1,147
 Briar Hill-Belgravia (108),2023,224,2,39,140,43,11,7,2,221
 Briar Hill-Belgravia (108),2024,243,0,48,160,35,7,5,3,240
 Briar Hill-Belgravia (108),2025,262,0,39,161,62,11,4,0,260
+Bridle Path-Sunnybrook-York Mills (41),2014,299,0,30,226,45,4,4,1,297
+Bridle Path-Sunnybrook-York Mills (41),2015,292,1,42,204,52,7,2,3,290
+Bridle Path-Sunnybrook-York Mills (41),2016,287,0,43,197,53,6,5,0,286
+Bridle Path-Sunnybrook-York Mills (41),2017,283,0,39,208,39,4,5,0,282
+Bridle Path-Sunnybrook-York Mills (41),2018,286,1,31,217,43,4,3,2,281
+Bridle Path-Sunnybrook-York Mills (41),2019,284,1,30,215,43,3,0,0,276
 Bridle Path-Sunnybrook-York Mills (41),2020,136,0,18,98,25,6,0,1,135
 Bridle Path-Sunnybrook-York Mills (41),2021,151,0,23,111,23,6,4,0,151
 Bridle Path-Sunnybrook-York Mills (41),2022,209,0,22,175,18,4,4,0,209
 Bridle Path-Sunnybrook-York Mills (41),2023,247,0,26,179,45,6,3,0,246
 Bridle Path-Sunnybrook-York Mills (41),2024,293,0,33,197,64,8,4,0,292
 Bridle Path-Sunnybrook-York Mills (41),2025,243,0,26,162,58,1,2,1,242
+Broadview North (57),2014,125,0,19,93,13,2,2,1,124
+Broadview North (57),2015,157,0,18,118,25,3,2,2,156
+Broadview North (57),2016,158,0,27,118,16,2,3,3,158
+Broadview North (57),2017,134,1,21,95,24,7,2,1,132
+Broadview North (57),2018,114,0,20,77,24,2,1,2,110
+Broadview North (57),2019,164,0,22,120,26,0,2,1,161
 Broadview North (57),2020,106,0,20,78,10,1,4,0,106
 Broadview North (57),2021,120,1,17,90,16,1,1,3,120
 Broadview North (57),2022,161,0,16,134,19,4,2,0,161
 Broadview North (57),2023,181,0,20,127,41,4,2,1,178
 Broadview North (57),2024,155,0,37,95,24,4,4,1,154
 Broadview North (57),2025,147,0,34,92,21,1,4,0,147
+Brookhaven-Amesbury (30),2014,293,0,37,189,68,9,1,2,290
+Brookhaven-Amesbury (30),2015,307,1,44,200,68,9,3,1,304
+Brookhaven-Amesbury (30),2016,357,0,59,225,80,11,3,6,355
+Brookhaven-Amesbury (30),2017,359,0,62,229,79,19,4,0,352
+Brookhaven-Amesbury (30),2018,332,0,51,206,85,15,1,3,319
+Brookhaven-Amesbury (30),2019,329,1,32,271,48,6,2,1,328
 Brookhaven-Amesbury (30),2020,235,0,27,181,35,10,2,1,229
 Brookhaven-Amesbury (30),2021,235,0,23,184,48,5,3,1,234
 Brookhaven-Amesbury (30),2022,303,0,22,264,19,8,2,2,301
 Brookhaven-Amesbury (30),2023,327,0,49,214,64,8,3,1,326
 Brookhaven-Amesbury (30),2024,297,0,48,187,62,7,6,2,295
 Brookhaven-Amesbury (30),2025,304,0,50,193,61,13,1,4,299
+Cabbagetown-South St.James Town (71),2014,235,0,30,162,45,3,14,1,234
+Cabbagetown-South St.James Town (71),2015,247,1,43,160,46,6,11,9,242
+Cabbagetown-South St.James Town (71),2016,263,0,55,171,46,13,9,5,261
+Cabbagetown-South St.James Town (71),2017,264,0,44,180,46,17,8,1,261
+Cabbagetown-South St.James Town (71),2018,274,0,42,199,41,12,8,6,268
+Cabbagetown-South St.James Town (71),2019,321,0,45,228,65,12,9,1,316
 Cabbagetown-South St.James Town (71),2020,170,0,29,128,15,11,8,0,166
 Cabbagetown-South St.James Town (71),2021,175,0,17,137,27,4,7,3,171
 Cabbagetown-South St.James Town (71),2022,251,0,36,202,26,13,11,2,246
 Cabbagetown-South St.James Town (71),2023,329,0,43,227,70,17,9,1,322
 Cabbagetown-South St.James Town (71),2024,272,0,35,173,68,14,12,1,266
 Cabbagetown-South St.James Town (71),2025,323,0,48,223,53,5,19,4,317
+Caledonia-Fairbank (109),2014,80,0,5,55,22,3,1,1,80
+Caledonia-Fairbank (109),2015,93,1,14,54,26,4,2,2,92
+Caledonia-Fairbank (109),2016,123,1,18,79,28,4,2,0,123
+Caledonia-Fairbank (109),2017,104,0,15,66,30,4,0,0,104
+Caledonia-Fairbank (109),2018,98,0,16,58,30,2,2,1,92
+Caledonia-Fairbank (109),2019,112,1,15,84,20,2,1,0,110
 Caledonia-Fairbank (109),2020,75,0,7,59,12,2,0,0,75
 Caledonia-Fairbank (109),2021,74,0,7,58,17,2,1,0,74
 Caledonia-Fairbank (109),2022,97,1,7,82,9,2,2,1,97
 Caledonia-Fairbank (109),2023,88,0,15,56,17,3,4,0,86
 Caledonia-Fairbank (109),2024,83,0,13,48,22,4,1,0,83
 Caledonia-Fairbank (109),2025,95,0,11,62,23,1,0,1,94
+Casa Loma (96),2014,344,0,52,242,53,10,15,3,340
+Casa Loma (96),2015,358,0,38,272,53,6,10,2,358
+Casa Loma (96),2016,339,0,49,249,47,9,9,2,335
+Casa Loma (96),2017,373,0,56,272,52,10,8,3,365
+Casa Loma (96),2018,409,0,50,311,53,5,12,3,396
+Casa Loma (96),2019,433,0,30,365,59,7,7,0,428
 Casa Loma (96),2020,230,0,19,191,26,10,4,2,229
 Casa Loma (96),2021,199,0,15,174,23,1,3,3,197
 Casa Loma (96),2022,309,0,13,280,22,4,9,1,306
 Casa Loma (96),2023,336,0,34,259,46,1,8,3,333
 Casa Loma (96),2024,370,0,38,269,66,4,13,0,366
 Casa Loma (96),2025,365,0,46,274,45,4,12,0,357
+Centennial Scarborough (133),2014,106,0,22,70,15,4,2,1,106
+Centennial Scarborough (133),2015,109,0,16,75,21,1,1,1,108
+Centennial Scarborough (133),2016,93,0,14,61,22,3,1,0,92
+Centennial Scarborough (133),2017,120,0,28,77,18,4,4,3,119
+Centennial Scarborough (133),2018,120,2,17,84,22,6,1,1,117
+Centennial Scarborough (133),2019,111,0,14,77,23,3,1,0,110
 Centennial Scarborough (133),2020,78,0,9,61,8,1,2,0,77
 Centennial Scarborough (133),2021,55,0,9,41,6,1,0,0,54
 Centennial Scarborough (133),2022,85,1,5,72,14,1,0,0,85
 Centennial Scarborough (133),2023,77,0,10,56,13,1,1,0,77
 Centennial Scarborough (133),2024,107,0,8,80,19,2,1,1,107
 Centennial Scarborough (133),2025,99,0,15,69,15,3,1,0,99
+Church-Wellesley (167),2014,285,0,41,200,47,19,12,5,282
+Church-Wellesley (167),2015,280,0,38,183,67,14,16,5,278
+Church-Wellesley (167),2016,280,0,47,177,65,17,14,1,275
+Church-Wellesley (167),2017,318,0,39,226,61,11,10,2,309
+Church-Wellesley (167),2018,309,0,31,225,61,9,7,4,304
+Church-Wellesley (167),2019,342,0,39,256,63,15,12,3,336
 Church-Wellesley (167),2020,186,0,17,145,29,10,5,2,184
 Church-Wellesley (167),2021,188,0,26,138,32,8,11,2,185
 Church-Wellesley (167),2022,224,1,20,190,24,6,14,2,217
 Church-Wellesley (167),2023,204,0,21,143,43,7,19,1,200
 Church-Wellesley (167),2024,218,0,29,138,53,12,16,3,214
 Church-Wellesley (167),2025,223,0,46,133,46,12,13,2,216
+Clairlea-Birchmount (120),2014,696,3,101,493,105,18,8,5,692
+Clairlea-Birchmount (120),2015,665,0,93,452,130,19,5,4,661
+Clairlea-Birchmount (120),2016,729,0,131,478,134,21,2,5,724
+Clairlea-Birchmount (120),2017,790,1,131,516,155,19,6,4,788
+Clairlea-Birchmount (120),2018,716,1,101,504,128,24,4,2,707
+Clairlea-Birchmount (120),2019,797,0,121,568,130,21,5,3,785
 Clairlea-Birchmount (120),2020,403,1,57,299,61,12,4,2,399
 Clairlea-Birchmount (120),2021,388,0,63,291,46,11,4,0,387
 Clairlea-Birchmount (120),2022,558,2,80,434,77,12,5,1,554
 Clairlea-Birchmount (120),2023,562,0,82,378,123,15,7,4,558
 Clairlea-Birchmount (120),2024,580,0,94,387,103,19,12,4,576
 Clairlea-Birchmount (120),2025,610,2,72,402,137,14,4,2,605
+Clanton Park (33),2014,249,0,46,160,48,10,3,1,249
+Clanton Park (33),2015,284,1,38,185,65,7,4,1,282
+Clanton Park (33),2016,337,0,47,221,78,6,1,2,334
+Clanton Park (33),2017,324,1,43,212,76,7,1,2,322
+Clanton Park (33),2018,338,1,47,241,55,5,0,0,328
+Clanton Park (33),2019,319,0,48,236,56,7,1,0,314
 Clanton Park (33),2020,207,1,23,158,36,6,5,1,203
 Clanton Park (33),2021,183,0,14,144,36,5,1,1,183
 Clanton Park (33),2022,278,0,21,242,24,6,2,0,277
 Clanton Park (33),2023,318,0,30,221,68,10,0,2,316
 Clanton Park (33),2024,365,0,60,226,80,9,4,1,362
 Clanton Park (33),2025,380,2,60,232,87,7,2,0,378
+Cliffcrest (123),2014,203,0,22,136,47,8,3,2,201
+Cliffcrest (123),2015,227,1,37,161,34,7,5,4,226
+Cliffcrest (123),2016,251,0,53,162,41,8,7,3,250
+Cliffcrest (123),2017,318,1,63,212,53,10,3,3,315
+Cliffcrest (123),2018,267,1,48,188,36,7,1,1,262
+Cliffcrest (123),2019,275,0,51,183,49,5,2,3,270
 Cliffcrest (123),2020,193,1,32,142,23,6,6,2,190
 Cliffcrest (123),2021,153,1,24,105,29,5,5,0,152
 Cliffcrest (123),2022,259,0,40,201,35,4,2,0,259
 Cliffcrest (123),2023,279,1,43,182,63,11,3,5,275
 Cliffcrest (123),2024,290,0,50,174,70,11,1,3,289
 Cliffcrest (123),2025,273,0,42,169,64,8,3,0,273
+Corso Italia-Davenport (92),2014,327,1,44,213,72,12,6,4,326
+Corso Italia-Davenport (92),2015,358,0,65,226,74,13,10,2,356
+Corso Italia-Davenport (92),2016,384,0,68,259,69,21,7,6,383
+Corso Italia-Davenport (92),2017,377,0,59,254,76,8,9,1,371
+Corso Italia-Davenport (92),2018,380,0,50,260,84,15,2,3,362
+Corso Italia-Davenport (92),2019,472,0,44,368,94,15,8,2,467
 Corso Italia-Davenport (92),2020,282,0,25,229,40,11,7,2,279
 Corso Italia-Davenport (92),2021,248,0,24,192,49,13,6,0,247
 Corso Italia-Davenport (92),2022,323,0,26,279,21,10,6,0,321
 Corso Italia-Davenport (92),2023,378,0,43,263,73,6,6,2,372
 Corso Italia-Davenport (92),2024,340,1,55,207,77,11,10,1,339
 Corso Italia-Davenport (92),2025,351,0,41,224,86,12,9,1,349
+Danforth (66),2014,161,0,19,106,38,3,5,2,159
+Danforth (66),2015,180,0,19,118,48,5,10,2,177
+Danforth (66),2016,184,0,34,123,31,7,2,3,183
+Danforth (66),2017,219,0,35,154,32,5,7,3,217
+Danforth (66),2018,223,0,30,169,27,7,4,1,219
+Danforth (66),2019,231,0,25,166,47,10,5,2,230
 Danforth (66),2020,130,0,18,95,23,4,6,1,129
 Danforth (66),2021,149,0,25,114,16,3,11,1,148
 Danforth (66),2022,146,0,16,118,23,1,5,0,146
 Danforth (66),2023,244,0,30,181,35,7,8,3,242
 Danforth (66),2024,265,1,30,160,75,10,14,3,260
 Danforth (66),2025,260,0,48,150,65,7,19,1,258
+Danforth East York (59),2014,172,0,21,122,30,6,8,2,168
+Danforth East York (59),2015,185,1,41,112,34,8,3,4,182
+Danforth East York (59),2016,171,0,34,105,37,5,5,0,171
+Danforth East York (59),2017,190,0,33,124,36,6,4,1,187
+Danforth East York (59),2018,164,0,28,109,30,8,2,3,157
+Danforth East York (59),2019,192,0,28,134,35,4,3,0,187
 Danforth East York (59),2020,111,0,14,84,15,5,4,3,109
 Danforth East York (59),2021,139,0,21,101,20,6,5,0,138
 Danforth East York (59),2022,133,0,9,116,16,3,2,0,133
 Danforth East York (59),2023,164,0,17,119,36,9,1,0,164
 Danforth East York (59),2024,162,0,23,105,35,7,4,0,161
 Danforth East York (59),2025,164,0,20,105,39,6,1,1,164
+Don Valley Village (47),2014,603,1,70,408,126,14,3,6,595
+Don Valley Village (47),2015,659,0,88,452,127,13,3,3,655
+Don Valley Village (47),2016,676,0,95,459,134,16,6,4,672
+Don Valley Village (47),2017,698,1,98,481,122,12,4,4,693
+Don Valley Village (47),2018,668,0,104,453,119,18,1,4,647
+Don Valley Village (47),2019,605,1,68,451,104,24,2,1,590
 Don Valley Village (47),2020,255,0,28,202,33,8,2,0,253
 Don Valley Village (47),2021,234,1,24,184,31,4,4,1,234
 Don Valley Village (47),2022,391,0,41,314,51,6,2,1,389
 Don Valley Village (47),2023,531,0,48,362,136,7,4,0,529
 Don Valley Village (47),2024,507,0,63,334,112,20,6,0,503
 Don Valley Village (47),2025,511,0,64,313,137,12,6,2,506
+Dorset Park (126),2014,799,0,112,572,122,14,4,4,794
+Dorset Park (126),2015,813,0,133,556,134,18,4,6,806
+Dorset Park (126),2016,870,1,148,594,143,21,10,7,863
+Dorset Park (126),2017,936,2,186,651,106,15,5,6,931
+Dorset Park (126),2018,1042,2,182,724,147,28,2,14,1019
+Dorset Park (126),2019,1135,0,169,824,167,14,4,4,1121
 Dorset Park (126),2020,686,1,80,541,77,11,3,1,683
 Dorset Park (126),2021,609,1,84,457,84,14,3,3,607
 Dorset Park (126),2022,859,0,112,687,102,16,6,5,856
 Dorset Park (126),2023,1098,0,142,770,214,27,5,1,1092
 Dorset Park (126),2024,1135,0,191,758,191,20,9,5,1131
 Dorset Park (126),2025,1093,0,173,736,192,23,6,3,1089
+Dovercourt Village (172),2014,356,0,70,256,36,20,20,6,353
+Dovercourt Village (172),2015,305,1,30,233,46,11,14,6,305
+Dovercourt Village (172),2016,373,2,65,253,68,15,15,3,367
+Dovercourt Village (172),2017,381,0,46,284,59,6,10,4,372
+Dovercourt Village (172),2018,360,1,40,253,82,10,16,5,341
+Dovercourt Village (172),2019,377,0,29,303,57,4,7,2,366
 Dovercourt Village (172),2020,257,0,29,199,38,7,19,2,253
 Dovercourt Village (172),2021,241,0,34,182,41,4,16,2,238
 Dovercourt Village (172),2022,290,0,31,245,17,6,8,1,285
 Dovercourt Village (172),2023,343,0,44,244,58,5,19,1,337
 Dovercourt Village (172),2024,361,1,58,213,89,11,26,6,355
 Dovercourt Village (172),2025,346,0,47,216,84,10,23,2,336
+Downsview (155),2014,354,0,59,232,72,11,1,4,347
+Downsview (155),2015,442,1,72,286,98,11,3,4,441
+Downsview (155),2016,447,0,83,280,91,12,5,1,446
+Downsview (155),2017,461,1,71,317,89,15,1,1,459
+Downsview (155),2018,505,1,86,320,112,16,7,4,487
+Downsview (155),2019,412,0,33,338,74,7,4,5,408
 Downsview (155),2020,270,1,35,210,35,11,3,1,269
 Downsview (155),2021,290,0,40,220,53,10,1,2,289
 Downsview (155),2022,395,1,36,342,21,8,5,1,393
 Downsview (155),2023,467,0,72,298,99,15,8,0,466
 Downsview (155),2024,450,0,94,257,101,18,10,3,443
 Downsview (155),2025,454,0,64,293,97,12,4,2,443
+Downtown Yonge East (168),2014,530,1,71,348,118,32,33,10,518
+Downtown Yonge East (168),2015,601,0,113,401,109,39,29,10,595
+Downtown Yonge East (168),2016,639,0,110,427,128,35,32,11,635
+Downtown Yonge East (168),2017,689,1,94,480,131,23,29,9,674
+Downtown Yonge East (168),2018,716,0,91,516,132,30,19,7,686
+Downtown Yonge East (168),2019,719,1,77,545,131,33,16,7,702
 Downtown Yonge East (168),2020,314,0,53,237,36,15,18,2,308
 Downtown Yonge East (168),2021,308,1,37,238,46,11,20,2,304
 Downtown Yonge East (168),2022,451,1,45,367,53,21,30,3,442
 Downtown Yonge East (168),2023,561,1,70,367,133,22,42,9,540
 Downtown Yonge East (168),2024,539,0,79,349,117,25,38,5,523
 Downtown Yonge East (168),2025,493,1,61,313,119,26,36,9,475
+Dufferin Grove (83),2014,240,0,42,138,61,8,18,3,239
+Dufferin Grove (83),2015,263,1,39,171,65,12,13,2,260
+Dufferin Grove (83),2016,266,0,43,158,69,6,15,4,260
+Dufferin Grove (83),2017,278,0,45,174,68,11,10,2,276
+Dufferin Grove (83),2018,279,0,32,183,73,7,16,1,268
+Dufferin Grove (83),2019,255,0,19,197,62,3,10,3,251
 Dufferin Grove (83),2020,191,1,20,146,32,6,5,2,190
 Dufferin Grove (83),2021,167,0,16,135,27,5,6,0,165
 Dufferin Grove (83),2022,227,0,29,186,14,14,5,5,218
 Dufferin Grove (83),2023,336,0,44,238,55,11,15,0,333
 Dufferin Grove (83),2024,361,0,54,205,104,14,18,6,351
 Dufferin Grove (83),2025,262,0,35,162,65,9,15,3,257
+East End-Danforth (62),2014,368,0,52,248,71,12,15,9,363
+East End-Danforth (62),2015,388,0,61,270,71,18,5,3,386
+East End-Danforth (62),2016,441,0,73,291,85,19,8,9,437
+East End-Danforth (62),2017,474,0,61,337,82,19,13,2,466
+East End-Danforth (62),2018,512,0,67,372,85,22,4,6,501
+East End-Danforth (62),2019,524,0,59,385,95,7,6,4,515
 East End-Danforth (62),2020,312,0,39,243,41,12,12,3,309
 East End-Danforth (62),2021,290,1,37,216,48,8,8,1,289
 East End-Danforth (62),2022,329,0,34,262,56,6,9,5,325
 East End-Danforth (62),2023,424,0,52,288,90,11,16,4,424
 East End-Danforth (62),2024,456,1,73,300,85,19,14,2,451
 East End-Danforth (62),2025,485,0,65,321,100,21,13,3,477
+East L'Amoreaux (148),2014,313,0,57,217,40,12,5,0,310
+East L'Amoreaux (148),2015,324,0,58,228,42,7,1,3,322
+East L'Amoreaux (148),2016,299,1,65,191,44,8,5,1,299
+East L'Amoreaux (148),2017,367,0,71,257,45,17,6,1,363
+East L'Amoreaux (148),2018,342,1,63,244,40,12,3,1,336
+East L'Amoreaux (148),2019,333,0,52,241,41,15,1,1,328
 East L'Amoreaux (148),2020,178,0,37,136,12,10,2,1,176
 East L'Amoreaux (148),2021,150,0,23,112,20,5,3,0,150
 East L'Amoreaux (148),2022,206,0,31,163,21,7,3,1,204
 East L'Amoreaux (148),2023,248,1,33,176,44,7,3,2,248
 East L'Amoreaux (148),2024,295,0,52,199,50,9,4,0,292
 East L'Amoreaux (148),2025,303,0,67,188,50,8,8,0,301
+East Willowdale (152),2014,284,0,46,201,39,17,2,1,283
+East Willowdale (152),2015,265,0,45,187,41,6,2,1,262
+East Willowdale (152),2016,328,0,66,226,39,11,3,1,326
+East Willowdale (152),2017,279,0,57,192,34,12,1,3,276
+East Willowdale (152),2018,265,0,36,203,32,7,3,2,259
+East Willowdale (152),2019,297,0,28,241,36,7,2,1,291
 East Willowdale (152),2020,127,0,17,106,7,2,1,0,127
 East Willowdale (152),2021,106,1,22,71,20,4,2,2,105
 East Willowdale (152),2022,200,0,25,167,11,2,4,0,200
 East Willowdale (152),2023,198,0,30,135,35,8,4,0,196
 East Willowdale (152),2024,197,0,43,125,29,3,3,1,196
 East Willowdale (152),2025,205,0,34,138,33,7,4,0,205
+Edenbridge-Humber Valley (9),2014,146,0,21,101,25,4,3,0,146
+Edenbridge-Humber Valley (9),2015,149,0,25,102,22,4,2,2,148
+Edenbridge-Humber Valley (9),2016,146,1,24,99,26,1,4,1,144
+Edenbridge-Humber Valley (9),2017,154,0,29,104,29,1,3,2,151
+Edenbridge-Humber Valley (9),2018,154,0,25,95,41,8,2,2,147
+Edenbridge-Humber Valley (9),2019,183,0,27,139,25,5,0,0,181
 Edenbridge-Humber Valley (9),2020,101,0,11,83,9,1,3,0,99
 Edenbridge-Humber Valley (9),2021,112,0,19,87,10,3,3,0,112
 Edenbridge-Humber Valley (9),2022,149,0,12,128,9,1,3,2,148
 Edenbridge-Humber Valley (9),2023,154,0,23,107,24,4,5,1,153
 Edenbridge-Humber Valley (9),2024,153,0,26,102,25,3,4,0,152
 Edenbridge-Humber Valley (9),2025,174,0,25,117,32,2,0,0,174
+Eglinton East (138),2014,352,1,60,225,68,11,1,3,350
+Eglinton East (138),2015,385,1,76,240,76,15,5,2,383
+Eglinton East (138),2016,426,2,109,255,69,30,3,4,418
+Eglinton East (138),2017,461,2,114,293,69,23,6,4,458
+Eglinton East (138),2018,366,1,76,234,62,18,2,3,361
+Eglinton East (138),2019,398,0,87,253,74,18,1,2,391
 Eglinton East (138),2020,215,0,39,149,37,9,6,3,213
 Eglinton East (138),2021,217,2,33,152,42,8,3,0,217
 Eglinton East (138),2022,298,0,45,226,51,11,3,1,294
 Eglinton East (138),2023,373,0,53,245,90,10,2,1,370
 Eglinton East (138),2024,370,1,65,224,86,18,3,3,367
 Eglinton East (138),2025,377,2,59,225,94,15,6,1,370
+Elms-Old Rexdale (5),2014,133,0,27,75,33,5,1,4,130
+Elms-Old Rexdale (5),2015,165,0,38,88,41,9,3,0,161
+Elms-Old Rexdale (5),2016,176,0,32,107,42,6,0,1,175
+Elms-Old Rexdale (5),2017,171,0,33,115,25,7,1,0,169
+Elms-Old Rexdale (5),2018,214,0,29,148,48,6,0,0,207
+Elms-Old Rexdale (5),2019,225,0,27,173,40,2,2,1,221
 Elms-Old Rexdale (5),2020,155,0,22,112,31,4,2,2,154
 Elms-Old Rexdale (5),2021,141,0,23,102,26,1,1,0,141
 Elms-Old Rexdale (5),2022,187,0,26,150,15,3,0,1,185
 Elms-Old Rexdale (5),2023,242,0,32,169,41,5,2,2,242
 Elms-Old Rexdale (5),2024,281,1,34,181,65,6,4,1,276
 Elms-Old Rexdale (5),2025,226,0,42,133,52,6,1,2,223
+Englemount-Lawrence (32),2014,223,0,30,154,41,8,6,2,221
+Englemount-Lawrence (32),2015,210,0,29,146,39,7,1,2,207
+Englemount-Lawrence (32),2016,233,0,36,161,42,8,3,1,231
+Englemount-Lawrence (32),2017,241,0,42,145,62,13,0,1,239
+Englemount-Lawrence (32),2018,242,0,34,161,51,11,3,0,233
+Englemount-Lawrence (32),2019,226,0,23,177,46,8,0,0,223
 Englemount-Lawrence (32),2020,116,1,18,86,16,4,5,0,115
 Englemount-Lawrence (32),2021,112,0,9,86,25,2,1,0,111
 Englemount-Lawrence (32),2022,177,0,14,152,18,6,2,0,177
 Englemount-Lawrence (32),2023,219,1,22,144,59,8,1,0,217
 Englemount-Lawrence (32),2024,203,2,25,125,51,6,1,1,200
 Englemount-Lawrence (32),2025,195,0,32,118,45,7,0,0,192
+Eringate-Centennial-West Deane (11),2014,167,1,22,112,33,3,1,2,166
+Eringate-Centennial-West Deane (11),2015,174,0,25,114,40,4,2,0,174
+Eringate-Centennial-West Deane (11),2016,180,0,29,117,38,4,3,1,179
+Eringate-Centennial-West Deane (11),2017,196,0,24,144,36,3,2,2,195
+Eringate-Centennial-West Deane (11),2018,191,0,38,111,48,3,2,0,183
+Eringate-Centennial-West Deane (11),2019,177,0,15,147,23,3,2,0,176
 Eringate-Centennial-West Deane (11),2020,86,0,15,61,20,1,8,1,82
 Eringate-Centennial-West Deane (11),2021,85,1,14,66,6,2,5,0,84
 Eringate-Centennial-West Deane (11),2022,142,0,18,115,13,5,1,1,140
 Eringate-Centennial-West Deane (11),2023,134,0,30,79,26,5,4,1,132
 Eringate-Centennial-West Deane (11),2024,157,0,24,104,29,2,3,0,157
 Eringate-Centennial-West Deane (11),2025,168,3,34,99,34,5,2,3,164
+Etobicoke City Centre (159),2014,918,0,123,595,208,21,5,3,915
+Etobicoke City Centre (159),2015,988,1,148,627,231,30,6,7,982
+Etobicoke City Centre (159),2016,1071,2,156,685,250,28,11,5,1063
+Etobicoke City Centre (159),2017,1053,1,157,683,235,31,11,4,1039
+Etobicoke City Centre (159),2018,1052,1,156,700,221,20,3,4,1019
+Etobicoke City Centre (159),2019,1048,1,115,810,213,18,2,8,1033
 Etobicoke City Centre (159),2020,566,0,66,441,80,7,4,1,563
 Etobicoke City Centre (159),2021,542,1,72,424,79,11,0,5,537
 Etobicoke City Centre (159),2022,764,2,72,655,39,18,7,5,759
 Etobicoke City Centre (159),2023,919,0,118,618,187,17,5,4,914
 Etobicoke City Centre (159),2024,923,1,144,558,221,18,3,5,914
 Etobicoke City Centre (159),2025,837,1,108,524,205,15,3,7,832
+Etobicoke West Mall (13),2014,101,0,15,68,18,2,0,0,101
+Etobicoke West Mall (13),2015,144,1,23,92,33,4,3,1,143
+Etobicoke West Mall (13),2016,115,0,26,71,22,5,0,0,114
+Etobicoke West Mall (13),2017,125,0,33,67,34,7,3,0,121
+Etobicoke West Mall (13),2018,110,0,18,71,25,5,0,2,105
+Etobicoke West Mall (13),2019,144,0,27,101,23,7,0,1,140
 Etobicoke West Mall (13),2020,70,0,10,52,11,5,0,0,70
 Etobicoke West Mall (13),2021,70,0,9,51,15,0,3,0,70
 Etobicoke West Mall (13),2022,98,0,11,81,6,2,3,0,95
 Etobicoke West Mall (13),2023,106,1,22,66,17,6,1,0,102
 Etobicoke West Mall (13),2024,138,0,36,86,16,1,5,0,138
 Etobicoke West Mall (13),2025,131,0,23,89,19,5,1,0,126
+Fenside-Parkwoods (150),2014,208,0,22,159,31,5,1,1,207
+Fenside-Parkwoods (150),2015,272,0,48,180,49,11,0,1,270
+Fenside-Parkwoods (150),2016,282,0,34,207,47,1,1,1,281
+Fenside-Parkwoods (150),2017,271,0,38,201,34,9,0,1,269
+Fenside-Parkwoods (150),2018,263,0,32,193,46,5,1,0,257
+Fenside-Parkwoods (150),2019,288,0,32,223,41,5,0,2,284
 Fenside-Parkwoods (150),2020,154,0,13,127,20,1,1,1,153
 Fenside-Parkwoods (150),2021,146,0,17,113,19,0,0,1,145
 Fenside-Parkwoods (150),2022,238,0,22,200,22,4,1,2,236
 Fenside-Parkwoods (150),2023,327,0,41,231,60,4,1,1,326
 Fenside-Parkwoods (150),2024,347,1,55,229,64,7,2,1,346
 Fenside-Parkwoods (150),2025,339,0,51,214,76,6,2,1,337
+Flemingdon Park (44),2014,359,0,63,250,49,15,7,3,356
+Flemingdon Park (44),2015,477,0,71,365,51,13,4,1,477
+Flemingdon Park (44),2016,456,0,78,318,66,9,4,6,453
+Flemingdon Park (44),2017,440,0,57,334,58,9,3,2,436
+Flemingdon Park (44),2018,433,0,65,323,56,8,3,2,423
+Flemingdon Park (44),2019,449,1,67,318,71,8,5,3,441
 Flemingdon Park (44),2020,219,0,36,165,21,7,2,1,218
 Flemingdon Park (44),2021,219,0,27,173,27,8,0,0,218
 Flemingdon Park (44),2022,322,0,44,256,35,7,4,0,322
 Flemingdon Park (44),2023,209,0,24,144,46,6,2,1,209
 Flemingdon Park (44),2024,253,0,43,167,46,6,0,1,253
 Flemingdon Park (44),2025,277,1,41,178,60,8,0,0,277
+Forest Hill North (102),2014,349,0,49,260,41,12,5,2,346
+Forest Hill North (102),2015,317,1,35,245,41,7,2,3,314
+Forest Hill North (102),2016,339,2,43,245,54,10,2,3,338
+Forest Hill North (102),2017,379,0,32,301,50,6,3,5,374
+Forest Hill North (102),2018,406,1,37,316,58,7,1,1,391
+Forest Hill North (102),2019,365,0,23,315,37,3,1,1,359
 Forest Hill North (102),2020,215,0,13,179,26,2,0,1,215
 Forest Hill North (102),2021,205,0,17,171,29,3,0,0,204
 Forest Hill North (102),2022,283,0,25,243,19,3,3,2,282
 Forest Hill North (102),2023,430,0,55,337,40,6,3,2,428
 Forest Hill North (102),2024,447,0,74,316,57,8,8,4,440
 Forest Hill North (102),2025,440,0,70,303,67,11,3,0,436
+Forest Hill South (101),2014,198,0,19,142,37,7,3,0,195
+Forest Hill South (101),2015,190,0,29,136,31,7,0,3,187
+Forest Hill South (101),2016,225,0,33,158,38,6,4,0,223
+Forest Hill South (101),2017,268,0,39,195,40,7,5,1,264
+Forest Hill South (101),2018,329,0,42,236,59,5,3,0,324
+Forest Hill South (101),2019,298,0,28,231,52,2,2,1,296
 Forest Hill South (101),2020,158,0,17,130,15,4,0,2,158
 Forest Hill South (101),2021,141,0,6,120,22,1,3,0,141
 Forest Hill South (101),2022,187,0,18,162,10,5,2,0,186
 Forest Hill South (101),2023,180,1,23,127,29,3,4,0,179
 Forest Hill South (101),2024,214,0,22,151,41,6,3,1,213
 Forest Hill South (101),2025,197,0,26,134,37,3,1,0,197
+Fort York-Liberty Village (163),2014,272,0,33,196,46,6,9,3,265
+Fort York-Liberty Village (163),2015,332,1,40,242,60,6,6,7,329
+Fort York-Liberty Village (163),2016,350,0,61,228,78,16,11,6,343
+Fort York-Liberty Village (163),2017,385,0,59,268,74,11,13,4,375
+Fort York-Liberty Village (163),2018,375,0,31,288,73,8,9,2,360
+Fort York-Liberty Village (163),2019,381,0,42,296,59,12,10,6,371
 Fort York-Liberty Village (163),2020,181,0,36,122,39,10,10,4,171
 Fort York-Liberty Village (163),2021,219,0,26,166,39,8,5,1,217
 Fort York-Liberty Village (163),2022,331,0,41,264,32,10,14,5,320
 Fort York-Liberty Village (163),2023,367,0,49,254,66,7,15,5,359
 Fort York-Liberty Village (163),2024,399,1,61,252,85,10,9,4,394
 Fort York-Liberty Village (163),2025,394,0,59,250,86,10,12,2,386
+Glenfield-Jane Heights (25),2014,457,0,81,279,104,18,7,2,452
+Glenfield-Jane Heights (25),2015,443,0,73,273,115,16,5,3,440
+Glenfield-Jane Heights (25),2016,498,3,87,305,118,18,4,3,492
+Glenfield-Jane Heights (25),2017,466,1,61,292,127,11,1,2,460
+Glenfield-Jane Heights (25),2018,527,0,73,328,143,15,3,0,516
+Glenfield-Jane Heights (25),2019,485,0,62,365,108,11,2,1,475
 Glenfield-Jane Heights (25),2020,343,0,47,250,64,13,2,2,338
 Glenfield-Jane Heights (25),2021,356,0,47,270,72,8,5,2,356
 Glenfield-Jane Heights (25),2022,403,0,38,333,34,5,5,0,400
 Glenfield-Jane Heights (25),2023,421,0,55,259,108,12,4,1,419
 Glenfield-Jane Heights (25),2024,405,1,90,189,126,18,5,2,397
 Glenfield-Jane Heights (25),2025,372,0,66,206,100,6,6,3,369
+Golfdale-Cedarbrae-Woburn (141),2014,509,0,90,315,107,19,9,7,504
+Golfdale-Cedarbrae-Woburn (141),2015,504,0,86,335,93,12,4,2,503
+Golfdale-Cedarbrae-Woburn (141),2016,573,0,99,363,115,18,4,1,569
+Golfdale-Cedarbrae-Woburn (141),2017,623,1,125,401,111,22,2,3,615
+Golfdale-Cedarbrae-Woburn (141),2018,685,1,113,463,131,18,2,3,669
+Golfdale-Cedarbrae-Woburn (141),2019,613,2,98,428,108,15,1,2,600
 Golfdale-Cedarbrae-Woburn (141),2020,372,0,45,296,42,5,8,2,371
 Golfdale-Cedarbrae-Woburn (141),2021,362,0,62,262,52,12,6,0,361
 Golfdale-Cedarbrae-Woburn (141),2022,475,2,62,365,81,9,1,1,475
 Golfdale-Cedarbrae-Woburn (141),2023,443,1,53,291,120,9,2,5,443
 Golfdale-Cedarbrae-Woburn (141),2024,459,0,73,277,116,18,6,1,454
 Golfdale-Cedarbrae-Woburn (141),2025,465,0,73,281,111,19,3,0,460
+Greenwood-Coxwell (65),2014,202,0,35,139,29,7,8,3,198
+Greenwood-Coxwell (65),2015,199,1,40,115,50,9,10,1,199
+Greenwood-Coxwell (65),2016,212,0,41,135,42,11,8,7,212
+Greenwood-Coxwell (65),2017,224,0,45,151,39,9,10,2,221
+Greenwood-Coxwell (65),2018,257,0,34,173,57,10,4,3,250
+Greenwood-Coxwell (65),2019,228,0,22,157,57,3,2,1,225
 Greenwood-Coxwell (65),2020,164,0,17,130,23,1,4,1,163
 Greenwood-Coxwell (65),2021,155,0,24,113,22,2,9,2,153
 Greenwood-Coxwell (65),2022,166,0,22,129,30,6,6,2,164
 Greenwood-Coxwell (65),2023,188,0,30,133,32,3,7,0,187
 Greenwood-Coxwell (65),2024,185,0,19,118,51,3,4,4,183
 Greenwood-Coxwell (65),2025,185,0,23,110,53,3,5,2,183
+Guildwood (140),2014,81,0,14,58,10,0,0,1,81
+Guildwood (140),2015,99,0,20,60,21,6,2,1,98
+Guildwood (140),2016,94,1,11,61,23,3,0,1,93
+Guildwood (140),2017,103,1,20,66,19,8,1,0,103
+Guildwood (140),2018,88,0,13,64,14,0,2,0,88
+Guildwood (140),2019,93,0,12,68,15,0,0,1,92
 Guildwood (140),2020,59,0,8,46,7,1,0,1,58
 Guildwood (140),2021,57,0,9,41,8,1,0,0,57
 Guildwood (140),2022,72,1,8,60,7,2,1,0,72
 Guildwood (140),2023,91,0,18,54,20,1,0,1,90
 Guildwood (140),2024,100,0,14,64,25,1,1,0,100
 Guildwood (140),2025,104,0,17,72,16,3,1,0,104
+Harbourfront-CityPlace (165),2014,571,0,65,423,89,14,9,4,564
+Harbourfront-CityPlace (165),2015,757,0,114,559,101,20,16,7,752
+Harbourfront-CityPlace (165),2016,788,1,108,556,139,19,13,8,776
+Harbourfront-CityPlace (165),2017,870,0,102,657,133,16,12,10,859
+Harbourfront-CityPlace (165),2018,896,0,89,707,119,17,13,7,854
+Harbourfront-CityPlace (165),2019,881,0,76,724,118,20,18,6,863
 Harbourfront-CityPlace (165),2020,401,0,43,327,49,10,10,3,397
 Harbourfront-CityPlace (165),2021,468,1,44,376,64,12,4,3,463
 Harbourfront-CityPlace (165),2022,652,0,59,546,57,14,16,3,636
 Harbourfront-CityPlace (165),2023,668,0,76,476,126,18,14,2,661
 Harbourfront-CityPlace (165),2024,741,0,94,515,141,16,6,8,736
 Harbourfront-CityPlace (165),2025,629,0,75,452,103,16,11,5,621
+Henry Farm (53),2014,141,0,8,91,42,3,0,0,141
+Henry Farm (53),2015,167,0,13,117,38,3,1,0,165
+Henry Farm (53),2016,153,0,18,92,46,7,2,2,151
+Henry Farm (53),2017,176,0,20,122,34,7,0,1,176
+Henry Farm (53),2018,219,0,19,151,56,6,0,0,217
+Henry Farm (53),2019,194,0,14,145,44,4,0,0,193
 Henry Farm (53),2020,94,0,4,75,20,2,0,0,92
 Henry Farm (53),2021,77,0,11,56,11,5,0,1,77
 Henry Farm (53),2022,129,0,8,108,19,3,2,0,129
 Henry Farm (53),2023,147,0,11,94,45,2,2,2,144
 Henry Farm (53),2024,180,1,20,116,45,6,4,1,178
 Henry Farm (53),2025,159,0,20,89,52,9,1,0,158
+High Park-Swansea (87),2014,351,0,48,229,75,7,5,5,349
+High Park-Swansea (87),2015,386,1,49,262,82,8,11,6,381
+High Park-Swansea (87),2016,381,0,51,256,85,10,15,4,376
+High Park-Swansea (87),2017,481,1,71,330,91,7,11,5,472
+High Park-Swansea (87),2018,471,2,52,320,106,9,3,2,451
+High Park-Swansea (87),2019,449,0,50,349,79,10,3,1,443
 High Park-Swansea (87),2020,247,0,39,183,33,12,13,2,242
 High Park-Swansea (87),2021,267,2,30,207,46,3,10,2,267
 High Park-Swansea (87),2022,324,0,30,276,23,5,12,2,316
 High Park-Swansea (87),2023,368,0,44,258,70,6,6,1,366
 High Park-Swansea (87),2024,364,1,63,221,80,10,17,3,357
 High Park-Swansea (87),2025,319,0,33,198,88,2,9,4,314
+High Park North (88),2014,303,2,47,209,46,10,10,3,299
+High Park North (88),2015,345,1,48,239,62,12,10,2,344
+High Park North (88),2016,314,0,49,215,56,13,7,5,314
+High Park North (88),2017,335,1,41,230,72,12,4,4,326
+High Park North (88),2018,339,0,31,251,67,10,7,5,327
+High Park North (88),2019,393,0,37,325,45,6,5,5,383
 High Park North (88),2020,236,0,29,188,30,9,15,1,232
 High Park North (88),2021,216,1,34,166,26,8,14,3,215
 High Park North (88),2022,268,0,24,234,13,9,12,2,260
 High Park North (88),2023,306,0,49,204,54,9,14,1,297
 High Park North (88),2024,271,0,54,162,55,16,13,1,267
 High Park North (88),2025,273,0,47,155,71,8,18,1,265
+Highland Creek (134),2014,179,0,23,132,24,3,2,1,178
+Highland Creek (134),2015,223,0,53,138,34,6,5,2,221
+Highland Creek (134),2016,214,0,52,131,36,7,0,2,214
+Highland Creek (134),2017,199,1,39,116,48,7,2,0,197
+Highland Creek (134),2018,195,0,30,141,32,4,2,1,191
+Highland Creek (134),2019,213,0,27,155,36,0,1,0,209
 Highland Creek (134),2020,85,0,20,60,6,1,1,0,84
 Highland Creek (134),2021,119,0,21,86,16,2,1,1,117
 Highland Creek (134),2022,184,0,26,144,20,4,3,0,183
 Highland Creek (134),2023,236,0,40,155,49,5,3,0,236
 Highland Creek (134),2024,252,0,43,157,54,4,4,1,250
 Highland Creek (134),2025,219,0,37,140,44,5,3,1,219
+Hillcrest Village (48),2014,460,1,52,334,75,17,1,0,457
+Hillcrest Village (48),2015,482,0,60,349,77,16,2,1,480
+Hillcrest Village (48),2016,485,3,70,341,73,13,4,1,483
+Hillcrest Village (48),2017,442,0,79,292,74,13,2,6,437
+Hillcrest Village (48),2018,471,0,76,324,76,11,2,2,463
+Hillcrest Village (48),2019,420,1,64,292,74,13,0,1,417
 Hillcrest Village (48),2020,197,0,30,149,23,6,2,0,194
 Hillcrest Village (48),2021,196,0,33,142,27,5,4,0,195
 Hillcrest Village (48),2022,269,0,31,219,26,6,1,2,268
 Hillcrest Village (48),2023,357,0,35,252,78,5,3,1,355
 Hillcrest Village (48),2024,348,0,53,229,66,8,0,2,343
 Hillcrest Village (48),2025,388,0,61,254,73,15,4,0,381
+Humber Bay Shores (161),2014,183,0,31,134,20,7,4,3,180
+Humber Bay Shores (161),2015,307,1,53,218,49,9,3,2,306
+Humber Bay Shores (161),2016,321,0,56,223,47,6,2,2,319
+Humber Bay Shores (161),2017,285,0,47,201,44,4,2,3,284
+Humber Bay Shores (161),2018,267,0,41,192,53,4,0,0,262
+Humber Bay Shores (161),2019,283,0,43,218,38,9,1,2,279
 Humber Bay Shores (161),2020,210,0,22,174,24,3,5,1,207
 Humber Bay Shores (161),2021,260,0,34,200,45,8,4,0,258
 Humber Bay Shores (161),2022,302,3,35,251,19,7,2,0,300
 Humber Bay Shores (161),2023,295,0,39,210,47,2,1,0,294
 Humber Bay Shores (161),2024,275,0,58,166,51,8,3,2,273
 Humber Bay Shores (161),2025,280,0,39,185,57,3,5,0,276
+Humber Heights-Westmount (8),2014,169,0,37,104,30,5,3,1,167
+Humber Heights-Westmount (8),2015,190,0,43,128,20,4,3,1,188
+Humber Heights-Westmount (8),2016,208,0,48,141,28,4,2,0,206
+Humber Heights-Westmount (8),2017,185,0,34,130,23,5,0,1,181
+Humber Heights-Westmount (8),2018,239,2,56,150,36,10,2,3,225
+Humber Heights-Westmount (8),2019,207,0,27,169,25,1,6,2,203
 Humber Heights-Westmount (8),2020,150,0,20,114,22,4,2,0,148
 Humber Heights-Westmount (8),2021,155,0,27,121,20,4,3,3,153
 Humber Heights-Westmount (8),2022,215,0,28,177,11,4,7,1,211
 Humber Heights-Westmount (8),2023,225,1,38,155,31,5,3,0,224
 Humber Heights-Westmount (8),2024,214,0,54,126,34,8,5,0,210
 Humber Heights-Westmount (8),2025,219,0,51,131,37,6,2,1,217
+Humber Summit (21),2014,566,0,85,380,105,14,7,2,561
+Humber Summit (21),2015,656,1,89,430,152,16,3,0,654
+Humber Summit (21),2016,713,0,118,475,143,21,5,2,708
+Humber Summit (21),2017,719,1,114,476,148,23,1,4,708
+Humber Summit (21),2018,742,2,103,503,160,15,2,4,724
+Humber Summit (21),2019,780,3,85,614,130,12,2,2,769
 Humber Summit (21),2020,431,0,40,341,63,12,2,5,426
 Humber Summit (21),2021,479,0,35,403,62,8,1,1,479
 Humber Summit (21),2022,529,0,44,456,34,7,1,2,526
 Humber Summit (21),2023,571,0,71,404,96,10,3,2,567
 Humber Summit (21),2024,598,0,113,369,117,12,4,0,595
 Humber Summit (21),2025,674,1,128,407,139,14,8,2,665
+Humbermede (22),2014,172,0,24,100,52,3,1,1,171
+Humbermede (22),2015,179,0,23,114,50,10,0,1,179
+Humbermede (22),2016,197,0,34,124,44,3,3,2,196
+Humbermede (22),2017,247,0,29,161,63,9,0,0,244
+Humbermede (22),2018,251,0,31,169,60,6,1,1,239
+Humbermede (22),2019,188,0,19,146,35,3,1,0,188
 Humbermede (22),2020,130,0,9,101,24,0,1,2,128
 Humbermede (22),2021,142,2,15,109,26,1,1,4,142
 Humbermede (22),2022,218,0,21,183,14,5,0,1,217
 Humbermede (22),2023,226,0,38,146,42,4,2,0,226
 Humbermede (22),2024,233,0,51,122,60,4,4,2,231
 Humbermede (22),2025,231,0,40,139,53,3,2,0,231
+Humewood-Cedarvale (106),2014,101,0,19,66,18,3,2,2,101
+Humewood-Cedarvale (106),2015,106,1,7,78,22,3,0,1,105
+Humewood-Cedarvale (106),2016,117,0,22,73,22,4,3,0,117
+Humewood-Cedarvale (106),2017,105,0,11,71,27,5,1,2,102
+Humewood-Cedarvale (106),2018,116,0,10,88,22,2,0,0,113
+Humewood-Cedarvale (106),2019,108,0,5,92,14,1,0,0,106
 Humewood-Cedarvale (106),2020,77,0,7,60,10,1,3,0,76
 Humewood-Cedarvale (106),2021,72,0,5,56,17,3,1,1,71
 Humewood-Cedarvale (106),2022,84,0,7,69,10,1,0,0,84
 Humewood-Cedarvale (106),2023,65,0,5,43,17,1,3,1,63
 Humewood-Cedarvale (106),2024,62,0,4,32,26,2,0,0,61
 Humewood-Cedarvale (106),2025,70,0,12,43,15,5,1,0,69
+Ionview (125),2014,233,1,38,155,41,12,3,3,231
+Ionview (125),2015,255,0,39,175,44,4,2,2,255
+Ionview (125),2016,244,1,37,176,34,7,1,2,243
+Ionview (125),2017,292,0,56,209,35,10,1,2,289
+Ionview (125),2018,284,1,51,202,34,10,1,0,276
+Ionview (125),2019,316,0,32,251,42,5,2,0,310
 Ionview (125),2020,168,0,31,127,15,8,1,1,167
 Ionview (125),2021,155,0,14,128,16,1,0,0,154
 Ionview (125),2022,200,0,25,165,17,1,3,0,198
 Ionview (125),2023,246,0,34,175,48,2,5,2,244
 Ionview (125),2024,266,0,43,176,53,4,5,2,261
 Ionview (125),2025,244,0,38,157,49,10,2,0,243
+Islington (158),2014,345,0,51,247,48,11,1,1,344
+Islington (158),2015,384,1,64,252,76,13,4,1,382
+Islington (158),2016,382,0,67,252,74,12,5,2,382
+Islington (158),2017,373,0,78,235,68,14,2,3,370
+Islington (158),2018,390,2,67,256,76,16,4,2,375
+Islington (158),2019,405,0,40,329,61,8,2,3,400
 Islington (158),2020,239,1,34,186,30,8,6,1,238
 Islington (158),2021,195,2,25,151,26,3,2,0,195
 Islington (158),2022,307,1,32,252,23,13,3,1,303
 Islington (158),2023,315,1,44,228,44,7,5,2,310
 Islington (158),2024,404,1,76,253,75,11,8,1,399
 Islington (158),2025,353,0,53,232,68,7,6,1,348
+Junction-Wallace Emerson (171),2014,309,0,49,185,81,9,19,8,306
+Junction-Wallace Emerson (171),2015,354,0,66,220,71,14,24,3,352
+Junction-Wallace Emerson (171),2016,369,0,64,229,84,12,16,2,365
+Junction-Wallace Emerson (171),2017,402,0,54,254,106,8,20,4,395
+Junction-Wallace Emerson (171),2018,381,0,52,258,83,13,8,1,366
+Junction-Wallace Emerson (171),2019,385,0,26,314,76,7,12,2,376
 Junction-Wallace Emerson (171),2020,257,0,23,208,36,6,14,2,254
 Junction-Wallace Emerson (171),2021,234,0,35,170,43,13,15,1,231
 Junction-Wallace Emerson (171),2022,289,1,25,245,19,6,18,0,284
 Junction-Wallace Emerson (171),2023,344,0,47,226,71,8,19,1,341
 Junction-Wallace Emerson (171),2024,328,0,52,194,84,10,19,2,322
 Junction-Wallace Emerson (171),2025,317,1,41,193,83,10,14,4,309
+Junction Area (90),2014,501,2,64,353,86,9,16,2,501
+Junction Area (90),2015,603,0,85,414,116,19,24,4,601
+Junction Area (90),2016,592,1,88,406,110,16,13,3,588
+Junction Area (90),2017,632,0,87,445,118,22,11,5,620
+Junction Area (90),2018,693,0,63,511,138,8,11,3,663
+Junction Area (90),2019,735,0,54,600,120,10,10,3,725
 Junction Area (90),2020,463,0,36,390,55,10,12,4,460
 Junction Area (90),2021,472,0,33,401,61,6,6,6,468
 Junction Area (90),2022,504,0,38,443,24,5,18,2,498
 Junction Area (90),2023,671,1,84,461,126,17,17,8,666
 Junction Area (90),2024,655,1,88,418,150,14,20,4,648
 Junction Area (90),2025,575,0,75,367,134,13,14,4,564
+Keelesdale-Eglinton West (110),2014,197,0,36,122,44,13,4,3,196
+Keelesdale-Eglinton West (110),2015,232,1,41,137,60,14,1,1,231
+Keelesdale-Eglinton West (110),2016,204,1,38,122,48,12,3,1,204
+Keelesdale-Eglinton West (110),2017,231,0,37,146,59,8,3,2,225
+Keelesdale-Eglinton West (110),2018,245,1,32,166,53,9,2,2,239
+Keelesdale-Eglinton West (110),2019,217,0,23,172,37,5,3,0,213
 Keelesdale-Eglinton West (110),2020,164,0,17,126,28,8,2,0,162
 Keelesdale-Eglinton West (110),2021,154,0,13,121,30,3,4,0,154
 Keelesdale-Eglinton West (110),2022,195,0,22,160,14,4,4,1,192
 Keelesdale-Eglinton West (110),2023,241,0,31,163,49,11,4,1,239
 Keelesdale-Eglinton West (110),2024,209,1,39,126,44,7,6,0,206
 Keelesdale-Eglinton West (110),2025,182,0,28,113,41,3,3,0,182
+Kennedy Park (124),2014,213,0,33,137,51,10,5,3,210
+Kennedy Park (124),2015,223,0,45,152,30,9,3,4,222
+Kennedy Park (124),2016,270,2,62,160,50,14,6,0,270
+Kennedy Park (124),2017,263,0,55,161,52,7,3,2,261
+Kennedy Park (124),2018,290,0,56,186,51,5,1,3,288
+Kennedy Park (124),2019,299,1,46,195,66,11,2,1,292
 Kennedy Park (124),2020,155,0,34,100,27,10,4,2,152
 Kennedy Park (124),2021,138,0,19,98,26,2,2,0,138
 Kennedy Park (124),2022,218,1,38,161,25,10,2,2,218
 Kennedy Park (124),2023,262,0,44,172,61,8,4,2,259
 Kennedy Park (124),2024,266,1,41,176,52,10,4,3,263
 Kennedy Park (124),2025,283,0,47,176,61,11,2,0,281
+Kensington-Chinatown (78),2014,582,2,86,360,144,40,35,9,575
+Kensington-Chinatown (78),2015,614,0,101,384,143,33,43,8,607
+Kensington-Chinatown (78),2016,686,0,98,428,177,32,37,12,676
+Kensington-Chinatown (78),2017,752,1,106,509,168,44,36,5,740
+Kensington-Chinatown (78),2018,714,0,75,523,140,23,25,11,688
+Kensington-Chinatown (78),2019,711,0,73,546,145,30,23,5,698
 Kensington-Chinatown (78),2020,382,1,34,302,61,11,19,4,374
 Kensington-Chinatown (78),2021,391,1,55,294,64,18,31,4,385
 Kensington-Chinatown (78),2022,543,0,53,454,56,22,26,3,533
 Kensington-Chinatown (78),2023,582,0,69,368,154,23,37,5,569
 Kensington-Chinatown (78),2024,639,0,59,399,184,27,32,4,621
 Kensington-Chinatown (78),2025,543,0,77,323,145,27,40,2,525
+Kingsview Village-The Westway (6),2014,272,0,51,168,58,7,5,1,269
+Kingsview Village-The Westway (6),2015,287,0,48,196,51,5,5,1,287
+Kingsview Village-The Westway (6),2016,358,0,82,217,69,22,5,2,356
+Kingsview Village-The Westway (6),2017,339,0,64,214,73,8,1,0,336
+Kingsview Village-The Westway (6),2018,315,0,53,205,79,14,2,0,303
+Kingsview Village-The Westway (6),2019,322,1,56,246,44,13,2,2,311
 Kingsview Village-The Westway (6),2020,196,0,31,147,24,5,0,2,194
 Kingsview Village-The Westway (6),2021,200,0,35,148,27,3,1,1,199
 Kingsview Village-The Westway (6),2022,289,0,45,231,13,6,1,1,289
 Kingsview Village-The Westway (6),2023,312,1,62,193,56,14,5,1,309
 Kingsview Village-The Westway (6),2024,309,0,56,190,63,9,0,2,307
 Kingsview Village-The Westway (6),2025,332,1,58,214,61,7,3,1,330
+Kingsway South (15),2014,184,1,27,128,28,6,2,3,182
+Kingsway South (15),2015,185,0,28,128,32,6,2,2,183
+Kingsway South (15),2016,186,1,30,126,34,10,2,0,185
+Kingsway South (15),2017,208,0,29,147,37,6,3,2,205
+Kingsway South (15),2018,164,0,26,123,16,6,3,1,161
+Kingsway South (15),2019,201,1,33,151,25,9,1,4,196
 Kingsway South (15),2020,82,1,20,56,6,6,1,2,81
 Kingsway South (15),2021,105,0,12,80,19,3,5,1,104
 Kingsway South (15),2022,145,0,14,126,5,2,2,1,143
 Kingsway South (15),2023,165,1,20,118,28,2,3,1,160
 Kingsway South (15),2024,152,0,27,104,22,2,5,2,152
 Kingsway South (15),2025,142,0,28,87,27,4,5,0,140
+L'Amoreaux West (147),2014,327,0,50,232,45,12,3,2,327
+L'Amoreaux West (147),2015,365,0,67,261,42,12,2,2,365
+L'Amoreaux West (147),2016,396,2,73,255,75,13,3,1,393
+L'Amoreaux West (147),2017,401,1,88,269,47,23,5,2,398
+L'Amoreaux West (147),2018,382,0,60,270,63,23,1,3,372
+L'Amoreaux West (147),2019,403,1,75,272,67,19,3,1,396
 L'Amoreaux West (147),2020,209,1,36,151,23,12,4,1,205
 L'Amoreaux West (147),2021,158,2,26,111,25,13,3,0,157
 L'Amoreaux West (147),2022,259,0,34,209,29,6,1,0,257
 L'Amoreaux West (147),2023,312,0,53,204,66,15,4,1,309
 L'Amoreaux West (147),2024,306,0,51,189,67,18,3,0,304
 L'Amoreaux West (147),2025,338,0,55,206,78,15,5,1,334
+Lambton Baby Point (114),2014,31,0,5,15,12,1,1,0,31
+Lambton Baby Point (114),2015,25,0,3,14,10,2,0,0,25
+Lambton Baby Point (114),2016,24,0,4,11,10,1,0,0,23
+Lambton Baby Point (114),2017,27,0,5,18,5,1,1,0,26
+Lambton Baby Point (114),2018,23,0,7,11,5,0,0,0,22
+Lambton Baby Point (114),2019,15,0,1,9,6,0,0,0,15
 Lambton Baby Point (114),2020,13,1,2,8,3,2,1,0,13
 Lambton Baby Point (114),2021,12,0,3,8,3,3,0,0,12
 Lambton Baby Point (114),2022,24,0,5,19,1,2,0,0,24
 Lambton Baby Point (114),2023,22,0,2,19,2,2,0,0,22
 Lambton Baby Point (114),2024,30,0,7,14,9,2,1,0,30
 Lambton Baby Point (114),2025,18,0,2,9,7,1,1,0,18
+Lansing-Westgate (38),2014,258,0,36,189,33,9,0,3,256
+Lansing-Westgate (38),2015,326,0,51,223,55,16,2,3,323
+Lansing-Westgate (38),2016,318,0,45,234,44,10,0,1,318
+Lansing-Westgate (38),2017,300,0,45,216,44,8,3,1,298
+Lansing-Westgate (38),2018,320,0,45,227,55,11,2,1,307
+Lansing-Westgate (38),2019,301,1,30,243,42,8,1,0,294
 Lansing-Westgate (38),2020,144,0,19,114,14,6,1,1,143
 Lansing-Westgate (38),2021,160,0,16,129,35,5,3,0,158
 Lansing-Westgate (38),2022,192,0,25,156,17,6,2,0,189
 Lansing-Westgate (38),2023,230,0,29,166,43,4,2,2,227
 Lansing-Westgate (38),2024,271,0,41,178,54,11,1,2,270
 Lansing-Westgate (38),2025,258,0,36,159,64,5,2,0,257
+Lawrence Park North (105),2014,300,0,25,211,68,8,2,0,300
+Lawrence Park North (105),2015,282,0,37,190,58,10,2,1,282
+Lawrence Park North (105),2016,296,0,30,206,61,4,3,0,296
+Lawrence Park North (105),2017,372,1,36,278,65,5,4,2,367
+Lawrence Park North (105),2018,395,1,29,293,73,5,0,1,388
+Lawrence Park North (105),2019,353,1,20,294,52,5,2,0,348
 Lawrence Park North (105),2020,210,0,9,185,20,3,2,0,210
 Lawrence Park North (105),2021,189,0,14,157,24,6,3,0,186
 Lawrence Park North (105),2022,275,0,18,247,16,5,1,4,272
 Lawrence Park North (105),2023,303,0,31,223,55,4,3,3,303
 Lawrence Park North (105),2024,329,0,42,214,74,10,2,2,329
 Lawrence Park North (105),2025,285,0,29,198,58,8,5,0,281
+Lawrence Park South (103),2014,246,0,29,171,47,12,4,1,245
+Lawrence Park South (103),2015,225,2,30,151,44,9,7,1,224
+Lawrence Park South (103),2016,259,0,32,197,34,7,3,0,259
+Lawrence Park South (103),2017,238,0,35,170,42,6,1,2,233
+Lawrence Park South (103),2018,247,1,22,186,43,7,1,0,236
+Lawrence Park South (103),2019,272,0,20,232,32,2,1,0,270
 Lawrence Park South (103),2020,140,0,19,107,18,2,2,1,139
 Lawrence Park South (103),2021,142,0,11,122,20,4,1,0,142
 Lawrence Park South (103),2022,178,0,22,147,14,8,1,0,178
 Lawrence Park South (103),2023,209,0,26,140,46,6,4,1,206
 Lawrence Park South (103),2024,164,0,25,108,33,4,1,1,164
 Lawrence Park South (103),2025,205,0,30,129,47,6,3,0,204
+Leaside-Bennington (56),2014,484,1,56,366,63,16,7,5,481
+Leaside-Bennington (56),2015,535,0,59,410,70,4,4,4,533
+Leaside-Bennington (56),2016,493,2,60,365,71,7,5,6,491
+Leaside-Bennington (56),2017,551,0,70,423,65,9,9,3,549
+Leaside-Bennington (56),2018,474,1,67,359,57,6,7,1,461
+Leaside-Bennington (56),2019,466,1,50,358,77,7,0,5,463
 Leaside-Bennington (56),2020,233,0,29,189,21,5,0,0,233
 Leaside-Bennington (56),2021,215,0,14,178,28,5,3,0,215
 Leaside-Bennington (56),2022,344,0,23,307,28,3,2,0,343
 Leaside-Bennington (56),2023,452,0,51,329,82,11,6,5,450
 Leaside-Bennington (56),2024,453,0,70,315,72,8,6,3,451
 Leaside-Bennington (56),2025,464,0,53,339,75,7,3,0,461
+Little Portugal (84),2014,174,0,28,108,41,5,8,2,171
+Little Portugal (84),2015,186,0,29,119,42,7,17,3,186
+Little Portugal (84),2016,212,0,32,143,42,8,12,2,208
+Little Portugal (84),2017,265,1,32,194,50,9,4,3,263
+Little Portugal (84),2018,254,0,29,174,60,5,11,4,248
+Little Portugal (84),2019,240,0,18,189,55,5,9,1,236
 Little Portugal (84),2020,160,1,16,130,22,7,6,1,158
 Little Portugal (84),2021,163,0,16,122,34,4,7,2,158
 Little Portugal (84),2022,166,0,15,142,11,8,11,0,160
 Little Portugal (84),2023,213,1,25,137,52,5,18,1,209
 Little Portugal (84),2024,207,0,23,126,59,8,7,1,204
 Little Portugal (84),2025,199,0,23,117,59,5,12,0,194
+Long Branch (19),2014,81,0,14,51,17,4,1,1,80
+Long Branch (19),2015,115,0,30,67,22,5,6,3,115
+Long Branch (19),2016,126,1,22,86,19,2,1,2,126
+Long Branch (19),2017,153,1,23,99,38,8,3,2,152
+Long Branch (19),2018,146,1,19,107,26,5,1,2,140
+Long Branch (19),2019,145,0,20,111,23,5,3,1,145
 Long Branch (19),2020,110,0,14,84,16,4,4,0,110
 Long Branch (19),2021,92,1,14,70,17,2,4,1,92
 Long Branch (19),2022,138,0,20,108,11,5,3,4,135
 Long Branch (19),2023,138,0,14,91,33,2,3,0,137
 Long Branch (19),2024,158,0,35,89,34,10,6,1,155
 Long Branch (19),2025,133,0,24,77,32,6,7,2,128
+Malvern East (146),2014,460,1,67,315,80,19,8,4,458
+Malvern East (146),2015,458,0,76,301,92,12,5,5,456
+Malvern East (146),2016,509,0,88,345,85,12,2,2,506
+Malvern East (146),2017,504,1,101,331,86,11,3,1,501
+Malvern East (146),2018,469,1,87,304,98,21,3,3,462
+Malvern East (146),2019,533,0,98,352,98,19,3,2,520
 Malvern East (146),2020,304,0,44,233,38,6,0,0,304
 Malvern East (146),2021,303,0,60,211,40,11,5,1,303
 Malvern East (146),2022,369,0,60,284,45,9,1,0,367
 Malvern East (146),2023,315,0,34,211,85,8,4,3,308
 Malvern East (146),2024,333,1,50,194,93,6,6,0,331
 Malvern East (146),2025,361,1,56,220,85,8,5,0,359
+Malvern West (145),2014,353,1,64,237,52,14,2,1,351
+Malvern West (145),2015,343,1,65,222,63,11,3,0,342
+Malvern West (145),2016,360,0,85,212,72,12,8,2,359
+Malvern West (145),2017,397,0,82,261,65,7,2,2,396
+Malvern West (145),2018,399,0,73,258,80,11,1,0,393
+Malvern West (145),2019,490,0,90,329,86,8,0,1,484
 Malvern West (145),2020,251,2,39,171,41,4,2,2,249
 Malvern West (145),2021,223,0,42,154,32,7,1,1,221
 Malvern West (145),2022,277,0,40,222,23,9,1,0,277
 Malvern West (145),2023,314,1,46,204,69,9,2,0,311
 Malvern West (145),2024,332,1,51,204,79,14,1,3,328
 Malvern West (145),2025,372,1,46,243,87,9,3,3,368
+Maple Leaf (29),2014,138,0,27,97,16,3,2,0,137
+Maple Leaf (29),2015,122,1,21,82,18,4,1,1,122
+Maple Leaf (29),2016,162,0,38,102,26,6,3,1,161
+Maple Leaf (29),2017,132,0,33,85,19,4,2,0,132
+Maple Leaf (29),2018,155,0,30,97,33,4,1,0,149
+Maple Leaf (29),2019,147,0,17,118,24,5,1,0,144
 Maple Leaf (29),2020,93,0,9,75,13,2,2,1,92
 Maple Leaf (29),2021,95,0,14,72,11,4,2,0,95
 Maple Leaf (29),2022,121,0,16,100,5,3,3,0,120
 Maple Leaf (29),2023,147,0,28,102,19,6,2,0,147
 Maple Leaf (29),2024,120,0,23,64,34,4,2,0,118
 Maple Leaf (29),2025,138,1,19,95,23,3,2,0,136
+Markland Wood (12),2014,122,0,21,87,17,2,1,0,122
+Markland Wood (12),2015,108,0,16,79,18,4,0,0,107
+Markland Wood (12),2016,132,0,29,85,26,4,3,1,131
+Markland Wood (12),2017,116,0,19,84,18,5,0,1,115
+Markland Wood (12),2018,122,0,30,80,18,6,0,1,121
+Markland Wood (12),2019,122,0,17,93,21,3,1,0,121
 Markland Wood (12),2020,60,1,10,44,9,1,1,1,60
 Markland Wood (12),2021,61,0,10,49,5,0,1,1,60
 Markland Wood (12),2022,113,0,12,93,9,3,3,1,111
 Markland Wood (12),2023,115,0,14,78,23,5,2,0,115
 Markland Wood (12),2024,111,0,30,62,19,5,3,1,111
 Markland Wood (12),2025,96,0,16,70,10,3,0,0,96
+Milliken (130),2014,909,0,124,631,156,21,13,6,903
+Milliken (130),2015,836,1,148,566,136,21,14,1,832
+Milliken (130),2016,938,0,165,611,177,16,18,4,931
+Milliken (130),2017,980,1,189,643,158,23,12,1,976
+Milliken (130),2018,970,0,134,663,186,20,9,5,950
+Milliken (130),2019,1007,2,162,677,185,22,17,1,997
 Milliken (130),2020,517,0,60,412,53,14,6,1,514
 Milliken (130),2021,539,1,97,382,78,8,16,3,538
 Milliken (130),2022,772,0,99,631,93,12,16,6,767
 Milliken (130),2023,915,0,116,612,215,12,17,3,911
 Milliken (130),2024,997,3,153,627,222,27,19,2,991
 Milliken (130),2025,982,1,134,649,205,20,12,2,979
+Mimico-Queensway (160),2014,263,0,47,183,38,10,5,1,261
+Mimico-Queensway (160),2015,355,1,63,245,58,8,2,2,354
+Mimico-Queensway (160),2016,351,0,57,243,58,5,2,3,345
+Mimico-Queensway (160),2017,363,0,64,260,50,9,3,3,360
+Mimico-Queensway (160),2018,362,1,66,252,50,11,6,1,347
+Mimico-Queensway (160),2019,340,0,44,270,48,8,7,1,335
 Mimico-Queensway (160),2020,239,2,31,184,35,7,8,2,234
 Mimico-Queensway (160),2021,201,1,31,151,29,5,7,0,199
 Mimico-Queensway (160),2022,283,1,38,226,22,4,11,0,282
 Mimico-Queensway (160),2023,348,0,55,239,55,4,6,5,345
 Mimico-Queensway (160),2024,351,0,60,234,58,4,8,2,350
 Mimico-Queensway (160),2025,318,1,66,200,51,6,15,1,312
+Morningside (135),2014,166,0,24,111,33,3,0,0,164
+Morningside (135),2015,216,0,33,141,44,5,1,1,216
+Morningside (135),2016,224,0,46,123,59,7,2,3,224
+Morningside (135),2017,237,0,48,150,43,7,0,2,236
+Morningside (135),2018,227,1,56,143,37,14,1,1,225
+Morningside (135),2019,240,0,41,167,40,6,0,2,238
 Morningside (135),2020,149,1,23,110,18,3,2,1,147
 Morningside (135),2021,123,1,23,91,14,9,3,0,123
 Morningside (135),2022,177,0,29,132,28,1,3,0,177
 Morningside (135),2023,200,0,23,121,67,8,0,1,199
 Morningside (135),2024,199,0,26,120,56,7,0,0,198
 Morningside (135),2025,208,0,30,138,42,10,1,1,205
+Morningside Heights (144),2014,467,0,67,335,70,7,1,2,465
+Morningside Heights (144),2015,539,1,87,366,99,8,4,3,535
+Morningside Heights (144),2016,633,2,116,408,126,9,4,6,624
+Morningside Heights (144),2017,585,3,109,384,107,6,2,3,583
+Morningside Heights (144),2018,613,1,117,407,106,16,1,1,604
+Morningside Heights (144),2019,655,0,102,446,117,9,3,3,647
 Morningside Heights (144),2020,399,0,55,301,55,10,5,2,394
 Morningside Heights (144),2021,365,0,67,253,55,6,2,2,365
 Morningside Heights (144),2022,551,0,89,411,85,11,3,0,550
 Morningside Heights (144),2023,735,1,135,472,150,30,2,4,732
 Morningside Heights (144),2024,801,1,148,511,152,16,4,3,795
 Morningside Heights (144),2025,800,1,153,493,159,16,11,0,796
+Moss Park (73),2014,503,0,95,337,77,33,28,7,498
+Moss Park (73),2015,514,2,93,350,89,27,27,7,510
+Moss Park (73),2016,610,3,113,412,97,25,32,5,607
+Moss Park (73),2017,684,2,118,473,111,28,24,13,674
+Moss Park (73),2018,696,1,122,483,114,37,21,9,671
+Moss Park (73),2019,647,0,108,462,98,28,26,2,634
 Moss Park (73),2020,458,1,78,359,39,26,19,3,452
 Moss Park (73),2021,383,2,62,281,53,19,16,0,381
 Moss Park (73),2022,520,0,63,423,47,16,20,3,514
 Moss Park (73),2023,715,0,97,512,110,24,32,3,701
 Moss Park (73),2024,617,0,101,392,128,13,31,10,607
 Moss Park (73),2025,610,1,108,388,115,24,37,3,597
+Mount Dennis (115),2014,180,0,37,115,31,12,7,1,178
+Mount Dennis (115),2015,187,0,52,106,38,10,6,3,185
+Mount Dennis (115),2016,195,0,45,114,45,10,2,0,194
+Mount Dennis (115),2017,207,1,46,135,37,14,0,1,202
+Mount Dennis (115),2018,191,0,38,115,48,14,0,2,188
+Mount Dennis (115),2019,169,0,31,120,34,8,2,1,167
 Mount Dennis (115),2020,112,0,24,78,13,6,2,1,111
 Mount Dennis (115),2021,109,0,17,80,19,6,0,2,108
 Mount Dennis (115),2022,150,0,31,109,12,6,1,4,148
 Mount Dennis (115),2023,149,0,33,87,30,9,0,1,149
 Mount Dennis (115),2024,171,0,37,89,45,7,4,3,169
 Mount Dennis (115),2025,169,0,27,100,42,4,4,0,167
+Mount Olive-Silverstone-Jamestown (2),2014,328,0,66,185,79,15,4,3,327
+Mount Olive-Silverstone-Jamestown (2),2015,363,0,71,219,87,18,5,3,361
+Mount Olive-Silverstone-Jamestown (2),2016,388,0,74,218,106,15,3,2,385
+Mount Olive-Silverstone-Jamestown (2),2017,461,0,87,277,121,19,2,1,455
+Mount Olive-Silverstone-Jamestown (2),2018,485,2,77,298,122,14,5,1,469
+Mount Olive-Silverstone-Jamestown (2),2019,470,0,81,337,98,12,5,0,462
 Mount Olive-Silverstone-Jamestown (2),2020,264,2,35,195,44,11,5,1,261
 Mount Olive-Silverstone-Jamestown (2),2021,302,0,49,217,57,4,5,3,299
 Mount Olive-Silverstone-Jamestown (2),2022,380,1,45,311,25,13,3,0,379
 Mount Olive-Silverstone-Jamestown (2),2023,386,1,51,265,71,10,4,1,385
 Mount Olive-Silverstone-Jamestown (2),2024,347,0,59,200,88,10,8,0,345
 Mount Olive-Silverstone-Jamestown (2),2025,380,1,61,220,98,10,4,1,377
+Mount Pleasant East (99),2014,339,0,32,254,55,8,3,5,337
+Mount Pleasant East (99),2015,363,0,48,270,49,11,5,5,361
+Mount Pleasant East (99),2016,317,0,42,223,56,14,1,1,314
+Mount Pleasant East (99),2017,348,0,41,250,61,11,4,2,344
+Mount Pleasant East (99),2018,332,0,35,256,45,5,1,0,327
+Mount Pleasant East (99),2019,326,0,21,259,56,5,1,2,319
 Mount Pleasant East (99),2020,209,0,19,168,28,6,3,1,209
 Mount Pleasant East (99),2021,192,0,27,147,27,6,1,1,192
 Mount Pleasant East (99),2022,239,0,18,205,29,6,3,1,237
 Mount Pleasant East (99),2023,325,1,28,235,65,11,2,3,320
 Mount Pleasant East (99),2024,337,0,29,251,58,4,0,4,335
 Mount Pleasant East (99),2025,291,0,34,221,39,7,2,0,291
+New Toronto (18),2014,121,0,17,78,28,4,3,0,121
+New Toronto (18),2015,133,0,31,75,34,9,7,3,133
+New Toronto (18),2016,130,2,19,83,29,5,3,0,126
+New Toronto (18),2017,143,1,21,87,39,4,5,4,139
+New Toronto (18),2018,153,2,31,96,34,11,3,0,150
+New Toronto (18),2019,154,0,23,112,28,8,6,0,147
 New Toronto (18),2020,102,0,13,72,23,2,3,2,99
 New Toronto (18),2021,103,1,13,79,16,8,3,2,102
 New Toronto (18),2022,131,0,13,105,14,4,4,0,130
 New Toronto (18),2023,133,1,21,80,32,7,1,2,130
 New Toronto (18),2024,145,0,22,90,33,6,5,2,144
 New Toronto (18),2025,128,0,20,75,34,3,4,1,126
+Newtonbrook East (50),2014,462,1,89,318,59,18,4,3,460
+Newtonbrook East (50),2015,502,0,77,360,72,16,3,2,500
+Newtonbrook East (50),2016,609,2,106,415,96,15,3,1,601
+Newtonbrook East (50),2017,543,0,88,380,84,25,5,2,531
+Newtonbrook East (50),2018,528,1,77,362,93,13,3,1,517
+Newtonbrook East (50),2019,467,0,60,363,57,11,2,2,462
 Newtonbrook East (50),2020,218,0,27,177,21,7,1,3,213
 Newtonbrook East (50),2021,183,1,27,143,19,5,2,0,183
 Newtonbrook East (50),2022,279,0,46,226,12,9,3,0,279
 Newtonbrook East (50),2023,415,0,69,300,49,8,5,3,413
 Newtonbrook East (50),2024,468,1,90,305,73,8,8,1,464
 Newtonbrook East (50),2025,362,0,65,243,54,10,6,0,359
+Newtonbrook West (36),2014,423,1,83,277,62,21,6,0,419
+Newtonbrook West (36),2015,441,1,75,287,90,18,7,6,437
+Newtonbrook West (36),2016,481,1,82,317,96,15,8,2,478
+Newtonbrook West (36),2017,506,0,83,317,121,14,4,2,496
+Newtonbrook West (36),2018,479,0,74,314,102,21,1,2,458
+Newtonbrook West (36),2019,503,0,61,378,92,18,4,4,493
 Newtonbrook West (36),2020,244,0,29,187,35,8,3,0,239
 Newtonbrook West (36),2021,244,0,38,181,37,6,5,0,243
 Newtonbrook West (36),2022,343,0,35,289,25,7,3,0,341
 Newtonbrook West (36),2023,375,0,53,243,83,12,5,0,374
 Newtonbrook West (36),2024,399,0,63,238,98,20,3,0,395
 Newtonbrook West (36),2025,357,0,69,222,66,14,6,1,353
+North Riverdale (68),2014,230,1,36,148,46,13,5,6,229
+North Riverdale (68),2015,258,2,47,171,44,17,14,0,257
+North Riverdale (68),2016,270,0,45,180,50,8,16,7,269
+North Riverdale (68),2017,268,0,46,171,57,6,9,4,264
+North Riverdale (68),2018,250,0,31,177,47,3,7,1,246
+North Riverdale (68),2019,248,0,31,191,39,3,5,6,239
 North Riverdale (68),2020,162,0,17,131,18,3,5,1,161
 North Riverdale (68),2021,155,1,20,113,28,6,7,1,153
 North Riverdale (68),2022,207,0,23,168,20,5,10,2,206
 North Riverdale (68),2023,202,0,28,123,58,4,5,0,200
 North Riverdale (68),2024,186,0,22,129,36,5,9,0,184
 North Riverdale (68),2025,181,0,36,97,48,9,8,2,176
+North St.James Town (74),2014,121,0,25,75,22,8,9,2,120
+North St.James Town (74),2015,151,0,24,104,31,7,8,0,150
+North St.James Town (74),2016,134,0,22,86,32,9,5,0,132
+North St.James Town (74),2017,161,1,23,101,43,4,5,1,157
+North St.James Town (74),2018,135,0,17,93,30,5,5,0,133
+North St.James Town (74),2019,153,0,24,111,29,4,5,1,150
 North St.James Town (74),2020,90,0,14,61,23,10,5,1,89
 North St.James Town (74),2021,89,0,12,69,16,1,5,1,89
 North St.James Town (74),2022,108,0,13,85,14,8,6,0,106
 North St.James Town (74),2023,126,0,17,82,36,7,11,0,121
 North St.James Town (74),2024,133,0,22,79,34,11,9,1,130
 North St.James Town (74),2025,153,0,23,99,31,5,5,1,149
+North Toronto (173),2014,244,0,29,175,42,15,3,3,240
+North Toronto (173),2015,200,0,19,163,20,11,3,0,199
+North Toronto (173),2016,267,0,32,183,55,16,2,1,263
+North Toronto (173),2017,210,0,24,150,39,8,3,2,208
+North Toronto (173),2018,212,0,20,151,45,9,1,1,205
+North Toronto (173),2019,257,1,12,205,56,5,1,1,252
 North Toronto (173),2020,135,0,6,116,20,4,1,0,135
 North Toronto (173),2021,150,0,16,125,19,6,5,1,148
 North Toronto (173),2022,215,0,6,191,27,6,4,0,213
 North Toronto (173),2023,195,0,15,139,45,8,0,0,193
 North Toronto (173),2024,239,0,14,164,62,6,3,2,234
 North Toronto (173),2025,200,1,22,131,46,8,3,0,198
+O'Connor-Parkview (54),2014,188,1,24,136,29,6,6,2,186
+O'Connor-Parkview (54),2015,196,0,26,130,43,6,0,2,195
+O'Connor-Parkview (54),2016,157,0,22,115,26,3,7,0,157
+O'Connor-Parkview (54),2017,177,0,32,121,27,2,3,1,176
+O'Connor-Parkview (54),2018,178,0,29,111,44,5,1,2,175
+O'Connor-Parkview (54),2019,212,1,20,155,44,3,2,3,210
 O'Connor-Parkview (54),2020,131,0,10,108,18,2,0,1,130
 O'Connor-Parkview (54),2021,130,0,12,102,19,2,2,0,130
 O'Connor-Parkview (54),2022,149,0,17,123,16,6,2,0,149
 O'Connor-Parkview (54),2023,204,0,22,146,42,3,3,1,204
 O'Connor-Parkview (54),2024,194,0,24,138,34,7,1,1,191
 O'Connor-Parkview (54),2025,179,0,24,113,45,6,2,1,175
+Oakdale-Beverley Heights (154),2014,403,0,70,254,87,16,2,0,400
+Oakdale-Beverley Heights (154),2015,432,1,77,268,95,15,3,1,431
+Oakdale-Beverley Heights (154),2016,516,1,65,331,133,14,2,4,514
+Oakdale-Beverley Heights (154),2017,534,0,79,324,154,20,2,0,531
+Oakdale-Beverley Heights (154),2018,486,2,68,302,132,17,1,4,470
+Oakdale-Beverley Heights (154),2019,419,0,61,306,89,12,3,1,412
 Oakdale-Beverley Heights (154),2020,290,0,35,221,46,15,5,0,286
 Oakdale-Beverley Heights (154),2021,350,0,51,248,78,18,4,1,348
 Oakdale-Beverley Heights (154),2022,429,1,40,351,42,18,5,2,422
 Oakdale-Beverley Heights (154),2023,457,2,69,281,108,23,5,1,454
 Oakdale-Beverley Heights (154),2024,475,0,90,262,125,18,6,2,469
 Oakdale-Beverley Heights (154),2025,428,0,67,254,108,11,4,0,422
+Oakridge (121),2014,201,0,28,143,31,8,2,3,200
+Oakridge (121),2015,248,0,46,159,52,6,6,5,247
+Oakridge (121),2016,245,0,39,171,38,8,8,0,243
+Oakridge (121),2017,238,0,35,172,39,9,4,3,230
+Oakridge (121),2018,225,0,40,159,33,8,3,5,221
+Oakridge (121),2019,218,1,44,152,32,9,2,1,213
 Oakridge (121),2020,131,0,23,89,21,2,4,2,130
 Oakridge (121),2021,132,0,17,97,21,7,1,2,132
 Oakridge (121),2022,207,0,23,170,29,2,4,1,205
 Oakridge (121),2023,233,0,36,154,51,5,9,0,230
 Oakridge (121),2024,251,1,35,156,62,11,6,1,249
 Oakridge (121),2025,224,0,35,141,48,6,11,2,219
+Oakwood Village (107),2014,188,0,30,127,32,9,4,2,186
+Oakwood Village (107),2015,241,0,43,156,55,11,4,3,240
+Oakwood Village (107),2016,249,0,64,155,40,19,9,3,249
+Oakwood Village (107),2017,244,0,34,164,57,7,2,3,240
+Oakwood Village (107),2018,231,0,36,154,48,10,2,2,223
+Oakwood Village (107),2019,210,0,34,155,38,13,3,1,207
 Oakwood Village (107),2020,169,0,17,137,21,2,3,1,168
 Oakwood Village (107),2021,144,0,19,107,32,3,5,1,143
 Oakwood Village (107),2022,178,0,21,138,20,3,4,1,178
 Oakwood Village (107),2023,198,1,22,137,40,5,3,0,198
 Oakwood Village (107),2024,208,0,38,123,47,7,4,2,204
 Oakwood Village (107),2025,197,0,42,114,41,11,0,1,194
+Old East York (58),2014,409,2,47,332,31,13,2,3,407
+Old East York (58),2015,558,1,87,428,44,9,6,5,556
+Old East York (58),2016,534,0,98,386,59,9,8,2,532
+Old East York (58),2017,494,0,88,370,45,6,2,4,490
+Old East York (58),2018,404,0,76,291,46,11,2,1,396
+Old East York (58),2019,449,0,64,352,40,8,2,1,444
 Old East York (58),2020,296,0,36,247,21,7,5,2,295
 Old East York (58),2021,303,2,35,236,39,5,4,2,302
 Old East York (58),2022,442,2,59,354,39,5,4,1,442
 Old East York (58),2023,503,0,85,337,91,11,7,6,499
 Old East York (58),2024,504,1,80,348,77,9,6,4,502
 Old East York (58),2025,496,0,84,345,70,6,4,2,493
+Palmerston-Little Italy (80),2014,225,0,45,131,55,9,31,2,225
+Palmerston-Little Italy (80),2015,214,0,42,131,47,9,23,10,210
+Palmerston-Little Italy (80),2016,259,1,49,154,62,13,29,1,255
+Palmerston-Little Italy (80),2017,220,1,36,151,41,8,17,4,215
+Palmerston-Little Italy (80),2018,213,0,29,138,49,7,13,3,204
+Palmerston-Little Italy (80),2019,235,0,23,186,45,10,12,3,225
 Palmerston-Little Italy (80),2020,147,0,16,110,27,9,12,2,143
 Palmerston-Little Italy (80),2021,160,0,16,131,26,6,10,0,157
 Palmerston-Little Italy (80),2022,174,0,20,140,19,6,10,1,167
 Palmerston-Little Italy (80),2023,205,0,32,130,46,6,26,0,196
 Palmerston-Little Italy (80),2024,250,0,42,146,65,12,26,1,246
 Palmerston-Little Italy (80),2025,223,0,37,120,67,5,23,2,214
+Parkwoods-O'Connor Hills (149),2014,308,0,43,221,48,8,1,2,307
+Parkwoods-O'Connor Hills (149),2015,346,0,49,262,37,7,0,3,342
+Parkwoods-O'Connor Hills (149),2016,328,1,52,242,36,7,1,1,327
+Parkwoods-O'Connor Hills (149),2017,374,0,68,268,42,5,1,2,372
+Parkwoods-O'Connor Hills (149),2018,302,0,46,228,37,5,0,0,296
+Parkwoods-O'Connor Hills (149),2019,333,1,45,245,50,4,0,2,327
 Parkwoods-O'Connor Hills (149),2020,162,0,26,112,25,2,2,0,162
 Parkwoods-O'Connor Hills (149),2021,197,0,34,146,19,4,2,0,197
 Parkwoods-O'Connor Hills (149),2022,199,0,30,163,13,2,0,3,198
 Parkwoods-O'Connor Hills (149),2023,224,0,29,152,47,6,1,2,221
 Parkwoods-O'Connor Hills (149),2024,229,0,38,138,55,2,0,2,228
 Parkwoods-O'Connor Hills (149),2025,218,0,36,127,57,5,0,2,217
+Pelmo Park-Humberlea (23),2014,176,0,27,114,36,5,0,1,176
+Pelmo Park-Humberlea (23),2015,229,0,34,157,46,2,3,1,229
+Pelmo Park-Humberlea (23),2016,266,0,45,159,72,6,4,1,266
+Pelmo Park-Humberlea (23),2017,288,0,39,189,74,5,2,1,287
+Pelmo Park-Humberlea (23),2018,302,0,42,204,71,8,0,2,291
+Pelmo Park-Humberlea (23),2019,251,0,31,186,48,7,3,1,248
 Pelmo Park-Humberlea (23),2020,165,0,13,129,33,3,0,1,163
 Pelmo Park-Humberlea (23),2021,176,0,22,132,40,3,4,1,174
 Pelmo Park-Humberlea (23),2022,244,2,20,200,23,6,5,0,243
 Pelmo Park-Humberlea (23),2023,232,0,46,142,45,2,2,2,229
 Pelmo Park-Humberlea (23),2024,261,0,54,152,56,7,5,1,260
 Pelmo Park-Humberlea (23),2025,246,1,55,139,51,5,3,1,244
+Playter Estates-Danforth (67),2014,116,0,18,77,23,3,6,2,116
+Playter Estates-Danforth (67),2015,122,0,24,75,27,8,6,4,122
+Playter Estates-Danforth (67),2016,124,0,20,58,47,7,4,3,121
+Playter Estates-Danforth (67),2017,140,0,26,92,27,1,5,3,138
+Playter Estates-Danforth (67),2018,120,0,23,70,29,5,6,1,114
+Playter Estates-Danforth (67),2019,138,0,13,108,22,2,5,1,137
 Playter Estates-Danforth (67),2020,99,0,18,73,13,2,12,0,97
 Playter Estates-Danforth (67),2021,82,0,10,59,17,1,5,2,81
 Playter Estates-Danforth (67),2022,138,0,12,114,24,3,1,0,137
 Playter Estates-Danforth (67),2023,221,0,22,147,62,1,14,0,221
 Playter Estates-Danforth (67),2024,202,0,35,124,45,3,13,0,199
 Playter Estates-Danforth (67),2025,204,0,33,126,45,6,9,1,201
+Pleasant View (46),2014,196,0,26,144,27,6,3,1,195
+Pleasant View (46),2015,210,0,28,153,29,4,3,0,209
+Pleasant View (46),2016,237,0,33,171,39,5,0,1,235
+Pleasant View (46),2017,228,0,35,172,23,3,3,3,226
+Pleasant View (46),2018,207,0,31,144,34,4,1,2,205
+Pleasant View (46),2019,234,0,29,181,30,5,0,0,232
 Pleasant View (46),2020,115,0,17,90,12,5,0,0,112
 Pleasant View (46),2021,100,0,15,71,16,4,0,1,99
 Pleasant View (46),2022,175,0,14,150,17,3,3,1,174
 Pleasant View (46),2023,192,0,20,149,28,6,2,0,190
 Pleasant View (46),2024,208,0,34,133,43,4,4,0,207
 Pleasant View (46),2025,176,0,46,100,31,5,5,0,176
+Princess-Rosethorn (10),2014,128,0,19,91,19,5,3,0,125
+Princess-Rosethorn (10),2015,129,0,19,93,20,3,1,0,129
+Princess-Rosethorn (10),2016,106,0,20,72,14,2,1,0,106
+Princess-Rosethorn (10),2017,148,0,26,103,21,1,2,0,146
+Princess-Rosethorn (10),2018,136,0,18,94,25,1,0,1,131
+Princess-Rosethorn (10),2019,139,0,21,109,19,0,4,0,138
 Princess-Rosethorn (10),2020,71,0,12,56,5,0,3,1,71
 Princess-Rosethorn (10),2021,68,1,10,49,15,1,2,0,67
 Princess-Rosethorn (10),2022,124,0,15,107,2,2,0,0,123
 Princess-Rosethorn (10),2023,102,0,13,76,13,1,1,1,100
 Princess-Rosethorn (10),2024,102,0,8,71,23,1,2,0,100
 Princess-Rosethorn (10),2025,93,0,10,67,16,1,0,1,92
+Regent Park (72),2014,164,1,23,113,28,7,10,3,162
+Regent Park (72),2015,162,0,34,104,27,9,8,2,160
+Regent Park (72),2016,219,1,39,140,45,12,9,3,218
+Regent Park (72),2017,157,0,31,100,32,9,8,1,155
+Regent Park (72),2018,190,0,32,122,43,3,9,4,183
+Regent Park (72),2019,171,1,32,111,31,7,5,2,168
 Regent Park (72),2020,120,0,24,89,16,10,8,2,117
 Regent Park (72),2021,126,0,24,90,19,6,7,2,125
 Regent Park (72),2022,138,0,14,111,21,4,5,0,135
 Regent Park (72),2023,172,0,23,117,34,14,17,1,167
 Regent Park (72),2024,157,2,23,106,29,9,13,2,155
 Regent Park (72),2025,171,0,29,98,46,11,16,2,165
+Rexdale-Kipling (4),2014,166,1,25,120,20,7,3,0,165
+Rexdale-Kipling (4),2015,204,0,34,138,39,10,2,0,203
+Rexdale-Kipling (4),2016,217,1,43,138,37,8,2,1,216
+Rexdale-Kipling (4),2017,233,0,46,153,43,4,3,1,230
+Rexdale-Kipling (4),2018,246,0,40,174,38,7,0,2,242
+Rexdale-Kipling (4),2019,267,0,28,213,40,5,0,1,260
 Rexdale-Kipling (4),2020,144,0,28,95,25,3,4,0,144
 Rexdale-Kipling (4),2021,150,0,29,112,14,5,3,0,150
 Rexdale-Kipling (4),2022,186,0,25,153,11,2,1,1,184
 Rexdale-Kipling (4),2023,200,0,33,133,34,3,1,0,199
 Rexdale-Kipling (4),2024,225,0,41,156,28,3,1,1,224
 Rexdale-Kipling (4),2025,200,1,34,138,27,4,3,1,197
+Rockcliffe-Smythe (111),2014,307,0,46,223,39,9,1,2,306
+Rockcliffe-Smythe (111),2015,379,0,65,255,67,10,2,0,379
+Rockcliffe-Smythe (111),2016,384,0,78,248,72,17,5,2,380
+Rockcliffe-Smythe (111),2017,391,0,62,271,66,10,4,3,386
+Rockcliffe-Smythe (111),2018,397,0,52,277,83,12,3,2,383
+Rockcliffe-Smythe (111),2019,369,1,41,287,64,15,4,2,367
 Rockcliffe-Smythe (111),2020,284,0,30,227,40,8,3,4,281
 Rockcliffe-Smythe (111),2021,283,0,30,230,42,5,3,2,283
 Rockcliffe-Smythe (111),2022,354,0,33,310,15,9,5,0,354
 Rockcliffe-Smythe (111),2023,378,0,59,251,69,13,6,3,374
 Rockcliffe-Smythe (111),2024,352,1,70,205,77,12,6,0,350
 Rockcliffe-Smythe (111),2025,330,0,44,211,75,12,6,3,327
+Roncesvalles (86),2014,295,0,47,191,62,7,19,4,291
+Roncesvalles (86),2015,360,0,55,236,78,19,17,10,354
+Roncesvalles (86),2016,341,0,50,228,74,18,10,5,337
+Roncesvalles (86),2017,288,0,36,193,63,10,8,2,283
+Roncesvalles (86),2018,344,0,42,243,66,7,9,2,329
+Roncesvalles (86),2019,349,0,35,273,65,8,8,4,341
 Roncesvalles (86),2020,206,0,22,156,39,5,10,5,200
 Roncesvalles (86),2021,196,0,23,157,35,10,6,1,194
 Roncesvalles (86),2022,286,0,27,243,24,8,18,3,283
 Roncesvalles (86),2023,365,0,55,233,79,15,21,5,355
 Roncesvalles (86),2024,329,1,42,195,94,14,17,3,318
 Roncesvalles (86),2025,329,0,59,192,78,14,18,3,316
+Rosedale-Moore Park (98),2014,590,0,65,420,108,20,14,4,587
+Rosedale-Moore Park (98),2015,634,1,77,471,89,16,20,4,628
+Rosedale-Moore Park (98),2016,620,2,95,457,84,19,16,2,615
+Rosedale-Moore Park (98),2017,634,2,79,472,92,21,11,5,626
+Rosedale-Moore Park (98),2018,680,1,86,500,106,21,10,8,666
+Rosedale-Moore Park (98),2019,730,1,71,572,121,24,14,8,717
 Rosedale-Moore Park (98),2020,362,0,34,298,42,7,7,4,355
 Rosedale-Moore Park (98),2021,365,0,42,289,43,6,17,3,357
 Rosedale-Moore Park (98),2022,489,1,40,418,43,12,17,2,481
 Rosedale-Moore Park (98),2023,580,1,76,407,105,12,37,3,568
 Rosedale-Moore Park (98),2024,603,1,96,405,104,15,44,3,593
 Rosedale-Moore Park (98),2025,557,0,91,370,97,8,26,3,538
+Runnymede-Bloor West Village (89),2014,217,0,29,141,50,11,2,2,217
+Runnymede-Bloor West Village (89),2015,209,0,29,139,43,12,3,1,209
+Runnymede-Bloor West Village (89),2016,225,1,37,158,33,11,2,1,223
+Runnymede-Bloor West Village (89),2017,264,1,37,184,48,8,4,1,259
+Runnymede-Bloor West Village (89),2018,250,0,27,175,50,5,4,2,243
+Runnymede-Bloor West Village (89),2019,240,0,19,189,43,7,3,2,238
 Runnymede-Bloor West Village (89),2020,142,0,15,113,25,5,4,0,139
 Runnymede-Bloor West Village (89),2021,135,0,11,114,17,3,4,0,134
 Runnymede-Bloor West Village (89),2022,180,0,11,158,12,3,7,1,176
 Runnymede-Bloor West Village (89),2023,240,0,33,168,39,6,5,0,235
 Runnymede-Bloor West Village (89),2024,225,0,36,146,43,4,6,3,220
 Runnymede-Bloor West Village (89),2025,191,0,24,127,40,6,4,2,186
+Rustic (28),2014,276,0,45,203,31,9,0,0,276
+Rustic (28),2015,317,1,53,235,34,6,2,2,317
+Rustic (28),2016,287,0,61,187,45,8,5,2,284
+Rustic (28),2017,293,0,50,223,38,7,0,3,293
+Rustic (28),2018,254,0,42,174,45,6,1,2,246
+Rustic (28),2019,269,0,32,223,30,3,0,1,265
 Rustic (28),2020,188,0,27,152,21,6,1,4,185
 Rustic (28),2021,161,0,17,128,20,5,0,1,160
 Rustic (28),2022,227,0,34,184,10,5,2,1,226
 Rustic (28),2023,265,0,47,175,44,5,2,0,264
 Rustic (28),2024,271,0,67,159,45,9,4,0,271
 Rustic (28),2025,260,0,48,182,31,4,5,2,257
+Scarborough Village (139),2014,165,1,26,105,35,8,3,1,164
+Scarborough Village (139),2015,205,1,40,128,42,11,3,1,204
+Scarborough Village (139),2016,199,1,37,123,45,16,1,1,193
+Scarborough Village (139),2017,234,0,44,159,40,11,3,1,232
+Scarborough Village (139),2018,193,0,38,115,54,10,2,1,184
+Scarborough Village (139),2019,209,0,27,134,56,6,0,2,205
 Scarborough Village (139),2020,139,0,22,100,24,6,2,1,137
 Scarborough Village (139),2021,141,0,13,112,22,3,2,2,140
 Scarborough Village (139),2022,209,0,31,160,28,10,2,0,208
 Scarborough Village (139),2023,191,1,31,114,54,8,1,1,190
 Scarborough Village (139),2024,218,0,36,136,50,10,5,1,216
 Scarborough Village (139),2025,226,1,33,144,50,10,4,3,225
+South Eglinton-Davisville (174),2014,172,0,15,121,38,8,3,2,172
+South Eglinton-Davisville (174),2015,166,0,11,117,40,4,1,3,163
+South Eglinton-Davisville (174),2016,175,0,15,130,30,7,1,1,174
+South Eglinton-Davisville (174),2017,173,0,27,117,31,11,2,2,172
+South Eglinton-Davisville (174),2018,196,0,24,135,39,8,2,3,186
+South Eglinton-Davisville (174),2019,154,0,15,121,22,5,0,1,151
 South Eglinton-Davisville (174),2020,103,0,13,79,11,5,0,1,101
 South Eglinton-Davisville (174),2021,109,0,7,84,23,1,1,1,107
 South Eglinton-Davisville (174),2022,136,0,9,118,17,6,5,0,131
 South Eglinton-Davisville (174),2023,174,3,12,117,44,6,4,1,174
 South Eglinton-Davisville (174),2024,176,0,19,118,40,9,5,1,175
 South Eglinton-Davisville (174),2025,160,0,19,98,43,7,3,1,159
+South Parkdale (85),2014,638,2,79,477,85,23,9,8,631
+South Parkdale (85),2015,869,1,107,662,114,12,15,9,863
+South Parkdale (85),2016,888,2,132,655,119,20,10,12,882
+South Parkdale (85),2017,901,2,139,640,143,20,20,12,885
+South Parkdale (85),2018,877,2,109,665,120,11,5,6,858
+South Parkdale (85),2019,802,1,70,668,111,18,5,6,791
 South Parkdale (85),2020,457,0,45,378,51,10,11,4,451
 South Parkdale (85),2021,474,0,41,405,47,11,5,3,474
 South Parkdale (85),2022,632,2,54,534,52,14,8,2,627
 South Parkdale (85),2023,785,1,103,539,152,11,12,4,773
 South Parkdale (85),2024,962,0,153,667,144,12,14,6,952
 South Parkdale (85),2025,866,1,134,574,159,19,8,6,856
+South Riverdale (70),2014,709,0,83,496,135,22,23,14,696
+South Riverdale (70),2015,818,2,121,574,140,31,27,12,812
+South Riverdale (70),2016,847,1,133,583,159,19,31,13,837
+South Riverdale (70),2017,975,0,151,678,172,26,26,9,964
+South Riverdale (70),2018,986,2,144,692,171,23,32,12,948
+South Riverdale (70),2019,954,0,116,689,194,23,23,12,932
 South Riverdale (70),2020,599,0,79,464,76,14,22,6,593
 South Riverdale (70),2021,580,1,79,427,91,18,24,6,575
 South Riverdale (70),2022,608,0,73,489,84,20,17,4,598
 South Riverdale (70),2023,782,1,97,512,196,15,34,3,763
 South Riverdale (70),2024,789,1,115,497,181,17,27,8,779
 South Riverdale (70),2025,726,0,101,470,157,14,22,4,719
+St Lawrence-East Bayfront-The Islands (166),2014,692,0,79,496,124,23,8,7,688
+St Lawrence-East Bayfront-The Islands (166),2015,844,0,121,616,126,27,15,14,832
+St Lawrence-East Bayfront-The Islands (166),2016,952,2,145,668,154,22,29,13,944
+St Lawrence-East Bayfront-The Islands (166),2017,1040,1,130,789,142,29,15,11,1026
+St Lawrence-East Bayfront-The Islands (166),2018,1135,0,113,851,186,22,13,12,1098
+St Lawrence-East Bayfront-The Islands (166),2019,1253,0,121,1019,161,24,14,8,1227
 St Lawrence-East Bayfront-The Islands (166),2020,523,2,39,432,58,10,17,3,517
 St Lawrence-East Bayfront-The Islands (166),2021,681,2,68,550,88,14,17,9,676
 St Lawrence-East Bayfront-The Islands (166),2022,1054,0,87,903,95,19,17,6,1047
 St Lawrence-East Bayfront-The Islands (166),2023,1080,1,102,804,182,21,23,7,1060
 St Lawrence-East Bayfront-The Islands (166),2024,961,5,106,657,202,12,22,3,950
 St Lawrence-East Bayfront-The Islands (166),2025,904,1,117,603,186,18,28,6,893
+St.Andrew-Windfields (40),2014,682,0,75,529,83,7,3,4,675
+St.Andrew-Windfields (40),2015,726,0,95,544,92,11,2,6,721
+St.Andrew-Windfields (40),2016,698,0,112,504,85,11,3,1,694
+St.Andrew-Windfields (40),2017,769,2,118,572,84,7,5,4,764
+St.Andrew-Windfields (40),2018,716,0,83,572,67,10,4,3,702
+St.Andrew-Windfields (40),2019,734,0,79,605,65,7,2,2,726
 St.Andrew-Windfields (40),2020,329,0,34,264,38,5,0,1,327
 St.Andrew-Windfields (40),2021,320,0,46,246,38,6,4,1,319
 St.Andrew-Windfields (40),2022,475,0,47,405,31,8,4,1,474
 St.Andrew-Windfields (40),2023,634,0,82,451,112,9,2,1,634
 St.Andrew-Windfields (40),2024,691,0,100,499,94,12,6,3,687
 St.Andrew-Windfields (40),2025,591,0,94,403,98,9,11,3,587
+Steeles (116),2014,410,1,59,291,60,9,3,0,410
+Steeles (116),2015,397,0,91,258,52,17,8,1,395
+Steeles (116),2016,385,0,77,265,44,11,5,0,385
+Steeles (116),2017,392,0,75,284,36,9,4,2,390
+Steeles (116),2018,350,2,68,239,45,13,3,2,342
+Steeles (116),2019,368,2,74,247,50,14,5,0,363
 Steeles (116),2020,158,0,26,115,19,6,3,1,155
 Steeles (116),2021,136,1,22,101,16,4,5,0,136
 Steeles (116),2022,206,0,33,164,14,2,4,1,205
 Steeles (116),2023,241,0,28,174,44,9,4,1,240
 Steeles (116),2024,226,0,40,153,37,5,5,0,225
 Steeles (116),2025,237,0,46,146,45,7,7,0,234
+Stonegate-Queensway (16),2014,471,0,68,344,66,16,9,3,468
+Stonegate-Queensway (16),2015,514,1,62,363,97,9,7,2,509
+Stonegate-Queensway (16),2016,515,0,79,362,84,6,11,5,514
+Stonegate-Queensway (16),2017,498,0,62,362,90,7,9,5,486
+Stonegate-Queensway (16),2018,531,0,70,398,81,17,4,2,508
+Stonegate-Queensway (16),2019,535,1,57,425,79,12,7,3,524
 Stonegate-Queensway (16),2020,345,0,39,282,36,5,8,3,341
 Stonegate-Queensway (16),2021,290,1,29,237,44,6,4,1,288
 Stonegate-Queensway (16),2022,430,1,49,356,26,14,6,3,425
 Stonegate-Queensway (16),2023,476,0,70,316,92,16,12,2,474
 Stonegate-Queensway (16),2024,469,0,74,299,99,8,12,2,462
 Stonegate-Queensway (16),2025,547,0,78,363,107,12,7,2,541
+Tam O'Shanter-Sullivan (118),2014,487,1,66,331,89,14,7,4,483
+Tam O'Shanter-Sullivan (118),2015,531,0,81,359,96,14,6,7,527
+Tam O'Shanter-Sullivan (118),2016,632,1,95,445,100,13,4,2,630
+Tam O'Shanter-Sullivan (118),2017,628,0,89,429,118,16,2,2,626
+Tam O'Shanter-Sullivan (118),2018,561,1,95,371,103,16,5,6,546
+Tam O'Shanter-Sullivan (118),2019,606,1,85,435,99,15,5,2,593
 Tam O'Shanter-Sullivan (118),2020,359,2,43,278,44,13,3,2,357
 Tam O'Shanter-Sullivan (118),2021,287,2,36,214,42,9,7,1,287
 Tam O'Shanter-Sullivan (118),2022,420,0,42,351,49,4,5,3,417
 Tam O'Shanter-Sullivan (118),2023,481,0,56,337,102,11,6,0,478
 Tam O'Shanter-Sullivan (118),2024,466,2,62,298,112,11,4,2,461
 Tam O'Shanter-Sullivan (118),2025,486,1,68,323,95,11,3,1,484
+Taylor-Massey (61),2014,94,0,20,55,19,6,2,0,94
+Taylor-Massey (61),2015,110,0,17,61,35,7,3,1,107
+Taylor-Massey (61),2016,97,1,14,58,27,5,4,1,97
+Taylor-Massey (61),2017,102,0,16,64,28,6,1,1,101
+Taylor-Massey (61),2018,119,0,13,81,32,4,1,0,115
+Taylor-Massey (61),2019,140,0,22,82,46,4,4,0,138
 Taylor-Massey (61),2020,80,0,10,61,10,3,3,1,77
 Taylor-Massey (61),2021,64,0,8,42,18,0,1,0,64
 Taylor-Massey (61),2022,106,0,11,83,22,2,2,0,106
 Taylor-Massey (61),2023,127,1,11,85,35,6,3,0,126
 Taylor-Massey (61),2024,150,0,14,91,47,9,1,1,146
 Taylor-Massey (61),2025,137,0,16,81,41,4,3,2,136
+The Beaches (63),2014,317,0,37,209,73,13,7,7,317
+The Beaches (63),2015,341,0,44,239,62,4,11,5,339
+The Beaches (63),2016,339,1,39,237,69,6,4,6,337
+The Beaches (63),2017,478,0,65,337,86,10,6,3,472
+The Beaches (63),2018,466,0,47,349,75,4,4,1,454
+The Beaches (63),2019,553,0,69,414,90,10,10,12,541
 The Beaches (63),2020,318,0,24,262,38,5,5,1,316
 The Beaches (63),2021,317,0,43,231,52,11,15,5,312
 The Beaches (63),2022,338,1,20,285,63,4,11,4,335
 The Beaches (63),2023,324,0,27,225,82,2,8,0,322
 The Beaches (63),2024,281,0,26,187,71,6,5,4,277
 The Beaches (63),2025,356,0,37,208,111,6,7,3,354
+Thistletown-Beaumond Heights (3),2014,218,0,41,141,39,8,1,0,217
+Thistletown-Beaumond Heights (3),2015,243,0,59,143,47,8,4,0,242
+Thistletown-Beaumond Heights (3),2016,256,1,59,157,47,8,1,0,255
+Thistletown-Beaumond Heights (3),2017,272,0,60,174,48,11,1,1,268
+Thistletown-Beaumond Heights (3),2018,271,0,41,193,44,3,2,2,261
+Thistletown-Beaumond Heights (3),2019,314,1,38,236,57,5,2,1,306
 Thistletown-Beaumond Heights (3),2020,193,0,28,149,25,5,1,1,192
 Thistletown-Beaumond Heights (3),2021,196,1,26,147,35,4,1,0,195
 Thistletown-Beaumond Heights (3),2022,268,0,40,217,13,9,2,0,264
 Thistletown-Beaumond Heights (3),2023,261,0,46,176,40,3,1,1,259
 Thistletown-Beaumond Heights (3),2024,252,0,56,142,54,5,4,0,249
 Thistletown-Beaumond Heights (3),2025,236,0,47,146,44,10,4,1,236
+Thorncliffe Park (55),2014,318,0,22,221,77,10,3,1,317
+Thorncliffe Park (55),2015,348,0,33,233,87,11,3,1,345
+Thorncliffe Park (55),2016,333,0,47,229,63,10,7,1,330
+Thorncliffe Park (55),2017,329,0,55,206,74,12,4,2,326
+Thorncliffe Park (55),2018,344,0,29,242,74,5,2,1,341
+Thorncliffe Park (55),2019,403,0,43,277,95,17,2,1,396
 Thorncliffe Park (55),2020,244,0,17,193,36,6,4,0,242
 Thorncliffe Park (55),2021,234,0,25,161,56,4,5,0,231
 Thorncliffe Park (55),2022,349,0,42,287,41,10,7,0,346
 Thorncliffe Park (55),2023,428,0,32,279,133,14,2,3,423
 Thorncliffe Park (55),2024,439,0,50,269,121,11,5,1,432
 Thorncliffe Park (55),2025,393,0,47,232,115,13,3,2,389
+Trinity-Bellwoods (81),2014,361,1,65,222,82,17,35,7,354
+Trinity-Bellwoods (81),2015,345,0,63,211,81,18,36,5,339
+Trinity-Bellwoods (81),2016,380,0,63,240,95,19,27,4,377
+Trinity-Bellwoods (81),2017,371,0,47,245,88,11,20,7,367
+Trinity-Bellwoods (81),2018,412,0,49,284,96,16,17,4,397
+Trinity-Bellwoods (81),2019,388,0,36,287,93,10,17,5,380
 Trinity-Bellwoods (81),2020,214,0,28,158,38,9,16,1,210
 Trinity-Bellwoods (81),2021,226,0,28,165,48,6,18,0,223
 Trinity-Bellwoods (81),2022,281,0,22,238,26,7,19,2,271
 Trinity-Bellwoods (81),2023,384,0,53,245,90,8,34,0,379
 Trinity-Bellwoods (81),2024,431,0,66,264,105,14,36,4,413
 Trinity-Bellwoods (81),2025,431,0,54,279,98,13,29,3,417
+University (79),2014,280,0,49,176,57,7,29,8,276
+University (79),2015,272,0,50,171,59,15,22,5,268
+University (79),2016,340,0,75,203,67,17,25,7,336
+University (79),2017,325,0,68,218,53,20,27,3,316
+University (79),2018,328,1,48,224,73,15,16,2,312
+University (79),2019,327,1,38,252,51,13,17,2,318
 University (79),2020,145,0,20,108,23,3,12,0,145
 University (79),2021,162,0,17,123,29,3,11,1,160
 University (79),2022,236,0,26,194,25,8,14,1,229
 University (79),2023,307,0,34,224,54,7,23,2,295
 University (79),2024,298,0,46,186,69,9,25,3,286
 University (79),2025,239,0,46,138,55,10,22,1,230
+Victoria Village (43),2014,182,0,32,127,24,7,2,1,178
+Victoria Village (43),2015,194,0,19,144,36,3,1,2,191
+Victoria Village (43),2016,202,0,38,146,23,5,3,1,200
+Victoria Village (43),2017,236,0,37,167,36,2,1,4,233
+Victoria Village (43),2018,209,0,29,148,38,1,1,2,208
+Victoria Village (43),2019,209,0,31,145,36,5,2,0,206
 Victoria Village (43),2020,113,0,11,89,20,3,1,1,112
 Victoria Village (43),2021,109,0,10,87,14,2,0,0,108
 Victoria Village (43),2022,142,1,19,116,12,4,2,1,141
 Victoria Village (43),2023,184,0,21,129,36,3,1,0,182
 Victoria Village (43),2024,205,0,21,136,48,2,1,1,203
 Victoria Village (43),2025,187,0,24,124,42,2,2,1,186
+Wellington Place (164),2014,641,0,86,427,139,30,34,11,634
+Wellington Place (164),2015,693,0,107,446,156,31,42,17,684
+Wellington Place (164),2016,776,0,121,520,166,40,42,9,764
+Wellington Place (164),2017,885,0,105,616,186,27,44,6,865
+Wellington Place (164),2018,867,0,85,648,172,29,33,8,843
+Wellington Place (164),2019,860,0,69,683,151,28,16,10,837
 Wellington Place (164),2020,353,0,50,265,57,26,16,3,349
 Wellington Place (164),2021,398,0,41,309,70,12,27,4,395
 Wellington Place (164),2022,624,1,52,511,78,23,35,6,603
 Wellington Place (164),2023,694,0,72,478,161,18,43,9,676
 Wellington Place (164),2024,685,0,88,435,170,20,41,2,670
 Wellington Place (164),2025,701,1,93,466,146,24,46,6,683
+West Hill (136),2014,386,0,60,268,60,21,6,0,384
+West Hill (136),2015,466,0,81,306,89,15,4,4,462
+West Hill (136),2016,435,0,86,272,91,13,5,3,432
+West Hill (136),2017,468,0,93,311,77,17,5,3,465
+West Hill (136),2018,516,0,97,349,89,24,5,4,508
+West Hill (136),2019,461,1,73,319,84,15,9,5,450
 West Hill (136),2020,357,2,72,252,46,15,11,3,352
 West Hill (136),2021,357,0,67,238,61,7,6,3,356
 West Hill (136),2022,418,0,79,313,53,21,2,3,416
 West Hill (136),2023,495,0,78,327,104,10,5,0,493
 West Hill (136),2024,525,0,84,338,106,19,4,1,520
 West Hill (136),2025,528,4,87,347,96,23,7,4,523
+West Humber-Clairville (1),2014,1222,2,184,789,261,29,7,5,1210
+West Humber-Clairville (1),2015,1336,1,230,860,272,26,11,10,1330
+West Humber-Clairville (1),2016,1489,2,295,943,292,31,16,9,1476
+West Humber-Clairville (1),2017,1562,1,294,950,353,32,6,7,1541
+West Humber-Clairville (1),2018,1636,1,248,1067,372,28,11,9,1587
+West Humber-Clairville (1),2019,1604,3,193,1229,272,31,10,7,1573
 West Humber-Clairville (1),2020,890,0,107,672,144,15,4,2,881
 West Humber-Clairville (1),2021,837,2,129,627,141,11,8,2,832
 West Humber-Clairville (1),2022,1284,2,147,1069,78,22,8,4,1278
 West Humber-Clairville (1),2023,1366,2,224,902,245,30,11,2,1359
 West Humber-Clairville (1),2024,1397,2,272,806,320,29,7,5,1387
 West Humber-Clairville (1),2025,1345,0,245,813,288,24,10,6,1337
+West Queen West (162),2014,188,0,30,123,38,10,13,3,184
+West Queen West (162),2015,235,0,51,143,46,16,21,4,232
+West Queen West (162),2016,239,0,30,170,46,9,11,1,235
+West Queen West (162),2017,213,0,39,132,52,15,9,4,208
+West Queen West (162),2018,234,0,25,179,41,5,9,3,225
+West Queen West (162),2019,241,0,26,186,47,11,11,5,234
 West Queen West (162),2020,122,0,16,86,28,2,12,2,120
 West Queen West (162),2021,123,0,17,96,18,10,9,0,121
 West Queen West (162),2022,158,0,18,122,23,6,20,2,152
 West Queen West (162),2023,147,0,16,101,32,3,8,1,143
 West Queen West (162),2024,155,0,19,95,41,6,13,2,145
 West Queen West (162),2025,136,1,26,69,42,7,14,1,128
+West Rouge (143),2014,228,0,39,151,38,5,3,2,226
+West Rouge (143),2015,254,1,27,182,48,7,3,0,252
+West Rouge (143),2016,275,0,46,189,47,10,2,3,275
+West Rouge (143),2017,241,0,48,164,42,9,3,4,238
+West Rouge (143),2018,294,0,42,205,56,9,3,0,288
+West Rouge (143),2019,287,1,42,208,42,4,0,0,282
 West Rouge (143),2020,175,0,27,133,19,6,2,2,172
 West Rouge (143),2021,185,1,32,127,32,6,2,2,183
 West Rouge (143),2022,214,0,28,169,30,5,5,0,211
 West Rouge (143),2023,247,0,34,168,51,6,1,0,245
 West Rouge (143),2024,260,1,42,162,57,2,4,3,260
 West Rouge (143),2025,263,0,35,162,67,4,5,1,260
+Westminster-Branson (35),2014,134,1,30,76,27,11,3,1,133
+Westminster-Branson (35),2015,139,1,22,83,37,8,1,1,139
+Westminster-Branson (35),2016,148,0,24,86,41,7,4,1,145
+Westminster-Branson (35),2017,128,0,28,68,37,10,4,0,127
+Westminster-Branson (35),2018,143,0,15,91,39,6,2,1,142
+Westminster-Branson (35),2019,117,0,20,86,26,4,1,0,114
 Westminster-Branson (35),2020,100,0,18,67,23,6,4,0,99
 Westminster-Branson (35),2021,75,0,11,52,19,2,4,0,75
 Westminster-Branson (35),2022,109,1,14,84,11,6,4,0,108
 Westminster-Branson (35),2023,105,0,11,73,21,4,0,1,104
 Westminster-Branson (35),2024,116,0,15,64,37,3,4,0,114
 Westminster-Branson (35),2025,131,0,26,74,32,9,3,0,130
+Weston-Pelham Park (91),2014,138,0,21,86,34,4,5,0,136
+Weston-Pelham Park (91),2015,143,0,26,81,40,8,8,1,143
+Weston-Pelham Park (91),2016,149,0,22,93,38,6,2,1,147
+Weston-Pelham Park (91),2017,179,0,19,128,39,5,3,1,177
+Weston-Pelham Park (91),2018,172,0,31,114,32,7,7,0,167
+Weston-Pelham Park (91),2019,234,0,23,184,37,8,5,1,232
 Weston-Pelham Park (91),2020,135,0,16,101,26,4,4,0,135
 Weston-Pelham Park (91),2021,118,0,11,97,23,6,3,0,116
 Weston-Pelham Park (91),2022,129,0,16,103,12,3,2,1,129
 Weston-Pelham Park (91),2023,146,0,16,94,36,1,2,0,146
 Weston-Pelham Park (91),2024,165,0,30,99,40,2,6,1,163
 Weston-Pelham Park (91),2025,160,0,19,106,35,4,3,0,157
+Weston (113),2014,243,0,32,157,59,9,1,1,241
+Weston (113),2015,265,0,60,161,52,17,2,2,265
+Weston (113),2016,253,0,55,158,52,13,1,1,252
+Weston (113),2017,295,0,55,186,64,11,4,3,290
+Weston (113),2018,327,0,53,201,87,16,3,2,322
+Weston (113),2019,287,0,47,219,47,13,2,2,285
 Weston (113),2020,179,0,24,130,34,6,3,3,178
 Weston (113),2021,183,1,29,124,43,12,4,2,182
 Weston (113),2022,195,0,25,153,19,7,0,3,194
 Weston (113),2023,246,0,52,147,48,16,4,0,243
 Weston (113),2024,262,0,43,149,72,13,4,1,260
 Weston (113),2025,261,0,56,148,58,12,3,1,260
+Wexford/Maryvale (119),2014,1425,2,203,1016,210,39,13,6,1418
+Wexford/Maryvale (119),2015,1579,1,238,1082,280,34,14,6,1574
+Wexford/Maryvale (119),2016,1690,1,278,1138,299,27,11,13,1685
+Wexford/Maryvale (119),2017,1754,5,299,1197,275,42,12,11,1738
+Wexford/Maryvale (119),2018,1871,0,281,1349,261,25,10,9,1842
+Wexford/Maryvale (119),2019,1929,3,271,1401,297,41,6,9,1908
 Wexford/Maryvale (119),2020,1103,1,152,844,121,21,9,6,1093
 Wexford/Maryvale (119),2021,1108,2,150,834,142,19,10,3,1104
 Wexford/Maryvale (119),2022,1493,0,193,1212,172,24,13,4,1485
 Wexford/Maryvale (119),2023,1669,3,209,1175,341,33,20,9,1667
 Wexford/Maryvale (119),2024,1961,0,260,1334,394,28,19,7,1951
 Wexford/Maryvale (119),2025,1966,1,267,1345,360,41,19,8,1948
+Willowdale West (37),2014,134,0,17,91,27,3,2,2,133
+Willowdale West (37),2015,130,0,6,99,28,1,2,0,128
+Willowdale West (37),2016,142,0,16,93,35,4,5,1,137
+Willowdale West (37),2017,173,0,16,122,41,4,2,1,171
+Willowdale West (37),2018,132,1,7,90,38,3,0,1,128
+Willowdale West (37),2019,162,0,16,124,31,8,2,1,158
 Willowdale West (37),2020,90,0,9,68,17,5,2,0,89
 Willowdale West (37),2021,56,0,6,43,12,1,1,0,56
 Willowdale West (37),2022,113,0,4,101,12,1,0,2,110
 Willowdale West (37),2023,137,0,16,96,27,3,5,1,137
 Willowdale West (37),2024,138,0,14,91,33,3,2,0,137
 Willowdale West (37),2025,120,0,12,82,26,3,2,0,117
+Willowridge-Martingrove-Richview (7),2014,269,0,35,183,53,3,2,2,269
+Willowridge-Martingrove-Richview (7),2015,270,2,46,189,39,7,6,4,269
+Willowridge-Martingrove-Richview (7),2016,254,0,44,172,42,5,3,2,251
+Willowridge-Martingrove-Richview (7),2017,275,0,45,201,34,9,4,0,273
+Willowridge-Martingrove-Richview (7),2018,301,0,51,212,47,6,3,0,290
+Willowridge-Martingrove-Richview (7),2019,358,0,54,276,50,6,1,1,350
 Willowridge-Martingrove-Richview (7),2020,173,0,29,134,16,5,4,1,172
 Willowridge-Martingrove-Richview (7),2021,164,0,19,133,23,4,5,1,164
 Willowridge-Martingrove-Richview (7),2022,262,0,35,218,10,9,2,1,259
 Willowridge-Martingrove-Richview (7),2023,357,0,58,249,52,8,6,1,354
 Willowridge-Martingrove-Richview (7),2024,318,0,57,207,54,4,5,1,316
 Willowridge-Martingrove-Richview (7),2025,333,0,47,229,58,8,5,1,329
+Woburn North (142),2014,751,2,103,522,128,14,6,2,749
+Woburn North (142),2015,816,2,153,565,118,18,6,1,812
+Woburn North (142),2016,912,0,145,648,125,13,2,2,907
+Woburn North (142),2017,951,0,205,647,118,21,5,2,945
+Woburn North (142),2018,936,1,176,650,129,21,2,8,913
+Woburn North (142),2019,940,3,162,663,136,17,3,1,933
 Woburn North (142),2020,498,0,88,372,52,10,3,1,496
 Woburn North (142),2021,434,0,68,324,48,8,4,2,431
 Woburn North (142),2022,698,0,76,578,78,6,3,2,696
 Woburn North (142),2023,902,0,141,622,166,22,4,0,900
 Woburn North (142),2024,965,0,154,643,180,24,8,2,957
 Woburn North (142),2025,936,1,143,634,165,21,7,2,932
+Woodbine-Lumsden (60),2014,119,0,18,88,15,3,5,0,119
+Woodbine-Lumsden (60),2015,100,0,19,66,16,5,1,1,100
+Woodbine-Lumsden (60),2016,117,1,23,78,19,4,2,2,115
+Woodbine-Lumsden (60),2017,102,0,10,81,12,1,0,0,102
+Woodbine-Lumsden (60),2018,106,0,16,71,21,3,0,2,105
+Woodbine-Lumsden (60),2019,102,0,15,73,15,2,3,0,101
 Woodbine-Lumsden (60),2020,72,0,13,52,10,2,4,0,72
 Woodbine-Lumsden (60),2021,82,0,13,62,12,2,3,1,82
 Woodbine-Lumsden (60),2022,94,0,8,82,11,2,3,1,94
 Woodbine-Lumsden (60),2023,96,0,17,52,31,4,3,2,93
 Woodbine-Lumsden (60),2024,99,0,17,59,24,1,4,0,98
 Woodbine-Lumsden (60),2025,74,0,12,52,10,0,5,0,73
+Woodbine Corridor (64),2014,137,0,15,90,33,6,4,1,135
+Woodbine Corridor (64),2015,116,0,14,82,27,7,4,2,116
+Woodbine Corridor (64),2016,140,0,27,93,24,9,2,3,138
+Woodbine Corridor (64),2017,121,0,16,87,23,5,5,3,119
+Woodbine Corridor (64),2018,138,0,21,96,25,3,2,1,135
+Woodbine Corridor (64),2019,140,0,17,102,24,0,3,0,139
 Woodbine Corridor (64),2020,100,0,13,81,8,5,4,1,98
 Woodbine Corridor (64),2021,97,1,8,81,11,2,4,0,97
 Woodbine Corridor (64),2022,123,0,18,93,20,3,4,2,122
 Woodbine Corridor (64),2023,117,0,17,65,41,5,3,2,114
 Woodbine Corridor (64),2024,128,0,15,86,27,1,1,1,127
 Woodbine Corridor (64),2025,145,0,19,83,43,4,2,1,143
+Wychwood (94),2014,190,0,30,126,35,9,12,5,186
+Wychwood (94),2015,205,1,21,146,43,6,4,2,204
+Wychwood (94),2016,232,2,42,150,41,7,15,4,230
+Wychwood (94),2017,261,0,46,172,51,12,8,3,258
+Wychwood (94),2018,230,0,35,149,50,9,9,1,228
+Wychwood (94),2019,265,1,32,198,49,12,6,4,261
 Wychwood (94),2020,130,0,9,106,22,5,5,1,130
 Wychwood (94),2021,120,0,14,88,25,6,3,2,120
 Wychwood (94),2022,168,0,17,141,11,5,6,0,167
 Wychwood (94),2023,248,1,28,180,42,10,8,2,243
 Wychwood (94),2024,272,0,38,164,71,7,12,0,269
 Wychwood (94),2025,229,0,32,148,49,7,8,0,224
+Yonge-Bay Corridor (170),2014,750,0,110,532,117,30,36,13,739
+Yonge-Bay Corridor (170),2015,870,0,126,627,132,45,39,15,865
+Yonge-Bay Corridor (170),2016,912,0,136,622,168,35,29,10,903
+Yonge-Bay Corridor (170),2017,1132,1,136,841,187,42,37,12,1109
+Yonge-Bay Corridor (170),2018,1076,1,111,842,151,31,25,11,1041
+Yonge-Bay Corridor (170),2019,1087,1,91,882,180,28,27,9,1065
 Yonge-Bay Corridor (170),2020,446,0,41,365,55,12,22,1,443
 Yonge-Bay Corridor (170),2021,492,0,72,379,58,17,30,5,483
 Yonge-Bay Corridor (170),2022,674,1,79,548,73,26,39,5,655
 Yonge-Bay Corridor (170),2023,864,0,93,609,177,22,39,5,845
 Yonge-Bay Corridor (170),2024,809,0,104,541,169,20,52,9,784
 Yonge-Bay Corridor (170),2025,793,0,92,550,152,32,52,6,766
+Yonge-Doris (151),2014,273,0,40,196,41,9,1,0,271
+Yonge-Doris (151),2015,283,1,33,212,42,9,2,2,282
+Yonge-Doris (151),2016,350,0,48,256,51,9,1,1,347
+Yonge-Doris (151),2017,315,0,37,229,53,12,0,2,308
+Yonge-Doris (151),2018,278,1,30,206,44,7,0,1,269
+Yonge-Doris (151),2019,296,1,26,238,46,6,0,2,289
 Yonge-Doris (151),2020,141,0,15,114,15,6,2,0,141
 Yonge-Doris (151),2021,143,0,20,109,18,5,4,0,141
 Yonge-Doris (151),2022,209,0,13,184,17,1,1,0,209
 Yonge-Doris (151),2023,257,0,28,183,47,4,4,2,256
 Yonge-Doris (151),2024,218,0,31,149,39,7,3,2,217
 Yonge-Doris (151),2025,240,1,31,164,44,7,4,0,239
+Yonge-Eglinton (100),2014,244,0,29,170,48,8,2,0,244
+Yonge-Eglinton (100),2015,278,0,39,192,55,5,6,2,274
+Yonge-Eglinton (100),2016,293,0,41,205,50,6,7,1,290
+Yonge-Eglinton (100),2017,300,1,37,208,59,6,4,0,296
+Yonge-Eglinton (100),2018,284,0,37,201,51,7,4,3,275
+Yonge-Eglinton (100),2019,295,0,18,241,53,6,3,2,293
 Yonge-Eglinton (100),2020,123,0,16,97,13,8,3,1,123
 Yonge-Eglinton (100),2021,135,0,14,111,20,5,5,1,133
 Yonge-Eglinton (100),2022,174,0,11,159,7,4,1,0,174
 Yonge-Eglinton (100),2023,210,0,14,159,40,1,2,0,209
 Yonge-Eglinton (100),2024,220,0,28,152,41,6,5,0,217
 Yonge-Eglinton (100),2025,225,0,22,158,46,9,6,3,223
+Yonge-St.Clair (97),2014,195,1,16,153,25,4,3,1,195
+Yonge-St.Clair (97),2015,219,0,27,161,34,7,1,3,216
+Yonge-St.Clair (97),2016,251,0,28,179,49,5,7,0,251
+Yonge-St.Clair (97),2017,255,0,26,185,52,8,2,1,253
+Yonge-St.Clair (97),2018,246,0,15,190,44,3,1,1,240
+Yonge-St.Clair (97),2019,220,0,16,177,32,2,5,1,219
 Yonge-St.Clair (97),2020,140,0,9,122,15,1,1,0,138
 Yonge-St.Clair (97),2021,132,0,12,112,14,5,1,1,132
 Yonge-St.Clair (97),2022,147,0,8,132,11,3,5,1,144
 Yonge-St.Clair (97),2023,189,0,18,134,41,2,1,1,188
 Yonge-St.Clair (97),2024,212,0,16,151,46,2,3,2,210
 Yonge-St.Clair (97),2025,205,0,21,138,46,7,5,0,202
+York University Heights (27),2014,1104,0,157,759,196,28,5,6,1100
+York University Heights (27),2015,1198,0,195,829,206,36,10,8,1190
+York University Heights (27),2016,1271,3,186,881,231,30,6,5,1262
+York University Heights (27),2017,1248,2,185,838,262,31,8,4,1232
+York University Heights (27),2018,1224,0,175,839,241,36,7,8,1183
+York University Heights (27),2019,1264,2,134,1029,173,30,5,6,1243
 York University Heights (27),2020,744,1,88,589,100,14,6,1,742
 York University Heights (27),2021,706,3,72,560,124,17,16,4,700
 York University Heights (27),2022,992,1,111,828,62,23,14,3,984
 York University Heights (27),2023,1150,1,179,768,208,29,13,6,1145
 York University Heights (27),2024,1053,0,194,628,233,26,14,5,1047
 York University Heights (27),2025,1113,0,194,677,245,18,10,2,1103
+Yorkdale-Glen Park (31),2014,945,1,100,565,285,24,8,5,938
+Yorkdale-Glen Park (31),2015,954,0,110,616,247,19,13,4,948
+Yorkdale-Glen Park (31),2016,1008,0,119,641,263,19,3,6,999
+Yorkdale-Glen Park (31),2017,1008,0,121,633,274,26,6,3,990
+Yorkdale-Glen Park (31),2018,927,1,94,596,262,29,4,1,894
+Yorkdale-Glen Park (31),2019,941,1,71,739,211,16,5,3,927
 Yorkdale-Glen Park (31),2020,481,1,45,390,62,12,5,2,477
 Yorkdale-Glen Park (31),2021,524,2,48,419,89,8,9,5,520
 Yorkdale-Glen Park (31),2022,755,0,60,639,71,14,5,0,751
