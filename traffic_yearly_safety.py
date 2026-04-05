@@ -12,10 +12,21 @@ import os
 import sys
 import pandas as pd
 import numpy as np
+import psycopg2
+from dotenv import load_dotenv
 
 # ── Paths ─────────────────────────────────────────────────────────────────────
 _SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 CSV_DIR = os.path.join(_SCRIPT_DIR, "project", "DB_csv")
+load_dotenv(os.path.join(_SCRIPT_DIR, "project", ".env"))
+
+DB_CONFIG = {
+    'dbname':   os.getenv('DB_NAME'),
+    'user':     os.getenv('DB_USER'),
+    'password': os.getenv('DB_PASSWORD'),
+    'host':     os.getenv('DB_HOST'),
+    'port':     os.getenv('DB_PORT'),
+}
 
 INPUT_CSV = os.path.join(CSV_DIR, "Traffic_Collisions_Neighbourhood_details.csv")
 OUTPUT_CSV = os.path.join(CSV_DIR, "Traffic_Collisions_Neighbourhood_Yearly_Safety.csv")
@@ -171,6 +182,80 @@ def remove_old_csv(path: str) -> None:
         print(f"  Old CSV not found (already removed): {path}")
 
 
+# ── SQL statements ────────────────────────────────────────────────────────────
+CREATE_TABLE_SQL = """
+DROP TABLE IF EXISTS traffic_neighbourhood_yearly_safety;
+CREATE TABLE traffic_neighbourhood_yearly_safety (
+    neighbourhood_158         TEXT,
+    occ_year                  INTEGER,
+    total_collisions          INTEGER,
+    fatalities                INTEGER,
+    injury_collisions         INTEGER,
+    pd_collisions             INTEGER,
+    ftr_collisions            INTEGER,
+    pedestrian_collisions     INTEGER,
+    bicycle_collisions        INTEGER,
+    motorcycle_collisions     INTEGER,
+    automobile_collisions     INTEGER,
+    safety_index              REAL,
+    safety_rank               INTEGER,
+    safety_category           TEXT,
+    PRIMARY KEY (neighbourhood_158, occ_year)
+);
+"""
+
+INSERT_SQL = """
+INSERT INTO traffic_neighbourhood_yearly_safety
+    (neighbourhood_158, occ_year, total_collisions, fatalities,
+     injury_collisions, pd_collisions, ftr_collisions,
+     pedestrian_collisions, bicycle_collisions, motorcycle_collisions,
+     automobile_collisions, safety_index, safety_rank, safety_category)
+VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s);
+"""
+
+# Also drop the old aggregated table that doesn't support year slicing
+DROP_OLD_TABLE_SQL = "DROP TABLE IF EXISTS traffic_neighbourhood_safety_scores;"
+
+
+def write_to_db(result: pd.DataFrame) -> None:
+    """Write the yearly safety DataFrame into PostgreSQL."""
+    conn = psycopg2.connect(**DB_CONFIG)
+    conn.autocommit = False
+    try:
+        cur = conn.cursor()
+        # Drop old aggregated table
+        cur.execute(DROP_OLD_TABLE_SQL)
+        # Create new yearly table
+        cur.execute(CREATE_TABLE_SQL)
+
+        # Ensure column order matches INSERT_SQL
+        db_cols = [
+            "neighbourhood_158", "occ_year", "total_collisions", "fatalities",
+            "injury_collisions", "pd_collisions", "ftr_collisions",
+            "pedestrian_collisions", "bicycle_collisions", "motorcycle_collisions",
+            "automobile_collisions", "safety_index", "safety_rank", "safety_category",
+        ]
+        # If automobile_collisions is missing, fill with None
+        if "automobile_collisions" not in result.columns:
+            result = result.copy()
+            result["automobile_collisions"] = None
+
+        rows = result[db_cols].values.tolist()
+        for row in rows:
+            # Convert numpy types to Python natives for psycopg2
+            cur.execute(INSERT_SQL, [None if pd.isna(v) else v for v in row])
+
+        conn.commit()
+        cur.close()
+        print(f"✓ DB table saved:    traffic_neighbourhood_yearly_safety  ({len(rows)} rows)")
+        print(f"✓ Dropped old table: traffic_neighbourhood_safety_scores")
+    except Exception as exc:
+        conn.rollback()
+        raise exc
+    finally:
+        conn.close()
+
+
 def main():
     print("=" * 65)
     print("TRAFFIC YEARLY SAFETY — neighbourhood × year")
@@ -194,7 +279,8 @@ def main():
 
     # ── Remove old aggregated CSV ─────────────────────────────────────────
     remove_old_csv(OLD_SCORES_CSV)
-
+    # ── Write to PostgreSQL ───────────────────────────────────────────────
+    write_to_db(result)
     # ── Summary ───────────────────────────────────────────────────────────
     print(f"\n{'─' * 65}")
     print("SUMMARY")
