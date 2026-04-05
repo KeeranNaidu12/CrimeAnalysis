@@ -1,10 +1,10 @@
 """
-Traffic Collision Prediction — XGBoost + SHAP (Priority: Collision Recall)
-==========================================================================
+Traffic Collision Prediction — LightGBM + SHAP (Priority: Collision Recall)
+============================================================================
 Just edit the CONFIG section below, then run:
 
-    pip install xgboost joblib
-    python collision_prediction.py
+    pip install lightgbm joblib
+    python collision_prediction_lgbm.py
 """
 
 import os
@@ -22,41 +22,43 @@ from sklearn.metrics import (
 from sklearn.preprocessing import LabelEncoder
 from scipy import stats
 import shap
-import xgboost as xgb
-import joblib  # ← Added for model serialization
+import lightgbm as lgb       # ← LightGBM replaces XGBoost
+import joblib
+from pathlib import Path
 
 # ═══════════════════════════════════════════════════════════════════════════════
 #  CONFIG  ← edit everything here, then just run the script
 # ═══════════════════════════════════════════════════════════════════════════════
 
-CSV_PATH = r"project\DB_csv\Traffic_Collisions_Data_enhanced.csv"
-OUT_DIR = "collision_outputs"
+CSV_PATH = Path("project/DB_csv/Traffic_Collisions_Data_enhanced.csv")
+OUT_DIR  = Path("project/outputs")
 
 PREDICT_START = None
-WINDOW_DAYS = 3
-TOP_N = 10
+WINDOW_DAYS   = 3
+TOP_N         = 10
 
 TRAIN_YEARS_UP_TO = 2024
 VALIDATION_YEARS  = [2025]
 
-# ── XGBoost base hyper-parameters ────────────────────────────────────────────
-XGB_N_ESTIMATORS     = 500
-XGB_LEARNING_RATE    = 0.05
-XGB_MAX_DEPTH        = 6
-XGB_SUBSAMPLE        = 0.8
-XGB_COLSAMPLE_BYTREE = 0.8
-XGB_MIN_CHILD_WEIGHT = 5
-XGB_REG_ALPHA        = 0.1
-XGB_REG_LAMBDA       = 1.0
-XGB_RANDOM_STATE     = 42
-COLLISION_BOOST      = 1.5  # Multiplier on scale_pos_weight to force higher collision recall
+# ── LightGBM base hyper-parameters ───────────────────────────────────────────
+LGB_N_ESTIMATORS     = 500
+LGB_LEARNING_RATE    = 0.05
+LGB_NUM_LEAVES       = 63        # LightGBM uses num_leaves instead of max_depth
+LGB_MAX_DEPTH        = -1        # -1 = no limit; num_leaves controls complexity
+LGB_MIN_CHILD_SAMPLES = 20       # LightGBM equivalent of XGB min_child_weight
+LGB_SUBSAMPLE        = 0.8       # row subsampling (bagging_fraction)
+LGB_COLSAMPLE_BYTREE = 0.8       # feature subsampling (feature_fraction)
+LGB_REG_ALPHA        = 0.1       # L1 regularisation
+LGB_REG_LAMBDA       = 1.0       # L2 regularisation
+LGB_RANDOM_STATE     = 42
+COLLISION_BOOST      = 1.5       # Multiplier on scale_pos_weight to force higher collision recall
 
 # ── Hyperparameter Tuning & Optimization ─────────────────────────────────────
-TUNE_ENABLED      = True
-TUNE_ITERATIONS   = 30
-TUNE_OBJECTIVE    = "recall_1"  # "recall_1", "f1_1", or "composite"
-MIN_RECALL_0      = 0.25        # Minimum acceptable non-collision recall floor
-TUNE_THRESHOLD    = 0.35        # Threshold used during tuning (biases toward collision)
+TUNE_ENABLED    = True
+TUNE_ITERATIONS = 30
+TUNE_OBJECTIVE  = "recall_1"   # "recall_1", "f1_1", or "composite"
+MIN_RECALL_0    = 0.25         # Minimum acceptable non-collision recall floor
+TUNE_THRESHOLD  = 0.35         # Threshold used during tuning (biases toward collision)
 
 # ── SHAP sample sizes ────────────────────────────────────────────────────────
 SHAP_BG_SAMPLES  = 500
@@ -105,8 +107,8 @@ def _is_holiday(dt):
 
 
 def _save(filename):
-    os.makedirs(OUT_DIR, exist_ok=True)
-    path = os.path.join(OUT_DIR, filename)
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    path = OUT_DIR / filename
     plt.savefig(path, dpi=150, bbox_inches="tight")
     plt.close()
     print(f"    Saved -> {path}")
@@ -118,7 +120,7 @@ def _save(filename):
 
 def load_and_preprocess(csv_path):
     print(f"\n[1/8] Loading data from: {csv_path}")
-    if not os.path.exists(csv_path):
+    if not csv_path.exists():
         raise FileNotFoundError(
             f"\nCSV not found at '{csv_path}'.\n"
             "Please update CSV_PATH in the CONFIG section at the top of this script."
@@ -261,7 +263,7 @@ def encode_and_split(windows_enriched):
 
     train_mask = windows_enriched["year"] <= TRAIN_YEARS_UP_TO
     val_mask   = windows_enriched["year"].isin(VALIDATION_YEARS)
-    
+
     X_train, y_train = X[train_mask], y[train_mask]
     X_val,   y_val   = X[val_mask],   y[val_mask]
 
@@ -280,56 +282,56 @@ def encode_and_split(windows_enriched):
 # 5. HYPERPARAMETER TUNING (CONSTRAINT-AWARE)
 # ─────────────────────────────────────────────────────────────────────────────
 
-def tune_xgboost(X_train, y_train, X_val, y_val):
+def tune_lgbm(X_train, y_train, X_val, y_val):
     print(f"[5/8] Hyperparameter Tuning ({TUNE_ITERATIONS} iterations, objective='{TUNE_OBJECTIVE}') ...")
-    
+
+    # LightGBM-specific param space
     param_space = {
-        'n_estimators': stats.randint(100, 800),
-        'learning_rate': stats.uniform(0.01, 0.15),
-        'max_depth': stats.randint(3, 12),
-        'min_child_weight': stats.randint(1, 20),
-        'subsample': stats.uniform(0.6, 0.4),
-        'colsample_bytree': stats.uniform(0.6, 0.4),
-        'reg_alpha': stats.uniform(0, 5),
-        'reg_lambda': stats.uniform(0, 5),
+        'n_estimators':      stats.randint(100, 800),
+        'learning_rate':     stats.uniform(0.01, 0.15),
+        'num_leaves':        stats.randint(15, 255),   # key LightGBM complexity knob
+        'max_depth':         stats.randint(3, 12),
+        'min_child_samples': stats.randint(5, 100),    # LightGBM name for min_child_weight
+        'subsample':         stats.uniform(0.6, 0.4),
+        'colsample_bytree':  stats.uniform(0.6, 0.4),
+        'reg_alpha':         stats.uniform(0, 5),
+        'reg_lambda':        stats.uniform(0, 5),
+        'min_split_gain':    stats.uniform(0, 1),      # LightGBM-specific regularisation
     }
 
     n_neg = (y_train == 0).sum()
     n_pos = (y_train == 1).sum()
-    # Boost collision class weight during training
     scale_w = (n_neg / max(n_pos, 1)) * COLLISION_BOOST
 
     results = []
     for i in range(TUNE_ITERATIONS):
         params = {k: v.rvs() for k, v in param_space.items()}
-        params['n_estimators'] = int(params['n_estimators'])
-        params['max_depth'] = int(params['max_depth'])
-        params['min_child_weight'] = int(params['min_child_weight'])
-        params['scale_pos_weight'] = scale_w
-        params['eval_metric'] = 'logloss'
-        params['random_state'] = XGB_RANDOM_STATE
-        params['n_jobs'] = -1
-        params['verbosity'] = 0
+        params['n_estimators']      = int(params['n_estimators'])
+        params['num_leaves']        = int(params['num_leaves'])
+        params['max_depth']         = int(params['max_depth'])
+        params['min_child_samples'] = int(params['min_child_samples'])
+        params['scale_pos_weight']  = scale_w
+        params['random_state']      = LGB_RANDOM_STATE
+        params['n_jobs']            = -1
+        params['verbose']           = -1           # LightGBM uses verbose=-1 for silence
 
-        clf = xgb.XGBClassifier(**params)
+        clf = lgb.LGBMClassifier(**params)
         clf.fit(X_train, y_train)
         y_prob = clf.predict_proba(X_val)[:, 1]
         y_pred = (y_prob >= TUNE_THRESHOLD).astype(int)
 
-        rec_1 = recall_score(y_val, y_pred, pos_label=1, zero_division=0)
+        rec_1  = recall_score(y_val, y_pred, pos_label=1, zero_division=0)
         prec_1 = precision_score(y_val, y_pred, pos_label=1, zero_division=0)
-        rec_0 = recall_score(y_val, y_pred, pos_label=0, zero_division=0)
+        rec_0  = recall_score(y_val, y_pred, pos_label=0, zero_division=0)
         prec_0 = precision_score(y_val, y_pred, pos_label=0, zero_division=0)
-        f1_1 = 2 * (prec_1 * rec_1) / (prec_1 + rec_1 + 1e-9)
+        f1_1   = 2 * (prec_1 * rec_1) / (prec_1 + rec_1 + 1e-9)
 
-        # Constraint-aware scoring
         passes_floor = (rec_0 >= MIN_RECALL_0)
-        if TUNE_OBJECTIVE == "recall_1": score = rec_1
-        elif TUNE_OBJECTIVE == "f1_1": score = f1_1
+        if TUNE_OBJECTIVE == "recall_1":   score = rec_1
+        elif TUNE_OBJECTIVE == "f1_1":     score = f1_1
         elif TUNE_OBJECTIVE == "composite": score = 0.7 * rec_1 + 0.3 * rec_0
-        else: score = rec_1
+        else:                               score = rec_1
 
-        # Heavy penalty if non-collision floor is violated
         score = score if passes_floor else score * 0.4
 
         results.append({
@@ -347,34 +349,42 @@ def tune_xgboost(X_train, y_train, X_val, y_val):
     print("    Top 3 Configurations:")
     for r in results[:3]:
         p = r['params']
-        print(f"      {r['iter']:2d}. Rec@1={r['recall_1']:.3f} | Rec@0={r['recall_0']:.3f} | lr={p['learning_rate']:.3f} md={p['max_depth']}")
+        print(f"      {r['iter']:2d}. Rec@1={r['recall_1']:.3f} | Rec@0={r['recall_0']:.3f} | lr={p['learning_rate']:.3f} leaves={p['num_leaves']}")
 
-    best_params = {k:v for k,v in best['params'].items() if k not in ['random_state','n_jobs','verbosity','eval_metric']}
+    best_params = {k: v for k, v in best['params'].items()
+                   if k not in ['random_state', 'n_jobs', 'verbose']}
     return best_params, results
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# 6. TRAIN (XGBOOST)
+# 6. TRAIN (LightGBM)
 # ─────────────────────────────────────────────────────────────────────────────
 
 def train_model(X_train, y_train, best_params=None):
-    print("[6/8] Training XGBoost ...")
-    
+    print("[6/8] Training LightGBM ...")
+
     n_neg = (y_train == 0).sum()
     n_pos = (y_train == 1).sum()
     scale_w = (n_neg / max(n_pos, 1)) * COLLISION_BOOST
 
     defaults = {
-        'n_estimators': XGB_N_ESTIMATORS, 'learning_rate': XGB_LEARNING_RATE,
-        'max_depth': XGB_MAX_DEPTH, 'subsample': XGB_SUBSAMPLE,
-        'colsample_bytree': XGB_COLSAMPLE_BYTREE, 'min_child_weight': XGB_MIN_CHILD_WEIGHT,
-        'reg_alpha': XGB_REG_ALPHA, 'reg_lambda': XGB_REG_LAMBDA,
-        'scale_pos_weight': scale_w, 'random_state': XGB_RANDOM_STATE,
-        'eval_metric': 'logloss', 'n_jobs': -1, 'verbosity': 0
+        'n_estimators':      LGB_N_ESTIMATORS,
+        'learning_rate':     LGB_LEARNING_RATE,
+        'num_leaves':        LGB_NUM_LEAVES,
+        'max_depth':         LGB_MAX_DEPTH,
+        'min_child_samples': LGB_MIN_CHILD_SAMPLES,
+        'subsample':         LGB_SUBSAMPLE,
+        'colsample_bytree':  LGB_COLSAMPLE_BYTREE,
+        'reg_alpha':         LGB_REG_ALPHA,
+        'reg_lambda':        LGB_REG_LAMBDA,
+        'scale_pos_weight':  scale_w,
+        'random_state':      LGB_RANDOM_STATE,
+        'n_jobs':            -1,
+        'verbose':           -1,
     }
     params = {**defaults, **(best_params or {})}
 
-    clf = xgb.XGBClassifier(**params)
+    clf = lgb.LGBMClassifier(**params)
     clf.fit(X_train, y_train)
     print("    Training complete.")
     return clf
@@ -389,26 +399,24 @@ def evaluate(clf, X_val, y_val):
     print("[7/8] Evaluating & Optimizing Threshold (Priority: Collision Recall) ...")
 
     y_prob = clf.predict_proba(X_val)[:, 1]
-    
-    # Constrained threshold search
+
     best_thresh, best_score = 0.5, -1.0
     for t in np.arange(0.15, 0.85, 0.01):
         pred = (y_prob >= t).astype(int)
         rec1 = recall_score(y_val, pred, pos_label=1, zero_division=0)
         rec0 = recall_score(y_val, pred, pos_label=0, zero_division=0)
-        
-        # Maximize collision recall, but penalize if non-collision drops below floor
+
         if rec0 >= MIN_RECALL_0:
             score = rec1
         else:
             score = rec1 * (rec0 / MIN_RECALL_0)
-            
+
         if score > best_score:
             best_score, best_thresh = score, t
 
     threshold = best_thresh
     y_pred = (y_prob >= threshold).astype(int)
-    
+
     rec1 = recall_score(y_val, y_pred, pos_label=1, zero_division=0)
     rec0 = recall_score(y_val, y_pred, pos_label=0, zero_division=0)
     print(f"    Optimized threshold: {threshold:.2f} (Rec@1={rec1:.3f} | Rec@0={rec0:.3f})")
@@ -441,13 +449,14 @@ def evaluate(clf, X_val, y_val):
     if auc is not None:
         fpr, tpr, _ = roc_curve(y_val, y_prob)
         fig2, ax2 = plt.subplots(figsize=(6, 5))
-        ax2.plot(fpr, tpr, lw=2, label=f"XGB (AUC = {auc:.3f})")
+        ax2.plot(fpr, tpr, lw=2, label=f"LightGBM (AUC = {auc:.3f})")
         ax2.plot([0, 1], [0, 1], "k--", lw=1, label="Random")
         ax2.set_xlabel("False Positive Rate"); ax2.set_ylabel("True Positive Rate")
         ax2.set_title("ROC Curve"); ax2.legend(loc="lower right"); ax2.grid(alpha=0.3)
         plt.tight_layout()
         _save("roc_curve.png")
 
+    # LightGBM feature importances (gain) — same API as XGBoost
     importances = pd.Series(clf.feature_importances_, index=FEATURE_DISPLAY_NAMES).sort_values(ascending=True)
     fig3, ax3 = plt.subplots(figsize=(9, 6))
     importances.plot(kind="barh", ax=ax3, color="#4C72B0", edgecolor="white")
@@ -468,9 +477,11 @@ def run_shap(clf, X_train, X_val):
     bg_sample  = X_train.sample(min(SHAP_BG_SAMPLES,  len(X_train)), random_state=42)
     val_sample = X_val.sample(  min(SHAP_VAL_SAMPLES, len(X_val)),   random_state=42)
 
+    # shap.TreeExplainer works natively with LightGBM — no API change needed
     explainer   = shap.TreeExplainer(clf, bg_sample)
     shap_values = explainer.shap_values(val_sample, check_additivity=False)
 
+    # LightGBM TreeExplainer returns a list [shap_class0, shap_class1]
     if isinstance(shap_values, list):
         shap_pos = shap_values[1]
     elif shap_values.ndim == 3:
@@ -525,23 +536,23 @@ def predict_window(clf, le, start_date, windows_enriched, threshold=0.5):
     if historical.empty:
         print("    ⚠️ No historical data available before prediction window. Using defaults.")
         historical = windows_enriched[windows_enriched["year"] < VALIDATION_YEARS[0]].copy()
-        
+
     latest_state = historical.sort_values('window_start').groupby('neighbourhood').last()
-    
+
     rows = []
     for n in le.classes_:
         if n in latest_state.index:
             row = latest_state.loc[n].to_dict()
-            row['week_day_num']    = WEEKDAY_MAP.get(start.day_name(), 0)
-            row['season_num']      = _date_to_season(start)
-            row['holiday']         = _is_holiday(start)
-            row['month_sin']       = np.sin(2 * np.pi * start.month / 12)
-            row['month_cos']       = np.cos(2 * np.pi * start.month / 12)
-            row['period_sin']      = np.sin(2 * np.pi * start.isocalendar().week / 52)
-            row['period_cos']      = np.cos(2 * np.pi * start.isocalendar().week / 52)
+            row['week_day_num']      = WEEKDAY_MAP.get(start.day_name(), 0)
+            row['season_num']        = _date_to_season(start)
+            row['holiday']           = _is_holiday(start)
+            row['month_sin']         = np.sin(2 * np.pi * start.month / 12)
+            row['month_cos']         = np.cos(2 * np.pi * start.month / 12)
+            row['period_sin']        = np.sin(2 * np.pi * start.isocalendar().week / 52)
+            row['period_cos']        = np.cos(2 * np.pi * start.isocalendar().week / 52)
             row['neighbourhood_enc'] = le.transform([n])[0]
-            row['neighbourhood']   = n
-            row['year_continuous'] = start.year + start.dayofyear / 365.25
+            row['neighbourhood']     = n
+            row['year_continuous']   = start.year + start.dayofyear / 365.25
         else:
             row = {col: 0.0 for col in FEATURE_COLS}
             row['neighbourhood_enc'] = le.transform([n])[0]
@@ -578,18 +589,17 @@ def predict_window(clf, le, start_date, windows_enriched, threshold=0.5):
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main():
-    os.makedirs(OUT_DIR, exist_ok=True)
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    df      = load_and_preprocess(CSV_PATH)
-    windows = build_windows(df)
-    
+    df               = load_and_preprocess(CSV_PATH)
+    windows          = build_windows(df)
     windows_enriched = engineer_features(windows)
     X_train, y_train, X_val, y_val, le, windows_enriched = encode_and_split(windows_enriched)
-    
+
     best_params = None
     if TUNE_ENABLED:
-        best_params, _ = tune_xgboost(X_train, y_train, X_val, y_val)
-    
+        best_params, _ = tune_lgbm(X_train, y_train, X_val, y_val)
+
     clf = train_model(X_train, y_train, best_params)
     y_pred, y_prob, threshold = evaluate(clf, X_val, y_val)
     run_shap(clf, X_train, X_val)
@@ -605,24 +615,25 @@ def main():
         "train_years_up_to": TRAIN_YEARS_UP_TO,
         "validation_years": VALIDATION_YEARS
     }
-    model_path = os.path.join(OUT_DIR, "collision_model_bundle.joblib")
+    model_path = OUT_DIR / "collision_model_bundle.joblib"
     joblib.dump(model_bundle, model_path)
     print(f"\n✅ Model bundle saved to: {model_path}")
     print("   To load in another app:")
     print("   >>> import joblib")
-    print("   >>> bundle = joblib.load('collision_model_bundle.joblib')")
+    print("   >>> from pathlib import Path")
+    print("   >>> bundle = joblib.load(Path('path/to/collision_model_bundle.joblib'))")
     print("   >>> clf, le, thresh = bundle['model'], bundle['label_encoder'], bundle['threshold']")
 
     if PREDICT_START:
         start_date = PREDICT_START
     else:
-        val_mask = windows_enriched["year"].isin(VALIDATION_YEARS)
-        first_val = windows_enriched[val_mask]["window_start"].min()
+        val_mask   = windows_enriched["year"].isin(VALIDATION_YEARS)
+        first_val  = windows_enriched[val_mask]["window_start"].min()
         start_date = str(first_val.date()) if not pd.isnull(first_val) else f"{VALIDATION_YEARS[0]}-01-01"
 
     predict_window(clf, le, start_date, windows_enriched, threshold)
 
-    print(f"\nDone. All outputs saved to: {os.path.abspath(OUT_DIR)}/")
+    print(f"\nDone. All outputs saved to: {OUT_DIR.absolute()}/")
     print("  collision_model_bundle.joblib  ← Load this in other apps!")
     print("  confusion_matrix.png | roc_curve.png | feature_importances.png")
     print("  shap_summary.png | shap_bar.png | shap_dependence_top.png | shap_waterfall.png")
