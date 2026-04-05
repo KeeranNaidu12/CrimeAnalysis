@@ -1,6 +1,7 @@
 import os
 import csv
 from datetime import datetime
+from pathlib import Path
 import psycopg2
 from dotenv import load_dotenv
 from tqdm import tqdm
@@ -15,29 +16,33 @@ DB_CONFIG = {
     'port': os.getenv('DB_PORT')
 }
 
-CSV_PATH = os.path.join('project', 'DB_csv', 'Open_Consolidated_Data_updated_deduplicated.csv')
+CSV_PATH = Path('project') / 'DB_csv' / 'Open_Consolidated_Data_updated_deduplicated_enhanced.csv'
 
 CREATE_TABLE_SQL = """
 DROP TABLE IF EXISTS open_consolidated_data;
 CREATE TABLE open_consolidated_data (
-    event_unique_id  TEXT,
-    occ_date         TIMESTAMP,
+    event_unique_id   TEXT,
+    occ_date          TIMESTAMP,
     neighbourhood_158 TEXT,
-    csi_category     TEXT,
-    offence          TEXT,
-    death            INTEGER,
-    injuries         INTEGER,
-    event_type       TEXT,
-    premise_type     TEXT
+    csi_category      TEXT,
+    offence           TEXT,
+    death             INTEGER,
+    injuries          INTEGER,
+    event_type        TEXT,
+    premise_type      TEXT,
+    week_day          TEXT,
+    season            TEXT,
+    holiday           BOOLEAN
 );
 """
 
 INSERT_SQL = """
 INSERT INTO open_consolidated_data (
     event_unique_id, occ_date, neighbourhood_158,
-    csi_category, offence, death, injuries, event_type, premise_type
+    csi_category, offence, death, injuries, event_type, premise_type,
+    week_day, season, holiday
 )
-VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s);
+VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);
 """
 
 
@@ -46,7 +51,7 @@ def parse_date(value: str):
     value = value.strip()
     if not value:
         return None
-    for fmt in ('%m/%d/%Y %I:%M:%S %p', '%m/%d/%Y %H:%M:%S', '%Y-%m-%d'):
+    for fmt in ('%Y-%m-%d %H:%M:%S', '%m/%d/%Y %I:%M:%S %p', '%m/%d/%Y %H:%M:%S', '%Y-%m-%d'):
         try:
             return datetime.strptime(value, fmt)
         except ValueError:
@@ -66,7 +71,15 @@ def parse_int(value: str):
         return None
 
 
-def load_csv(path: str) -> list[tuple]:
+def parse_bool(value: str):
+    """Convert True/False strings to booleans; return None if empty."""
+    value = value.strip().upper()
+    if not value:
+        return None
+    return value == 'TRUE'
+
+
+def load_csv(path: Path) -> list[tuple]:
     rows = []
     with open(path, newline='', encoding='utf-8-sig') as f:
         reader = csv.DictReader(f)
@@ -82,6 +95,9 @@ def load_csv(path: str) -> list[tuple]:
                     parse_int(row['INJURIES']),
                     row['EVENT_TYPE'].strip() or None,
                     row['PREMISE_TYPE'].strip() or None,
+                    row['week_day'].strip() or None,
+                    row['season'].strip() or None,
+                    parse_bool(row['holiday']),
                 )
                 rows.append(record)
             except KeyError as e:
@@ -111,7 +127,7 @@ def main():
                     pbar.update(min(CHUNK, len(rows) - i))
             inserted = len(rows)
             conn.commit()
-            print(f"Done — {inserted} rows inserted (duplicates skipped).")
+            print(f"Done — {inserted} rows inserted.")
     except Exception as exc:
         conn.rollback()
         print(f"Error: {exc}")
