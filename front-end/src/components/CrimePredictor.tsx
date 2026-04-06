@@ -1,7 +1,7 @@
 // app/components/CrimePredictor.tsx
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import Header from './Header';
 
 interface PredictionResult {
@@ -60,6 +60,7 @@ export default function CrimePredictor() {
     const [endDate, setEndDate] = useState<string>('');
     const [activeTab, setActiveTab] = useState<'results' | 'alerts' | 'ranking'>('results');
     const [sortConfig, setSortConfig] = useState<{ key: keyof PredictionResult; direction: 'asc' | 'desc' } | null>(null);
+    const [searchQuery, setSearchQuery] = useState<string>('');
 
     // Map frontend crime names to backend API crime types
     const getCrimeTypeForAPI = (crimeName: string): string => {
@@ -142,6 +143,18 @@ export default function CrimePredictor() {
         setPrediction({ ...prediction, results: sorted });
     };
 
+    // Filter results based on search query
+    const filteredResults = useMemo(() => {
+        if (!prediction || !searchQuery.trim()) return prediction?.results || [];
+        
+        const query = searchQuery.toLowerCase();
+        return prediction.results.filter(result => 
+            result.neighbourhood_clean.toLowerCase().includes(query) ||
+            result.risk_level.toLowerCase().includes(query) ||
+            result.neighbourhood_id.toString().includes(query)
+        );
+    }, [prediction, searchQuery]);
+
     // Professional risk indicator (text-based, no badges)
     const getRiskIndicator = (riskLevel: string): string => {
         switch (riskLevel) {
@@ -187,15 +200,7 @@ export default function CrimePredictor() {
 
                 {/* Error State */}
                 {error && !loading && (
-                    <div className="bg-red-50/50 border border-red-200 rounded-lg p-5 text-center animate-in fade-in duration-300">
-                        <p className="text-red-700 font-medium font-['Book_Antiqua',_Palatino,_serif]">{error}</p>
-                        <button
-                            onClick={() => setError(null)}
-                            className="mt-3 text-sm text-red-600 hover:text-red-800 transition-colors font-['Book_Antiqua',_Palatino,_serif]"
-                        >
-                            Dismiss
-                        </button>
-                    </div>
+                    <p className="text-red-700 font-medium font-['Book_Antiqua',_Palatino,_serif] text-center">{error}</p>
                 )}
 
                 {/* Results Display */}
@@ -203,26 +208,24 @@ export default function CrimePredictor() {
                     <div className="space-y-6 animate-in fade-in duration-500">
                         
                         {/* Summary Header */}
-                        <div className="bg-white/60 backdrop-blur-sm rounded-lg border border-gray-100 p-6">
-                            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                                <div>
-                                    <h2 className="text-xl font-['Book_Antiqua',_Palatino,_serif] text-gray-800 tracking-tight">
-                                        {prediction.crime_display_name} · Risk Assessment
-                                    </h2>
-                                    <p className="text-gray-500 text-sm font-['Book_Antiqua',_Palatino,_serif] mt-1">
-                                        {prediction.date_range.start} — {prediction.date_range.end}
-                                        {prediction.neighbourhood_filter && ` · ${prediction.neighbourhood_filter}`}
-                                    </p>
+                        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                            <div>
+                                <h2 className="text-xl font-['Book_Antiqua',_Palatino,_serif] text-gray-800 tracking-tight">
+                                    {prediction.crime_display_name} · Risk Assessment
+                                </h2>
+                                <p className="text-gray-500 text-sm font-['Book_Antiqua',_Palatino,_serif] mt-1">
+                                    {prediction.date_range.start} — {prediction.date_range.end}
+                                    {prediction.neighbourhood_filter && ` · ${prediction.neighbourhood_filter}`}
+                                </p>
+                            </div>
+                            <div className="flex items-center gap-6 text-sm font-['Book_Antiqua',_Palatino,_serif]">
+                                <div className="text-right">
+                                    <span className="text-gray-400">Positive Rate</span>
+                                    <p className="text-lg font-medium text-gray-800">{prediction.summary.positive_percentage}%</p>
                                 </div>
-                                <div className="flex items-center gap-6 text-sm font-['Book_Antiqua',_Palatino,_serif]">
-                                    <div className="text-right">
-                                        <span className="text-gray-400">Positive Rate</span>
-                                        <p className="text-lg font-medium text-gray-800">{prediction.summary.positive_percentage}%</p>
-                                    </div>
-                                    <div className="text-right">
-                                        <span className="text-gray-400">Total Windows</span>
-                                        <p className="text-lg font-medium text-gray-800">{prediction.summary.total_windows}</p>
-                                    </div>
+                                <div className="text-right">
+                                    <span className="text-gray-400">Total Windows</span>
+                                    <p className="text-lg font-medium text-gray-800">{prediction.summary.total_windows}</p>
                                 </div>
                             </div>
                         </div>
@@ -233,7 +236,7 @@ export default function CrimePredictor() {
                                 {(['results', 'alerts', 'ranking'] as const).map((tab) => (
                                     <button
                                         key={tab}
-                                        onClick={() => setActiveTab(tab)}
+                                        onClick={() => { setActiveTab(tab); setSearchQuery(''); }}
                                         className={`pb-3 text-sm font-medium transition-all duration-200 font-['Book_Antiqua',_Palatino,_serif] ${
                                             activeTab === tab
                                                 ? 'text-blue-600 border-b-2 border-blue-500'
@@ -248,189 +251,205 @@ export default function CrimePredictor() {
                             </nav>
                         </div>
 
+                        {/* Search Bar - Only show on results tab */}
+                        {activeTab === 'results' && (
+                            <div className="flex items-center gap-3">
+                                <div className="relative flex-1 max-w-md">
+                                    <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                    </svg>
+                                    <input
+                                        type="text"
+                                        value={searchQuery}
+                                        onChange={(e) => setSearchQuery(e.target.value)}
+                                        placeholder="Search neighborhoods, risk levels, or IDs..."
+                                        className="w-full pl-10 pr-4 py-2 text-sm bg-white/60 backdrop-blur-sm border border-gray-200 rounded-lg focus:outline-none focus:border-blue-400 focus:ring-1 focus:ring-blue-400 transition-all font-['Book_Antiqua',_Palatino,_serif]"
+                                    />
+                                </div>
+                                {searchQuery && (
+                                    <button
+                                        onClick={() => setSearchQuery('')}
+                                        className="text-sm text-gray-500 hover:text-gray-700 transition-colors font-['Book_Antiqua',_Palatino,_serif]"
+                                    >
+                                        Clear
+                                    </button>
+                                )}
+                                <span className="text-xs text-gray-400 font-['Book_Antiqua',_Palatino,_serif]">
+                                    {filteredResults.length} result{filteredResults.length !== 1 ? 's' : ''}
+                                </span>
+                            </div>
+                        )}
+
                         {/* Tab Content Area */}
                         <div className="min-h-[400px]">
                             
                             {/* RESULTS TAB - Professional Table View */}
                             {activeTab === 'results' && (
-                                <div className="bg-white/60 backdrop-blur-sm rounded-lg border border-gray-100 overflow-hidden">
-                                    <div className="overflow-x-auto">
-                                        <table className="w-full">
-                                            <thead className="bg-gray-50/50 border-b border-gray-100">
-                                                <tr className="text-left text-xs uppercase tracking-wide text-gray-500 font-['Book_Antiqua',_Palatino,_serif]">
-                                                    <th 
-                                                        className="py-4 px-5 cursor-pointer hover:text-gray-700 transition-colors"
-                                                        onClick={() => handleSort('neighbourhood_clean')}
-                                                    >
-                                                        Neighborhood
-                                                    </th>
-                                                    <th className="py-4 px-5">Time Window</th>
-                                                    <th 
-                                                        className="py-4 px-5 cursor-pointer hover:text-gray-700 transition-colors"
-                                                        onClick={() => handleSort('risk_level')}
-                                                    >
-                                                        Risk Level
-                                                    </th>
-                                                    <th 
-                                                        className="py-4 px-5 text-right cursor-pointer hover:text-gray-700 transition-colors"
-                                                        onClick={() => handleSort('probability')}
-                                                    >
-                                                        Probability
-                                                    </th>
-                                                    <th className="py-4 px-5 text-right">ID</th>
+                                <div className="overflow-x-auto">
+                                    <table className="w-full">
+                                        <thead className="border-b border-gray-200">
+                                            <tr className="text-left text-xs uppercase tracking-wide text-gray-500 font-['Book_Antiqua',_Palatino,_serif]">
+                                                <th 
+                                                    className="py-4 px-5 cursor-pointer hover:text-gray-700 transition-colors"
+                                                    onClick={() => handleSort('neighbourhood_clean')}
+                                                >
+                                                    Neighborhood
+                                                </th>
+                                                <th className="py-4 px-5">Time Window</th>
+                                                <th 
+                                                    className="py-4 px-5 cursor-pointer hover:text-gray-700 transition-colors"
+                                                    onClick={() => handleSort('risk_level')}
+                                                >
+                                                    Risk Level
+                                                </th>
+                                                <th 
+                                                    className="py-4 px-5 text-right cursor-pointer hover:text-gray-700 transition-colors"
+                                                    onClick={() => handleSort('probability')}
+                                                >
+                                                    Probability
+                                                </th>
+                                                <th className="py-4 px-5 text-right">ID</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody className="divide-y divide-gray-100">
+                                            {filteredResults.slice(0, 100).map((result, index) => (
+                                                <tr 
+                                                    key={`${result.neighbourhood_id}-${result.window_start}-${index}`}
+                                                    className="hover:bg-gradient-to-r hover:from-blue-50/50 hover:to-purple-50/50 transition-all duration-200 font-['Book_Antiqua',_Palatino,_serif] hover:shadow-sm hover:shadow-blue-100/50 animate-pulse-hover"
+                                                >
+                                                    <td className="py-4 px-5 text-gray-800">
+                                                        {result.neighbourhood_clean}
+                                                    </td>
+                                                    <td className="py-4 px-5 text-gray-600 text-sm">
+                                                        {result.window_start}<br />
+                                                        <span className="text-gray-400">to {result.window_end}</span>
+                                                    </td>
+                                                    <td className="py-4 px-5">
+                                                        <span className={getRiskIndicator(result.risk_level)}>
+                                                            {result.risk_level}
+                                                        </span>
+                                                    </td>
+                                                    <td className="py-4 px-5 text-right">
+                                                        <span className={getProbabilityStyle(result.probability)}>
+                                                            {formatProbability(result.probability)}
+                                                        </span>
+                                                    </td>
+                                                    <td className="py-4 px-5 text-right text-gray-400 text-sm">
+                                                        {result.neighbourhood_id}
+                                                    </td>
                                                 </tr>
-                                            </thead>
-                                            <tbody className="divide-y divide-gray-100">
-                                                {prediction.results.slice(0, 100).map((result, index) => (
-                                                    <tr 
-                                                        key={`${result.neighbourhood_id}-${result.window_start}-${index}`}
-                                                        className="hover:bg-gray-50/30 transition-colors duration-150 font-['Book_Antiqua',_Palatino,_serif]"
-                                                    >
-                                                        <td className="py-4 px-5 text-gray-800">
-                                                            {result.neighbourhood_clean}
-                                                        </td>
-                                                        <td className="py-4 px-5 text-gray-600 text-sm">
-                                                            {result.window_start}<br />
-                                                            <span className="text-gray-400">to {result.window_end}</span>
-                                                        </td>
-                                                        <td className="py-4 px-5">
-                                                            <span className={getRiskIndicator(result.risk_level)}>
-                                                                {result.risk_level}
-                                                            </span>
-                                                        </td>
-                                                        <td className="py-4 px-5 text-right">
-                                                            <span className={getProbabilityStyle(result.probability)}>
-                                                                {formatProbability(result.probability)}
-                                                            </span>
-                                                        </td>
-                                                        <td className="py-4 px-5 text-right text-gray-400 text-sm">
-                                                            {result.neighbourhood_id}
-                                                        </td>
-                                                    </tr>
-                                                ))}
-                                                {prediction.results.length === 0 && (
-                                                    <tr>
-                                                        <td colSpan={5} className="py-12 text-center text-gray-400 font-['Book_Antiqua',_Palatino,_serif]">
-                                                            No results match the selected criteria
-                                                        </td>
-                                                    </tr>
-                                                )}
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    {prediction.results.length > 100 && (
-                                        <div className="px-5 py-3 border-t border-gray-100 text-sm text-gray-500 text-center font-['Book_Antiqua',_Palatino,_serif]">
-                                            Showing first 100 of {prediction.results.length} results
-                                        </div>
+                                            ))}
+                                            {filteredResults.length === 0 && (
+                                                <tr>
+                                                    <td colSpan={5} className="py-8 text-center text-gray-400 font-['Book_Antiqua',_Palatino,_serif]">
+                                                        {searchQuery ? `No results match "${searchQuery}"` : 'No results match the selected criteria'}
+                                                    </td>
+                                                </tr>
+                                            )}
+                                        </tbody>
+                                    </table>
+                                    {filteredResults.length > 100 && (
+                                        <p className="py-3 text-sm text-gray-500 text-center font-['Book_Antiqua',_Palatino,_serif]">
+                                            Showing first 100 of {filteredResults.length} results
+                                        </p>
                                     )}
                                 </div>
                             )}
 
                             {/* ALERTS TAB - Clean List View */}
                             {activeTab === 'alerts' && (
-                                <div className="bg-white/60 backdrop-blur-sm rounded-lg border border-gray-100 overflow-hidden">
+                                <div className="overflow-x-auto">
                                     {prediction.high_risk_alerts.length > 0 ? (
-                                        <div className="overflow-x-auto">
-                                            <table className="w-full">
-                                                <thead className="bg-gray-50/50 border-b border-gray-100">
-                                                    <tr className="text-left text-xs uppercase tracking-wide text-gray-500 font-['Book_Antiqua',_Palatino,_serif]">
-                                                        <th className="py-4 px-5">Neighborhood</th>
-                                                        <th className="py-4 px-5">Time Window</th>
-                                                        <th className="py-4 px-5 text-right">Probability</th>
-                                                        <th className="py-4 px-5 text-right">Risk</th>
+                                        <table className="w-full">
+                                            <thead className="border-b border-gray-200">
+                                                <tr className="text-left text-xs uppercase tracking-wide text-gray-500 font-['Book_Antiqua',_Palatino,_serif]">
+                                                    <th className="py-4 px-5">Neighborhood</th>
+                                                    <th className="py-4 px-5">Time Window</th>
+                                                    <th className="py-4 px-5 text-right">Probability</th>
+                                                    <th className="py-4 px-5 text-right">Risk</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody className="divide-y divide-gray-100">
+                                                {prediction.high_risk_alerts.map((alert, index) => (
+                                                    <tr 
+                                                        key={`alert-${index}`}
+                                                        className="hover:bg-gradient-to-r hover:from-red-50/30 hover:to-amber-50/30 transition-all duration-200 font-['Book_Antiqua',_Palatino,_serif] hover:shadow-sm hover:shadow-red-100/30 animate-pulse-hover"
+                                                    >
+                                                        <td className="py-4 px-5 text-gray-800 font-medium">
+                                                            {alert.neighbourhood_clean}
+                                                        </td>
+                                                        <td className="py-4 px-5 text-gray-600 text-sm">
+                                                            {alert.window_start}<br />
+                                                            <span className="text-gray-400">to {alert.window_end}</span>
+                                                        </td>
+                                                        <td className="py-4 px-5 text-right">
+                                                            <span className="text-red-700 font-medium">
+                                                                {formatProbability(alert.probability)}
+                                                            </span>
+                                                        </td>
+                                                        <td className="py-4 px-5 text-right">
+                                                            <span className="text-red-700 font-medium">HIGH</span>
+                                                        </td>
                                                     </tr>
-                                                </thead>
-                                                <tbody className="divide-y divide-gray-100">
-                                                    {prediction.high_risk_alerts.map((alert, index) => (
-                                                        <tr 
-                                                            key={`alert-${index}`}
-                                                            className="hover:bg-red-50/20 transition-colors duration-150 font-['Book_Antiqua',_Palatino,_serif]"
-                                                        >
-                                                            <td className="py-4 px-5 text-gray-800 font-medium">
-                                                                {alert.neighbourhood_clean}
-                                                            </td>
-                                                            <td className="py-4 px-5 text-gray-600 text-sm">
-                                                                {alert.window_start}<br />
-                                                                <span className="text-gray-400">to {alert.window_end}</span>
-                                                            </td>
-                                                            <td className="py-4 px-5 text-right">
-                                                                <span className="text-red-700 font-medium">
-                                                                    {formatProbability(alert.probability)}
-                                                                </span>
-                                                            </td>
-                                                            <td className="py-4 px-5 text-right">
-                                                                <span className="text-red-700 font-medium">HIGH</span>
-                                                            </td>
-                                                        </tr>
-                                                    ))}
-                                                </tbody>
-                                            </table>
-                                        </div>
+                                                ))}
+                                            </tbody>
+                                        </table>
                                     ) : (
-                                        <div className="py-16 text-center">
-                                            <p className="text-gray-500 font-['Book_Antiqua',_Palatino,_serif]">
-                                                No high-risk alerts detected for the selected parameters
-                                            </p>
-                                        </div>
+                                        <p className="py-4 text-gray-500 font-['Book_Antiqua',_Palatino,_serif]">
+                                            No high-risk alerts detected for the selected parameters
+                                        </p>
                                     )}
                                 </div>
                             )}
 
                             {/* RANKING TAB - Sorted Table */}
                             {activeTab === 'ranking' && (
-                                <div className="bg-white/60 backdrop-blur-sm rounded-lg border border-gray-100 overflow-hidden">
-                                    <div className="overflow-x-auto">
-                                        <table className="w-full">
-                                            <thead className="bg-gray-50/50 border-b border-gray-100">
-                                                <tr className="text-left text-xs uppercase tracking-wide text-gray-500 font-['Book_Antiqua',_Palatino,_serif]">
-                                                    <th className="py-4 px-5">Rank</th>
-                                                    <th className="py-4 px-5">Neighborhood</th>
-                                                    <th className="py-4 px-5 text-right">Avg. Probability</th>
-                                                    <th className="py-4 px-5 text-right">Predicted</th>
-                                                    <th className="py-4 px-5 text-right">Total Windows</th>
+                                <div className="overflow-x-auto">
+                                    <table className="w-full">
+                                        <thead className="border-b border-gray-200">
+                                            <tr className="text-left text-xs uppercase tracking-wide text-gray-500 font-['Book_Antiqua',_Palatino,_serif]">
+                                                <th className="py-4 px-5">Rank</th>
+                                                <th className="py-4 px-5">Neighborhood</th>
+                                                <th className="py-4 px-5 text-right">Avg. Probability</th>
+                                                <th className="py-4 px-5 text-right">Predicted</th>
+                                                <th className="py-4 px-5 text-right">Total Windows</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody className="divide-y divide-gray-100">
+                                            {prediction.neighbourhood_ranking.map((item, index) => (
+                                                <tr 
+                                                    key={`rank-${index}`}
+                                                    className="hover:bg-gradient-to-r hover:from-blue-50/50 hover:to-purple-50/50 transition-all duration-200 font-['Book_Antiqua',_Palatino,_serif] hover:shadow-sm hover:shadow-blue-100/50 animate-pulse-hover"
+                                                >
+                                                    <td className="py-4 px-5 text-gray-500">#{index + 1}</td>
+                                                    <td className="py-4 px-5 text-gray-800">{item.neighbourhood}</td>
+                                                    <td className="py-4 px-5 text-right">
+                                                        <span className={getProbabilityStyle(item.avg_probability)}>
+                                                            {formatProbability(item.avg_probability)}
+                                                        </span>
+                                                    </td>
+                                                    <td className="py-4 px-5 text-right text-gray-600">{item.predicted_count}</td>
+                                                    <td className="py-4 px-5 text-right text-gray-400">{item.total_windows}</td>
                                                 </tr>
-                                            </thead>
-                                            <tbody className="divide-y divide-gray-100">
-                                                {prediction.neighbourhood_ranking.map((item, index) => (
-                                                    <tr 
-                                                        key={`rank-${index}`}
-                                                        className="hover:bg-gray-50/30 transition-colors duration-150 font-['Book_Antiqua',_Palatino,_serif]"
-                                                    >
-                                                        <td className="py-4 px-5 text-gray-500">#{index + 1}</td>
-                                                        <td className="py-4 px-5 text-gray-800">{item.neighbourhood}</td>
-                                                        <td className="py-4 px-5 text-right">
-                                                            <span className={getProbabilityStyle(item.avg_probability)}>
-                                                                {formatProbability(item.avg_probability)}
-                                                            </span>
-                                                        </td>
-                                                        <td className="py-4 px-5 text-right text-gray-600">{item.predicted_count}</td>
-                                                        <td className="py-4 px-5 text-right text-gray-400">{item.total_windows}</td>
-                                                    </tr>
-                                                ))}
-                                                {prediction.neighbourhood_ranking.length === 0 && (
-                                                    <tr>
-                                                        <td colSpan={5} className="py-12 text-center text-gray-400 font-['Book_Antiqua',_Palatino,_serif]">
-                                                            No ranking data available
-                                                        </td>
-                                                    </tr>
-                                                )}
-                                            </tbody>
-                                        </table>
-                                    </div>
+                                            ))}
+                                            {prediction.neighbourhood_ranking.length === 0 && (
+                                                <tr>
+                                                    <td colSpan={5} className="py-8 text-center text-gray-400 font-['Book_Antiqua',_Palatino,_serif]">
+                                                        No ranking data available
+                                                    </td>
+                                                </tr>
+                                            )}
+                                        </tbody>
+                                    </table>
                                 </div>
                             )}
                         </div>
                     </div>
                 )}
 
-                {/* Initial Empty State */}
+                {/* Initial Empty State - Clean text on page, no card block */}
                 {!prediction && !loading && !error && (
-                    <div className="bg-white/60 backdrop-blur-sm rounded-lg border border-gray-100 p-10 text-center">
-                        <div className="w-16 h-16 mx-auto mb-5 rounded-full bg-gradient-to-br from-blue-100/50 to-purple-100/50 flex items-center justify-center">
-                            <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                            </svg>
-                        </div>
+                    <div className="py-12 text-center">
                         <h3 className="text-lg font-['Book_Antiqua',_Palatino,_serif] text-gray-800 mb-2">
                             Configure Prediction Parameters
                         </h3>
@@ -447,8 +466,19 @@ export default function CrimePredictor() {
                     from { opacity: 0; transform: translateY(4px); }
                     to { opacity: 1; transform: translateY(0); }
                 }
+                @keyframes pulse-hover {
+                    0%, 100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
+                    50% { box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.08); }
+                }
                 .animate-in {
                     animation: fade-in 300ms ease-out forwards;
+                }
+                .animate-pulse-hover:hover {
+                    animation: pulse-hover 1.5s ease-in-out infinite;
+                }
+                /* Smooth transition for search filter */
+                tbody tr {
+                    transition: background-color 150ms ease, box-shadow 150ms ease;
                 }
             `}</style>
         </div>
