@@ -17,7 +17,7 @@ interface HeaderProps {
 
 const crimeTypes = ['Assault', 'Auto Theft', 'Break and Entering', 'Collision'];
 
-const neighborhoods = [
+const neighborhoods = ["All Neighborhoods",
     "Agincourt North (129)", "Agincourt South-Malvern West (128)", "Alderwood (20)",
     "Annex (95)", "Avondale (153)", "Banbury-Don Mills (42)", "Bathurst Manor (34)",
     "Bay-Cloverhill (169)", "Bayview Village (52)", "Bayview Woods-Steeles (49)",
@@ -548,8 +548,6 @@ export default function Header({
                             >
                                 <span className="relative">
                                     Predict Crime Risk
-                                    {/* Animated underline */}
-                                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-300 group-hover:w-full" />
                                 </span>
                                 {/* Subtle glow on hover */}
                                 <span className="absolute inset-0 rounded-full blur-md bg-blue-400/0 group-hover:bg-blue-400/20 transition-all duration-300 -z-10" />
