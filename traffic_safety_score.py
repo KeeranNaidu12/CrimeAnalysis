@@ -1,5 +1,5 @@
 """
-Traffic Safety Score — Neighbourhood Safety Index for Toronto (2020–2025)
+Traffic Safety Score — Neighbourhood Safety Index for Toronto (2014–2025)
 
 Queries the traffic_collisions_data table in PostgreSQL, computes a composite
 safety index per neighbourhood, and exports two CSVs:
@@ -14,9 +14,12 @@ Scoring weights:
     Property damage     1×
 
 Recency weights:
-    2024-2025  → 1.0
-    2022-2023  → 0.7
-    2020-2021  → 0.5
+    2024-2025  → 1.00
+    2022-2023  → 0.75
+    2020-2021  → 0.50
+    2018-2019  → 0.35
+    2016-2017  → 0.20
+    2014-2015  → 0.10
 
 Higher Safety Index = Safer neighbourhood (0–100 scale).
 """
@@ -28,7 +31,8 @@ import numpy as np
 from dotenv import load_dotenv
 
 # ── Config ────────────────────────────────────────────────────────────────────
-load_dotenv(os.path.join('project', '.env'))
+_SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+load_dotenv(os.path.join(_SCRIPT_DIR, 'project', '.env'))
 
 DB_CONFIG = {
     'dbname': os.getenv('DB_NAME'),
@@ -38,7 +42,7 @@ DB_CONFIG = {
     'port':   os.getenv('DB_PORT'),
 }
 
-OUTPUT_DIR = os.path.join('project', 'DB_csv')
+OUTPUT_DIR = os.path.join(_SCRIPT_DIR, 'project', 'DB_csv')
 
 # Severity weights
 W_FATAL      = 5
@@ -52,9 +56,12 @@ RECENCY = {
     2024: 1.0, 2025: 1.0,
     2022: 0.7, 2023: 0.7,
     2020: 0.5, 2021: 0.5,
+    2018: 0.35, 2019: 0.35,
+    2016: 0.25, 2017: 0.25,
+    2014: 0.15, 2015: 0.15,
 }
 
-YEAR_MIN = 2020
+YEAR_MIN = 2014
 YEAR_MAX = 2025
 
 
@@ -74,7 +81,7 @@ SELECT
     COUNT(*) FILTER (WHERE automobile)         AS automobile_collisions
 FROM traffic_collisions_data
 WHERE neighbourhood_158 <> 'NSA'
-  AND occ_date >= '2020-01-01'
+  AND occ_date >= '2014-01-01'
   AND occ_date <  '2026-01-01'
 GROUP BY neighbourhood_158, EXTRACT(YEAR FROM occ_date)
 ORDER BY neighbourhood_158, occ_year;
@@ -161,7 +168,7 @@ def write_to_db(conn, detail_df, scores_df):
 
 def fetch_detail(conn):
     """Return per-neighbourhood / per-year detail as a DataFrame."""
-    print("Querying traffic data (2020–2025, excl. NSA) …")
+    print("Querying traffic data (2014–2025, excl. NSA) …")
     df = pd.read_sql(DETAIL_QUERY, conn)
     print(f"  Retrieved {len(df)} rows across "
           f"{df['neighbourhood_158'].nunique()} neighbourhoods.")
@@ -251,7 +258,7 @@ def compute_scores(detail: pd.DataFrame) -> pd.DataFrame:
 
 def main():
     print("=" * 60)
-    print("TRAFFIC SAFETY SCORE — Toronto Neighbourhoods (2020–2025)")
+    print("TRAFFIC SAFETY SCORE — Toronto Neighbourhoods (2014–2025)")
     print("=" * 60)
 
     conn = psycopg2.connect(**DB_CONFIG)
