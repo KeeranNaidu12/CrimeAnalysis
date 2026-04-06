@@ -1,6 +1,7 @@
 import os
 import csv
 from datetime import datetime
+from pathlib import Path
 import psycopg2
 from dotenv import load_dotenv
 from tqdm import tqdm
@@ -15,7 +16,7 @@ DB_CONFIG = {
     'port': os.getenv('DB_PORT')
 }
 
-CSV_PATH = os.path.join('project', 'DB_csv', 'Traffic_Collisions_Data.csv')
+CSV_PATH = Path('project') / 'DB_csv' / 'Traffic_Collisions_Data_enhanced.csv'
 
 CREATE_TABLE_SQL = """
 DROP TABLE IF EXISTS traffic_collisions_data;
@@ -31,7 +32,10 @@ CREATE TABLE traffic_collisions_data (
     pedestrian        BOOLEAN,
     neighbourhood_158 TEXT,
     ftr_collisions    BOOLEAN,
-    pd_collisions     BOOLEAN
+    pd_collisions     BOOLEAN,
+    week_day          TEXT,
+    season            TEXT,
+    holiday           BOOLEAN
 );
 """
 
@@ -39,9 +43,10 @@ INSERT_SQL = """
 INSERT INTO traffic_collisions_data (
     event_unique_id, occ_date, fatalities, injury_collisions,
     automobile, motorcycle, passenger, bicycle, pedestrian,
-    neighbourhood_158, ftr_collisions, pd_collisions
+    neighbourhood_158, ftr_collisions, pd_collisions,
+    week_day, season, holiday
 )
-VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);
+VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);
 """
 
 
@@ -50,7 +55,7 @@ def parse_date(value: str):
     value = value.strip()
     if not value:
         return None
-    for fmt in ('%m/%d/%Y %I:%M:%S %p', '%m/%d/%Y %H:%M:%S', '%Y-%m-%d'):
+    for fmt in ('%Y-%m-%d %H:%M:%S', '%m/%d/%Y %I:%M:%S %p', '%m/%d/%Y %H:%M:%S', '%Y-%m-%d'):
         try:
             return datetime.strptime(value, fmt)
         except ValueError:
@@ -78,7 +83,7 @@ def parse_bool(value: str):
     return value == 'YES'
 
 
-def load_csv(path: str) -> list[tuple]:
+def load_csv(path: Path) -> list[tuple]:
     rows = []
     with open(path, newline='', encoding='utf-8-sig') as f:
         reader = csv.DictReader(f)
@@ -97,6 +102,9 @@ def load_csv(path: str) -> list[tuple]:
                     row['NEIGHBOURHOOD_158'].strip() or None,
                     parse_bool(row['FTR_COLLISIONS']),
                     parse_bool(row['PD_COLLISIONS']),
+                    row['week_day'].strip() or None,
+                    row['season'].strip() or None,
+                    parse_bool(row['holiday']),
                 )
                 rows.append(record)
             except KeyError as e:

@@ -53,7 +53,7 @@ def main():
                 table_name = slugify(category)
                 print(f"Processing '{category}' → table '{table_name}' …")
 
-                # Drop & recreate
+                # Drop & recreate with enhanced columns
                 cur.execute(f"DROP TABLE IF EXISTS {table_name};")
                 cur.execute(f"""
                     CREATE TABLE {table_name} (
@@ -65,7 +65,10 @@ def main():
                         death             INTEGER,
                         injuries          INTEGER,
                         event_type        TEXT,
-                        premise_type      TEXT
+                        premise_type      TEXT,
+                        week_day          TEXT,
+                        season            TEXT,
+                        holiday           BOOLEAN
                     );
                 """)
 
@@ -85,7 +88,7 @@ def main():
                     DECLARE {server_cur_name} CURSOR FOR
                     SELECT event_unique_id, occ_date, neighbourhood_158,
                            csi_category, offence, death, injuries,
-                           event_type, premise_type
+                           event_type, premise_type, week_day, season, holiday
                     FROM {SOURCE_TABLE}
                     WHERE csi_category = %s
                       AND occ_date >= '2014-01-01';
@@ -102,8 +105,8 @@ def main():
                             INSERT INTO {table_name} (
                                 event_unique_id, occ_date, neighbourhood_158,
                                 csi_category, offence, death, injuries,
-                                event_type, premise_type
-                            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s);
+                                event_type, premise_type, week_day, season, holiday
+                            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);
                         """, batch)
                         inserted += len(batch)
                         pbar.update(len(batch))
