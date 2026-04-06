@@ -1,0 +1,1897 @@
+neighbourhood_158,occ_year,assault_incidents,auto_theft_incidents,break_and_enter_incidents,nonmci_incidents,robbery_incidents,theft_over_incidents,total_incidents,weighted_risk_score,dominant_crime_category,safety_score,safety_rank,safety_category
+Maple Leaf (29),2014,21,7,14,12,6,0,60,84.5,Assault,100.0,1,Very Safe
+Avondale (153),2014,30,13,10,8,2,2,65,96.42,Assault,99.1,2,Very Safe
+Yonge-St.Clair (97),2014,18,1,37,7,3,2,68,96.94,Break and Enter,99.1,2,Very Safe
+Lambton Baby Point (114),2014,30,6,17,23,1,0,77,104.22,Assault,98.5,4,Very Safe
+Bridle Path-Sunnybrook-York Mills (41),2014,19,5,38,21,1,5,89,112.82,Break and Enter,97.9,5,Very Safe
+Casa Loma (96),2014,24,4,32,22,6,5,93,122.85,Break and Enter,97.1,6,Very Safe
+Mount Pleasant East (99),2014,28,7,30,25,1,4,95,123.5,Break and Enter,97.1,6,Very Safe
+Forest Hill South (101),2014,21,5,47,23,2,5,103,130.98,Break and Enter,96.5,8,Very Safe
+Pleasant View (46),2014,32,11,17,32,6,3,101,130.75,Assault,96.5,8,Very Safe
+Kingsway South (15),2014,25,16,24,24,11,3,103,132.32,Assault,96.4,10,Very Safe
+Broadview North (57),2014,47,2,14,15,8,0,86,137.86,Assault,96.0,11,Very Safe
+Bayview Woods-Steeles (49),2014,33,16,22,22,7,3,103,140.16,Assault,95.8,12,Very Safe
+Elms-Old Rexdale (5),2014,40,7,9,31,12,2,101,141.57,Assault,95.7,13,Very Safe
+Guildwood (140),2014,45,2,13,23,10,1,94,141.73,Assault,95.7,13,Very Safe
+Runnymede-Bloor West Village (89),2014,27,17,21,33,12,1,111,141.56,NonMCI,95.7,13,Very Safe
+South Eglinton-Davisville (174),2014,42,2,27,12,7,4,94,142.46,Assault,95.6,16,Very Safe
+Centennial Scarborough (133),2014,45,8,13,35,8,2,111,153.24,Assault,94.8,17,Very Safe
+Alderwood (20),2014,43,10,19,37,4,7,120,157.42,Assault,94.5,18,Very Safe
+Yonge-Doris (151),2014,60,8,8,14,7,2,99,159.15,Assault,94.4,19,Very Safe
+Lawrence Park North (105),2014,26,22,34,62,0,4,148,161.5,NonMCI,94.2,20,Very Safe
+Parkwoods-O'Connor Hills (149),2014,39,15,25,38,7,1,125,162.07,Assault,94.2,20,Very Safe
+Humber Heights-Westmount (8),2014,23,27,19,70,11,1,151,162.89,NonMCI,94.1,22,Very Safe
+Caledonia-Fairbank (109),2014,47,7,27,14,10,5,110,165.12,Assault,93.9,23,Very Safe
+Etobicoke West Mall (13),2014,42,11,27,24,11,0,115,165.79,Assault,93.9,23,Very Safe
+Forest Hill North (102),2014,32,12,39,34,8,3,128,165.71,Break and Enter,93.9,23,Very Safe
+Lansing-Westgate (38),2014,35,18,34,22,9,5,123,166.0,Assault,93.9,23,Very Safe
+Old East York (58),2014,45,2,21,34,14,4,120,167.43,Assault,93.8,27,Very Safe
+Markland Wood (12),2014,20,8,51,55,9,3,146,168.65,NonMCI,93.7,28,Very Safe
+Lawrence Park South (103),2014,14,14,68,48,3,5,152,169.82,Break and Enter,93.6,29,Very Safe
+North Toronto (173),2014,52,8,26,23,6,2,117,171.57,Assault,93.4,30,Very Safe
+Humber Bay Shores (161),2014,57,6,12,47,1,6,129,173.19,Assault,93.3,31,Very Safe
+Woodbine-Lumsden (60),2014,45,2,36,49,5,2,139,179.93,NonMCI,92.8,32,Very Safe
+Beechborough-Greenbrook (112),2014,57,10,20,9,16,2,114,182.43,Assault,92.6,33,Very Safe
+Yonge-Eglinton (100),2014,47,6,36,23,10,5,127,182.34,Assault,92.6,33,Very Safe
+Bendale South (157),2014,54,9,26,15,14,2,120,185.01,Assault,92.4,35,Very Safe
+Humewood-Cedarvale (106),2014,36,12,30,83,4,3,168,185.75,NonMCI,92.4,35,Very Safe
+Leaside-Bennington (56),2014,31,12,39,67,6,9,164,185.67,NonMCI,92.4,35,Very Safe
+Rustic (28),2014,56,8,21,22,14,1,122,184.87,Assault,92.4,35,Very Safe
+Wychwood (94),2014,51,7,32,16,15,2,123,186.85,Assault,92.3,39,Very Safe
+Henry Farm (53),2014,52,15,38,28,2,3,138,194.3,Assault,91.7,40,Very Safe
+Princess-Rosethorn (10),2014,22,21,34,90,14,3,184,195.34,NonMCI,91.7,40,Very Safe
+Blake-Jones (69),2014,67,2,20,29,10,1,129,196.44,Assault,91.6,42,Very Safe
+Rexdale-Kipling (4),2014,51,13,17,58,12,1,152,195.95,NonMCI,91.6,42,Very Safe
+Thistletown-Beaumond Heights (3),2014,56,10,22,31,19,1,139,201.01,Assault,91.2,44,Very Safe
+Edenbridge-Humber Valley (9),2014,27,28,43,80,6,3,187,202.93,NonMCI,91.1,45,Very Safe
+Steeles (116),2014,40,17,61,23,8,2,151,205.98,Break and Enter,90.9,46,Very Safe
+East Willowdale (152),2014,38,14,67,27,7,2,155,206.08,Break and Enter,90.8,47,Very Safe
+Playter Estates-Danforth (67),2014,54,4,36,40,14,0,148,207.74,Assault,90.7,48,Very Safe
+Highland Creek (134),2014,51,24,27,27,16,4,149,209.17,Assault,90.6,49,Very Safe
+North Riverdale (68),2014,39,12,43,49,18,3,164,210.73,NonMCI,90.5,50,Very Safe
+Long Branch (19),2014,62,10,24,45,12,1,154,214.62,Assault,90.2,51,Very Safe
+Willowdale West (37),2014,71,11,29,13,9,4,137,217.33,Assault,90.0,52,Very Safe
+Bathurst Manor (34),2014,51,36,34,38,8,2,169,221.41,Assault,89.7,53,Very Safe
+Danforth East York (59),2014,65,7,31,57,4,1,165,222.69,Assault,89.6,54,Very Safe
+Pelmo Park-Humberlea (23),2014,56,29,31,38,9,3,166,223.95,Assault,89.5,55,Very Safe
+Keelesdale-Eglinton West (110),2014,63,19,23,17,26,1,149,228.2,Assault,89.2,56,Very Safe
+East L'Amoreaux (148),2014,53,7,35,44,23,5,167,229.14,Assault,89.1,57,Very Safe
+New Toronto (18),2014,74,9,24,21,16,4,148,230.85,Assault,89.0,58,Very Safe
+Malvern West (145),2014,66,7,34,39,12,5,163,232.55,Assault,88.9,59,Very Safe
+Newtonbrook East (50),2014,70,15,36,21,9,2,153,231.27,Assault,88.9,59,Very Safe
+Corso Italia-Davenport (92),2014,64,16,29,26,20,2,157,233.6,Assault,88.8,61,Very Safe
+L'Amoreaux West (147),2014,58,11,33,36,24,1,163,233.5,Assault,88.8,61,Very Safe
+Woodbine Corridor (64),2014,75,6,32,39,10,2,164,240.31,Assault,88.3,63,Very Safe
+Hillcrest Village (48),2014,67,12,35,22,20,6,162,243.22,Assault,88.0,64,Very Safe
+High Park North (88),2014,81,14,17,36,13,7,168,248.23,Assault,87.7,65,Very Safe
+Eringate-Centennial-West Deane (11),2014,51,27,39,69,11,7,204,250.89,NonMCI,87.5,66,Very Safe
+Little Portugal (84),2014,76,15,41,23,7,5,167,251.13,Assault,87.5,66,Very Safe
+Thorncliffe Park (55),2014,78,13,33,23,15,7,169,255.11,Assault,87.2,68,Very Safe
+Dovercourt Village (172),2014,63,11,40,43,22,5,184,255.3,Assault,87.1,69,Very Safe
+Fort York-Liberty Village (163),2014,87,14,30,38,6,12,187,271.6,Assault,85.9,70,Very Safe
+Ionview (125),2014,92,5,32,12,21,1,163,272.31,Assault,85.9,70,Very Safe
+Weston-Pelham Park (91),2014,90,23,26,23,11,4,177,271.85,Assault,85.9,70,Very Safe
+Dufferin Grove (83),2014,75,9,30,45,24,9,192,274.05,Assault,85.7,73,Very Safe
+Banbury-Don Mills (42),2014,52,19,66,72,10,9,228,280.07,NonMCI,85.3,74,Very Safe
+Danforth (66),2014,83,12,39,40,17,3,194,284.2,Assault,85.0,75,Very Safe
+Brookhaven-Amesbury (30),2014,79,40,23,29,21,5,197,285.18,Assault,84.9,76,Very Safe
+Mount Dennis (115),2014,89,28,18,20,25,2,182,285.44,Assault,84.9,76,Very Safe
+Cliffcrest (123),2014,73,19,42,39,25,3,201,287.05,Assault,84.7,78,Very Safe
+Briar Hill-Belgravia (108),2014,74,20,43,32,22,9,200,288.9,Assault,84.6,79,Very Safe
+High Park-Swansea (87),2014,75,18,44,50,15,7,209,289.47,Assault,84.6,79,Very Safe
+West Rouge (143),2014,75,30,36,64,11,3,219,288.96,Assault,84.6,79,Very Safe
+The Beaches (63),2014,78,7,45,66,13,7,216,292.33,Assault,84.4,82,Very Safe
+Junction Area (90),2014,89,23,36,34,12,6,200,295.53,Assault,84.1,83,Very Safe
+Roncesvalles (86),2014,92,15,38,25,21,2,193,296.56,Assault,84.0,84,Very Safe
+Morningside Heights (144),2014,83,29,39,38,15,7,211,298.95,Assault,83.9,85,Very Safe
+Bayview Village (52),2014,76,25,43,83,3,9,239,300.2,NonMCI,83.8,86,Very Safe
+Fenside-Parkwoods (150),2014,86,21,45,52,5,5,214,299.39,Assault,83.8,86,Very Safe
+St.Andrew-Windfields (40),2014,55,17,82,62,9,13,238,299.2,Break and Enter,83.8,86,Very Safe
+Oakwood Village (107),2014,94,17,26,28,27,2,194,302.38,Assault,83.6,89,Very Safe
+Englemount-Lawrence (32),2014,77,30,43,30,26,3,209,303.05,Assault,83.5,90,Very Safe
+Palmerston-Little Italy (80),2014,77,18,54,38,19,6,212,305.45,Assault,83.4,91,Very Safe
+Bay-Cloverhill (169),2014,104,7,25,37,12,16,201,305.66,Assault,83.3,92,Very Safe
+Clanton Park (33),2014,61,69,60,34,7,4,235,305.75,Auto Theft,83.3,92,Very Safe
+Victoria Village (43),2014,104,18,39,39,6,5,211,314.68,Assault,82.7,94,Very Safe
+Regent Park (72),2014,95,9,35,54,18,9,220,317.4,Assault,82.5,95,Very Safe
+Humbermede (22),2014,92,36,34,34,20,1,217,318.89,Assault,82.4,96,Very Safe
+Agincourt North (129),2014,73,17,45,63,34,1,233,319.19,Assault,82.3,97,Very Safe
+Morningside (135),2014,115,20,31,24,14,0,204,325.12,Assault,81.9,98,Very Safe
+Bedford Park-Nortown (39),2014,56,37,84,66,10,10,263,326.85,Break and Enter,81.8,99,Very Safe
+Westminster-Branson (35),2014,74,27,62,79,10,5,257,328.98,NonMCI,81.6,100,Very Safe
+Islington (158),2014,80,26,54,76,15,2,253,330.03,Assault,81.5,101,Very Safe
+Cabbagetown-South St.James Town (71),2014,80,9,74,72,9,3,247,330.9,Assault,81.4,102,Very Safe
+Harbourfront-CityPlace (165),2014,102,20,27,81,8,13,251,335.1,Assault,81.1,103,Very Safe
+Taylor-Massey (61),2014,117,13,30,29,26,3,218,345.27,Assault,80.4,104,Very Safe
+Willowridge-Martingrove-Richview (7),2014,72,44,44,116,15,4,295,347.45,NonMCI,80.2,105,Very Safe
+Downsview (155),2014,100,37,30,59,21,6,253,353.28,Assault,79.8,106,Safe
+Malvern East (146),2014,123,16,29,28,21,6,223,355.61,Assault,79.6,107,Safe
+Rosedale-Moore Park (98),2014,65,10,99,90,16,7,287,360.25,Break and Enter,79.2,108,Safe
+Greenwood-Coxwell (65),2014,113,15,48,50,15,4,245,363.19,Assault,79.0,109,Safe
+Tam O'Shanter-Sullivan (118),2014,99,21,48,65,23,3,259,364.23,Assault,78.9,110,Safe
+West Queen West (162),2014,111,13,35,88,17,3,267,368.87,Assault,78.6,111,Safe
+Kingsview Village-The Westway (6),2014,87,55,36,108,14,4,304,370.53,NonMCI,78.5,112,Safe
+Stonegate-Queensway (16),2014,80,38,70,90,13,8,299,378.92,NonMCI,77.8,113,Safe
+Milliken (130),2014,68,33,102,59,20,16,298,385.34,Break and Enter,77.3,114,Safe
+Humber Summit (21),2014,88,61,54,70,20,15,308,399.94,Assault,76.3,115,Safe
+Mimico-Queensway (160),2014,125,30,43,69,9,4,280,400.02,Assault,76.2,116,Safe
+Rockcliffe-Smythe (111),2014,111,44,37,51,31,6,280,402.6,Assault,76.1,117,Safe
+Trinity-Bellwoods (81),2014,102,10,65,98,22,11,308,408.96,Assault,75.6,118,Safe
+Agincourt South-Malvern West (128),2014,105,33,73,73,20,19,323,432.56,Assault,73.8,119,Safe
+Flemingdon Park (44),2014,119,10,50,111,25,10,325,436.13,Assault,73.5,120,Safe
+Yorkdale-Glen Park (31),2014,95,67,51,95,20,23,351,441.71,Assault,73.1,121,Safe
+Newtonbrook West (36),2014,124,48,54,62,24,9,321,453.88,Assault,72.2,122,Safe
+Scarborough Village (139),2014,144,20,50,55,26,3,298,453.44,Assault,72.2,122,Safe
+Birchcliffe-Cliffside (122),2014,134,13,72,81,16,3,319,458.11,Assault,71.9,124,Safe
+Junction-Wallace Emerson (171),2014,152,23,36,73,22,5,311,459.64,Assault,71.8,125,Safe
+North St.James Town (74),2014,115,25,76,89,25,7,337,460.05,Assault,71.7,126,Safe
+University (79),2014,118,10,72,86,40,7,333,468.92,Assault,71.1,127,Safe
+South Parkdale (85),2014,167,10,45,70,18,5,315,479.18,Assault,70.3,128,Safe
+Don Valley Village (47),2014,106,48,80,101,42,10,387,503.91,Assault,68.4,129,Safe
+Bendale-Glen Andrew (156),2014,121,37,71,83,44,7,363,505.15,Assault,68.3,130,Safe
+O'Connor-Parkview (54),2014,168,20,53,58,21,11,331,505.87,Assault,68.3,130,Safe
+Oakridge (121),2014,161,20,62,32,39,2,316,509.57,Assault,68.0,132,Safe
+Dorset Park (126),2014,121,46,92,78,32,7,376,516.95,Assault,67.4,133,Safe
+Weston (113),2014,159,51,33,74,32,5,354,517.55,Assault,67.4,133,Safe
+Golfdale-Cedarbrae-Woburn (141),2014,178,17,54,36,35,3,323,524.3,Assault,66.9,135,Safe
+Woburn North (142),2014,153,27,67,58,39,8,352,528.39,Assault,66.6,136,Safe
+Eglinton East (138),2014,173,19,40,28,55,8,323,530.49,Assault,66.4,137,Safe
+East End-Danforth (62),2014,158,19,81,78,32,6,374,550.02,Assault,65.0,138,Safe
+St Lawrence-East Bayfront-The Islands (166),2014,162,20,60,120,20,15,397,548.99,Assault,65.0,138,Safe
+Etobicoke City Centre (159),2014,132,66,57,130,18,36,439,554.6,Assault,64.6,140,Safe
+Black Creek (24),2014,197,44,26,41,42,10,360,569.77,Assault,63.5,141,Safe
+Kennedy Park (124),2014,196,25,48,31,65,6,371,612.1,Assault,60.3,142,Safe
+Church-Wellesley (167),2014,196,14,62,102,38,8,420,619.43,Assault,59.7,143,Moderate
+Oakdale-Beverley Heights (154),2014,195,68,56,73,36,12,440,648.02,Assault,57.6,144,Moderate
+Mount Olive-Silverstone-Jamestown (2),2014,217,59,25,108,61,4,474,696.77,Assault,53.9,145,Moderate
+South Riverdale (70),2014,181,20,89,207,42,17,556,717.14,NonMCI,52.4,146,Moderate
+Glenfield-Jane Heights (25),2014,261,41,36,77,35,6,456,717.98,Assault,52.3,147,Moderate
+Wexford/Maryvale (119),2014,189,57,126,111,43,16,542,759.77,Assault,49.2,148,Moderate
+Clairlea-Birchmount (120),2014,224,44,129,101,37,4,539,784.24,Assault,47.3,149,Moderate
+Annex (95),2014,217,13,156,127,42,19,574,823.2,Assault,44.4,150,Moderate
+West Hill (136),2014,320,23,88,57,57,5,550,905.05,Assault,38.2,151,Risky
+York University Heights (27),2014,260,104,110,134,54,31,693,971.86,Assault,33.2,152,Risky
+Yonge-Bay Corridor (170),2014,344,11,69,118,58,38,638,992.83,Assault,31.6,153,Risky
+Downtown Yonge East (168),2014,297,26,88,186,81,23,701,1007.81,Assault,30.5,154,Risky
+Wellington Place (164),2014,357,22,80,178,24,20,681,1010.93,Assault,30.2,155,Risky
+Moss Park (73),2014,329,25,152,175,111,8,800,1185.91,Assault,17.1,156,Very Risky
+Kensington-Chinatown (78),2014,312,27,103,544,68,18,1072,1270.43,NonMCI,10.7,157,Very Risky
+West Humber-Clairville (1),2014,271,303,151,358,60,41,1184,1412.69,NonMCI,0.0,158,Very Risky
+Forest Hill South (101),2015,11,13,18,12,1,5,60,87.12,Break and Enter,100.0,1,Very Safe
+Avondale (153),2015,29,9,9,6,3,2,58,104.03,Assault,98.8,2,Very Safe
+Yonge-St.Clair (97),2015,25,3,20,8,1,5,62,106.98,Assault,98.6,3,Very Safe
+Markland Wood (12),2015,14,12,19,37,3,2,87,113.3,NonMCI,98.2,4,Very Safe
+Lambton Baby Point (114),2015,31,5,12,13,3,3,67,115.83,Assault,98.0,5,Very Safe
+Centennial Scarborough (133),2015,32,7,15,13,3,0,70,121.58,Assault,97.6,6,Very Safe
+Maple Leaf (29),2015,28,17,13,15,3,3,79,126.0,Assault,97.3,7,Very Safe
+Mount Pleasant East (99),2015,32,4,17,24,5,1,83,135.64,Assault,96.7,8,Very Safe
+Bridle Path-Sunnybrook-York Mills (41),2015,27,8,35,16,1,4,91,146.77,Break and Enter,95.9,9,Very Safe
+Casa Loma (96),2015,33,2,24,25,5,4,93,151.88,Assault,95.5,10,Very Safe
+Woodbine-Lumsden (60),2015,36,6,18,32,6,3,101,158.67,Assault,95.1,11,Very Safe
+Caledonia-Fairbank (109),2015,49,4,17,11,6,1,88,164.86,Assault,94.6,12,Very Safe
+Bayview Woods-Steeles (49),2015,40,7,34,14,1,1,97,166.73,Assault,94.5,13,Very Safe
+Old East York (58),2015,45,5,12,33,5,3,103,168.33,Assault,94.4,14,Very Safe
+Guildwood (140),2015,36,1,21,57,6,2,123,176.15,NonMCI,93.9,15,Very Safe
+Humber Heights-Westmount (8),2015,32,25,20,37,5,2,121,175.24,NonMCI,93.9,15,Very Safe
+Princess-Rosethorn (10),2015,17,19,29,73,4,4,146,174.94,NonMCI,93.9,15,Very Safe
+Pleasant View (46),2015,33,6,18,45,13,6,121,176.74,NonMCI,93.8,18,Very Safe
+Lawrence Park North (105),2015,27,19,35,34,5,5,125,180.41,Break and Enter,93.6,19,Very Safe
+Leaside-Bennington (56),2015,31,14,30,34,7,4,120,180.0,NonMCI,93.6,19,Very Safe
+Forest Hill North (102),2015,34,16,36,18,6,3,113,182.94,Break and Enter,93.4,21,Very Safe
+Lawrence Park South (103),2015,21,27,47,21,6,4,126,185.06,Break and Enter,93.2,22,Very Safe
+Elms-Old Rexdale (5),2015,46,18,17,25,8,0,114,188.74,Assault,93.0,23,Very Safe
+Broadview North (57),2015,53,4,21,26,3,1,108,189.34,Assault,92.9,24,Very Safe
+North Toronto (173),2015,43,2,43,7,7,3,105,190.5,Assault,92.9,24,Very Safe
+Yonge-Eglinton (100),2015,51,6,24,11,7,4,103,189.75,Assault,92.9,24,Very Safe
+Kingsway South (15),2015,33,14,23,33,17,3,123,191.9,Assault,92.8,27,Very Safe
+Parkwoods-O'Connor Hills (149),2015,41,18,27,41,1,3,131,196.41,Assault,92.5,28,Very Safe
+Rexdale-Kipling (4),2015,52,12,17,20,12,1,114,200.34,Assault,92.2,29,Very Safe
+Henry Farm (53),2015,51,10,26,30,5,3,125,205.0,Assault,91.9,30,Very Safe
+Yonge-Doris (151),2015,65,6,9,11,10,4,105,204.91,Assault,91.9,30,Very Safe
+Alderwood (20),2015,41,15,27,44,6,4,137,206.09,NonMCI,91.8,32,Very Safe
+Pelmo Park-Humberlea (23),2015,40,25,14,30,18,6,133,208.47,Assault,91.6,33,Very Safe
+Runnymede-Bloor West Village (89),2015,43,12,26,28,16,1,126,209.73,Assault,91.5,34,Very Safe
+South Eglinton-Davisville (174),2015,54,4,32,16,8,3,117,212.72,Assault,91.3,35,Very Safe
+Playter Estates-Danforth (67),2015,42,9,40,23,13,2,129,214.93,Assault,91.2,36,Very Safe
+Keelesdale-Eglinton West (110),2015,53,16,20,16,15,2,122,216.66,Assault,91.1,37,Very Safe
+Bathurst Manor (34),2015,45,25,30,31,7,2,140,220.19,Assault,90.8,38,Very Safe
+Blake-Jones (69),2015,60,2,28,17,10,1,118,220.62,Assault,90.8,38,Very Safe
+Edenbridge-Humber Valley (9),2015,21,24,40,82,7,4,178,221.65,NonMCI,90.7,40,Very Safe
+Etobicoke West Mall (13),2015,60,17,25,21,5,3,131,226.83,Assault,90.4,41,Very Safe
+Steeles (116),2015,36,15,59,27,8,3,148,234.1,Break and Enter,89.9,42,Very Safe
+Danforth East York (59),2015,54,10,24,63,7,3,161,239.47,NonMCI,89.5,43,Very Safe
+Humber Bay Shores (161),2015,73,11,20,20,5,5,134,244.74,Assault,89.1,44,Very Safe
+Humewood-Cedarvale (106),2015,50,6,39,53,9,3,160,245.62,NonMCI,89.1,44,Very Safe
+Rustic (28),2015,65,17,17,15,19,1,134,247.24,Assault,89.0,46,Very Safe
+West Rouge (143),2015,54,26,32,31,8,2,153,247.19,Assault,89.0,46,Very Safe
+Lansing-Westgate (38),2015,63,21,27,31,5,3,150,248.28,Assault,88.9,48,Very Safe
+Bendale South (157),2015,61,12,28,28,14,2,145,250.16,Assault,88.8,49,Very Safe
+Hillcrest Village (48),2015,47,10,48,46,8,5,164,252.1,Break and Enter,88.6,50,Very Safe
+Highland Creek (134),2015,48,10,36,25,25,5,149,254.17,Assault,88.5,51,Very Safe
+Beechborough-Greenbrook (112),2015,79,9,15,16,11,6,136,257.76,Assault,88.2,52,Very Safe
+East Willowdale (152),2015,41,20,58,18,14,5,156,257.43,Break and Enter,88.2,52,Very Safe
+Thistletown-Beaumond Heights (3),2015,56,14,23,49,21,3,166,264.56,Assault,87.8,54,Very Safe
+Woodbine Corridor (64),2015,67,10,25,36,14,3,155,263.8,Assault,87.8,54,Very Safe
+Wychwood (94),2015,70,16,30,23,9,3,151,267.75,Assault,87.5,56,Very Safe
+Eringate-Centennial-West Deane (11),2015,58,25,28,47,13,3,174,270.91,Assault,87.3,57,Very Safe
+Dovercourt Village (172),2015,64,16,20,37,22,2,161,273.34,Assault,87.2,58,Very Safe
+Willowdale West (37),2015,87,15,18,18,1,6,145,272.19,Assault,87.2,58,Very Safe
+Little Portugal (84),2015,74,10,40,29,5,1,159,277.46,Assault,86.9,60,Very Safe
+Long Branch (19),2015,62,17,33,50,14,4,180,285.07,Assault,86.3,61,Very Safe
+Bedford Park-Nortown (39),2015,28,38,66,61,6,13,212,286.75,Break and Enter,86.2,62,Very Safe
+Weston-Pelham Park (91),2015,82,15,22,27,11,5,162,289.27,Assault,86.1,63,Very Safe
+Corso Italia-Davenport (92),2015,80,10,22,36,13,4,165,290.64,Assault,86.0,64,Very Safe
+Clanton Park (33),2015,57,29,44,50,7,5,192,292.13,Assault,85.9,65,Very Safe
+Dufferin Grove (83),2015,71,8,31,32,21,4,167,291.17,Assault,85.9,65,Very Safe
+North Riverdale (68),2015,53,10,51,43,22,2,181,292.5,Assault,85.8,67,Very Safe
+Briar Hill-Belgravia (108),2015,81,14,30,35,12,3,175,305.58,Assault,84.9,68,Very Safe
+Thorncliffe Park (55),2015,92,13,26,16,10,5,162,306.85,Assault,84.8,69,Very Safe
+East L'Amoreaux (148),2015,75,8,50,30,12,5,180,313.67,Assault,84.4,70,Very Safe
+Newtonbrook East (50),2015,76,8,50,30,9,7,180,314.76,Assault,84.3,71,Very Safe
+St.Andrew-Windfields (40),2015,43,25,79,42,6,15,210,314.45,Break and Enter,84.3,71,Very Safe
+L'Amoreaux West (147),2015,74,12,35,35,24,2,182,315.49,Assault,84.2,73,Very Safe
+Malvern West (145),2015,87,17,21,31,18,4,178,316.96,Assault,84.1,74,Very Safe
+Stonegate-Queensway (16),2015,67,31,45,59,8,8,218,334.09,Assault,83.0,75,Very Safe
+Willowridge-Martingrove-Richview (7),2015,70,36,36,57,13,4,216,334.93,Assault,82.9,76,Very Safe
+Bayview Village (52),2015,96,21,35,21,5,9,187,339.19,Assault,82.6,77,Very Safe
+Mount Dennis (115),2015,99,15,20,54,13,2,203,346.01,Assault,82.1,78,Very Safe
+Englemount-Lawrence (32),2015,88,21,40,55,10,2,216,354.04,Assault,81.6,79,Very Safe
+Bay-Cloverhill (169),2015,96,5,46,21,14,10,192,355.77,Assault,81.5,80,Very Safe
+Islington (158),2015,58,24,57,104,13,6,262,365.96,NonMCI,80.8,81,Very Safe
+Agincourt North (129),2015,65,26,54,44,31,7,227,367.79,Assault,80.6,82,Very Safe
+Junction Area (90),2015,97,23,33,39,16,2,210,367.95,Assault,80.6,82,Very Safe
+Fenside-Parkwoods (150),2015,96,15,35,53,16,3,218,369.85,Assault,80.5,84,Very Safe
+Palmerston-Little Italy (80),2015,80,16,43,108,13,1,261,380.3,NonMCI,79.8,85,Safe
+New Toronto (18),2015,99,14,43,41,15,4,216,380.67,Assault,79.7,86,Safe
+Ionview (125),2015,102,12,45,29,17,5,210,382.22,Assault,79.6,87,Safe
+Regent Park (72),2015,104,13,28,61,15,4,225,382.71,Assault,79.6,87,Safe
+Fort York-Liberty Village (163),2015,99,19,39,56,6,13,232,384.18,Assault,79.5,89,Safe
+Danforth (66),2015,93,8,40,65,22,5,233,385.86,Assault,79.4,90,Safe
+Roncesvalles (86),2015,112,9,37,35,20,2,215,394.59,Assault,78.8,91,Safe
+Rosedale-Moore Park (98),2015,106,22,28,40,19,9,224,394.03,Assault,78.8,91,Safe
+Westminster-Branson (35),2015,90,26,68,46,5,5,240,395.46,Assault,78.7,93,Safe
+West Queen West (162),2015,121,10,30,47,10,4,222,399.61,Assault,78.4,94,Safe
+Banbury-Don Mills (42),2015,72,19,87,40,13,16,247,401.19,Break and Enter,78.3,95,Safe
+Morningside Heights (144),2015,105,22,41,36,16,8,228,402.46,Assault,78.2,96,Safe
+Flemingdon Park (44),2015,134,8,21,15,18,3,199,404.83,Assault,78.1,97,Safe
+High Park-Swansea (87),2015,89,14,50,68,24,5,250,406.52,Assault,78.0,98,Safe
+The Beaches (63),2015,96,25,42,96,6,5,270,406.28,Assault,78.0,98,Safe
+Humbermede (22),2015,111,31,35,27,15,9,228,407.15,Assault,77.9,100,Safe
+Brookhaven-Amesbury (30),2015,94,42,44,49,15,7,251,410.89,Assault,77.7,101,Safe
+Cliffcrest (123),2015,96,13,58,57,18,6,248,414.61,Assault,77.4,102,Safe
+Oakwood Village (107),2015,128,11,29,37,14,3,222,415.23,Assault,77.4,102,Safe
+Victoria Village (43),2015,118,11,48,34,13,5,229,417.23,Assault,77.2,104,Safe
+Newtonbrook West (36),2015,112,24,42,64,6,5,253,422.0,Assault,76.9,105,Safe
+Trinity-Bellwoods (81),2015,101,16,56,61,15,5,254,423.4,Assault,76.8,106,Safe
+Morningside (135),2015,131,15,19,36,23,2,226,426.22,Assault,76.6,107,Safe
+Tam O'Shanter-Sullivan (118),2015,84,19,68,55,29,8,263,433.91,Assault,76.1,108,Safe
+Agincourt South-Malvern West (128),2015,93,29,60,67,18,9,276,439.28,Assault,75.7,109,Safe
+Greenwood-Coxwell (65),2015,121,17,35,59,15,7,254,438.97,Assault,75.7,109,Safe
+High Park North (88),2015,106,14,70,23,25,1,239,440.63,Assault,75.6,111,Safe
+Downsview (155),2015,115,35,33,46,21,10,260,446.89,Assault,75.2,112,Safe
+Taylor-Massey (61),2015,90,9,71,48,37,3,258,445.88,Assault,75.2,112,Safe
+Humber Summit (21),2015,94,37,45,58,26,15,275,448.36,Assault,75.1,114,Safe
+Kingsview Village-The Westway (6),2015,109,49,33,53,27,4,275,457.75,Assault,74.4,115,Safe
+Mimico-Queensway (160),2015,121,24,46,49,16,10,266,460.95,Assault,74.2,116,Safe
+Cabbagetown-South St.James Town (71),2015,102,7,65,115,14,5,308,467.14,NonMCI,73.8,117,Safe
+Scarborough Village (139),2015,138,14,48,26,29,2,257,490.61,Assault,72.2,118,Safe
+Junction-Wallace Emerson (171),2015,142,15,47,25,26,5,260,499.79,Assault,71.5,119,Safe
+Rockcliffe-Smythe (111),2015,123,41,39,54,35,3,295,507.34,Assault,71.0,120,Safe
+Malvern East (146),2015,172,15,21,19,26,1,254,515.53,Assault,70.4,121,Safe
+O'Connor-Parkview (54),2015,154,13,31,85,11,6,300,518.08,Assault,70.3,122,Safe
+Don Valley Village (47),2015,122,29,48,102,24,5,330,519.06,Assault,70.2,123,Safe
+University (79),2015,135,11,62,67,18,10,303,523.2,Assault,69.9,124,Safe
+Harbourfront-CityPlace (165),2015,132,23,66,91,7,15,334,538.47,Assault,68.9,125,Safe
+Milliken (130),2015,83,44,117,60,29,13,346,544.99,Break and Enter,68.4,126,Safe
+Yorkdale-Glen Park (31),2015,127,51,55,72,16,18,339,548.63,Assault,68.2,127,Safe
+Bendale-Glen Andrew (156),2015,136,37,34,62,40,8,317,548.74,Assault,68.1,128,Safe
+Birchcliffe-Cliffside (122),2015,127,22,82,106,20,4,361,577.66,Assault,66.2,129,Safe
+Weston (113),2015,143,35,54,64,40,4,340,588.89,Assault,65.4,130,Safe
+North St.James Town (74),2015,152,11,67,93,28,3,354,599.99,Assault,64.6,131,Safe
+Oakridge (121),2015,157,14,68,77,30,4,350,611.53,Assault,63.8,132,Safe
+St Lawrence-East Bayfront-The Islands (166),2015,177,14,46,106,12,18,373,624.09,Assault,62.9,133,Safe
+Woburn North (142),2015,162,17,85,56,32,8,360,645.31,Assault,61.5,134,Safe
+South Parkdale (85),2015,200,18,53,40,28,3,342,659.5,Assault,60.5,135,Safe
+Eglinton East (138),2015,175,17,77,47,41,3,360,665.47,Assault,60.1,136,Safe
+Dorset Park (126),2015,157,42,84,98,31,9,421,691.82,Assault,58.3,137,Moderate
+Black Creek (24),2015,214,46,26,30,39,4,359,696.88,Assault,57.9,138,Moderate
+Church-Wellesley (167),2015,197,11,73,61,33,5,380,702.56,Assault,57.5,139,Moderate
+Etobicoke City Centre (159),2015,142,77,86,107,19,37,468,715.64,Assault,56.6,140,Moderate
+Golfdale-Cedarbrae-Woburn (141),2015,203,18,60,58,43,5,387,721.19,Assault,56.2,141,Moderate
+Kennedy Park (124),2015,216,14,36,49,57,3,375,725.56,Assault,55.9,142,Moderate
+East End-Danforth (62),2015,180,13,90,119,27,8,437,732.93,Assault,55.4,143,Moderate
+Oakdale-Beverley Heights (154),2015,215,66,43,42,32,4,402,743.04,Assault,54.7,144,Moderate
+South Riverdale (70),2015,188,24,97,151,40,17,517,832.2,Assault,48.6,145,Moderate
+Mount Olive-Silverstone-Jamestown (2),2015,220,53,37,63,86,6,465,851.42,Assault,47.3,146,Moderate
+Wexford/Maryvale (119),2015,201,49,91,125,34,18,518,855.08,Assault,47.0,147,Moderate
+Glenfield-Jane Heights (25),2015,269,49,38,49,38,6,449,866.19,Assault,46.2,148,Moderate
+Clairlea-Birchmount (120),2015,235,26,114,96,42,17,530,927.77,Assault,42.0,149,Moderate
+Annex (95),2015,206,15,108,205,44,19,597,931.41,Assault,41.7,150,Moderate
+West Hill (136),2015,367,16,68,66,60,7,584,1149.51,Assault,26.7,151,Risky
+York University Heights (27),2015,271,103,139,103,73,48,737,1243.83,Assault,20.2,152,Risky
+Wellington Place (164),2015,410,19,72,122,27,16,666,1254.11,Assault,19.5,153,Very Risky
+Downtown Yonge East (168),2015,352,18,81,158,88,14,711,1277.91,Assault,17.8,154,Very Risky
+Moss Park (73),2015,371,20,97,163,123,14,788,1415.77,Assault,8.3,155,Very Risky
+Yonge-Bay Corridor (170),2015,448,17,113,98,44,27,747,1433.3,Assault,7.1,156,Very Risky
+West Humber-Clairville (1),2015,279,260,118,250,65,58,1030,1529.66,Assault,0.5,157,Very Risky
+Kensington-Chinatown (78),2015,355,22,99,510,49,40,1075,1536.37,NonMCI,0.0,158,Very Risky
+Lambton Baby Point (114),2016,23,1,9,15,2,1,51,97.59,Assault,100.0,1,Very Safe
+Mount Pleasant East (99),2016,19,8,15,16,2,1,61,107.59,Assault,99.4,2,Very Safe
+Forest Hill South (101),2016,9,6,29,14,2,6,66,109.59,Break and Enter,99.3,3,Very Safe
+Avondale (153),2016,33,10,7,14,1,4,69,133.25,Assault,97.9,4,Very Safe
+Yonge-St.Clair (97),2016,28,6,13,7,5,7,66,132.57,Assault,97.9,4,Very Safe
+Forest Hill North (102),2016,25,8,18,12,7,2,72,138.41,Assault,97.6,6,Very Safe
+Lawrence Park North (105),2016,22,12,27,23,4,4,92,157.77,Break and Enter,96.4,7,Very Safe
+Bridle Path-Sunnybrook-York Mills (41),2016,16,9,51,11,2,4,93,164.9,Break and Enter,96.0,8,Very Safe
+Woodbine-Lumsden (60),2016,37,1,14,36,3,5,96,168.85,Assault,95.8,9,Very Safe
+Casa Loma (96),2016,38,6,19,21,2,7,93,176.81,Assault,95.3,10,Very Safe
+Maple Leaf (29),2016,39,14,18,13,5,0,89,177.76,Assault,95.2,11,Very Safe
+Markland Wood (12),2016,24,13,19,44,9,2,111,178.13,NonMCI,95.2,11,Very Safe
+Lawrence Park South (103),2016,18,17,45,23,2,2,107,179.24,Break and Enter,95.1,13,Very Safe
+Kingsway South (15),2016,29,9,28,20,10,2,98,181.63,Assault,95.0,14,Very Safe
+Leaside-Bennington (56),2016,30,4,33,19,8,3,97,183.03,Break and Enter,94.9,15,Very Safe
+Runnymede-Bloor West Village (89),2016,35,10,21,18,12,1,97,188.24,Assault,94.6,16,Very Safe
+Guildwood (140),2016,40,4,17,30,8,1,100,190.42,Assault,94.5,17,Very Safe
+Bayview Woods-Steeles (49),2016,36,15,33,15,0,3,102,192.99,Assault,94.3,18,Very Safe
+Humber Heights-Westmount (8),2016,30,14,24,24,11,4,107,193.5,Assault,94.3,18,Very Safe
+North Toronto (173),2016,50,2,15,14,6,2,89,193.09,Assault,94.3,18,Very Safe
+Etobicoke West Mall (13),2016,49,15,14,20,4,0,102,201.95,Assault,93.8,21,Very Safe
+Old East York (58),2016,45,5,25,17,7,2,101,204.19,Assault,93.7,22,Very Safe
+Broadview North (57),2016,53,8,16,20,6,2,105,215.24,Assault,93.0,23,Very Safe
+Centennial Scarborough (133),2016,42,3,18,47,10,2,122,215.75,NonMCI,93.0,23,Very Safe
+Keelesdale-Eglinton West (110),2016,51,13,14,11,15,0,104,221.21,Assault,92.6,25,Very Safe
+Caledonia-Fairbank (109),2016,58,10,13,10,10,1,102,224.21,Assault,92.5,26,Very Safe
+Yonge-Eglinton (100),2016,55,3,19,8,12,3,100,224.44,Assault,92.4,27,Very Safe
+Alderwood (20),2016,37,15,26,39,8,10,135,230.35,NonMCI,92.1,28,Very Safe
+South Eglinton-Davisville (174),2016,59,7,25,9,4,4,108,235.38,Assault,91.8,29,Very Safe
+Hillcrest Village (48),2016,40,22,34,20,10,1,127,238.87,Assault,91.6,30,Very Safe
+Pleasant View (46),2016,49,8,32,11,13,2,115,239.09,Assault,91.6,30,Very Safe
+Edenbridge-Humber Valley (9),2016,27,27,46,44,4,1,149,240.6,Break and Enter,91.5,32,Very Safe
+Long Branch (19),2016,54,12,28,19,6,1,120,240.48,Assault,91.5,32,Very Safe
+Parkwoods-O'Connor Hills (149),2016,50,11,21,43,6,2,133,241.8,Assault,91.4,34,Very Safe
+Beechborough-Greenbrook (112),2016,61,6,12,7,21,3,110,248.87,Assault,91.0,35,Very Safe
+Danforth East York (59),2016,40,12,43,42,5,4,146,251.27,Break and Enter,90.9,36,Very Safe
+Henry Farm (53),2016,64,12,12,34,3,3,128,250.26,Assault,90.9,36,Very Safe
+Thistletown-Beaumond Heights (3),2016,46,16,23,37,14,1,137,250.05,Assault,90.9,36,Very Safe
+Blake-Jones (69),2016,62,5,24,20,11,0,122,256.78,Assault,90.5,39,Very Safe
+Rustic (28),2016,69,10,17,9,8,3,116,256.96,Assault,90.5,39,Very Safe
+Humewood-Cedarvale (106),2016,52,17,27,39,4,5,144,260.38,Assault,90.3,41,Very Safe
+Playter Estates-Danforth (67),2016,61,10,24,12,12,3,122,260.07,Assault,90.3,41,Very Safe
+Princess-Rosethorn (10),2016,28,20,33,51,22,3,157,259.79,NonMCI,90.3,41,Very Safe
+Elms-Old Rexdale (5),2016,64,13,9,23,17,0,126,262.97,Assault,90.2,44,Very Safe
+Pelmo Park-Humberlea (23),2016,50,25,24,34,11,4,148,269.06,Assault,89.8,45,Very Safe
+Steeles (116),2016,39,28,48,18,12,3,148,273.16,Break and Enter,89.5,46,Very Safe
+Bendale South (157),2016,63,8,28,17,13,4,133,279.6,Assault,89.2,47,Very Safe
+Rexdale-Kipling (4),2016,67,22,16,14,13,0,132,278.46,Assault,89.2,47,Very Safe
+Yonge-Doris (151),2016,67,6,11,13,21,8,126,278.18,Assault,89.2,47,Very Safe
+Corso Italia-Davenport (92),2016,62,7,15,27,26,2,139,285.5,Assault,88.8,50,Very Safe
+Humber Bay Shores (161),2016,75,10,17,33,2,11,148,294.33,Assault,88.3,51,Very Safe
+West Rouge (143),2016,62,6,35,44,8,3,158,297.6,Assault,88.1,52,Very Safe
+Highland Creek (134),2016,67,8,34,30,10,1,150,300.66,Assault,87.9,53,Very Safe
+Eringate-Centennial-West Deane (11),2016,56,27,28,39,12,5,167,303.29,Assault,87.8,54,Very Safe
+Wychwood (94),2016,70,17,27,26,9,2,151,305.11,Assault,87.6,55,Very Safe
+Danforth (66),2016,64,6,40,19,16,5,150,309.83,Assault,87.4,56,Very Safe
+North Riverdale (68),2016,50,7,41,48,23,4,173,314.92,Assault,87.1,57,Very Safe
+Clanton Park (33),2016,51,44,41,38,4,6,184,320.87,Assault,86.7,58,Very Safe
+East Willowdale (152),2016,54,21,57,33,8,2,175,325.19,Break and Enter,86.5,59,Very Safe
+Lansing-Westgate (38),2016,63,25,41,36,5,4,174,323.61,Assault,86.5,59,Very Safe
+Willowdale West (37),2016,71,11,36,37,8,4,167,325.63,Assault,86.4,61,Very Safe
+Bayview Village (52),2016,71,16,33,40,8,5,173,330.67,Assault,86.1,62,Very Safe
+St.Andrew-Windfields (40),2016,55,10,56,30,18,6,175,335.26,Break and Enter,85.9,63,Very Safe
+Dufferin Grove (83),2016,79,9,26,35,13,3,165,335.44,Assault,85.8,64,Very Safe
+Ionview (125),2016,97,8,17,16,8,4,150,337.69,Assault,85.7,65,Very Safe
+Bathurst Manor (34),2016,70,25,34,32,11,5,177,338.75,Assault,85.6,66,Very Safe
+Thorncliffe Park (55),2016,83,6,24,31,11,11,166,340.16,Assault,85.6,66,Very Safe
+East L'Amoreaux (148),2016,87,11,20,29,13,2,162,341.82,Assault,85.5,68,Very Safe
+Weston-Pelham Park (91),2016,91,15,16,20,11,7,160,341.84,Assault,85.5,68,Very Safe
+Woodbine Corridor (64),2016,77,8,52,26,8,6,177,355.56,Assault,84.6,70,Very Safe
+High Park-Swansea (87),2016,79,13,32,48,13,4,189,363.85,Assault,84.1,71,Very Safe
+Palmerston-Little Italy (80),2016,67,17,39,45,21,8,197,370.43,Assault,83.8,72,Very Safe
+Fort York-Liberty Village (163),2016,92,20,28,23,4,12,179,370.79,Assault,83.7,73,Very Safe
+L'Amoreaux West (147),2016,85,15,29,24,23,2,178,376.48,Assault,83.4,74,Very Safe
+Newtonbrook East (50),2016,90,9,41,28,9,5,182,377.07,Assault,83.4,74,Very Safe
+Stonegate-Queensway (16),2016,75,14,49,48,10,4,200,378.3,Assault,83.3,76,Very Safe
+Briar Hill-Belgravia (108),2016,79,18,31,34,24,5,191,379.33,Assault,83.2,77,Very Safe
+Agincourt North (129),2016,73,17,49,48,14,5,206,385.17,Assault,82.9,78,Very Safe
+Bedford Park-Nortown (39),2016,33,29,101,43,15,8,229,390.79,Break and Enter,82.5,79,Very Safe
+New Toronto (18),2016,92,10,41,33,14,5,195,401.42,Assault,81.9,80,Very Safe
+Westminster-Branson (35),2016,101,25,19,43,8,6,202,401.07,Assault,81.9,80,Very Safe
+Dovercourt Village (172),2016,85,14,39,52,14,5,209,402.95,Assault,81.8,82,Very Safe
+Taylor-Massey (61),2016,93,6,42,36,16,5,198,405.81,Assault,81.7,83,Very Safe
+High Park North (88),2016,101,7,28,19,26,2,183,408.47,Assault,81.5,84,Very Safe
+Banbury-Don Mills (42),2016,80,11,56,47,13,9,216,410.7,Assault,81.4,85,Very Safe
+Little Portugal (84),2016,102,16,39,30,7,3,197,409.73,Assault,81.4,85,Very Safe
+Morningside Heights (144),2016,80,16,41,37,25,8,207,409.99,Assault,81.4,85,Very Safe
+Junction Area (90),2016,102,21,33,31,13,2,202,419.87,Assault,80.8,88,Very Safe
+West Queen West (162),2016,105,5,40,46,6,6,208,420.76,Assault,80.8,88,Very Safe
+Islington (158),2016,80,33,40,52,17,6,228,421.07,Assault,80.7,90,Very Safe
+Mount Dennis (115),2016,102,18,31,17,26,0,194,427.35,Assault,80.4,91,Very Safe
+Victoria Village (43),2016,117,18,20,31,10,4,200,428.59,Assault,80.3,92,Very Safe
+Fenside-Parkwoods (150),2016,107,17,24,45,20,2,215,441.98,Assault,79.5,93,Safe
+The Beaches (63),2016,76,7,77,64,13,4,241,442.79,Break and Enter,79.4,94,Safe
+Humbermede (22),2016,99,45,24,32,21,1,222,444.71,Assault,79.3,95,Safe
+Brookhaven-Amesbury (30),2016,100,31,31,28,27,1,218,449.98,Assault,79.0,96,Safe
+Regent Park (72),2016,118,4,26,46,18,3,215,454.09,Assault,78.8,97,Safe
+Greenwood-Coxwell (65),2016,91,13,60,55,13,7,239,454.73,Assault,78.7,98,Safe
+Malvern West (145),2016,110,17,25,35,29,5,221,463.01,Assault,78.2,99,Safe
+Milliken (130),2016,75,33,67,35,25,11,246,464.27,Assault,78.2,99,Safe
+Tam O'Shanter-Sullivan (118),2016,93,19,62,44,13,9,240,464.69,Assault,78.1,101,Safe
+Morningside (135),2016,145,14,19,17,9,0,204,473.49,Assault,77.6,102,Safe
+Rosedale-Moore Park (98),2016,100,12,59,45,16,8,240,473.48,Assault,77.6,102,Safe
+Oakwood Village (107),2016,126,23,22,27,22,1,221,482.23,Assault,77.1,104,Safe
+Cliffcrest (123),2016,103,10,59,59,21,4,256,497.95,Assault,76.2,105,Safe
+Flemingdon Park (44),2016,141,8,14,46,21,3,233,506.67,Assault,75.6,106,Safe
+Downsview (155),2016,121,35,28,62,13,4,263,510.58,Assault,75.4,107,Safe
+Bay-Cloverhill (169),2016,121,6,58,26,16,15,242,513.32,Assault,75.3,108,Safe
+Willowridge-Martingrove-Richview (7),2016,95,48,32,56,39,4,274,519.97,Assault,74.9,109,Safe
+Trinity-Bellwoods (81),2016,122,19,46,63,13,2,265,523.67,Assault,74.6,110,Safe
+O'Connor-Parkview (54),2016,125,6,34,81,20,6,272,528.21,Assault,74.4,111,Safe
+Englemount-Lawrence (32),2016,109,19,56,35,33,9,261,535.08,Assault,74.0,112,Safe
+Roncesvalles (86),2016,125,14,41,34,34,3,251,536.05,Assault,73.9,113,Safe
+Harbourfront-CityPlace (165),2016,128,14,38,67,9,23,279,541.23,Assault,73.6,114,Safe
+Kingsview Village-The Westway (6),2016,120,38,34,53,25,5,275,543.46,Assault,73.5,115,Safe
+Mimico-Queensway (160),2016,154,29,32,32,8,5,260,562.85,Assault,72.3,116,Safe
+University (79),2016,127,17,49,70,30,5,298,585.98,Assault,70.9,117,Safe
+Agincourt South-Malvern West (128),2016,125,27,61,55,18,13,299,587.33,Assault,70.8,118,Safe
+Cabbagetown-South St.James Town (71),2016,119,13,53,107,23,7,322,588.98,Assault,70.7,119,Safe
+Humber Summit (21),2016,114,58,41,62,23,19,317,589.16,Assault,70.7,119,Safe
+Scarborough Village (139),2016,167,11,34,36,20,2,270,599.18,Assault,70.1,121,Safe
+Malvern East (146),2016,159,17,41,26,26,3,272,607.07,Assault,69.7,122,Safe
+Don Valley Village (47),2016,126,28,65,64,23,8,314,609.06,Assault,69.6,123,Safe
+Newtonbrook West (36),2016,140,43,55,43,16,7,304,613.59,Assault,69.3,124,Safe
+Oakridge (121),2016,135,11,58,71,27,10,312,614.74,Assault,69.2,125,Safe
+Junction-Wallace Emerson (171),2016,157,13,42,47,26,6,291,619.73,Assault,68.9,126,Safe
+Rockcliffe-Smythe (111),2016,139,32,37,44,49,3,304,633.07,Assault,68.1,127,Safe
+Bendale-Glen Andrew (156),2016,158,32,29,44,38,10,311,655.81,Assault,66.8,128,Safe
+Woburn North (142),2016,161,22,42,50,30,10,315,658.43,Assault,66.6,129,Safe
+North St.James Town (74),2016,130,19,54,151,22,9,385,668.7,NonMCI,66.0,130,Safe
+Golfdale-Cedarbrae-Woburn (141),2016,174,12,36,44,35,6,307,673.29,Assault,65.7,131,Safe
+Kennedy Park (124),2016,202,12,47,34,21,5,321,722.88,Assault,62.8,132,Safe
+Etobicoke City Centre (159),2016,128,91,64,89,16,29,417,728.29,Assault,62.5,133,Safe
+Yorkdale-Glen Park (31),2016,168,39,65,59,23,24,378,754.83,Assault,60.9,134,Safe
+Weston (113),2016,182,37,44,92,31,2,388,768.86,Assault,60.0,135,Moderate
+East End-Danforth (62),2016,164,25,79,75,35,11,389,771.72,Assault,59.9,136,Moderate
+Birchcliffe-Cliffside (122),2016,185,14,75,87,20,6,387,778.12,Assault,59.5,137,Moderate
+Eglinton East (138),2016,192,20,64,39,40,6,361,784.98,Assault,59.1,138,Moderate
+St Lawrence-East Bayfront-The Islands (166),2016,206,9,62,83,14,16,390,798.72,Assault,58.3,139,Moderate
+Oakdale-Beverley Heights (154),2016,215,51,24,41,29,8,368,799.65,Assault,58.2,140,Moderate
+South Parkdale (85),2016,206,25,66,43,25,12,377,809.4,Assault,57.6,141,Moderate
+Dorset Park (126),2016,178,44,70,59,50,12,413,839.22,Assault,55.8,142,Moderate
+Wexford/Maryvale (119),2016,193,44,75,117,24,11,464,881.72,Assault,53.3,143,Moderate
+Black Creek (24),2016,255,52,28,54,32,6,427,929.13,Assault,50.5,144,Moderate
+Clairlea-Birchmount (120),2016,228,34,89,107,34,16,508,1008.1,Assault,45.8,145,Moderate
+Church-Wellesley (167),2016,275,13,61,65,50,12,476,1048.43,Assault,43.4,146,Moderate
+Mount Olive-Silverstone-Jamestown (2),2016,246,45,34,93,89,3,510,1064.24,Assault,42.5,147,Moderate
+South Riverdale (70),2016,207,28,149,143,30,23,580,1083.76,Assault,41.3,148,Moderate
+Glenfield-Jane Heights (25),2016,276,59,28,86,59,12,520,1091.92,Assault,40.8,149,Moderate
+Annex (95),2016,254,21,124,142,43,21,605,1180.46,Assault,35.5,150,Risky
+West Hill (136),2016,382,13,72,62,59,7,595,1361.7,Assault,24.7,151,Risky
+Downtown Yonge East (168),2016,322,18,85,136,89,28,678,1397.46,Assault,22.6,152,Risky
+Yonge-Bay Corridor (170),2016,417,17,62,76,63,28,663,1495.74,Assault,16.8,153,Very Risky
+York University Heights (27),2016,336,102,99,138,60,35,770,1516.35,Assault,15.5,154,Very Risky
+Wellington Place (164),2016,447,24,115,66,40,17,709,1609.48,Assault,10.0,155,Very Risky
+Kensington-Chinatown (78),2016,350,28,82,526,58,17,1061,1738.04,NonMCI,2.3,156,Very Risky
+West Humber-Clairville (1),2016,274,290,130,213,78,40,1025,1770.09,Auto Theft,0.4,157,Very Risky
+Moss Park (73),2016,422,20,132,129,115,12,830,1777.33,Assault,0.0,158,Very Risky
+Lambton Baby Point (114),2017,16,5,10,6,2,0,39,86.64,Assault,100.0,1,Very Safe
+Maple Leaf (29),2017,20,8,10,6,2,2,48,106.8,Assault,99.0,2,Very Safe
+Yonge-St.Clair (97),2017,24,2,17,8,2,0,53,122.54,Assault,98.3,3,Very Safe
+Woodbine-Lumsden (60),2017,31,1,10,17,4,2,65,147.72,Assault,97.1,4,Very Safe
+Markland Wood (12),2017,23,10,13,30,10,1,87,167.1,NonMCI,96.2,5,Very Safe
+Avondale (153),2017,40,4,11,8,4,5,72,174.5,Assault,95.9,6,Very Safe
+Alderwood (20),2017,22,16,23,15,6,6,88,176.55,Break and Enter,95.8,7,Very Safe
+Old East York (58),2017,41,0,17,20,4,2,84,193.19,Assault,95.0,8,Very Safe
+Princess-Rosethorn (10),2017,22,18,29,30,5,3,107,200.87,NonMCI,94.6,9,Very Safe
+Pleasant View (46),2017,37,16,11,24,5,5,98,203.24,Assault,94.5,10,Very Safe
+Etobicoke West Mall (13),2017,51,9,7,13,3,4,87,208.94,Assault,94.2,11,Very Safe
+Casa Loma (96),2017,32,9,29,16,8,7,101,216.95,Assault,93.9,12,Very Safe
+Guildwood (140),2017,42,4,10,41,8,4,109,221.77,Assault,93.6,13,Very Safe
+Runnymede-Bloor West Village (89),2017,33,16,19,23,15,1,107,225.1,Assault,93.5,14,Very Safe
+Lawrence Park South (103),2017,20,15,48,34,4,2,123,227.16,Break and Enter,93.4,15,Very Safe
+Kingsway South (15),2017,25,19,30,23,13,6,116,228.68,Break and Enter,93.3,16,Very Safe
+Bayview Woods-Steeles (49),2017,32,21,39,7,5,2,106,230.62,Break and Enter,93.2,17,Very Safe
+Broadview North (57),2017,50,7,24,12,4,1,98,233.58,Assault,93.1,18,Very Safe
+Bridle Path-Sunnybrook-York Mills (41),2017,27,2,64,12,1,4,110,235.5,Break and Enter,93.0,19,Very Safe
+Mount Pleasant East (99),2017,41,10,21,32,7,4,115,239.1,Assault,92.8,20,Very Safe
+North Toronto (173),2017,54,1,24,14,6,2,101,244.27,Assault,92.6,21,Very Safe
+Forest Hill South (101),2017,22,12,64,14,3,7,122,245.23,Break and Enter,92.5,22,Very Safe
+Leaside-Bennington (56),2017,34,4,29,45,10,5,127,246.5,NonMCI,92.5,22,Very Safe
+Humber Heights-Westmount (8),2017,37,23,32,22,3,6,123,252.17,Assault,92.2,24,Very Safe
+Edenbridge-Humber Valley (9),2017,30,18,43,36,3,4,134,254.78,Break and Enter,92.1,25,Very Safe
+Caledonia-Fairbank (109),2017,61,7,10,21,8,1,108,256.23,Assault,92.0,26,Very Safe
+Playter Estates-Danforth (67),2017,60,7,15,23,5,2,112,262.31,Assault,91.7,27,Very Safe
+Centennial Scarborough (133),2017,45,8,23,44,9,3,132,266.75,Assault,91.5,28,Very Safe
+Lawrence Park North (105),2017,36,26,30,36,5,6,139,267.82,Assault,91.5,28,Very Safe
+Rustic (28),2017,62,13,12,18,6,1,112,267.78,Assault,91.5,28,Very Safe
+Yonge-Eglinton (100),2017,58,2,24,24,9,3,120,279.43,Assault,90.9,31,Very Safe
+Blake-Jones (69),2017,61,8,17,17,13,3,119,285.99,Assault,90.6,32,Very Safe
+Beechborough-Greenbrook (112),2017,65,12,15,16,10,2,120,288.68,Assault,90.5,33,Very Safe
+Humewood-Cedarvale (106),2017,41,20,39,33,6,5,144,288.42,Assault,90.5,33,Very Safe
+Wychwood (94),2017,44,11,38,27,12,4,136,288.98,Assault,90.5,33,Very Safe
+Elms-Old Rexdale (5),2017,59,13,12,21,20,2,127,297.44,Assault,90.1,36,Very Safe
+Forest Hill North (102),2017,40,12,47,40,9,3,151,301.04,Break and Enter,89.9,37,Very Safe
+Steeles (116),2017,39,31,44,30,5,6,155,305.46,Break and Enter,89.7,38,Very Safe
+Danforth East York (59),2017,67,10,24,20,8,0,129,308.46,Assault,89.5,39,Very Safe
+Eringate-Centennial-West Deane (11),2017,56,28,18,29,12,1,144,309.78,Assault,89.5,39,Very Safe
+Weston-Pelham Park (91),2017,83,8,8,13,9,1,122,316.11,Assault,89.2,41,Very Safe
+Thistletown-Beaumond Heights (3),2017,57,22,17,18,20,5,139,316.8,Assault,89.1,42,Very Safe
+Bayview Village (52),2017,50,19,40,29,8,8,154,321.99,Assault,88.9,43,Very Safe
+Parkwoods-O'Connor Hills (149),2017,46,16,35,49,14,4,164,325.11,NonMCI,88.8,44,Very Safe
+Yonge-Doris (151),2017,72,15,11,18,14,5,135,323.07,Assault,88.8,44,Very Safe
+North Riverdale (68),2017,55,9,29,40,16,4,153,325.84,Assault,88.7,46,Very Safe
+Bathurst Manor (34),2017,50,24,37,31,12,4,158,329.01,Assault,88.6,47,Very Safe
+Keelesdale-Eglinton West (110),2017,60,26,14,22,22,4,148,331.41,Assault,88.5,48,Very Safe
+Hillcrest Village (48),2017,55,18,31,20,21,4,149,333.94,Assault,88.3,49,Very Safe
+South Eglinton-Davisville (174),2017,72,6,38,16,6,2,140,339.6,Assault,88.1,50,Very Safe
+Long Branch (19),2017,63,11,27,43,12,3,159,340.02,Assault,88.0,51,Very Safe
+Dufferin Grove (83),2017,73,11,25,33,8,4,154,348.0,Assault,87.7,52,Very Safe
+Henry Farm (53),2017,68,20,28,19,10,8,153,348.78,Assault,87.6,53,Very Safe
+Highland Creek (134),2017,61,13,29,52,15,1,171,353.41,Assault,87.4,54,Very Safe
+East L'Amoreaux (148),2017,73,10,32,23,14,4,156,363.05,Assault,87.0,55,Very Safe
+Willowdale West (37),2017,63,16,30,45,16,4,174,366.88,Assault,86.8,56,Very Safe
+Humber Bay Shores (161),2017,77,29,15,33,5,9,168,368.2,Assault,86.7,57,Very Safe
+Victoria Village (43),2017,69,11,33,35,13,5,166,368.29,Assault,86.7,57,Very Safe
+St.Andrew-Windfields (40),2017,45,13,86,30,2,6,182,373.5,Break and Enter,86.5,59,Very Safe
+Pelmo Park-Humberlea (23),2017,52,43,31,35,18,6,185,375.21,Assault,86.4,60,Very Safe
+Danforth (66),2017,79,6,29,16,22,2,154,381.09,Assault,86.1,61,Very Safe
+Rexdale-Kipling (4),2017,79,24,14,21,22,1,161,381.29,Assault,86.1,61,Very Safe
+Briar Hill-Belgravia (108),2017,78,13,31,31,13,3,169,387.19,Assault,85.8,63,Very Safe
+Ionview (125),2017,88,7,29,21,12,1,158,390.64,Assault,85.7,64,Very Safe
+Woodbine Corridor (64),2017,77,7,31,40,16,5,176,394.57,Assault,85.5,65,Very Safe
+Thorncliffe Park (55),2017,93,12,19,22,8,10,164,397.68,Assault,85.3,66,Very Safe
+Greenwood-Coxwell (65),2017,73,12,34,36,19,8,182,403.92,Assault,85.0,67,Very Safe
+East Willowdale (152),2017,44,16,71,34,26,7,198,411.66,Break and Enter,84.7,68,Very Safe
+Bendale South (157),2017,85,10,35,44,12,3,189,423.71,Assault,84.1,69,Very Safe
+Corso Italia-Davenport (92),2017,84,12,31,23,26,3,179,430.57,Assault,83.8,70,Very Safe
+Clanton Park (33),2017,60,32,55,69,10,5,231,441.66,NonMCI,83.3,71,Very Safe
+Mount Dennis (115),2017,95,16,17,17,28,4,177,442.51,Assault,83.2,72,Very Safe
+New Toronto (18),2017,100,13,26,18,19,1,177,441.92,Assault,83.2,72,Very Safe
+L'Amoreaux West (147),2017,89,14,40,33,15,3,194,447.59,Assault,83.0,74,Very Safe
+Lansing-Westgate (38),2017,81,26,42,31,12,11,203,447.49,Assault,83.0,74,Very Safe
+Little Portugal (84),2017,86,20,40,43,11,2,202,446.46,Assault,83.0,74,Very Safe
+Palmerston-Little Italy (80),2017,77,15,37,77,11,7,224,447.62,Assault,83.0,74,Very Safe
+Taylor-Massey (61),2017,102,5,27,35,17,2,188,451.35,Assault,82.8,78,Very Safe
+High Park-Swansea (87),2017,78,15,40,49,19,11,212,453.72,Assault,82.7,79,Very Safe
+West Rouge (143),2017,84,7,40,61,18,5,215,459.04,Assault,82.4,80,Very Safe
+Islington (158),2017,71,25,40,66,23,7,232,469.33,Assault,81.9,81,Very Safe
+Flemingdon Park (44),2017,122,12,11,17,18,3,183,475.36,Assault,81.7,82,Very Safe
+Westminster-Branson (35),2017,95,16,41,45,13,4,214,477.5,Assault,81.6,83,Very Safe
+Newtonbrook East (50),2017,86,12,56,35,16,9,214,479.35,Assault,81.5,84,Very Safe
+Morningside Heights (144),2017,86,24,30,66,18,6,230,480.33,Assault,81.4,85,Very Safe
+Fort York-Liberty Village (163),2017,94,20,56,39,2,8,219,483.39,Assault,81.3,86,Very Safe
+Malvern West (145),2017,103,25,11,43,27,3,212,490.85,Assault,80.9,87,Very Safe
+Junction Area (90),2017,89,23,46,47,14,8,227,493.02,Assault,80.8,88,Very Safe
+Agincourt North (129),2017,65,34,49,91,19,10,268,503.06,NonMCI,80.4,89,Very Safe
+West Queen West (162),2017,111,7,31,79,4,4,236,503.79,Assault,80.3,90,Very Safe
+Willowridge-Martingrove-Richview (7),2017,90,39,39,40,20,2,230,504.69,Assault,80.3,90,Very Safe
+Brookhaven-Amesbury (30),2017,104,23,34,33,18,10,222,510.71,Assault,80.0,92,Safe
+Dovercourt Village (172),2017,93,16,38,40,32,4,223,511.73,Assault,79.9,93,Safe
+O'Connor-Parkview (54),2017,118,9,38,31,15,4,215,521.82,Assault,79.5,94,Safe
+Regent Park (72),2017,117,10,29,39,19,3,217,520.26,Assault,79.5,94,Safe
+Fenside-Parkwoods (150),2017,102,27,31,53,23,5,241,528.97,Assault,79.1,96,Safe
+Englemount-Lawrence (32),2017,91,35,47,49,19,9,250,533.14,Assault,78.9,97,Safe
+Banbury-Don Mills (42),2017,98,18,63,58,8,6,251,538.78,Assault,78.7,98,Safe
+Kingsview Village-The Westway (6),2017,106,34,39,44,13,6,242,537.16,Assault,78.7,98,Safe
+Stonegate-Queensway (16),2017,95,33,50,57,19,6,260,552.76,Assault,78.0,100,Safe
+Morningside (135),2017,145,11,16,36,15,2,225,563.94,Assault,77.5,101,Safe
+Don Valley Village (47),2017,118,32,33,36,17,10,246,564.87,Assault,77.4,102,Safe
+Oakwood Village (107),2017,113,11,41,59,24,5,253,569.0,Assault,77.2,103,Safe
+High Park North (88),2017,106,9,54,47,31,2,249,572.3,Assault,77.1,104,Safe
+Downsview (155),2017,122,29,27,49,15,12,254,576.59,Assault,76.9,105,Safe
+The Beaches (63),2017,109,15,36,61,32,8,261,580.76,Assault,76.7,106,Safe
+Cliffcrest (123),2017,110,16,36,68,30,5,265,582.54,Assault,76.6,107,Safe
+Bedford Park-Nortown (39),2017,47,40,120,88,14,11,320,587.45,Break and Enter,76.4,108,Safe
+Rosedale-Moore Park (98),2017,106,8,72,51,25,9,271,605.24,Assault,75.5,109,Safe
+Cabbagetown-South St.James Town (71),2017,94,5,56,108,34,7,304,609.59,NonMCI,75.3,110,Safe
+Tam O'Shanter-Sullivan (118),2017,114,14,55,72,23,6,284,620.65,Assault,74.8,111,Safe
+Rockcliffe-Smythe (111),2017,105,46,37,52,38,10,288,628.44,Assault,74.4,112,Safe
+Roncesvalles (86),2017,127,20,50,57,20,12,286,641.22,Assault,73.8,113,Safe
+Scarborough Village (139),2017,148,23,32,43,22,5,273,649.78,Assault,73.4,114,Safe
+Bay-Cloverhill (169),2017,149,7,54,16,20,11,257,654.92,Assault,73.2,115,Safe
+Trinity-Bellwoods (81),2017,126,17,71,67,12,6,299,660.16,Assault,72.9,116,Safe
+Humbermede (22),2017,143,54,23,22,28,7,277,666.53,Assault,72.6,117,Safe
+Milliken (130),2017,71,57,115,72,20,20,355,683.85,Break and Enter,71.8,118,Safe
+Agincourt South-Malvern West (128),2017,100,36,92,78,26,15,347,709.42,Assault,70.6,119,Safe
+Newtonbrook West (36),2017,109,30,86,47,35,16,323,709.43,Assault,70.6,119,Safe
+North St.James Town (74),2017,150,15,48,56,29,6,304,713.72,Assault,70.4,121,Safe
+Junction-Wallace Emerson (171),2017,148,18,49,74,25,6,320,719.47,Assault,70.1,122,Safe
+Humber Summit (21),2017,120,78,40,79,24,17,358,731.06,Assault,69.6,123,Safe
+Malvern East (146),2017,173,25,23,53,28,3,305,735.21,Assault,69.4,124,Safe
+Birchcliffe-Cliffside (122),2017,157,13,83,56,14,6,329,763.59,Assault,68.1,125,Safe
+Oakridge (121),2017,155,12,70,57,33,1,328,769.76,Assault,67.8,126,Safe
+University (79),2017,147,7,66,118,20,7,365,769.23,Assault,67.8,126,Safe
+Harbourfront-CityPlace (165),2017,170,23,62,70,10,11,346,787.98,Assault,66.9,128,Safe
+Bendale-Glen Andrew (156),2017,164,25,28,59,54,14,344,809.45,Assault,65.9,129,Safe
+Woburn North (142),2017,164,21,38,65,48,13,349,809.38,Assault,65.9,129,Safe
+Yorkdale-Glen Park (31),2017,145,45,58,78,30,24,380,815.44,Assault,65.6,131,Safe
+Etobicoke City Centre (159),2017,130,69,58,92,31,30,410,832.04,Assault,64.8,132,Safe
+East End-Danforth (62),2017,167,25,60,60,38,9,359,835.64,Assault,64.7,133,Safe
+Eglinton East (138),2017,198,29,56,54,27,1,365,879.37,Assault,62.6,134,Safe
+South Parkdale (85),2017,202,19,57,80,22,8,388,905.84,Assault,61.4,135,Safe
+Kennedy Park (124),2017,191,24,49,73,49,5,391,917.48,Assault,60.8,136,Safe
+Weston (113),2017,171,45,75,82,44,4,421,938.28,Assault,59.8,137,Moderate
+Black Creek (24),2017,224,31,27,46,40,19,387,955.48,Assault,59.0,138,Moderate
+Dorset Park (126),2017,193,41,89,58,27,5,413,958.24,Assault,58.9,139,Moderate
+Mimico-Queensway (160),2017,248,22,43,43,15,5,376,959.83,Assault,58.8,140,Moderate
+St Lawrence-East Bayfront-The Islands (166),2017,210,19,70,84,19,19,421,971.83,Assault,58.2,141,Moderate
+Golfdale-Cedarbrae-Woburn (141),2017,212,28,49,44,61,10,404,997.63,Assault,57.0,142,Moderate
+Wexford/Maryvale (119),2017,197,62,88,129,30,12,518,1090.13,Assault,52.7,143,Moderate
+Glenfield-Jane Heights (25),2017,256,48,42,60,38,5,449,1097.6,Assault,52.3,144,Moderate
+Oakdale-Beverley Heights (154),2017,262,50,32,61,42,9,456,1111.46,Assault,51.7,145,Moderate
+South Riverdale (70),2017,207,35,92,114,46,24,518,1135.2,Assault,50.5,146,Moderate
+Mount Olive-Silverstone-Jamestown (2),2017,252,51,35,71,61,1,471,1139.91,Assault,50.3,147,Moderate
+Clairlea-Birchmount (120),2017,227,36,102,105,49,6,525,1187.88,Assault,48.0,148,Moderate
+Church-Wellesley (167),2017,274,19,88,56,42,10,489,1215.92,Assault,46.7,149,Moderate
+Annex (95),2017,245,24,117,194,50,33,663,1387.57,Assault,38.6,150,Risky
+West Hill (136),2017,364,29,86,110,57,10,656,1587.37,Assault,29.2,151,Risky
+York University Heights (27),2017,330,85,105,158,68,42,788,1739.16,Assault,22.0,152,Risky
+Wellington Place (164),2017,429,29,129,105,37,22,751,1836.52,Assault,17.4,153,Very Risky
+Moss Park (73),2017,426,20,129,174,94,19,862,2024.48,Assault,8.6,154,Very Risky
+Downtown Yonge East (168),2017,423,15,114,222,102,20,896,2050.09,Assault,7.4,155,Very Risky
+Kensington-Chinatown (78),2017,393,30,105,399,79,25,1031,2084.0,NonMCI,5.8,156,Very Risky
+West Humber-Clairville (1),2017,282,292,124,205,109,57,1069,2108.73,Auto Theft,4.6,157,Very Risky
+Yonge-Bay Corridor (170),2017,530,15,122,83,77,35,862,2206.41,Assault,0.0,158,Very Risky
+Lambton Baby Point (114),2018,25,15,11,24,1,2,78,167.57,Assault,100.0,1,Very Safe
+Maple Leaf (29),2018,28,13,7,32,6,4,90,190.72,NonMCI,99.2,2,Very Safe
+Yonge-St.Clair (97),2018,31,4,24,22,1,3,85,197.62,Assault,98.9,3,Very Safe
+Markland Wood (12),2018,24,16,25,22,4,2,93,202.85,Break and Enter,98.7,4,Very Safe
+Princess-Rosethorn (10),2018,19,21,23,36,3,6,108,210.14,NonMCI,98.5,5,Very Safe
+Lawrence Park North (105),2018,21,38,12,39,2,3,115,216.77,NonMCI,98.2,6,Very Safe
+Lawrence Park South (103),2018,13,28,35,27,5,2,110,217.32,Break and Enter,98.2,6,Very Safe
+Alderwood (20),2018,25,17,24,21,8,7,102,224.6,Assault,97.9,8,Very Safe
+Forest Hill South (101),2018,12,22,43,25,6,2,110,224.22,Break and Enter,97.9,8,Very Safe
+Guildwood (140),2018,42,2,16,27,4,1,92,225.13,Assault,97.9,8,Very Safe
+Woodbine-Lumsden (60),2018,41,2,14,34,5,1,97,227.73,Assault,97.8,11,Very Safe
+Etobicoke West Mall (13),2018,39,8,16,23,6,5,97,233.0,Assault,97.6,12,Very Safe
+Kingsway South (15),2018,31,11,18,26,13,4,103,236.01,Assault,97.5,13,Very Safe
+Broadview North (57),2018,53,4,8,16,7,1,89,242.75,Assault,97.3,14,Very Safe
+Bayview Woods-Steeles (49),2018,35,7,28,30,6,2,108,247.13,Assault,97.1,15,Very Safe
+Centennial Scarborough (133),2018,42,10,16,30,6,3,107,248.53,Assault,97.1,15,Very Safe
+Edenbridge-Humber Valley (9),2018,24,16,44,22,4,5,115,250.91,Break and Enter,97.0,17,Very Safe
+Casa Loma (96),2018,43,12,22,21,6,2,106,259.55,Assault,96.7,18,Very Safe
+Humber Heights-Westmount (8),2018,36,16,27,35,3,3,120,262.29,Assault,96.6,19,Very Safe
+Bridle Path-Sunnybrook-York Mills (41),2018,29,9,53,18,0,6,115,263.66,Break and Enter,96.5,20,Very Safe
+Pleasant View (46),2018,33,11,33,29,9,5,120,270.89,Assault,96.2,21,Very Safe
+Runnymede-Bloor West Village (89),2018,31,25,22,21,18,2,119,272.98,Assault,96.2,21,Very Safe
+Caledonia-Fairbank (109),2018,55,10,9,20,9,1,104,274.62,Assault,96.1,23,Very Safe
+Beechborough-Greenbrook (112),2018,48,12,25,12,12,0,109,285.65,Assault,95.7,24,Very Safe
+Highland Creek (134),2018,45,14,30,22,5,3,119,285.98,Assault,95.7,24,Very Safe
+Avondale (153),2018,61,11,13,6,7,5,103,288.13,Assault,95.6,26,Very Safe
+Parkwoods-O'Connor Hills (149),2018,41,10,34,31,6,4,126,289.7,Assault,95.6,26,Very Safe
+Eringate-Centennial-West Deane (11),2018,29,24,33,41,9,5,141,292.78,NonMCI,95.5,28,Very Safe
+Leaside-Bennington (56),2018,34,33,34,29,4,3,137,297.89,Assault,95.3,29,Very Safe
+Mount Pleasant East (99),2018,36,13,36,27,9,9,130,297.41,Assault,95.3,29,Very Safe
+Playter Estates-Danforth (67),2018,53,11,24,20,7,2,117,298.8,Assault,95.2,31,Very Safe
+Blake-Jones (69),2018,55,11,26,9,13,1,115,311.8,Assault,94.8,32,Very Safe
+Elms-Old Rexdale (5),2018,57,29,7,18,11,1,123,311.83,Assault,94.8,32,Very Safe
+Forest Hill North (102),2018,36,17,42,34,13,0,142,318.54,Break and Enter,94.5,34,Very Safe
+North Riverdale (68),2018,44,11,34,32,13,5,139,325.87,Assault,94.3,35,Very Safe
+Old East York (58),2018,60,9,28,21,6,1,125,324.0,Assault,94.3,35,Very Safe
+Long Branch (19),2018,53,10,39,13,10,2,127,330.41,Assault,94.1,37,Very Safe
+Bendale South (157),2018,67,13,18,27,5,0,130,334.17,Assault,94.0,38,Very Safe
+Thistletown-Beaumond Heights (3),2018,50,39,16,34,10,1,150,339.29,Assault,93.8,39,Very Safe
+Humewood-Cedarvale (106),2018,42,20,34,59,4,7,166,342.32,NonMCI,93.7,40,Very Safe
+Yonge-Eglinton (100),2018,56,12,25,19,18,6,136,346.87,Assault,93.5,41,Very Safe
+Henry Farm (53),2018,68,13,21,24,7,4,137,350.19,Assault,93.4,42,Very Safe
+Rustic (28),2018,70,14,9,47,8,2,150,359.14,Assault,93.0,43,Very Safe
+Humber Bay Shores (161),2018,74,14,14,13,11,6,132,363.53,Assault,92.9,44,Very Safe
+Steeles (116),2018,34,21,61,40,9,3,168,363.68,Break and Enter,92.9,44,Very Safe
+Danforth East York (59),2018,76,12,18,35,6,4,151,381.14,Assault,92.2,46,Very Safe
+Ionview (125),2018,85,3,19,26,8,1,142,386.75,Assault,92.0,47,Very Safe
+North Toronto (173),2018,70,3,42,8,13,5,141,387.74,Assault,92.0,47,Very Safe
+Bayview Village (52),2018,65,6,49,27,5,7,159,396.63,Assault,91.7,49,Very Safe
+Bathurst Manor (34),2018,60,34,32,37,10,4,177,410.21,Assault,91.2,50,Very Safe
+South Eglinton-Davisville (174),2018,71,12,47,18,8,3,159,412.01,Assault,91.1,51,Very Safe
+Weston-Pelham Park (91),2018,75,15,23,25,18,2,158,411.4,Assault,91.1,51,Very Safe
+Yonge-Doris (151),2018,81,17,6,23,23,6,156,415.71,Assault,91.0,53,Very Safe
+East Willowdale (152),2018,47,12,55,35,27,3,179,422.51,Break and Enter,90.7,54,Very Safe
+High Park-Swansea (87),2018,67,18,47,25,12,1,170,424.58,Assault,90.7,54,Very Safe
+Mount Dennis (115),2018,85,16,22,32,8,1,164,423.49,Assault,90.7,54,Very Safe
+East L'Amoreaux (148),2018,69,14,35,31,17,5,171,425.31,Assault,90.6,57,Very Safe
+Hillcrest Village (48),2018,59,22,42,33,17,8,181,430.46,Assault,90.5,58,Very Safe
+Thorncliffe Park (55),2018,90,11,27,30,4,3,165,433.0,Assault,90.4,59,Very Safe
+Wychwood (94),2018,70,19,31,41,18,2,181,437.21,Assault,90.2,60,Very Safe
+Keelesdale-Eglinton West (110),2018,73,21,34,20,19,4,171,441.05,Assault,90.1,61,Very Safe
+West Rouge (143),2018,75,12,36,53,12,5,193,456.08,Assault,89.5,62,Very Safe
+Rexdale-Kipling (4),2018,70,54,18,33,20,4,199,470.74,Assault,89.0,63,Very Safe
+Lansing-Westgate (38),2018,62,17,51,52,21,7,210,480.54,Assault,88.6,64,Very Safe
+Pelmo Park-Humberlea (23),2018,65,59,25,53,14,4,220,482.26,Assault,88.6,64,Very Safe
+West Queen West (162),2018,92,6,28,58,8,7,199,483.24,Assault,88.5,66,Very Safe
+St.Andrew-Windfields (40),2018,60,26,82,28,6,5,207,490.42,Break and Enter,88.3,67,Very Safe
+New Toronto (18),2018,103,10,21,36,14,1,185,492.25,Assault,88.2,68,Very Safe
+Corso Italia-Davenport (92),2018,89,12,32,34,19,6,192,494.71,Assault,88.1,69,Very Safe
+Briar Hill-Belgravia (108),2018,78,39,33,33,18,4,205,497.98,Assault,88.0,70,Very Safe
+Woodbine Corridor (64),2018,84,10,23,78,16,6,217,497.54,Assault,88.0,70,Very Safe
+Little Portugal (84),2018,81,11,56,26,12,12,198,501.17,Assault,87.9,72,Very Safe
+Willowdale West (37),2018,83,11,35,36,26,7,198,504.01,Assault,87.8,73,Very Safe
+Fenside-Parkwoods (150),2018,92,13,45,21,16,3,190,504.98,Assault,87.7,74,Very Safe
+Victoria Village (43),2018,97,12,35,43,9,4,200,506.21,Assault,87.7,74,Very Safe
+L'Amoreaux West (147),2018,85,18,41,36,20,3,203,513.99,Assault,87.4,76,Very Safe
+Newtonbrook East (50),2018,85,14,64,35,10,4,212,531.58,Assault,86.8,77,Very Safe
+Clanton Park (33),2018,77,32,51,60,11,8,239,542.78,Assault,86.4,78,Very Safe
+Bedford Park-Nortown (39),2018,35,45,102,69,11,8,270,545.15,Break and Enter,86.3,79,Very Safe
+Palmerston-Little Italy (80),2018,78,19,46,68,19,10,240,545.82,Assault,86.3,79,Very Safe
+Malvern West (145),2018,95,26,32,42,19,11,225,555.78,Assault,85.9,81,Very Safe
+Danforth (66),2018,97,13,30,33,37,5,215,564.65,Assault,85.6,82,Very Safe
+Brookhaven-Amesbury (30),2018,90,44,32,46,17,11,240,567.07,Assault,85.5,83,Very Safe
+Westminster-Branson (35),2018,93,31,41,57,14,3,239,566.36,Assault,85.5,83,Very Safe
+Banbury-Don Mills (42),2018,68,26,87,62,6,8,257,569.84,Break and Enter,85.4,85,Very Safe
+Flemingdon Park (44),2018,136,8,15,25,13,1,198,570.8,Assault,85.4,85,Very Safe
+Taylor-Massey (61),2018,109,12,41,29,17,4,212,569.53,Assault,85.4,85,Very Safe
+Dufferin Grove (83),2018,99,18,46,40,17,8,228,572.43,Assault,85.3,88,Very Safe
+Islington (158),2018,82,39,48,71,15,5,260,582.04,Assault,85.0,89,Very Safe
+Morningside Heights (144),2018,91,36,47,45,14,11,244,582.02,Assault,85.0,89,Very Safe
+Englemount-Lawrence (32),2018,89,38,54,53,10,6,250,583.26,Assault,84.9,91,Very Safe
+Morningside (135),2018,134,11,19,33,12,2,211,587.27,Assault,84.8,92,Very Safe
+Stonegate-Queensway (16),2018,86,35,39,75,21,7,263,592.21,Assault,84.6,93,Very Safe
+Willowridge-Martingrove-Richview (7),2018,71,48,66,67,14,4,270,591.54,Assault,84.6,93,Very Safe
+High Park North (88),2018,102,16,62,28,19,5,232,606.38,Assault,84.1,95,Very Safe
+The Beaches (63),2018,90,29,43,97,11,7,277,605.4,NonMCI,84.1,95,Very Safe
+Oakwood Village (107),2018,124,30,20,37,17,2,230,608.57,Assault,84.0,97,Very Safe
+Kingsview Village-The Westway (6),2018,95,51,40,53,18,3,260,612.08,Assault,83.9,98,Very Safe
+Fort York-Liberty Village (163),2018,124,14,47,31,5,11,232,616.83,Assault,83.7,99,Very Safe
+O'Connor-Parkview (54),2018,126,16,26,77,5,6,256,619.52,Assault,83.6,100,Very Safe
+Greenwood-Coxwell (65),2018,112,21,37,64,16,6,256,625.13,Assault,83.4,101,Very Safe
+Humbermede (22),2018,100,51,42,41,22,11,267,642.35,Assault,82.8,102,Very Safe
+Dovercourt Village (172),2018,103,12,50,86,23,3,277,646.24,Assault,82.6,103,Very Safe
+Roncesvalles (86),2018,89,24,75,57,24,6,275,651.2,Assault,82.4,104,Very Safe
+Trinity-Bellwoods (81),2018,106,22,61,59,15,8,271,655.29,Assault,82.3,105,Very Safe
+Agincourt North (129),2018,74,41,69,67,38,4,293,662.59,Assault,82.0,106,Very Safe
+Cliffcrest (123),2018,119,20,53,64,12,3,271,664.31,Assault,82.0,106,Very Safe
+Downsview (155),2018,114,32,41,59,30,2,278,686.64,Assault,81.2,108,Very Safe
+Regent Park (72),2018,134,10,27,66,31,4,272,696.98,Assault,80.8,109,Very Safe
+Cabbagetown-South St.James Town (71),2018,105,19,44,104,33,6,311,707.69,Assault,80.4,110,Very Safe
+Tam O'Shanter-Sullivan (118),2018,117,28,76,53,14,3,291,721.4,Assault,79.9,111,Safe
+University (79),2018,113,11,73,67,18,18,300,725.21,Assault,79.8,112,Safe
+Rockcliffe-Smythe (111),2018,128,48,26,76,17,15,310,729.9,Assault,79.6,113,Safe
+Bay-Cloverhill (169),2018,123,20,73,32,24,10,282,733.23,Assault,79.5,114,Safe
+Don Valley Village (47),2018,119,26,58,51,29,15,298,740.3,Assault,79.2,115,Safe
+Junction Area (90),2018,124,32,61,66,20,7,310,752.22,Assault,78.8,116,Safe
+Malvern East (146),2018,155,29,34,25,27,4,274,760.85,Assault,78.5,117,Safe
+Harbourfront-CityPlace (165),2018,131,10,82,59,16,18,316,785.49,Assault,77.6,118,Safe
+Rosedale-Moore Park (98),2018,126,29,63,70,25,11,324,783.62,Assault,77.6,118,Safe
+Scarborough Village (139),2018,167,20,45,54,10,4,300,792.44,Assault,77.3,120,Safe
+Agincourt South-Malvern West (128),2018,103,34,94,70,29,11,341,795.77,Assault,77.2,121,Safe
+Milliken (130),2018,74,81,118,67,15,19,374,799.51,Break and Enter,77.1,122,Safe
+Oakridge (121),2018,149,13,64,58,36,5,325,843.44,Assault,75.5,123,Safe
+Bendale-Glen Andrew (156),2018,156,36,33,55,41,13,334,861.0,Assault,74.8,124,Safe
+Weston (113),2018,149,51,38,75,39,7,359,879.22,Assault,74.2,125,Safe
+Eglinton East (138),2018,175,14,45,65,30,6,335,879.88,Assault,74.1,126,Safe
+Humber Summit (21),2018,109,108,55,79,32,16,399,880.07,Assault,74.1,126,Safe
+Newtonbrook West (36),2018,155,47,54,59,26,10,351,881.6,Assault,74.1,126,Safe
+Black Creek (24),2018,183,52,30,54,30,7,356,929.54,Assault,72.3,129,Safe
+Golfdale-Cedarbrae-Woburn (141),2018,185,32,37,65,32,4,355,930.37,Assault,72.3,129,Safe
+Kennedy Park (124),2018,184,29,52,56,27,18,366,956.62,Assault,71.4,131,Safe
+North St.James Town (74),2018,174,12,71,91,27,7,382,957.62,Assault,71.3,132,Safe
+Woburn North (142),2018,175,20,61,74,35,10,375,958.15,Assault,71.3,132,Safe
+Birchcliffe-Cliffside (122),2018,182,23,71,95,17,10,398,983.31,Assault,70.4,134,Safe
+Yorkdale-Glen Park (31),2018,156,46,65,90,40,19,416,997.12,Assault,69.9,135,Safe
+Junction-Wallace Emerson (171),2018,151,33,91,149,18,10,452,1005.48,Assault,69.6,136,Safe
+East End-Danforth (62),2018,173,27,79,95,30,7,411,1008.36,Assault,69.5,137,Safe
+South Parkdale (85),2018,192,15,86,43,28,11,375,1009.15,Assault,69.4,138,Safe
+Etobicoke City Centre (159),2018,144,107,70,98,15,48,482,1059.03,Assault,67.6,139,Safe
+Dorset Park (126),2018,186,75,69,64,31,13,438,1091.62,Assault,66.5,140,Safe
+Wexford/Maryvale (119),2018,187,81,102,90,32,14,506,1210.69,Assault,62.1,141,Safe
+Mount Olive-Silverstone-Jamestown (2),2018,235,74,26,77,53,4,469,1223.76,Assault,61.7,142,Safe
+Clairlea-Birchmount (120),2018,252,42,66,134,28,14,536,1316.73,Assault,58.3,143,Moderate
+St Lawrence-East Bayfront-The Islands (166),2018,274,21,77,68,34,19,493,1337.77,Assault,57.5,144,Moderate
+Glenfield-Jane Heights (25),2018,279,60,39,76,44,10,508,1357.07,Assault,56.8,145,Moderate
+Mimico-Queensway (160),2018,350,16,37,43,13,5,464,1386.31,Assault,55.8,146,Moderate
+Oakdale-Beverley Heights (154),2018,278,71,47,110,34,10,550,1405.1,Assault,55.1,147,Moderate
+South Riverdale (70),2018,261,33,91,156,32,26,599,1449.64,Assault,53.5,148,Moderate
+Church-Wellesley (167),2018,337,25,79,49,45,22,557,1579.13,Assault,48.8,149,Moderate
+Annex (95),2018,257,30,173,203,40,48,751,1727.93,Assault,43.3,150,Moderate
+West Hill (136),2018,387,26,104,75,43,5,640,1797.79,Assault,40.8,151,Moderate
+York University Heights (27),2018,323,88,123,166,79,37,816,1987.19,Assault,33.9,152,Risky
+Wellington Place (164),2018,409,38,177,90,39,27,780,2103.49,Assault,29.7,153,Risky
+Yonge-Bay Corridor (170),2018,506,27,99,99,73,42,846,2364.82,Assault,20.2,154,Risky
+Downtown Yonge East (168),2018,449,50,123,177,135,21,955,2489.19,Assault,15.7,155,Very Risky
+Kensington-Chinatown (78),2018,428,24,241,267,67,25,1052,2560.75,Assault,13.1,156,Very Risky
+West Humber-Clairville (1),2018,299,436,170,380,81,54,1420,2877.97,Auto Theft,1.6,157,Very Risky
+Moss Park (73),2018,535,52,134,233,144,35,1133,2921.87,Assault,0.0,158,Very Risky
+Guildwood (140),2019,26,3,11,27,6,2,75,185.79,NonMCI,100.0,1,Very Safe
+Lambton Baby Point (114),2019,26,9,14,17,4,2,72,185.19,Assault,100.0,1,Very Safe
+Markland Wood (12),2019,14,9,25,16,14,3,81,200.16,Break and Enter,99.6,3,Very Safe
+Maple Leaf (29),2019,27,19,15,16,4,3,84,211.33,Assault,99.2,4,Very Safe
+Woodbine-Lumsden (60),2019,33,7,10,34,3,5,92,221.01,NonMCI,98.9,5,Very Safe
+Etobicoke West Mall (13),2019,37,10,8,18,8,4,85,230.47,Assault,98.7,6,Very Safe
+Yonge-St.Clair (97),2019,31,6,28,21,2,6,94,239.01,Assault,98.4,7,Very Safe
+Avondale (153),2019,39,16,13,20,3,4,95,247.97,Assault,98.1,8,Very Safe
+Humber Heights-Westmount (8),2019,32,17,23,14,5,5,96,249.75,Assault,98.1,8,Very Safe
+Bayview Woods-Steeles (49),2019,37,17,21,20,4,2,101,262.28,Assault,97.7,10,Very Safe
+Kingsway South (15),2019,27,28,25,22,10,4,116,280.8,Auto Theft,97.2,11,Very Safe
+Old East York (58),2019,45,4,13,36,11,2,111,288.98,Assault,96.9,12,Very Safe
+Lawrence Park North (105),2019,33,15,23,55,4,4,134,296.63,NonMCI,96.7,13,Very Safe
+Pleasant View (46),2019,40,21,12,44,10,4,131,311.97,NonMCI,96.3,14,Very Safe
+Alderwood (20),2019,36,14,25,51,4,9,139,312.5,NonMCI,96.2,15,Very Safe
+Forest Hill South (101),2019,30,19,36,29,11,4,129,313.18,Break and Enter,96.2,15,Very Safe
+Princess-Rosethorn (10),2019,27,23,32,32,13,5,132,312.24,Break and Enter,96.2,15,Very Safe
+Humewood-Cedarvale (106),2019,36,15,28,46,9,3,137,321.24,NonMCI,96.0,18,Very Safe
+Beechborough-Greenbrook (112),2019,62,11,12,8,11,3,107,330.64,Assault,95.7,19,Very Safe
+Casa Loma (96),2019,49,5,32,30,6,2,124,332.03,Assault,95.7,19,Very Safe
+Caledonia-Fairbank (109),2019,62,8,9,20,12,2,113,334.52,Assault,95.6,21,Very Safe
+Centennial Scarborough (133),2019,49,19,29,29,1,3,130,334.85,Assault,95.6,21,Very Safe
+Leaside-Bennington (56),2019,31,26,46,45,2,6,156,352.15,Break and Enter,95.1,23,Very Safe
+Eringate-Centennial-West Deane (11),2019,42,35,20,35,11,4,147,356.11,Assault,95.0,24,Very Safe
+Runnymede-Bloor West Village (89),2019,42,25,28,33,13,3,144,359.76,Assault,94.8,25,Very Safe
+Bridle Path-Sunnybrook-York Mills (41),2019,43,11,53,25,5,3,140,365.13,Break and Enter,94.7,26,Very Safe
+Blake-Jones (69),2019,67,7,19,22,8,3,126,367.29,Assault,94.6,27,Very Safe
+Edenbridge-Humber Valley (9),2019,35,22,53,32,3,9,154,368.03,Break and Enter,94.6,27,Very Safe
+Parkwoods-O'Connor Hills (149),2019,55,7,34,29,8,3,136,369.21,Assault,94.6,27,Very Safe
+Forest Hill North (102),2019,38,27,38,31,16,4,154,383.2,Assault,94.2,30,Very Safe
+Lawrence Park South (103),2019,24,23,58,53,7,9,174,382.05,Break and Enter,94.2,30,Very Safe
+Rustic (28),2019,64,32,14,27,6,1,144,385.56,Assault,94.1,32,Very Safe
+Bathurst Manor (34),2019,57,22,22,29,11,5,146,387.71,Assault,94.0,33,Very Safe
+Keelesdale-Eglinton West (110),2019,59,30,15,25,10,7,146,386.96,Assault,94.0,33,Very Safe
+Broadview North (57),2019,74,3,27,26,5,1,136,396.24,Assault,93.8,35,Very Safe
+Bendale South (157),2019,67,17,21,35,6,1,147,400.16,Assault,93.6,36,Very Safe
+Elms-Old Rexdale (5),2019,67,27,10,25,14,4,147,406.38,Assault,93.5,37,Very Safe
+Long Branch (19),2019,59,10,30,44,15,1,159,416.79,Assault,93.2,38,Very Safe
+Highland Creek (134),2019,54,26,33,42,13,0,168,426.27,Assault,92.9,39,Very Safe
+Steeles (116),2019,35,31,68,38,7,4,183,435.67,Break and Enter,92.6,40,Very Safe
+Mount Pleasant East (99),2019,52,17,51,54,9,2,185,450.63,NonMCI,92.2,41,Very Safe
+Rexdale-Kipling (4),2019,56,50,13,45,17,2,183,448.2,Assault,92.2,41,Very Safe
+Ionview (125),2019,85,9,19,28,11,2,154,453.8,Assault,92.1,43,Very Safe
+Wychwood (94),2019,63,8,48,38,11,0,168,451.17,Assault,92.1,43,Very Safe
+North Toronto (173),2019,78,6,37,17,10,5,153,457.43,Assault,92.0,45,Very Safe
+Thistletown-Beaumond Heights (3),2019,65,48,14,38,10,5,180,455.56,Assault,92.0,45,Very Safe
+Mount Dennis (115),2019,87,21,15,31,14,5,173,493.53,Assault,90.9,47,Very Safe
+North Riverdale (68),2019,63,18,41,55,17,4,198,499.67,Assault,90.7,48,Very Safe
+West Rouge (143),2019,74,30,23,38,19,4,188,501.01,Assault,90.7,48,Very Safe
+Danforth East York (59),2019,76,10,24,82,8,6,206,502.26,NonMCI,90.6,50,Very Safe
+Hillcrest Village (48),2019,67,24,35,47,18,6,197,506.02,Assault,90.5,51,Very Safe
+South Eglinton-Davisville (174),2019,64,7,83,23,5,4,186,508.59,Break and Enter,90.4,52,Very Safe
+Weston-Pelham Park (91),2019,101,13,24,23,5,3,169,509.58,Assault,90.4,52,Very Safe
+Dufferin Grove (83),2019,70,4,44,34,26,6,184,513.39,Assault,90.3,54,Very Safe
+Lansing-Westgate (38),2019,66,24,38,70,7,9,214,512.19,NonMCI,90.3,54,Very Safe
+East Willowdale (152),2019,52,26,55,45,20,8,206,515.84,Break and Enter,90.2,56,Very Safe
+Pelmo Park-Humberlea (23),2019,69,67,24,26,9,7,202,516.39,Assault,90.2,56,Very Safe
+Yonge-Doris (151),2019,69,26,23,61,17,15,211,521.06,Assault,90.1,58,Very Safe
+Yonge-Eglinton (100),2019,80,9,42,42,11,8,192,519.61,Assault,90.1,58,Very Safe
+Humber Bay Shores (161),2019,91,22,33,17,10,4,177,523.64,Assault,90.0,60,Very Safe
+Woodbine Corridor (64),2019,84,6,33,68,10,2,203,523.07,Assault,90.0,60,Very Safe
+Playter Estates-Danforth (67),2019,80,9,34,63,10,10,206,526.89,Assault,89.9,62,Very Safe
+Bayview Village (52),2019,67,37,38,51,10,11,214,529.02,Assault,89.8,63,Very Safe
+Little Portugal (84),2019,76,11,60,42,8,8,205,546.35,Assault,89.3,64,Very Safe
+Henry Farm (53),2019,76,21,38,79,6,13,233,558.9,NonMCI,89.0,65,Very Safe
+Kingsview Village-The Westway (6),2019,88,37,27,39,14,3,208,560.02,Assault,88.9,66,Very Safe
+Willowdale West (37),2019,92,19,20,51,18,8,208,562.45,Assault,88.9,66,Very Safe
+Westminster-Branson (35),2019,88,28,39,51,7,1,214,564.2,Assault,88.8,68,Very Safe
+Danforth (66),2019,86,11,40,58,17,4,216,573.43,Assault,88.5,69,Very Safe
+New Toronto (18),2019,101,19,25,40,15,4,204,577.95,Assault,88.4,70,Very Safe
+The Beaches (63),2019,74,20,57,51,14,8,224,576.87,Assault,88.4,70,Very Safe
+Palmerston-Little Italy (80),2019,83,14,51,57,10,11,226,582.95,Assault,88.3,72,Very Safe
+East L'Amoreaux (148),2019,83,13,41,28,38,2,205,590.4,Assault,88.0,73,Very Safe
+Flemingdon Park (44),2019,130,9,15,16,9,3,182,592.94,Assault,88.0,73,Very Safe
+Newtonbrook East (50),2019,78,33,53,56,9,9,238,597.78,Assault,87.8,75,Very Safe
+Corso Italia-Davenport (92),2019,85,17,40,40,30,7,219,602.27,Assault,87.7,76,Very Safe
+Fenside-Parkwoods (150),2019,90,21,33,74,17,2,237,603.26,Assault,87.7,76,Very Safe
+Clanton Park (33),2019,81,37,44,70,9,6,247,605.9,Assault,87.6,78,Very Safe
+St.Andrew-Windfields (40),2019,64,35,82,45,9,8,243,604.81,Break and Enter,87.6,78,Very Safe
+Junction Area (90),2019,89,29,43,50,13,9,233,611.88,Assault,87.4,80,Very Safe
+Briar Hill-Belgravia (108),2019,85,19,49,33,28,6,220,614.11,Assault,87.3,81,Very Safe
+High Park-Swansea (87),2019,83,22,52,52,15,15,239,616.56,Assault,87.3,81,Very Safe
+Thorncliffe Park (55),2019,117,17,30,23,12,5,204,615.79,Assault,87.3,81,Very Safe
+Englemount-Lawrence (32),2019,101,19,31,61,14,7,233,621.48,Assault,87.1,84,Very Safe
+L'Amoreaux West (147),2019,104,20,46,29,18,0,217,630.98,Assault,86.8,85,Very Safe
+Morningside Heights (144),2019,99,46,34,45,12,10,246,650.17,Assault,86.3,86,Very Safe
+Banbury-Don Mills (42),2019,69,37,79,56,13,15,269,659.46,Break and Enter,86.0,87,Very Safe
+Stonegate-Queensway (16),2019,77,33,64,71,18,4,267,658.63,Assault,86.0,87,Very Safe
+Agincourt North (129),2019,73,36,57,66,31,3,266,662.3,Assault,85.9,89,Very Safe
+High Park North (88),2019,93,24,67,47,12,5,248,662.07,Assault,85.9,89,Very Safe
+Islington (158),2019,79,48,51,75,12,8,273,662.66,Assault,85.9,89,Very Safe
+Willowridge-Martingrove-Richview (7),2019,88,39,43,37,34,4,245,668.06,Assault,85.7,92,Very Safe
+West Queen West (162),2019,101,14,66,53,8,7,249,673.08,Assault,85.6,93,Very Safe
+Brookhaven-Amesbury (30),2019,98,35,51,46,15,10,255,684.4,Assault,85.3,94,Very Safe
+Malvern West (145),2019,112,34,28,44,21,7,246,686.84,Assault,85.2,95,Very Safe
+Taylor-Massey (61),2019,107,11,65,50,12,4,249,688.42,Assault,85.1,96,Very Safe
+Victoria Village (43),2019,115,15,61,38,12,4,245,700.57,Assault,84.8,97,Very Safe
+Morningside (135),2019,149,9,17,33,17,4,229,717.16,Assault,84.3,98,Very Safe
+Bedford Park-Nortown (39),2019,51,52,89,116,11,18,337,720.84,NonMCI,84.2,99,Very Safe
+Tam O'Shanter-Sullivan (118),2019,104,25,67,59,22,3,280,748.91,Assault,83.3,100,Very Safe
+Greenwood-Coxwell (65),2019,113,25,49,99,10,6,302,752.84,Assault,83.2,101,Very Safe
+Dovercourt Village (172),2019,109,12,82,78,13,4,298,779.16,Assault,82.5,102,Very Safe
+Fort York-Liberty Village (163),2019,117,23,80,46,8,9,283,776.15,Assault,82.5,102,Very Safe
+Don Valley Village (47),2019,129,21,35,65,29,10,289,796.63,Assault,81.9,104,Very Safe
+Rockcliffe-Smythe (111),2019,138,34,43,69,9,10,303,815.67,Assault,81.4,105,Very Safe
+O'Connor-Parkview (54),2019,140,24,56,53,12,5,290,819.92,Assault,81.3,106,Very Safe
+University (79),2019,122,11,92,56,11,6,298,818.73,Assault,81.3,106,Very Safe
+Cliffcrest (123),2019,129,17,47,106,23,3,325,837.68,Assault,80.7,108,Very Safe
+Downsview (155),2019,125,67,37,71,19,7,326,843.76,Assault,80.5,109,Very Safe
+Roncesvalles (86),2019,120,14,95,45,21,11,306,852.97,Assault,80.3,110,Very Safe
+Trinity-Bellwoods (81),2019,108,25,110,59,17,3,322,853.65,Break and Enter,80.3,110,Very Safe
+Oakridge (121),2019,152,7,50,52,30,5,296,868.63,Assault,79.8,112,Safe
+Oakwood Village (107),2019,138,34,48,49,34,2,305,869.09,Assault,79.8,112,Safe
+Humbermede (22),2019,124,58,66,38,26,8,320,879.94,Assault,79.5,114,Safe
+Scarborough Village (139),2019,160,18,41,55,26,1,301,882.56,Assault,79.4,115,Safe
+Agincourt South-Malvern West (128),2019,102,52,100,53,25,13,345,890.55,Assault,79.2,116,Safe
+Newtonbrook West (36),2019,138,53,53,79,18,11,352,918.4,Assault,78.3,117,Safe
+Rosedale-Moore Park (98),2019,119,31,102,64,24,16,356,940.04,Assault,77.7,118,Safe
+Malvern East (146),2019,196,38,14,34,22,3,307,950.34,Assault,77.4,119,Safe
+Bay-Cloverhill (169),2019,153,6,83,33,36,9,320,957.78,Assault,77.2,120,Safe
+Regent Park (72),2019,166,25,65,59,18,5,338,965.88,Assault,76.9,121,Safe
+Cabbagetown-South St.James Town (71),2019,138,21,110,77,16,5,367,979.51,Assault,76.5,122,Safe
+Dorset Park (126),2019,145,60,56,74,28,8,371,984.79,Assault,76.4,123,Safe
+Bendale-Glen Andrew (156),2019,180,36,31,47,32,9,335,989.13,Assault,76.3,124,Safe
+Harbourfront-CityPlace (165),2019,173,16,81,39,13,20,342,1001.17,Assault,75.9,125,Safe
+Milliken (130),2019,83,73,133,73,32,20,414,1002.05,Break and Enter,75.9,125,Safe
+East End-Danforth (62),2019,173,20,64,62,24,9,352,1011.52,Assault,75.6,127,Safe
+Humber Summit (21),2019,121,119,59,68,26,21,414,1024.14,Assault,75.2,128,Safe
+Weston (113),2019,180,44,56,70,17,5,372,1041.85,Assault,74.7,129,Safe
+Eglinton East (138),2019,179,25,59,59,33,7,362,1048.97,Assault,74.5,130,Safe
+Kennedy Park (124),2019,206,20,37,64,23,7,357,1062.14,Assault,74.1,131,Safe
+Golfdale-Cedarbrae-Woburn (141),2019,199,23,41,61,33,4,361,1071.47,Assault,73.8,132,Safe
+Mimico-Queensway (160),2019,205,37,46,71,7,15,381,1084.61,Assault,73.4,133,Safe
+Etobicoke City Centre (159),2019,129,107,73,116,18,28,471,1111.27,Assault,72.6,134,Safe
+Birchcliffe-Cliffside (122),2019,198,25,56,90,30,5,404,1136.53,Assault,71.9,135,Safe
+Woburn North (142),2019,205,37,60,95,19,5,421,1165.19,Assault,71.1,136,Safe
+Black Creek (24),2019,203,67,42,64,42,9,427,1215.44,Assault,69.6,137,Safe
+Junction-Wallace Emerson (171),2019,178,23,104,123,30,5,463,1225.94,Assault,69.3,138,Safe
+North St.James Town (74),2019,213,14,72,92,28,14,433,1228.74,Assault,69.2,139,Safe
+South Parkdale (85),2019,220,21,80,48,29,21,419,1247.01,Assault,68.6,140,Safe
+Yorkdale-Glen Park (31),2019,193,59,89,82,32,29,484,1307.11,Assault,66.9,141,Safe
+Wexford/Maryvale (119),2019,228,82,85,85,28,15,523,1430.04,Assault,63.2,142,Safe
+Clairlea-Birchmount (120),2019,242,64,68,119,34,13,540,1466.16,Assault,62.2,143,Safe
+Mount Olive-Silverstone-Jamestown (2),2019,255,79,35,110,49,7,535,1483.21,Assault,61.7,144,Safe
+St Lawrence-East Bayfront-The Islands (166),2019,254,17,108,114,21,26,540,1502.2,Assault,61.1,145,Safe
+South Riverdale (70),2019,228,40,134,150,26,19,597,1561.82,Assault,59.3,146,Moderate
+Glenfield-Jane Heights (25),2019,297,74,35,73,42,12,533,1575.11,Assault,58.9,147,Moderate
+Oakdale-Beverley Heights (154),2019,265,83,76,122,35,5,586,1599.61,Assault,58.2,148,Moderate
+Church-Wellesley (167),2019,318,19,130,90,47,19,623,1836.49,Assault,51.2,149,Moderate
+Annex (95),2019,283,23,215,169,27,41,758,2005.87,Assault,46.2,150,Moderate
+West Hill (136),2019,407,43,75,57,63,5,650,2057.19,Assault,44.7,151,Moderate
+Wellington Place (164),2019,359,31,157,102,46,26,721,2108.88,Assault,43.2,152,Moderate
+York University Heights (27),2019,351,137,110,155,72,29,854,2310.22,Assault,37.2,153,Risky
+Kensington-Chinatown (78),2019,364,39,275,325,45,39,1087,2727.36,Assault,24.9,154,Risky
+West Humber-Clairville (1),2019,229,447,137,346,63,65,1287,2772.17,Auto Theft,23.6,155,Risky
+Yonge-Bay Corridor (170),2019,568,37,118,166,58,65,1012,2986.15,Assault,17.3,156,Very Risky
+Downtown Yonge East (168),2019,554,39,181,248,103,21,1146,3247.77,Assault,9.5,157,Very Risky
+Moss Park (73),2019,588,40,230,207,138,24,1227,3570.48,Assault,0.0,158,Very Risky
+Kingsway South (15),2020,10,16,21,15,4,3,69,170.62,Break and Enter,100.0,1,Very Safe
+Lambton Baby Point (114),2020,27,11,13,16,1,1,69,194.99,Assault,99.4,2,Very Safe
+Guildwood (140),2020,35,11,3,35,3,0,87,231.16,Assault,98.5,3,Very Safe
+Old East York (58),2020,27,8,15,28,5,4,87,229.95,NonMCI,98.5,3,Very Safe
+Maple Leaf (29),2020,28,18,11,33,2,2,94,235.74,NonMCI,98.4,5,Very Safe
+Woodbine-Lumsden (60),2020,30,3,12,39,5,1,90,234.07,NonMCI,98.4,5,Very Safe
+Yonge-St.Clair (97),2020,24,8,28,19,4,3,86,235.78,Break and Enter,98.4,5,Very Safe
+Humber Heights-Westmount (8),2020,27,22,9,36,2,1,97,237.13,NonMCI,98.3,8,Very Safe
+Princess-Rosethorn (10),2020,20,19,12,35,9,4,99,238.39,NonMCI,98.3,8,Very Safe
+Highland Creek (134),2020,27,14,13,45,2,3,104,248.04,NonMCI,98.0,10,Very Safe
+Centennial Scarborough (133),2020,42,9,8,41,2,0,102,273.21,Assault,97.4,11,Very Safe
+Beechborough-Greenbrook (112),2020,47,12,6,22,4,3,94,282.13,Assault,97.2,12,Very Safe
+Caledonia-Fairbank (109),2020,51,8,10,19,5,2,95,298.37,Assault,96.8,13,Very Safe
+Runnymede-Bloor West Village (89),2020,33,16,29,15,8,2,103,297.32,Assault,96.8,13,Very Safe
+Bayview Woods-Steeles (49),2020,32,14,33,31,2,2,114,301.28,Break and Enter,96.7,15,Very Safe
+Steeles (116),2020,37,24,24,20,5,1,111,309.74,Assault,96.5,16,Very Safe
+Markland Wood (12),2020,37,26,12,16,12,7,110,312.55,Assault,96.4,17,Very Safe
+North Riverdale (68),2020,31,14,34,36,8,2,125,327.21,NonMCI,96.0,18,Very Safe
+Avondale (153),2020,42,26,13,36,6,3,126,333.81,Assault,95.9,19,Very Safe
+Edenbridge-Humber Valley (9),2020,36,32,23,29,5,2,127,334.33,Assault,95.9,19,Very Safe
+Forest Hill South (101),2020,25,30,33,44,3,6,141,334.62,NonMCI,95.8,21,Very Safe
+Blake-Jones (69),2020,49,6,26,25,3,6,115,339.41,Assault,95.7,22,Very Safe
+Parkwoods-O'Connor Hills (149),2020,40,23,24,37,4,1,129,339.9,Assault,95.7,22,Very Safe
+Bendale South (157),2020,65,8,11,23,2,1,110,352.62,Assault,95.4,24,Very Safe
+Bridle Path-Sunnybrook-York Mills (41),2020,40,15,31,37,5,4,132,352.16,Assault,95.4,24,Very Safe
+Lawrence Park North (105),2020,43,22,19,46,5,1,136,351.99,NonMCI,95.4,24,Very Safe
+Broadview North (57),2020,52,7,24,30,3,7,123,356.99,Assault,95.3,27,Very Safe
+Etobicoke West Mall (13),2020,59,11,14,29,7,7,127,376.21,Assault,94.8,28,Very Safe
+Alderwood (20),2020,33,25,43,45,6,3,155,389.44,NonMCI,94.5,29,Very Safe
+Pleasant View (46),2020,41,27,19,48,10,7,152,387.01,NonMCI,94.5,29,Very Safe
+Elms-Old Rexdale (5),2020,50,42,13,34,6,2,147,396.19,Assault,94.3,31,Very Safe
+Leaside-Bennington (56),2020,29,38,39,41,7,7,161,395.28,NonMCI,94.3,31,Very Safe
+East Willowdale (152),2020,36,20,35,44,15,4,154,398.92,NonMCI,94.2,33,Very Safe
+Eringate-Centennial-West Deane (11),2020,45,45,12,36,13,3,154,406.32,Assault,94.0,34,Very Safe
+Hillcrest Village (48),2020,52,23,18,32,12,8,145,407.01,Assault,94.0,34,Very Safe
+Lawrence Park South (103),2020,23,26,57,44,10,10,170,415.6,Break and Enter,93.8,36,Very Safe
+Rustic (28),2020,62,22,15,35,7,5,146,419.39,Assault,93.7,37,Very Safe
+Mount Pleasant East (99),2020,41,18,36,53,12,4,164,422.9,NonMCI,93.6,38,Very Safe
+Thistletown-Beaumond Heights (3),2020,52,40,11,54,6,4,167,423.46,NonMCI,93.6,38,Very Safe
+Ionview (125),2020,79,6,15,33,2,0,135,428.48,Assault,93.5,40,Very Safe
+Rexdale-Kipling (4),2020,48,40,19,43,13,1,164,432.02,Assault,93.4,41,Very Safe
+Danforth East York (59),2020,51,17,33,59,6,5,171,442.54,NonMCI,93.1,42,Very Safe
+Malvern West (145),2020,76,21,11,30,7,1,146,446.77,Assault,93.0,43,Very Safe
+Woodbine Corridor (64),2020,58,11,34,54,4,4,165,446.9,Assault,93.0,43,Very Safe
+Casa Loma (96),2020,61,20,37,28,3,7,156,451.92,Assault,92.9,45,Very Safe
+Keelesdale-Eglinton West (110),2020,66,22,23,32,8,3,154,452.13,Assault,92.9,45,Very Safe
+Humewood-Cedarvale (106),2020,40,24,49,56,6,7,182,456.06,NonMCI,92.8,47,Very Safe
+Pelmo Park-Humberlea (23),2020,51,56,18,48,2,10,185,463.45,Auto Theft,92.6,48,Very Safe
+West Rouge (143),2020,61,15,19,55,15,3,168,464.11,Assault,92.6,48,Very Safe
+Playter Estates-Danforth (67),2020,59,7,50,30,7,6,159,467.72,Assault,92.5,50,Very Safe
+Palmerston-Little Italy (80),2020,55,16,49,48,5,3,176,476.2,Assault,92.3,51,Very Safe
+Long Branch (19),2020,60,21,33,40,12,4,170,479.52,Assault,92.2,52,Very Safe
+Forest Hill North (102),2020,41,34,44,55,12,6,192,483.49,NonMCI,92.1,53,Very Safe
+Mount Dennis (115),2020,69,23,21,37,16,3,169,495.84,Assault,91.8,54,Very Safe
+East L'Amoreaux (148),2020,81,12,23,33,11,2,162,502.7,Assault,91.6,55,Very Safe
+Humber Bay Shores (161),2020,79,23,21,26,8,10,167,506.74,Assault,91.5,56,Very Safe
+St.Andrew-Windfields (40),2020,49,30,50,58,7,3,197,506.44,NonMCI,91.5,56,Very Safe
+Yonge-Doris (151),2020,62,17,28,77,9,10,203,517.5,NonMCI,91.2,58,Very Safe
+Bathurst Manor (34),2020,62,43,27,56,6,7,201,523.54,Assault,91.1,59,Very Safe
+Danforth (66),2020,63,9,42,59,14,3,190,522.87,Assault,91.1,59,Very Safe
+Bayview Village (52),2020,61,34,29,53,10,13,200,527.87,Assault,91.0,61,Very Safe
+Henry Farm (53),2020,78,20,33,33,6,6,176,527.47,Assault,91.0,61,Very Safe
+Thorncliffe Park (55),2020,83,19,37,26,4,4,173,532.38,Assault,90.8,63,Very Safe
+Agincourt North (129),2020,60,56,16,58,14,5,209,536.23,Assault,90.7,64,Very Safe
+L'Amoreaux West (147),2020,84,17,25,37,14,3,180,546.35,Assault,90.5,65,Very Safe
+Morningside (135),2020,94,27,18,26,7,2,174,548.37,Assault,90.4,66,Very Safe
+Newtonbrook East (50),2020,63,40,40,44,11,11,209,566.32,Assault,90.0,67,Very Safe
+Yonge-Eglinton (100),2020,83,16,35,40,9,7,190,564.83,Assault,90.0,67,Very Safe
+Corso Italia-Davenport (92),2020,80,12,41,44,11,5,193,568.45,Assault,89.9,69,Very Safe
+Dufferin Grove (83),2020,66,15,57,43,17,4,202,576.52,Assault,89.7,70,Very Safe
+Banbury-Don Mills (42),2020,72,41,41,45,5,7,211,580.94,Assault,89.6,71,Very Safe
+Morningside Heights (144),2020,74,37,19,72,12,7,221,581.08,Assault,89.6,71,Very Safe
+New Toronto (18),2020,85,20,41,40,8,3,197,586.11,Assault,89.5,73,Very Safe
+Weston-Pelham Park (91),2020,99,18,30,36,4,3,190,591.29,Assault,89.4,74,Very Safe
+Wychwood (94),2020,78,23,46,34,16,1,198,590.81,Assault,89.4,74,Very Safe
+Flemingdon Park (44),2020,119,17,13,26,4,3,182,606.7,Assault,89.0,76,Very Safe
+Little Portugal (84),2020,77,27,52,39,9,6,210,605.31,Assault,89.0,76,Very Safe
+University (79),2020,76,6,60,55,12,5,214,606.3,Assault,89.0,76,Very Safe
+Clanton Park (33),2020,69,42,33,69,15,4,232,607.68,Assault,88.9,79,Very Safe
+High Park North (88),2020,90,18,32,44,16,3,203,611.7,Assault,88.8,80,Very Safe
+Westminster-Branson (35),2020,81,47,13,67,16,6,230,617.98,Assault,88.7,81,Very Safe
+Briar Hill-Belgravia (108),2020,71,36,47,61,10,8,233,622.71,Assault,88.6,82,Very Safe
+South Eglinton-Davisville (174),2020,73,14,72,41,13,3,216,628.24,Assault,88.4,83,Very Safe
+Fenside-Parkwoods (150),2020,106,23,24,49,5,3,210,634.78,Assault,88.3,84,Very Safe
+High Park-Swansea (87),2020,74,41,49,53,9,6,232,632.77,Assault,88.3,84,Very Safe
+Victoria Village (43),2020,104,15,32,36,11,4,202,635.58,Assault,88.2,86,Very Safe
+Islington (158),2020,72,45,43,70,11,6,247,645.48,Assault,88.0,87,Very Safe
+Kingsview Village-The Westway (6),2020,91,54,14,67,7,6,239,644.53,Assault,88.0,87,Very Safe
+Fort York-Liberty Village (163),2020,90,16,48,41,14,6,215,646.93,Assault,87.9,89,Very Safe
+North Toronto (173),2020,79,13,89,24,3,6,214,647.09,Break and Enter,87.9,89,Very Safe
+The Beaches (63),2020,79,20,63,60,4,9,235,650.67,Assault,87.9,89,Very Safe
+Brookhaven-Amesbury (30),2020,81,49,33,58,11,8,240,652.87,Assault,87.8,92,Very Safe
+West Queen West (162),2020,89,12,64,39,8,6,218,652.35,Assault,87.8,92,Very Safe
+Willowdale West (37),2020,83,35,24,70,23,8,243,665.54,Assault,87.5,94,Very Safe
+Willowridge-Martingrove-Richview (7),2020,93,68,20,42,11,4,238,673.57,Assault,87.3,95,Very Safe
+Don Valley Village (47),2020,92,35,29,53,19,7,235,676.78,Assault,87.2,96,Very Safe
+Taylor-Massey (61),2020,99,15,29,56,24,7,230,685.56,Assault,87.0,97,Very Safe
+Englemount-Lawrence (32),2020,90,29,33,66,22,10,250,697.53,Assault,86.7,98,Very Safe
+Dovercourt Village (172),2020,96,23,47,67,12,3,248,702.3,Assault,86.5,99,Very Safe
+O'Connor-Parkview (54),2020,105,20,25,71,14,11,246,705.24,Assault,86.5,99,Very Safe
+Oakwood Village (107),2020,103,22,33,48,22,5,233,706.36,Assault,86.4,101,Very Safe
+Bay-Cloverhill (169),2020,92,8,79,31,16,7,233,712.12,Assault,86.3,102,Very Safe
+Humbermede (22),2020,88,68,32,54,13,11,266,724.87,Assault,86.0,103,Very Safe
+Bedford Park-Nortown (39),2020,50,70,63,107,15,10,315,732.9,NonMCI,85.8,104,Very Safe
+Lansing-Westgate (38),2020,93,47,39,80,8,7,274,730.09,Assault,85.8,104,Very Safe
+Junction Area (90),2020,103,36,49,50,10,6,254,740.34,Assault,85.6,106,Very Safe
+Bendale-Glen Andrew (156),2020,118,46,20,44,16,5,249,749.95,Assault,85.3,107,Very Safe
+Cliffcrest (123),2020,102,18,37,84,22,10,273,762.09,Assault,85.0,108,Very Safe
+Regent Park (72),2020,137,9,28,40,14,6,234,764.64,Assault,85.0,108,Very Safe
+Stonegate-Queensway (16),2020,93,46,35,97,16,5,292,762.46,NonMCI,85.0,108,Very Safe
+Roncesvalles (86),2020,108,15,64,51,21,3,262,791.72,Assault,84.3,111,Very Safe
+Greenwood-Coxwell (65),2020,109,25,40,95,17,5,291,799.82,Assault,84.1,112,Very Safe
+Trinity-Bellwoods (81),2020,102,16,86,29,19,8,260,799.56,Assault,84.1,112,Very Safe
+Tam O'Shanter-Sullivan (118),2020,109,35,54,57,16,3,274,801.77,Assault,84.0,114,Very Safe
+Milliken (130),2020,73,69,61,81,22,11,317,809.11,NonMCI,83.8,115,Very Safe
+Downsview (155),2020,121,52,45,73,6,10,307,861.96,Assault,82.5,116,Very Safe
+Cabbagetown-South St.James Town (71),2020,132,12,68,52,14,2,280,867.78,Assault,82.4,117,Very Safe
+Eglinton East (138),2020,133,28,22,89,21,8,301,865.66,Assault,82.4,117,Very Safe
+Malvern East (146),2020,147,37,14,62,16,6,282,864.15,Assault,82.4,117,Very Safe
+Rockcliffe-Smythe (111),2020,128,55,38,67,13,3,304,877.21,Assault,82.1,120,Very Safe
+Humber Summit (21),2020,98,97,28,91,17,24,355,903.69,Assault,81.4,121,Very Safe
+Birchcliffe-Cliffside (122),2020,138,17,46,88,19,5,313,915.97,Assault,81.1,122,Very Safe
+Oakridge (121),2020,156,16,36,44,26,4,282,923.06,Assault,81.0,123,Very Safe
+Scarborough Village (139),2020,158,19,27,86,17,7,314,943.27,Assault,80.4,124,Very Safe
+Agincourt South-Malvern West (128),2020,115,51,86,65,15,8,340,966.31,Assault,79.9,125,Safe
+Golfdale-Cedarbrae-Woburn (141),2020,151,32,39,67,25,5,319,971.04,Assault,79.7,126,Safe
+Newtonbrook West (36),2020,148,59,29,93,17,8,354,1002.35,Assault,79.0,127,Safe
+East End-Danforth (62),2020,133,29,60,111,22,6,361,1002.93,Assault,78.9,128,Safe
+Mimico-Queensway (160),2020,187,28,35,46,3,8,307,1003.09,Assault,78.9,128,Safe
+Kennedy Park (124),2020,165,28,32,73,23,8,329,1006.92,Assault,78.8,130,Safe
+Dorset Park (126),2020,121,61,71,115,19,5,392,1041.85,Assault,78.0,131,Safe
+Woburn North (142),2020,164,47,26,77,23,12,349,1043.29,Assault,77.9,132,Safe
+Mount Olive-Silverstone-Jamestown (2),2020,173,80,18,94,23,8,396,1137.3,Assault,75.5,133,Safe
+Rosedale-Moore Park (98),2020,153,49,97,44,24,8,375,1144.27,Assault,75.4,134,Safe
+Etobicoke City Centre (159),2020,130,91,58,139,15,28,461,1167.17,NonMCI,74.8,135,Safe
+Clairlea-Birchmount (120),2020,169,51,55,108,28,6,417,1197.05,Assault,74.0,136,Safe
+Weston (113),2020,195,69,25,92,23,11,415,1232.75,Assault,73.1,137,Safe
+Yorkdale-Glen Park (31),2020,149,74,72,123,31,18,467,1260.88,Assault,72.4,138,Safe
+Harbourfront-CityPlace (165),2020,213,37,76,48,11,17,402,1287.23,Assault,71.7,139,Safe
+North St.James Town (74),2020,224,24,58,78,35,6,425,1357.31,Assault,70.0,140,Safe
+Black Creek (24),2020,228,72,21,88,23,15,447,1360.16,Assault,69.9,141,Safe
+Junction-Wallace Emerson (171),2020,170,42,109,142,22,10,495,1361.85,Assault,69.9,141,Safe
+Wexford/Maryvale (119),2020,175,79,80,131,23,11,499,1370.82,Assault,69.6,143,Safe
+South Parkdale (85),2020,237,18,89,39,16,12,411,1377.0,Assault,69.5,144,Safe
+Oakdale-Beverley Heights (154),2020,226,88,47,151,39,14,565,1591.38,Assault,64.0,145,Safe
+South Riverdale (70),2020,196,39,141,132,32,24,564,1594.41,Assault,64.0,145,Safe
+St Lawrence-East Bayfront-The Islands (166),2020,243,14,93,154,38,17,559,1640.24,Assault,62.8,147,Safe
+West Hill (136),2020,289,51,58,125,35,8,566,1741.27,Assault,60.3,148,Safe
+Glenfield-Jane Heights (25),2020,257,104,51,133,38,19,602,1744.95,Assault,60.2,149,Safe
+Church-Wellesley (167),2020,298,7,97,65,53,20,540,1799.17,Assault,58.8,150,Moderate
+Wellington Place (164),2020,254,41,177,127,22,22,643,1882.09,Assault,56.7,151,Moderate
+Annex (95),2020,268,38,204,133,41,30,714,2103.56,Assault,51.1,152,Moderate
+Yonge-Bay Corridor (170),2020,339,16,146,127,46,32,706,2186.79,Assault,49.0,153,Moderate
+York University Heights (27),2020,318,170,110,253,41,46,938,2517.14,Assault,40.6,154,Moderate
+Kensington-Chinatown (78),2020,377,54,174,180,39,27,851,2542.48,Assault,40.0,155,Risky
+West Humber-Clairville (1),2020,225,339,107,350,59,53,1133,2674.78,NonMCI,36.6,156,Risky
+Downtown Yonge East (168),2020,451,26,145,178,74,23,897,2822.72,Assault,32.9,157,Risky
+Moss Park (73),2020,687,36,204,162,130,19,1238,4122.11,Assault,0.0,158,Very Risky
+Lambton Baby Point (114),2021,33,10,6,7,0,1,57,197.16,Assault,100.0,1,Very Safe
+Princess-Rosethorn (10),2021,22,21,11,32,1,2,89,233.2,NonMCI,98.9,2,Very Safe
+Bayview Woods-Steeles (49),2021,25,24,11,25,1,2,88,242.03,Assault,98.7,3,Very Safe
+Guildwood (140),2021,30,10,7,33,4,0,84,239.95,NonMCI,98.7,3,Very Safe
+Markland Wood (12),2021,23,22,9,23,8,1,86,242.71,Assault,98.7,3,Very Safe
+Maple Leaf (29),2021,35,12,10,17,1,3,78,247.28,Assault,98.5,6,Very Safe
+Woodbine-Lumsden (60),2021,32,9,11,32,2,0,86,248.77,Assault,98.5,6,Very Safe
+Runnymede-Bloor West Village (89),2021,24,22,11,21,5,8,91,255.19,Assault,98.3,8,Very Safe
+Highland Creek (134),2021,33,27,5,25,2,1,93,267.35,Assault,97.9,9,Very Safe
+Centennial Scarborough (133),2021,31,20,5,36,6,2,100,276.58,NonMCI,97.7,10,Very Safe
+Kingsway South (15),2021,27,33,9,17,9,5,100,290.58,Auto Theft,97.2,11,Very Safe
+Old East York (58),2021,39,18,6,21,6,5,95,295.46,Assault,97.1,12,Very Safe
+Humber Heights-Westmount (8),2021,33,21,16,29,1,5,105,298.01,Assault,97.0,13,Very Safe
+Etobicoke West Mall (13),2021,46,15,12,18,2,3,96,313.76,Assault,96.6,14,Very Safe
+Alderwood (20),2021,29,25,17,43,2,6,122,320.15,NonMCI,96.4,15,Very Safe
+Edenbridge-Humber Valley (9),2021,37,27,17,25,1,2,109,319.14,Assault,96.4,15,Very Safe
+Forest Hill South (101),2021,14,63,23,25,2,4,131,323.46,Auto Theft,96.3,17,Very Safe
+Pleasant View (46),2021,24,12,17,70,9,5,137,329.95,NonMCI,96.1,18,Very Safe
+Beechborough-Greenbrook (112),2021,50,17,8,12,10,0,97,337.44,Assault,95.9,19,Very Safe
+Bendale South (157),2021,54,14,4,26,6,0,104,343.19,Assault,95.7,20,Very Safe
+Blake-Jones (69),2021,47,6,27,11,8,1,100,349.52,Assault,95.5,21,Very Safe
+Broadview North (57),2021,50,10,17,23,7,1,108,353.17,Assault,95.4,22,Very Safe
+Casa Loma (96),2021,43,18,34,8,1,3,107,353.46,Assault,95.4,22,Very Safe
+Bridle Path-Sunnybrook-York Mills (41),2021,44,35,18,12,4,2,115,362.2,Assault,95.1,24,Very Safe
+Yonge-St.Clair (97),2021,43,13,30,23,4,3,116,363.04,Assault,95.1,24,Very Safe
+Caledonia-Fairbank (109),2021,61,8,11,18,2,5,105,365.92,Assault,95.0,26,Very Safe
+Forest Hill North (102),2021,41,33,12,38,3,4,131,366.4,Assault,95.0,26,Very Safe
+Lawrence Park North (105),2021,40,40,20,26,7,2,135,393.38,Assault,94.2,28,Very Safe
+Avondale (153),2021,48,31,17,27,5,5,133,400.26,Assault,94.0,29,Very Safe
+Eringate-Centennial-West Deane (11),2021,37,56,14,34,4,2,147,399.59,Auto Theft,94.0,29,Very Safe
+Rustic (28),2021,69,15,7,12,6,0,109,398.47,Assault,94.0,29,Very Safe
+Steeles (116),2021,44,40,16,28,6,2,136,398.37,Assault,94.0,29,Very Safe
+Wychwood (94),2021,53,14,31,13,5,2,118,398.85,Assault,94.0,29,Very Safe
+East L'Amoreaux (148),2021,61,18,13,16,6,5,119,404.95,Assault,93.9,34,Very Safe
+Humewood-Cedarvale (106),2021,48,29,22,38,2,1,140,407.98,Assault,93.8,35,Very Safe
+Parkwoods-O'Connor Hills (149),2021,50,16,17,29,15,1,128,406.27,Assault,93.8,35,Very Safe
+Lawrence Park South (103),2021,32,53,26,27,7,3,148,410.15,Auto Theft,93.7,37,Very Safe
+Yonge-Eglinton (100),2021,53,23,30,21,4,3,134,428.0,Assault,93.2,38,Very Safe
+Thistletown-Beaumond Heights (3),2021,54,41,8,39,6,3,151,439.19,Assault,92.8,39,Very Safe
+North Riverdale (68),2021,57,14,32,31,5,0,139,443.86,Assault,92.7,40,Very Safe
+Elms-Old Rexdale (5),2021,59,47,9,18,6,3,142,446.47,Assault,92.6,41,Very Safe
+Mount Pleasant East (99),2021,44,35,34,25,7,5,150,447.5,Assault,92.6,41,Very Safe
+Hillcrest Village (48),2021,42,36,22,51,9,5,165,451.34,NonMCI,92.5,43,Very Safe
+Danforth East York (59),2021,58,14,23,54,4,4,157,457.23,Assault,92.3,44,Very Safe
+Palmerston-Little Italy (80),2021,63,9,31,22,9,0,134,457.51,Assault,92.3,44,Very Safe
+Playter Estates-Danforth (67),2021,54,7,41,33,10,1,146,461.9,Assault,92.2,46,Very Safe
+West Rouge (143),2021,58,33,22,30,5,4,152,464.68,Assault,92.1,47,Very Safe
+Bathurst Manor (34),2021,55,38,18,35,8,2,156,467.84,Assault,92.0,48,Very Safe
+East Willowdale (152),2021,43,40,27,53,7,5,175,475.11,NonMCI,91.8,49,Very Safe
+Rexdale-Kipling (4),2021,48,39,28,54,8,2,179,495.89,NonMCI,91.2,50,Very Safe
+Agincourt North (129),2021,60,47,18,32,7,2,166,504.56,Assault,90.9,51,Very Safe
+Dufferin Grove (83),2021,74,18,28,22,4,3,149,505.75,Assault,90.9,51,Very Safe
+Woodbine Corridor (64),2021,71,11,31,34,8,2,157,514.07,Assault,90.6,53,Very Safe
+Pelmo Park-Humberlea (23),2021,58,64,12,46,4,2,186,519.87,Auto Theft,90.5,54,Very Safe
+Morningside (135),2021,80,31,17,21,4,1,154,521.28,Assault,90.4,55,Very Safe
+Ionview (125),2021,85,9,18,40,4,4,160,532.47,Assault,90.1,56,Very Safe
+Weston-Pelham Park (91),2021,87,15,23,17,5,1,148,532.32,Assault,90.1,56,Very Safe
+Willowridge-Martingrove-Richview (7),2021,54,54,22,57,5,4,196,535.44,NonMCI,90.0,58,Very Safe
+St.Andrew-Windfields (40),2021,46,57,32,60,2,8,205,540.32,NonMCI,89.9,59,Very Safe
+Keelesdale-Eglinton West (110),2021,76,21,27,33,7,1,165,540.38,Assault,89.8,60,Very Safe
+Malvern West (145),2021,81,22,14,24,14,2,157,542.89,Assault,89.8,60,Very Safe
+High Park-Swansea (87),2021,75,25,29,28,8,4,169,550.9,Assault,89.5,62,Very Safe
+L'Amoreaux West (147),2021,84,18,17,35,8,3,165,551.13,Assault,89.5,62,Very Safe
+Leaside-Bennington (56),2021,43,78,40,38,3,3,205,553.37,Auto Theft,89.5,62,Very Safe
+Fenside-Parkwoods (150),2021,74,31,20,45,8,3,181,559.54,Assault,89.3,65,Very Safe
+University (79),2021,86,9,31,20,9,5,160,567.05,Assault,89.1,66,Very Safe
+Bayview Village (52),2021,68,39,29,45,4,9,194,574.09,Assault,88.9,67,Very Safe
+Bedford Park-Nortown (39),2021,39,94,30,48,6,4,221,572.59,Auto Theft,88.9,67,Very Safe
+Long Branch (19),2021,88,38,15,41,1,3,186,589.34,Assault,88.4,69,Very Safe
+Lansing-Westgate (38),2021,76,56,16,37,5,5,195,591.45,Assault,88.3,70,Very Safe
+Banbury-Don Mills (42),2021,83,34,23,38,3,7,188,596.2,Assault,88.2,71,Very Safe
+Dovercourt Village (172),2021,95,11,20,18,15,3,162,594.5,Assault,88.2,71,Very Safe
+Islington (158),2021,57,52,44,40,11,6,210,608.49,Assault,87.8,73,Very Safe
+Little Portugal (84),2021,91,8,41,25,6,7,178,613.22,Assault,87.7,74,Very Safe
+Mount Dennis (115),2021,95,23,16,33,10,3,180,612.03,Assault,87.7,74,Very Safe
+Englemount-Lawrence (32),2021,78,35,23,59,7,7,209,620.35,Assault,87.5,76,Very Safe
+Humber Bay Shores (161),2021,96,26,28,19,6,6,181,630.04,Assault,87.2,77,Very Safe
+Willowdale West (37),2021,73,28,15,66,23,9,214,634.75,Assault,87.1,78,Very Safe
+Yonge-Doris (151),2021,66,38,17,71,23,9,224,637.89,NonMCI,87.0,79,Very Safe
+New Toronto (18),2021,106,15,18,25,11,5,180,644.77,Assault,86.8,80,Very Safe
+Taylor-Massey (61),2021,99,17,16,50,7,10,199,644.54,Assault,86.8,80,Very Safe
+Briar Hill-Belgravia (108),2021,73,27,40,61,14,3,218,650.42,Assault,86.6,82,Very Safe
+South Eglinton-Davisville (174),2021,96,14,43,23,9,5,190,660.77,Assault,86.3,83,Very Safe
+Victoria Village (43),2021,88,33,22,61,8,5,217,659.89,Assault,86.3,83,Very Safe
+High Park North (88),2021,93,20,38,31,11,5,198,665.8,Assault,86.1,85,Very Safe
+Newtonbrook East (50),2021,84,47,25,37,12,8,213,670.27,Assault,86.0,86,Very Safe
+Cliffcrest (123),2021,82,30,28,71,14,2,227,674.54,Assault,85.9,87,Very Safe
+Danforth (66),2021,84,18,49,50,12,4,217,681.83,Assault,85.7,88,Very Safe
+Stonegate-Queensway (16),2021,72,60,29,57,13,7,238,684.07,Assault,85.6,89,Very Safe
+Henry Farm (53),2021,83,29,24,101,7,5,249,687.62,NonMCI,85.5,90,Very Safe
+The Beaches (63),2021,86,30,39,44,14,7,220,694.04,Assault,85.3,91,Very Safe
+Corso Italia-Davenport (92),2021,115,23,31,23,1,3,196,696.54,Assault,85.2,92,Very Safe
+Morningside Heights (144),2021,76,73,25,51,10,7,242,698.42,Assault,85.2,92,Very Safe
+Oakwood Village (107),2021,99,27,36,51,9,6,228,729.0,Assault,84.3,94,Very Safe
+Greenwood-Coxwell (65),2021,95,21,38,58,14,5,231,731.23,Assault,84.2,95,Very Safe
+West Queen West (162),2021,98,14,50,50,10,6,228,736.34,Assault,84.1,96,Very Safe
+Flemingdon Park (44),2021,135,19,9,36,4,2,205,739.75,Assault,84.0,97,Very Safe
+Junction Area (90),2021,106,24,45,32,8,6,221,746.03,Assault,83.8,98,Very Safe
+Westminster-Branson (35),2021,92,60,25,60,7,7,251,745.06,Assault,83.8,98,Very Safe
+Scarborough Village (139),2021,108,25,22,59,13,7,234,750.39,Assault,83.6,100,Very Safe
+North Toronto (173),2021,115,13,50,16,12,2,208,758.77,Assault,83.4,101,Very Safe
+Thorncliffe Park (55),2021,116,17,35,39,14,1,222,766.76,Assault,83.2,102,Very Safe
+Tam O'Shanter-Sullivan (118),2021,108,54,16,55,8,5,246,767.21,Assault,83.1,103,Very Safe
+Roncesvalles (86),2021,97,16,67,38,10,10,238,776.3,Assault,82.9,104,Very Safe
+Milliken (130),2021,53,66,87,65,15,7,293,801.47,Break and Enter,82.1,105,Very Safe
+O'Connor-Parkview (54),2021,109,38,40,64,9,1,261,813.85,Assault,81.8,106,Very Safe
+Malvern East (146),2021,126,43,21,25,19,1,235,824.15,Assault,81.5,107,Very Safe
+Brookhaven-Amesbury (30),2021,120,44,23,47,13,5,252,825.81,Assault,81.4,108,Very Safe
+Clanton Park (33),2021,86,83,36,70,9,8,292,826.03,Assault,81.4,108,Very Safe
+Kingsview Village-The Westway (6),2021,99,77,14,92,9,8,299,838.85,Assault,81.0,110,Very Safe
+Cabbagetown-South St.James Town (71),2021,116,4,67,48,12,7,254,853.42,Assault,80.6,111,Very Safe
+Trinity-Bellwoods (81),2021,124,20,49,27,16,9,245,856.94,Assault,80.5,112,Very Safe
+Bay-Cloverhill (169),2021,131,20,39,20,19,12,241,864.0,Assault,80.3,113,Very Safe
+Humbermede (22),2021,116,55,29,39,16,13,268,865.75,Assault,80.2,114,Very Safe
+Don Valley Village (47),2021,126,32,30,59,15,12,274,889.92,Assault,79.5,115,Safe
+Rockcliffe-Smythe (111),2021,132,42,32,38,14,6,264,893.01,Assault,79.4,116,Safe
+Fort York-Liberty Village (163),2021,145,12,39,39,7,16,258,901.27,Assault,79.2,117,Safe
+Downsview (155),2021,127,53,29,56,10,7,282,903.25,Assault,79.1,118,Safe
+Regent Park (72),2021,157,8,33,20,15,4,237,902.59,Assault,79.1,118,Safe
+Bendale-Glen Andrew (156),2021,112,70,18,37,37,7,281,914.43,Assault,78.8,120,Safe
+Eglinton East (138),2021,140,35,30,50,14,2,271,915.67,Assault,78.8,120,Safe
+Birchcliffe-Cliffside (122),2021,134,29,42,66,12,4,287,929.05,Assault,78.4,122,Safe
+Dorset Park (126),2021,134,43,38,89,16,4,324,1002.36,Assault,76.2,123,Safe
+Golfdale-Cedarbrae-Woburn (141),2021,152,42,27,58,17,4,300,1004.28,Assault,76.1,124,Safe
+Agincourt South-Malvern West (128),2021,142,33,39,88,14,5,321,1008.87,Assault,76.0,125,Safe
+Oakridge (121),2021,172,19,28,63,18,5,305,1057.41,Assault,74.6,126,Safe
+Woburn North (142),2021,166,48,29,76,11,8,338,1098.99,Assault,73.3,127,Safe
+Humber Summit (21),2021,108,127,40,82,14,28,399,1114.35,Auto Theft,72.9,128,Safe
+Rosedale-Moore Park (98),2021,138,68,63,32,27,10,338,1117.51,Assault,72.8,129,Safe
+Kennedy Park (124),2021,176,28,36,65,19,4,328,1119.69,Assault,72.7,130,Safe
+Junction-Wallace Emerson (171),2021,161,30,77,53,11,8,340,1139.81,Assault,72.1,131,Safe
+Yorkdale-Glen Park (31),2021,140,82,61,106,13,21,423,1240.01,Assault,69.2,132,Safe
+Weston (113),2021,187,55,36,65,22,4,369,1243.52,Assault,69.1,133,Safe
+East End-Danforth (62),2021,173,35,65,80,24,7,384,1263.34,Assault,68.5,134,Safe
+Newtonbrook West (36),2021,181,84,35,78,13,10,401,1277.97,Assault,68.0,135,Safe
+Black Creek (24),2021,208,62,27,64,13,11,385,1303.94,Assault,67.3,136,Safe
+Mimico-Queensway (160),2021,245,32,27,29,6,6,345,1317.08,Assault,66.9,137,Safe
+North St.James Town (74),2021,235,16,44,39,16,3,353,1326.3,Assault,66.6,138,Safe
+Etobicoke City Centre (159),2021,142,104,75,112,11,29,473,1354.37,Assault,65.8,139,Safe
+Mount Olive-Silverstone-Jamestown (2),2021,197,72,17,82,38,3,409,1353.47,Assault,65.8,139,Safe
+South Parkdale (85),2021,234,16,64,49,18,6,387,1410.4,Assault,64.1,141,Safe
+Harbourfront-CityPlace (165),2021,258,25,52,49,18,7,409,1503.02,Assault,61.4,142,Safe
+Clairlea-Birchmount (120),2021,220,41,58,137,9,17,482,1512.72,Assault,61.1,143,Safe
+Wexford/Maryvale (119),2021,197,82,73,134,21,16,523,1583.49,Assault,59.0,144,Moderate
+South Riverdale (70),2021,203,41,135,121,26,18,544,1704.85,Assault,55.4,145,Moderate
+Glenfield-Jane Heights (25),2021,284,91,40,90,19,7,531,1794.51,Assault,52.8,146,Moderate
+Oakdale-Beverley Heights (154),2021,265,104,63,107,23,20,582,1875.07,Assault,50.4,147,Moderate
+Yonge-Bay Corridor (170),2021,294,19,114,59,44,29,559,2000.91,Assault,46.7,148,Moderate
+West Hill (136),2021,293,68,71,137,41,4,614,2025.53,Assault,45.9,149,Moderate
+Annex (95),2021,273,38,153,73,46,36,619,2105.57,Assault,43.6,150,Moderate
+Wellington Place (164),2021,306,36,146,98,18,22,626,2134.37,Assault,42.7,151,Moderate
+Church-Wellesley (167),2021,358,30,85,54,39,21,587,2173.69,Assault,41.5,152,Moderate
+Kensington-Chinatown (78),2021,367,23,97,84,29,22,622,2240.28,Assault,39.6,153,Risky
+St Lawrence-East Bayfront-The Islands (166),2021,324,31,152,70,42,23,642,2263.84,Assault,38.9,154,Risky
+York University Heights (27),2021,304,148,111,190,33,27,813,2465.17,Assault,32.9,155,Risky
+West Humber-Clairville (1),2021,228,439,100,362,47,57,1233,3122.97,Auto Theft,13.5,156,Very Risky
+Downtown Yonge East (168),2021,532,43,161,112,81,25,954,3448.19,Assault,3.9,157,Very Risky
+Moss Park (73),2021,561,49,154,125,85,16,990,3578.49,Assault,0.0,158,Very Risky
+Bayview Woods-Steeles (49),2022,34,14,9,18,2,3,80,268.71,Assault,100.0,1,Very Safe
+Humber Heights-Westmount (8),2022,29,27,10,18,6,1,91,289.96,Assault,99.5,2,Very Safe
+Woodbine-Lumsden (60),2022,39,19,6,13,5,1,83,292.69,Assault,99.4,3,Very Safe
+Guildwood (140),2022,34,7,5,49,6,2,103,302.38,NonMCI,99.2,4,Very Safe
+Avondale (153),2022,36,18,8,35,1,9,107,322.58,Assault,98.7,5,Very Safe
+Bendale South (157),2022,40,21,8,28,5,2,104,336.77,Assault,98.3,6,Very Safe
+Kingsway South (15),2022,22,56,13,21,7,2,121,348.02,Auto Theft,98.0,7,Very Safe
+Princess-Rosethorn (10),2022,23,59,13,26,2,2,125,350.22,Auto Theft,98.0,7,Very Safe
+Markland Wood (12),2022,32,26,12,40,7,3,120,351.35,NonMCI,97.9,9,Very Safe
+Lambton Baby Point (114),2022,53,22,11,7,1,1,95,359.48,Assault,97.7,10,Very Safe
+Pleasant View (46),2022,32,26,15,51,4,4,132,367.5,NonMCI,97.5,11,Very Safe
+Centennial Scarborough (133),2022,34,24,21,54,0,4,137,381.18,NonMCI,97.2,12,Very Safe
+Blake-Jones (69),2022,48,8,23,14,9,2,104,384.27,Assault,97.1,13,Very Safe
+Caledonia-Fairbank (109),2022,54,24,6,22,3,2,111,383.71,Assault,97.1,13,Very Safe
+Yonge-St.Clair (97),2022,40,27,25,21,6,1,120,393.95,Assault,96.9,15,Very Safe
+Runnymede-Bloor West Village (89),2022,40,25,21,19,12,0,117,395.9,Assault,96.8,16,Very Safe
+Highland Creek (134),2022,43,38,14,35,2,1,133,408.1,Assault,96.5,17,Very Safe
+Forest Hill North (102),2022,51,35,17,11,5,4,123,430.16,Assault,96.0,18,Very Safe
+Beechborough-Greenbrook (112),2022,62,20,13,25,2,2,124,438.42,Assault,95.8,19,Very Safe
+Broadview North (57),2022,63,12,18,31,2,2,128,448.63,Assault,95.5,20,Very Safe
+Old East York (58),2022,56,20,22,25,5,1,129,448.1,Assault,95.5,20,Very Safe
+Forest Hill South (101),2022,27,74,26,26,0,10,163,455.13,Auto Theft,95.4,22,Very Safe
+Hillcrest Village (48),2022,41,14,29,44,14,4,146,455.79,NonMCI,95.3,23,Very Safe
+Steeles (116),2022,36,35,33,40,6,4,154,458.41,NonMCI,95.3,23,Very Safe
+Maple Leaf (29),2022,48,43,21,20,5,3,140,460.08,Assault,95.2,25,Very Safe
+Edenbridge-Humber Valley (9),2022,27,71,29,36,3,8,174,481.75,Auto Theft,94.7,26,Very Safe
+Humewood-Cedarvale (106),2022,36,55,30,37,5,2,165,482.68,Auto Theft,94.7,26,Very Safe
+Bridle Path-Sunnybrook-York Mills (41),2022,31,57,47,16,3,5,159,484.9,Auto Theft,94.6,28,Very Safe
+Casa Loma (96),2022,62,28,20,21,7,4,142,498.85,Assault,94.3,29,Very Safe
+Lawrence Park North (105),2022,34,76,28,27,4,2,171,498.3,Auto Theft,94.3,29,Very Safe
+Etobicoke West Mall (13),2022,57,33,21,50,4,5,170,523.53,Assault,93.7,31,Very Safe
+Ionview (125),2022,74,10,13,43,8,2,150,523.7,Assault,93.7,31,Very Safe
+Parkwoods-O'Connor Hills (149),2022,67,37,16,30,5,1,156,530.15,Assault,93.5,33,Very Safe
+Elms-Old Rexdale (5),2022,60,58,9,30,8,0,165,532.37,Assault,93.4,34,Very Safe
+Rustic (28),2022,75,33,10,24,4,5,151,536.75,Assault,93.3,35,Very Safe
+Thistletown-Beaumond Heights (3),2022,58,52,17,20,13,1,161,539.89,Assault,93.3,35,Very Safe
+Lawrence Park South (103),2022,25,91,35,38,7,5,201,550.43,Auto Theft,93.0,37,Very Safe
+Mount Pleasant East (99),2022,50,56,27,44,3,4,184,549.18,Auto Theft,93.0,37,Very Safe
+Leaside-Bennington (56),2022,29,70,41,62,4,3,209,558.01,Auto Theft,92.8,39,Very Safe
+North Riverdale (68),2022,69,22,30,28,7,3,159,558.93,Assault,92.8,39,Very Safe
+Alderwood (20),2022,41,61,42,29,6,6,185,560.43,Auto Theft,92.7,41,Very Safe
+Rexdale-Kipling (4),2022,50,55,21,46,9,9,190,567.88,Auto Theft,92.6,42,Very Safe
+Danforth East York (59),2022,58,45,27,48,4,3,185,570.56,Assault,92.5,43,Very Safe
+West Rouge (143),2022,53,55,22,57,11,4,202,599.44,NonMCI,91.8,44,Very Safe
+Dufferin Grove (83),2022,78,10,28,22,16,7,161,601.64,Assault,91.7,45,Very Safe
+East L'Amoreaux (148),2022,69,42,23,34,5,10,183,603.08,Assault,91.7,45,Very Safe
+Malvern West (145),2022,81,51,8,30,10,4,184,631.07,Assault,91.0,47,Very Safe
+Keelesdale-Eglinton West (110),2022,89,25,17,33,10,0,174,633.23,Assault,90.9,48,Very Safe
+Wychwood (94),2022,83,30,28,24,5,9,179,635.41,Assault,90.9,48,Very Safe
+Agincourt North (129),2022,70,45,23,46,11,3,198,640.43,Assault,90.8,50,Very Safe
+Woodbine Corridor (64),2022,97,16,23,21,7,5,169,648.05,Assault,90.6,51,Very Safe
+Yonge-Doris (151),2022,72,33,18,66,8,11,208,646.37,Assault,90.6,51,Very Safe
+Weston-Pelham Park (91),2022,98,28,15,16,9,3,169,650.54,Assault,90.5,53,Very Safe
+Palmerston-Little Italy (80),2022,78,25,37,32,9,8,189,654.92,Assault,90.4,54,Very Safe
+Long Branch (19),2022,83,31,33,29,6,5,187,658.71,Assault,90.3,55,Very Safe
+East Willowdale (152),2022,57,40,38,60,12,13,220,663.73,NonMCI,90.2,56,Very Safe
+L'Amoreaux West (147),2022,89,28,17,49,10,5,198,675.07,Assault,89.9,57,Very Safe
+Englemount-Lawrence (32),2022,81,56,15,52,5,3,212,679.79,Assault,89.8,58,Very Safe
+Eringate-Centennial-West Deane (11),2022,60,86,18,57,10,3,234,688.58,Auto Theft,89.6,59,Very Safe
+West Queen West (162),2022,99,18,34,34,4,6,195,710.25,Assault,89.0,60,Very Safe
+Playter Estates-Danforth (67),2022,94,19,31,42,13,3,202,721.74,Assault,88.7,61,Very Safe
+Bathurst Manor (34),2022,53,70,24,93,15,8,263,726.19,NonMCI,88.6,62,Very Safe
+Fenside-Parkwoods (150),2022,100,32,11,62,9,1,215,727.69,Assault,88.6,62,Very Safe
+Lansing-Westgate (38),2022,66,63,36,49,11,11,236,730.69,Assault,88.5,64,Very Safe
+Little Portugal (84),2022,98,24,31,31,12,5,201,734.1,Assault,88.4,65,Very Safe
+Corso Italia-Davenport (92),2022,105,33,25,19,10,3,195,739.06,Assault,88.3,66,Very Safe
+Dovercourt Village (172),2022,97,25,34,29,13,5,203,741.63,Assault,88.2,67,Very Safe
+University (79),2022,93,15,41,36,14,13,212,755.95,Assault,87.9,68,Very Safe
+Newtonbrook East (50),2022,78,55,40,42,9,10,234,760.09,Assault,87.8,69,Very Safe
+South Eglinton-Davisville (174),2022,113,9,23,41,14,3,203,760.25,Assault,87.8,69,Very Safe
+Flemingdon Park (44),2022,119,18,22,27,9,1,196,762.46,Assault,87.7,71,Very Safe
+Regent Park (72),2022,117,12,24,27,11,6,197,766.31,Assault,87.6,72,Very Safe
+St.Andrew-Windfields (40),2022,58,80,53,47,8,12,258,773.75,Auto Theft,87.4,73,Very Safe
+Henry Farm (53),2022,90,29,35,80,8,10,252,792.98,Assault,87.0,74,Very Safe
+Pelmo Park-Humberlea (23),2022,78,89,31,42,5,9,254,792.34,Auto Theft,87.0,74,Very Safe
+Taylor-Massey (61),2022,116,13,25,58,8,5,225,800.83,Assault,86.8,76,Very Safe
+Willowdale West (37),2022,107,41,30,40,3,9,230,801.55,Assault,86.8,76,Very Safe
+Briar Hill-Belgravia (108),2022,102,45,25,36,14,7,229,805.34,Assault,86.7,78,Very Safe
+Bay-Cloverhill (169),2022,107,15,41,26,17,8,214,806.36,Assault,86.6,79,Very Safe
+North Toronto (173),2022,115,9,44,25,12,5,210,808.43,Assault,86.6,79,Very Safe
+Mount Dennis (115),2022,115,39,21,37,7,5,224,810.11,Assault,86.5,81,Very Safe
+Roncesvalles (86),2022,98,24,53,43,16,6,240,842.57,Assault,85.7,82,Very Safe
+Yonge-Eglinton (100),2022,123,31,32,32,5,5,228,844.71,Assault,85.7,82,Very Safe
+High Park-Swansea (87),2022,88,64,50,39,10,5,256,846.21,Assault,85.6,84,Very Safe
+Greenwood-Coxwell (65),2022,110,22,37,41,21,6,237,859.55,Assault,85.3,85,Very Safe
+Morningside (135),2022,102,52,11,108,10,3,286,868.76,NonMCI,85.1,86,Very Safe
+Victoria Village (43),2022,114,31,38,55,9,4,251,873.04,Assault,85.0,87,Very Safe
+Cliffcrest (123),2022,114,37,20,78,11,5,265,879.32,Assault,84.8,88,Very Safe
+Malvern East (146),2022,113,41,16,70,16,7,263,882.15,Assault,84.8,88,Very Safe
+Thorncliffe Park (55),2022,101,25,51,56,17,10,260,884.46,Assault,84.7,90,Very Safe
+Bayview Village (52),2022,112,48,30,66,8,7,271,901.91,Assault,84.3,91,Very Safe
+Willowridge-Martingrove-Richview (7),2022,87,100,27,62,13,4,293,899.7,Auto Theft,84.3,91,Very Safe
+Bedford Park-Nortown (39),2022,42,152,65,49,9,8,325,903.97,Auto Theft,84.2,93,Very Safe
+Scarborough Village (139),2022,139,23,20,51,8,7,248,915.11,Assault,83.9,94,Very Safe
+Junction Area (90),2022,106,41,57,41,16,11,272,940.45,Assault,83.3,95,Very Safe
+Humber Bay Shores (161),2022,122,52,27,59,6,14,280,944.78,Assault,83.2,96,Very Safe
+The Beaches (63),2022,109,55,45,45,15,10,279,948.83,Assault,83.1,97,Very Safe
+Danforth (66),2022,120,24,58,39,18,3,262,957.33,Assault,82.9,98,Very Safe
+Westminster-Branson (35),2022,80,77,33,137,12,10,349,960.27,NonMCI,82.8,99,Very Safe
+Islington (158),2022,86,85,45,67,19,9,311,962.72,Assault,82.7,100,Very Safe
+Banbury-Don Mills (42),2022,109,50,49,48,17,11,284,968.83,Assault,82.6,101,Very Safe
+Brookhaven-Amesbury (30),2022,131,61,20,47,10,8,277,972.29,Assault,82.5,102,Very Safe
+Don Valley Village (47),2022,107,59,30,77,21,9,303,973.88,Assault,82.5,102,Very Safe
+Fort York-Liberty Village (163),2022,155,18,27,28,7,13,248,971.55,Assault,82.5,102,Very Safe
+High Park North (88),2022,131,36,34,53,16,7,277,983.78,Assault,82.2,105,Very Safe
+Cabbagetown-South St.James Town (71),2022,121,18,64,50,20,9,282,1005.2,Assault,81.7,106,Very Safe
+Morningside Heights (144),2022,98,115,21,55,21,15,325,1018.73,Auto Theft,81.4,107,Very Safe
+O'Connor-Parkview (54),2022,142,33,46,39,8,9,277,1021.96,Assault,81.3,108,Very Safe
+Humbermede (22),2022,99,99,32,44,30,9,313,1024.74,Assault,81.2,109,Very Safe
+Milliken (130),2022,67,97,63,77,29,15,348,1025.96,Auto Theft,81.2,109,Very Safe
+Trinity-Bellwoods (81),2022,126,28,69,34,17,9,283,1032.22,Assault,81.0,111,Very Safe
+New Toronto (18),2022,152,34,24,48,16,6,280,1041.06,Assault,80.8,112,Very Safe
+Tam O'Shanter-Sullivan (118),2022,103,72,36,103,26,5,345,1059.87,Assault,80.3,113,Very Safe
+Junction-Wallace Emerson (171),2022,129,41,56,58,18,7,309,1075.2,Assault,80.0,114,Safe
+Oakwood Village (107),2022,140,58,37,46,17,5,303,1076.97,Assault,79.9,115,Safe
+Oakridge (121),2022,162,20,35,61,11,7,296,1091.14,Assault,79.6,116,Safe
+Clanton Park (33),2022,108,124,40,58,11,11,352,1103.22,Auto Theft,79.3,117,Safe
+Kingsview Village-The Westway (6),2022,136,100,15,69,9,7,336,1099.72,Assault,79.3,117,Safe
+Stonegate-Queensway (16),2022,93,127,44,103,6,11,384,1103.68,Auto Theft,79.2,119,Safe
+Birchcliffe-Cliffside (122),2022,153,44,31,69,14,7,318,1118.9,Assault,78.9,120,Safe
+Rockcliffe-Smythe (111),2022,155,53,32,52,17,11,320,1147.34,Assault,78.2,121,Safe
+Downsview (155),2022,124,110,31,62,17,13,357,1152.3,Assault,78.0,122,Safe
+Eglinton East (138),2022,162,40,39,104,16,8,369,1246.96,Assault,75.7,123,Safe
+Bendale-Glen Andrew (156),2022,145,72,25,65,42,13,362,1249.22,Assault,75.6,124,Safe
+Golfdale-Cedarbrae-Woburn (141),2022,173,72,28,108,15,6,402,1332.88,Assault,73.5,125,Safe
+Agincourt South-Malvern West (128),2022,158,72,53,77,24,11,395,1341.96,Assault,73.3,126,Safe
+North St.James Town (74),2022,213,15,37,63,24,5,357,1376.92,Assault,72.5,127,Safe
+Woburn North (142),2022,176,92,33,101,18,12,432,1428.04,Assault,71.2,128,Safe
+Humber Summit (21),2022,132,151,54,73,29,24,463,1452.49,Auto Theft,70.6,129,Safe
+Kennedy Park (124),2022,208,40,44,92,25,5,414,1487.49,Assault,69.7,130,Safe
+Dorset Park (126),2022,185,64,71,76,24,9,429,1501.56,Assault,69.4,131,Safe
+Black Creek (24),2022,231,72,33,37,18,8,399,1532.38,Assault,68.6,132,Safe
+East End-Danforth (62),2022,211,34,71,82,23,12,433,1566.46,Assault,67.7,133,Safe
+Rosedale-Moore Park (98),2022,205,93,71,41,17,14,441,1596.56,Assault,67.0,134,Safe
+South Parkdale (85),2022,260,33,60,53,7,12,425,1651.52,Assault,65.6,135,Safe
+Weston (113),2022,215,90,45,82,29,8,469,1652.07,Assault,65.6,135,Safe
+Harbourfront-CityPlace (165),2022,251,26,57,53,28,13,428,1671.01,Assault,65.1,137,Safe
+Clairlea-Birchmount (120),2022,222,65,75,117,16,13,508,1737.34,Assault,63.5,138,Safe
+Newtonbrook West (36),2022,206,156,36,106,26,12,542,1775.28,Assault,62.6,139,Safe
+Yorkdale-Glen Park (31),2022,162,178,58,116,31,43,588,1792.11,Auto Theft,62.1,140,Safe
+Mount Olive-Silverstone-Jamestown (2),2022,249,108,25,79,45,18,524,1875.33,Assault,60.1,141,Safe
+Wexford/Maryvale (119),2022,205,118,71,135,33,19,581,1879.02,Assault,60.0,142,Moderate
+Mimico-Queensway (160),2022,300,57,44,61,13,11,486,1884.54,Assault,59.8,143,Moderate
+Glenfield-Jane Heights (25),2022,264,144,34,80,25,12,559,1973.45,Assault,57.6,144,Moderate
+South Riverdale (70),2022,257,73,102,71,31,22,556,2014.72,Assault,56.6,145,Moderate
+Etobicoke City Centre (159),2022,196,163,86,181,38,42,706,2135.1,Assault,53.6,146,Moderate
+Oakdale-Beverley Heights (154),2022,301,102,51,101,34,18,607,2186.85,Assault,52.3,147,Moderate
+Church-Wellesley (167),2022,342,15,78,51,40,19,545,2208.49,Assault,51.8,148,Moderate
+West Hill (136),2022,357,54,43,144,49,14,661,2432.9,Assault,46.2,149,Moderate
+St Lawrence-East Bayfront-The Islands (166),2022,349,36,125,97,29,23,659,2476.24,Assault,45.1,150,Moderate
+Kensington-Chinatown (78),2022,365,36,99,95,45,20,660,2523.73,Assault,43.9,151,Moderate
+Annex (95),2022,349,60,140,109,41,40,739,2690.4,Assault,39.8,152,Risky
+Wellington Place (164),2022,382,60,125,78,50,20,715,2735.81,Assault,38.7,153,Risky
+Yonge-Bay Corridor (170),2022,386,26,121,103,51,50,737,2777.06,Assault,37.6,154,Risky
+York University Heights (27),2022,330,200,127,199,44,60,960,3092.83,Assault,29.8,155,Risky
+Downtown Yonge East (168),2022,491,42,109,76,70,19,807,3242.32,Assault,26.1,156,Risky
+Moss Park (73),2022,506,54,128,85,59,15,847,3358.13,Assault,23.2,157,Risky
+West Humber-Clairville (1),2022,243,684,134,438,58,59,1616,4291.64,Auto Theft,0.0,158,Very Risky
+Woodbine-Lumsden (60),2023,31,17,12,12,0,4,76,275.06,Assault,100.0,1,Very Safe
+Lambton Baby Point (114),2023,30,19,15,7,5,2,78,292.33,Assault,99.6,2,Very Safe
+Humber Heights-Westmount (8),2023,45,25,12,19,5,2,108,394.52,Assault,97.6,3,Very Safe
+Guildwood (140),2023,50,21,9,27,1,5,113,403.93,Assault,97.4,4,Very Safe
+Markland Wood (12),2023,39,43,14,23,3,1,123,412.28,Auto Theft,97.2,5,Very Safe
+Yonge-St.Clair (97),2023,34,38,36,19,2,2,131,441.99,Auto Theft,96.6,6,Very Safe
+Centennial Scarborough (133),2023,38,44,17,28,7,2,136,449.07,Auto Theft,96.5,7,Very Safe
+Caledonia-Fairbank (109),2023,62,28,13,11,3,3,120,472.61,Assault,96.0,8,Very Safe
+Maple Leaf (29),2023,48,46,16,16,5,1,132,470.86,Assault,96.0,8,Very Safe
+Old East York (58),2023,62,28,6,27,6,2,131,488.08,Assault,95.7,10,Very Safe
+Alderwood (20),2023,45,44,21,14,7,8,139,489.92,Assault,95.6,11,Very Safe
+Pleasant View (46),2023,43,41,17,33,12,4,150,501.7,Assault,95.4,12,Very Safe
+Broadview North (57),2023,66,16,21,26,3,3,135,515.38,Assault,95.1,13,Very Safe
+Avondale (153),2023,49,26,20,59,5,6,165,523.15,NonMCI,95.0,14,Very Safe
+Blake-Jones (69),2023,64,6,31,16,9,3,129,523.5,Assault,94.9,15,Very Safe
+Steeles (116),2023,47,56,27,24,4,1,159,539.26,Auto Theft,94.6,16,Very Safe
+Bayview Woods-Steeles (49),2023,56,29,28,34,7,1,155,547.74,Assault,94.5,17,Very Safe
+Highland Creek (134),2023,61,53,14,20,3,2,153,550.18,Assault,94.4,18,Very Safe
+Lawrence Park North (105),2023,31,80,33,30,4,6,184,558.31,Auto Theft,94.2,19,Very Safe
+Runnymede-Bloor West Village (89),2023,48,38,32,18,14,6,156,558.92,Assault,94.2,19,Very Safe
+Bendale South (157),2023,68,23,15,24,15,1,146,568.76,Assault,94.0,21,Very Safe
+Humewood-Cedarvale (106),2023,55,51,35,25,1,3,170,588.21,Assault,93.6,22,Very Safe
+Casa Loma (96),2023,49,35,46,10,14,7,161,592.46,Assault,93.5,23,Very Safe
+Elms-Old Rexdale (5),2023,58,39,16,44,14,4,175,597.27,Assault,93.4,24,Very Safe
+North Riverdale (68),2023,72,24,31,21,5,4,157,604.51,Assault,93.3,25,Very Safe
+Etobicoke West Mall (13),2023,62,60,12,45,1,5,185,607.11,Assault,93.2,26,Very Safe
+Mount Pleasant East (99),2023,65,50,21,21,8,6,171,617.98,Assault,93.0,27,Very Safe
+Rustic (28),2023,85,34,19,13,3,2,156,628.03,Assault,92.8,28,Very Safe
+Palmerston-Little Italy (80),2023,68,14,35,28,15,9,169,640.0,Assault,92.6,29,Very Safe
+Beechborough-Greenbrook (112),2023,82,24,24,10,12,7,159,649.44,Assault,92.4,30,Very Safe
+Forest Hill North (102),2023,54,52,43,33,9,3,194,656.64,Assault,92.2,31,Very Safe
+Thistletown-Beaumond Heights (3),2023,60,48,23,51,12,14,208,684.5,Assault,91.7,32,Very Safe
+Lawrence Park South (103),2023,31,105,59,21,6,6,228,705.11,Auto Theft,91.3,33,Very Safe
+Long Branch (19),2023,88,36,27,17,7,3,178,703.28,Assault,91.3,33,Very Safe
+East L'Amoreaux (148),2023,72,49,26,39,10,6,202,707.75,Assault,91.2,35,Very Safe
+Princess-Rosethorn (10),2023,25,109,64,17,10,5,230,713.32,Auto Theft,91.1,36,Very Safe
+Forest Hill South (101),2023,42,85,73,15,1,2,218,718.11,Auto Theft,91.0,37,Very Safe
+Malvern West (145),2023,78,54,16,45,12,1,206,724.4,Assault,90.9,38,Very Safe
+Parkwoods-O'Connor Hills (149),2023,77,49,35,23,6,7,197,724.45,Assault,90.9,38,Very Safe
+Woodbine Corridor (64),2023,92,31,25,33,6,4,191,727.38,Assault,90.8,40,Very Safe
+Kingsway South (15),2023,55,80,55,12,4,7,213,731.46,Auto Theft,90.7,41,Very Safe
+Playter Estates-Danforth (67),2023,89,27,25,27,19,0,187,737.07,Assault,90.6,42,Very Safe
+Danforth East York (59),2023,93,51,11,43,4,4,206,747.22,Assault,90.4,43,Very Safe
+Wychwood (94),2023,79,24,42,22,23,1,191,748.84,Assault,90.4,43,Very Safe
+Leaside-Bennington (56),2023,36,109,49,49,5,9,257,760.27,Auto Theft,90.1,45,Very Safe
+West Queen West (162),2023,95,13,43,30,8,5,194,766.23,Assault,90.0,46,Very Safe
+Rexdale-Kipling (4),2023,72,69,16,45,21,4,227,776.02,Assault,89.8,47,Very Safe
+Weston-Pelham Park (91),2023,107,19,37,16,4,4,187,778.67,Assault,89.8,47,Very Safe
+North Toronto (173),2023,97,19,31,38,11,8,204,784.33,Assault,89.6,49,Very Safe
+Hillcrest Village (48),2023,70,62,39,40,12,8,231,791.4,Assault,89.5,50,Very Safe
+Ionview (125),2023,117,30,14,32,4,1,198,799.14,Assault,89.3,51,Very Safe
+South Eglinton-Davisville (174),2023,100,18,43,36,3,8,208,800.46,Assault,89.3,51,Very Safe
+Bridle Path-Sunnybrook-York Mills (41),2023,46,69,95,23,3,8,244,812.32,Break and Enter,89.1,53,Very Safe
+Greenwood-Coxwell (65),2023,113,27,20,33,7,3,203,810.26,Assault,89.1,53,Very Safe
+Keelesdale-Eglinton West (110),2023,99,34,28,22,21,2,206,821.98,Assault,88.9,55,Very Safe
+Yonge-Eglinton (100),2023,96,38,34,15,10,19,212,821.57,Assault,88.9,55,Very Safe
+Edenbridge-Humber Valley (9),2023,48,108,63,27,6,6,258,827.33,Auto Theft,88.8,57,Very Safe
+Briar Hill-Belgravia (108),2023,85,37,38,48,22,8,238,857.4,Assault,88.2,58,Very Safe
+West Rouge (143),2023,71,89,26,45,20,5,256,856.81,Auto Theft,88.2,58,Very Safe
+Dovercourt Village (172),2023,96,29,47,25,20,1,218,862.23,Assault,88.1,60,Very Safe
+Mount Dennis (115),2023,106,48,30,27,7,8,226,864.5,Assault,88.0,61,Very Safe
+Morningside (135),2023,124,50,8,47,3,2,234,888.96,Assault,87.5,62,Very Safe
+Taylor-Massey (61),2023,116,27,18,30,27,2,220,895.19,Assault,87.4,63,Very Safe
+East Willowdale (152),2023,44,83,70,67,16,14,294,897.27,Auto Theft,87.3,64,Very Safe
+Little Portugal (84),2023,120,20,32,39,11,8,230,908.86,Assault,87.1,65,Very Safe
+Pelmo Park-Humberlea (23),2023,95,95,23,24,12,6,255,915.95,Assault,87.0,66,Very Safe
+Newtonbrook East (50),2023,84,75,34,35,19,15,262,918.38,Assault,86.9,67,Very Safe
+Agincourt North (129),2023,74,109,44,29,13,5,274,924.47,Auto Theft,86.8,68,Very Safe
+Bathurst Manor (34),2023,85,71,42,54,15,2,269,923.28,Assault,86.8,68,Very Safe
+Fenside-Parkwoods (150),2023,122,41,20,33,12,7,235,926.06,Assault,86.8,68,Very Safe
+University (79),2023,111,8,52,39,15,11,236,927.58,Assault,86.7,71,Very Safe
+Danforth (66),2023,126,24,24,28,19,5,226,931.84,Assault,86.6,72,Very Safe
+L'Amoreaux West (147),2023,108,57,27,46,13,3,254,935.19,Assault,86.6,72,Very Safe
+Eringate-Centennial-West Deane (11),2023,82,114,29,44,11,3,283,942.95,Auto Theft,86.4,74,Very Safe
+Oakwood Village (107),2023,106,55,36,45,12,3,257,943.72,Assault,86.4,74,Very Safe
+Henry Farm (53),2023,96,66,26,84,9,11,292,960.22,Assault,86.1,76,Very Safe
+High Park-Swansea (87),2023,103,50,51,36,9,11,260,959.19,Assault,86.1,76,Very Safe
+Yonge-Doris (151),2023,91,43,16,130,12,22,314,959.59,NonMCI,86.1,76,Very Safe
+Corso Italia-Davenport (92),2023,114,36,41,35,18,11,255,984.75,Assault,85.6,79,Very Safe
+Victoria Village (43),2023,116,54,26,50,14,8,268,987.72,Assault,85.5,80,Very Safe
+Cabbagetown-South St.James Town (71),2023,120,19,53,45,13,6,256,992.04,Assault,85.4,81,Very Safe
+The Beaches (63),2023,106,55,37,49,15,14,276,994.43,Assault,85.4,81,Very Safe
+Willowdale West (37),2023,108,56,37,48,14,11,274,992.17,Assault,85.4,81,Very Safe
+Westminster-Branson (35),2023,110,79,27,62,4,8,290,1000.73,Assault,85.2,84,Very Safe
+St.Andrew-Windfields (40),2023,52,113,92,33,11,12,313,1007.79,Auto Theft,85.1,85,Very Safe
+O'Connor-Parkview (54),2023,121,59,43,38,3,7,271,1013.5,Assault,85.0,86,Very Safe
+Dufferin Grove (83),2023,139,16,36,36,21,7,255,1048.55,Assault,84.3,87,Very Safe
+Flemingdon Park (44),2023,142,38,25,52,9,5,271,1052.47,Assault,84.2,88,Very Safe
+Thorncliffe Park (55),2023,121,52,50,33,12,6,274,1050.95,Assault,84.2,88,Very Safe
+Lansing-Westgate (38),2023,82,108,53,52,18,8,321,1063.91,Auto Theft,84.0,90,Very Safe
+Regent Park (72),2023,144,14,40,34,18,7,257,1063.89,Assault,84.0,90,Very Safe
+Roncesvalles (86),2023,134,27,50,36,18,5,270,1080.94,Assault,83.6,92,Very Safe
+Fort York-Liberty Village (163),2023,156,24,33,34,7,11,265,1094.57,Assault,83.3,93,Very Safe
+Malvern East (146),2023,132,62,32,53,16,0,295,1105.27,Assault,83.1,94,Very Safe
+Bay-Cloverhill (169),2023,133,15,64,40,17,12,281,1110.64,Assault,83.0,95,Very Safe
+Willowridge-Martingrove-Richview (7),2023,114,100,31,62,15,4,326,1124.16,Assault,82.7,96,Very Safe
+Englemount-Lawrence (32),2023,122,66,50,50,15,7,310,1134.63,Assault,82.5,97,Very Safe
+New Toronto (18),2023,151,35,39,32,15,7,279,1133.94,Assault,82.5,97,Very Safe
+Junction Area (90),2023,127,40,67,39,17,9,299,1146.25,Assault,82.3,99,Very Safe
+Trinity-Bellwoods (81),2023,127,27,71,39,22,8,294,1143.87,Assault,82.3,99,Very Safe
+Humber Bay Shores (161),2023,149,72,36,31,9,8,305,1184.16,Assault,81.5,101,Very Safe
+Scarborough Village (139),2023,143,47,36,68,18,5,317,1184.73,Assault,81.5,101,Very Safe
+Cliffcrest (123),2023,163,56,25,48,11,4,307,1203.79,Assault,81.1,103,Very Safe
+Tam O'Shanter-Sullivan (118),2023,130,78,41,63,21,5,338,1219.17,Assault,80.8,104,Very Safe
+Morningside Heights (144),2023,109,134,33,60,19,15,370,1234.43,Auto Theft,80.5,105,Very Safe
+Brookhaven-Amesbury (30),2023,141,75,35,50,29,10,340,1268.74,Assault,79.8,106,Safe
+High Park North (88),2023,177,40,55,25,21,3,321,1337.77,Assault,78.4,107,Safe
+Kingsview Village-The Westway (6),2023,134,100,38,93,20,7,392,1336.27,Assault,78.4,107,Safe
+Humbermede (22),2023,142,119,29,76,14,9,389,1345.76,Assault,78.2,109,Safe
+Eglinton East (138),2023,147,47,53,97,31,9,384,1373.28,Assault,77.7,110,Safe
+Bedford Park-Nortown (39),2023,49,203,123,68,8,12,463,1374.08,Auto Theft,77.6,111,Safe
+Oakridge (121),2023,204,22,31,52,16,5,330,1376.75,Assault,77.6,111,Safe
+Bayview Village (52),2023,131,93,66,102,7,17,416,1385.41,Assault,77.4,113,Safe
+Golfdale-Cedarbrae-Woburn (141),2023,171,68,25,71,26,9,370,1393.05,Assault,77.3,114,Safe
+Clanton Park (33),2023,119,143,67,72,13,9,423,1408.41,Auto Theft,76.9,115,Safe
+Birchcliffe-Cliffside (122),2023,195,66,33,50,11,5,360,1428.26,Assault,76.5,116,Safe
+Islington (158),2023,132,159,58,47,11,13,420,1442.87,Auto Theft,76.2,117,Safe
+East End-Danforth (62),2023,192,49,42,63,18,8,372,1454.18,Assault,76.0,118,Safe
+Banbury-Don Mills (42),2023,110,134,100,59,21,14,438,1478.02,Auto Theft,75.5,119,Safe
+Rockcliffe-Smythe (111),2023,172,71,54,91,17,10,415,1503.55,Assault,75.0,120,Safe
+Stonegate-Queensway (16),2023,124,130,100,68,16,10,448,1518.6,Auto Theft,74.7,121,Safe
+Woburn North (142),2023,175,96,45,88,19,12,435,1560.54,Assault,73.9,122,Safe
+Junction-Wallace Emerson (171),2023,206,30,83,54,17,8,398,1602.26,Assault,73.0,123,Safe
+Don Valley Village (47),2023,150,146,45,102,25,15,483,1617.63,Assault,72.7,124,Safe
+Agincourt South-Malvern West (128),2023,172,116,68,68,16,11,451,1626.9,Assault,72.5,125,Safe
+Black Creek (24),2023,218,73,28,57,23,13,412,1629.2,Assault,72.5,125,Safe
+North St.James Town (74),2023,252,10,41,61,27,10,401,1703.26,Assault,71.0,127,Safe
+Milliken (130),2023,80,274,78,76,33,22,563,1707.53,Auto Theft,70.9,128,Safe
+Downsview (155),2023,189,94,74,64,24,17,462,1719.15,Assault,70.6,129,Safe
+Humber Summit (21),2023,156,116,91,80,22,42,507,1748.26,Assault,70.0,130,Safe
+Dorset Park (126),2023,201,90,66,85,26,25,493,1807.44,Assault,68.8,131,Safe
+Weston (113),2023,222,93,61,57,34,4,471,1834.89,Assault,68.3,132,Safe
+Bendale-Glen Andrew (156),2023,219,138,27,72,41,21,518,1922.06,Assault,66.5,133,Safe
+Harbourfront-CityPlace (165),2023,263,32,76,92,20,15,498,1970.06,Assault,65.5,134,Safe
+Kennedy Park (124),2023,284,44,40,70,27,12,477,1969.87,Assault,65.5,134,Safe
+South Parkdale (85),2023,291,38,64,32,22,19,466,2005.73,Assault,64.8,136,Safe
+Newtonbrook West (36),2023,186,195,53,138,27,15,614,2023.35,Auto Theft,64.4,137,Safe
+Rosedale-Moore Park (98),2023,239,139,99,41,19,22,559,2124.85,Assault,62.4,138,Safe
+Clairlea-Birchmount (120),2023,272,113,59,84,19,8,555,2131.37,Assault,62.2,139,Safe
+Mount Olive-Silverstone-Jamestown (2),2023,266,139,24,120,43,13,605,2224.26,Assault,60.4,140,Safe
+Glenfield-Jane Heights (25),2023,307,117,44,47,26,26,567,2287.09,Assault,59.1,141,Moderate
+Church-Wellesley (167),2023,312,34,72,68,53,26,565,2342.88,Assault,57.9,142,Moderate
+Wexford/Maryvale (119),2023,249,193,76,110,25,22,675,2385.21,Assault,57.1,143,Moderate
+South Riverdale (70),2023,295,71,95,85,38,27,611,2392.21,Assault,56.9,144,Moderate
+Yorkdale-Glen Park (31),2023,190,188,152,111,64,43,748,2551.28,Assault,53.7,145,Moderate
+St Lawrence-East Bayfront-The Islands (166),2023,365,41,95,96,35,30,662,2690.22,Assault,50.9,146,Moderate
+Etobicoke City Centre (159),2023,270,249,72,171,26,62,850,2830.63,Assault,48.0,147,Moderate
+West Hill (136),2023,387,77,56,135,50,19,724,2869.46,Assault,47.2,148,Moderate
+Mimico-Queensway (160),2023,474,67,34,45,7,25,652,2893.72,Assault,46.7,149,Moderate
+Oakdale-Beverley Heights (154),2023,403,151,85,70,27,22,758,3039.46,Assault,43.8,150,Moderate
+Annex (95),2023,359,75,136,96,52,63,781,3050.56,Assault,43.5,151,Moderate
+Wellington Place (164),2023,386,69,147,85,40,33,760,3058.89,Assault,43.4,152,Moderate
+Kensington-Chinatown (78),2023,450,47,147,100,44,28,816,3362.85,Assault,37.2,153,Risky
+Yonge-Bay Corridor (170),2023,492,46,107,74,52,53,824,3487.11,Assault,34.7,154,Risky
+York University Heights (27),2023,367,227,216,168,81,40,1099,3941.45,Assault,25.4,155,Risky
+Moss Park (73),2023,569,42,147,102,53,26,939,3987.48,Assault,24.5,156,Risky
+Downtown Yonge East (168),2023,585,42,117,105,76,26,951,4080.95,Assault,22.6,157,Risky
+West Humber-Clairville (1),2023,311,752,214,278,63,77,1695,5191.51,Auto Theft,0.0,158,Very Risky
+Lambton Baby Point (114),2024,35,6,15,10,3,1,70,297.27,Assault,100.0,1,Very Safe
+Guildwood (140),2024,32,16,15,21,6,1,91,341.68,Assault,99.0,2,Very Safe
+Woodbine-Lumsden (60),2024,42,9,11,20,3,1,86,348.24,Assault,98.9,3,Very Safe
+Caledonia-Fairbank (109),2024,46,26,10,25,5,1,113,429.49,Assault,97.2,4,Very Safe
+Maple Leaf (29),2024,44,38,17,15,2,2,118,446.94,Assault,96.8,5,Very Safe
+Blake-Jones (69),2024,52,5,13,19,15,3,107,456.67,Assault,96.6,6,Very Safe
+Forest Hill North (102),2024,44,14,28,20,6,4,116,454.61,Assault,96.6,6,Very Safe
+Avondale (153),2024,51,15,20,21,9,2,118,479.39,Assault,96.1,8,Very Safe
+Centennial Scarborough (133),2024,44,24,17,37,5,7,134,477.95,Assault,96.1,8,Very Safe
+Bayview Woods-Steeles (49),2024,35,20,52,14,3,7,131,494.44,Break and Enter,95.8,10,Very Safe
+Princess-Rosethorn (10),2024,29,37,45,29,1,4,145,491.6,Break and Enter,95.8,10,Very Safe
+Pleasant View (46),2024,47,37,13,26,8,2,133,495.76,Assault,95.7,12,Very Safe
+Runnymede-Bloor West Village (89),2024,48,24,29,16,6,2,125,495.92,Assault,95.7,12,Very Safe
+Yonge-St.Clair (97),2024,53,16,34,10,1,5,119,496.41,Assault,95.7,12,Very Safe
+Etobicoke West Mall (13),2024,55,39,11,21,2,4,132,504.84,Assault,95.5,15,Very Safe
+Leaside-Bennington (56),2024,21,74,30,25,5,4,159,504.99,Auto Theft,95.5,15,Very Safe
+Markland Wood (12),2024,49,38,19,21,4,3,134,507.0,Assault,95.5,15,Very Safe
+Old East York (58),2024,60,21,9,26,7,3,126,508.2,Assault,95.5,15,Very Safe
+Forest Hill South (101),2024,32,24,52,18,6,8,140,514.22,Break and Enter,95.3,19,Very Safe
+Humber Heights-Westmount (8),2024,52,27,17,16,12,3,127,514.08,Assault,95.3,19,Very Safe
+Kingsway South (15),2024,42,26,34,24,6,7,139,514.54,Assault,95.3,19,Very Safe
+Steeles (116),2024,46,39,27,14,7,4,137,526.23,Assault,95.1,22,Very Safe
+Bendale South (157),2024,64,29,14,14,8,2,131,549.02,Assault,94.6,23,Very Safe
+Humewood-Cedarvale (106),2024,51,31,29,27,2,8,148,550.12,Assault,94.6,23,Very Safe
+North Riverdale (68),2024,60,24,20,24,8,4,140,559.89,Assault,94.3,25,Very Safe
+Casa Loma (96),2024,49,19,48,18,8,5,147,577.78,Assault,94.0,26,Very Safe
+Lawrence Park South (103),2024,28,47,56,17,8,13,169,588.23,Break and Enter,93.7,27,Very Safe
+Alderwood (20),2024,52,45,33,18,1,11,160,596.54,Assault,93.6,28,Very Safe
+Lawrence Park North (105),2024,46,36,39,27,7,9,164,598.15,Assault,93.5,29,Very Safe
+Broadview North (57),2024,80,13,20,19,3,5,140,608.47,Assault,93.3,30,Very Safe
+Highland Creek (134),2024,55,54,16,26,11,3,165,611.9,Assault,93.2,31,Very Safe
+Bridle Path-Sunnybrook-York Mills (41),2024,33,32,71,17,9,9,171,624.51,Break and Enter,93.0,32,Very Safe
+Mount Pleasant East (99),2024,50,43,47,18,5,5,168,631.99,Assault,92.8,33,Very Safe
+Long Branch (19),2024,75,29,21,22,5,5,157,642.43,Assault,92.6,34,Very Safe
+Palmerston-Little Italy (80),2024,70,15,44,10,6,6,151,645.18,Assault,92.5,35,Very Safe
+Thistletown-Beaumond Heights (3),2024,70,34,21,41,9,3,178,676.45,Assault,91.8,36,Very Safe
+Danforth East York (59),2024,74,37,19,35,5,8,178,684.92,Assault,91.7,37,Very Safe
+Keelesdale-Eglinton West (110),2024,81,22,14,46,9,4,176,693.35,Assault,91.5,38,Very Safe
+Parkwoods-O'Connor Hills (149),2024,57,59,30,30,6,9,191,691.38,Auto Theft,91.5,38,Very Safe
+Edenbridge-Humber Valley (9),2024,57,41,59,21,2,7,187,705.13,Break and Enter,91.2,40,Very Safe
+Woodbine Corridor (64),2024,95,22,21,18,5,1,162,716.28,Assault,91.0,41,Very Safe
+Ionview (125),2024,97,25,16,20,2,8,168,726.72,Assault,90.8,42,Very Safe
+Beechborough-Greenbrook (112),2024,92,30,16,22,9,2,171,731.3,Assault,90.7,43,Very Safe
+Hillcrest Village (48),2024,57,47,36,25,23,6,194,738.44,Assault,90.5,44,Very Safe
+Elms-Old Rexdale (5),2024,81,44,11,36,18,2,192,759.55,Assault,90.1,45,Very Safe
+Henry Farm (53),2024,92,38,18,24,3,10,185,756.9,Assault,90.1,45,Very Safe
+Rustic (28),2024,99,27,14,36,11,1,188,786.01,Assault,89.5,47,Very Safe
+Wychwood (94),2024,91,31,35,19,6,7,189,791.53,Assault,89.4,48,Very Safe
+East L'Amoreaux (148),2024,74,65,36,31,6,1,213,798.94,Assault,89.2,49,Very Safe
+Danforth (66),2024,101,20,14,29,19,5,188,811.65,Assault,88.9,50,Very Safe
+West Rouge (143),2024,70,75,21,39,16,3,224,818.38,Auto Theft,88.8,51,Very Safe
+Playter Estates-Danforth (67),2024,95,14,41,36,9,2,197,820.7,Assault,88.7,52,Very Safe
+Rexdale-Kipling (4),2024,87,40,24,31,22,1,205,830.27,Assault,88.5,53,Very Safe
+Malvern West (145),2024,91,56,17,24,14,6,208,836.74,Assault,88.4,54,Very Safe
+Yonge-Doris (151),2024,93,29,17,48,19,14,220,860.5,Assault,87.9,55,Very Safe
+Willowdale West (37),2024,100,27,21,34,17,10,209,864.61,Assault,87.8,56,Very Safe
+West Queen West (162),2024,107,13,41,23,8,7,199,869.55,Assault,87.7,57,Very Safe
+North Toronto (173),2024,120,9,25,11,15,5,185,875.42,Assault,87.6,58,Very Safe
+Englemount-Lawrence (32),2024,101,28,23,31,16,12,211,877.49,Assault,87.5,59,Very Safe
+Lansing-Westgate (38),2024,94,45,26,30,14,11,220,879.17,Assault,87.5,59,Very Safe
+Pelmo Park-Humberlea (23),2024,89,60,27,40,8,7,231,879.07,Assault,87.5,59,Very Safe
+East Willowdale (152),2024,66,38,53,45,25,11,238,884.94,Assault,87.4,62,Very Safe
+Taylor-Massey (61),2024,122,12,20,30,13,4,201,898.65,Assault,87.1,63,Very Safe
+Eringate-Centennial-West Deane (11),2024,76,88,31,50,6,10,261,914.67,Auto Theft,86.7,64,Very Safe
+Dovercourt Village (172),2024,103,34,42,22,11,7,219,917.64,Assault,86.6,65,Very Safe
+Weston-Pelham Park (91),2024,120,22,28,35,7,3,215,923.03,Assault,86.5,66,Very Safe
+South Eglinton-Davisville (174),2024,108,18,51,25,12,8,222,949.34,Assault,86.0,67,Very Safe
+Fenside-Parkwoods (150),2024,114,74,9,28,10,3,238,965.81,Assault,85.6,68,Very Safe
+Humber Bay Shores (161),2024,112,32,33,43,8,11,239,965.97,Assault,85.6,68,Very Safe
+High Park-Swansea (87),2024,97,29,50,55,11,13,255,978.25,Assault,85.3,70,Very Safe
+Corso Italia-Davenport (92),2024,119,34,30,11,20,8,222,986.91,Assault,85.2,71,Very Safe
+Greenwood-Coxwell (65),2024,102,44,46,48,10,4,254,991.14,Assault,85.1,72,Very Safe
+Briar Hill-Belgravia (108),2024,97,43,49,61,7,13,270,1007.11,Assault,84.7,73,Very Safe
+Mount Dennis (115),2024,121,36,32,33,14,5,241,1014.03,Assault,84.6,74,Very Safe
+Victoria Village (43),2024,109,75,26,28,6,13,257,1013.06,Assault,84.6,74,Very Safe
+L'Amoreaux West (147),2024,103,48,40,32,23,7,253,1022.26,Assault,84.4,76,Very Safe
+The Beaches (63),2024,121,53,31,33,10,3,251,1032.6,Assault,84.2,77,Very Safe
+Morningside (135),2024,134,53,9,41,10,2,249,1034.88,Assault,84.1,78,Very Safe
+New Toronto (18),2024,143,30,25,24,4,6,232,1035.93,Assault,84.1,78,Very Safe
+Newtonbrook East (50),2024,108,53,33,44,17,12,267,1047.44,Assault,83.9,80,Very Safe
+Bathurst Manor (34),2024,131,47,22,40,6,11,257,1058.11,Assault,83.6,81,Very Safe
+O'Connor-Parkview (54),2024,130,49,29,39,6,7,260,1065.45,Assault,83.5,82,Very Safe
+Westminster-Branson (35),2024,130,55,18,41,10,12,266,1077.86,Assault,83.2,83,Very Safe
+Flemingdon Park (44),2024,130,51,18,66,6,10,281,1090.16,Assault,82.9,84,Very Safe
+Malvern East (146),2024,128,65,15,36,16,7,267,1093.18,Assault,82.9,84,Very Safe
+Willowridge-Martingrove-Richview (7),2024,98,79,42,60,12,10,301,1093.59,Assault,82.9,84,Very Safe
+Yonge-Eglinton (100),2024,138,25,34,19,16,17,249,1102.03,Assault,82.7,87,Very Safe
+Bay-Cloverhill (169),2024,108,8,69,59,14,26,284,1107.78,Assault,82.6,88,Very Safe
+Regent Park (72),2024,152,12,28,16,21,5,234,1104.82,Assault,82.6,88,Very Safe
+Tam O'Shanter-Sullivan (118),2024,98,70,45,56,21,7,297,1106.17,Assault,82.6,88,Very Safe
+Agincourt North (129),2024,74,119,32,38,37,10,310,1115.73,Auto Theft,82.4,91,Very Safe
+Oakwood Village (107),2024,128,44,47,25,14,9,267,1125.14,Assault,82.2,92,Very Safe
+University (79),2024,135,12,53,36,17,10,263,1138.23,Assault,81.9,93,Very Safe
+Cabbagetown-South St.James Town (71),2024,134,13,48,37,26,8,266,1152.78,Assault,81.6,94,Very Safe
+Thorncliffe Park (55),2024,127,49,46,55,8,10,295,1158.47,Assault,81.5,95,Very Safe
+Bedford Park-Nortown (39),2024,62,89,95,33,33,10,322,1164.83,Break and Enter,81.3,96,Very Safe
+Brookhaven-Amesbury (30),2024,122,51,45,57,16,7,298,1165.57,Assault,81.3,96,Very Safe
+Cliffcrest (123),2024,146,63,26,31,7,12,285,1189.85,Assault,80.8,98,Very Safe
+Scarborough Village (139),2024,128,62,28,47,26,7,298,1194.22,Assault,80.7,99,Very Safe
+Little Portugal (84),2024,147,20,42,38,22,17,286,1232.19,Assault,79.9,100,Safe
+Bayview Village (52),2024,110,68,62,39,26,13,318,1239.32,Assault,79.7,101,Safe
+St.Andrew-Windfields (40),2024,89,77,96,31,21,16,330,1242.51,Break and Enter,79.7,101,Safe
+Roncesvalles (86),2024,155,16,70,27,6,8,282,1248.81,Assault,79.5,103,Safe
+Birchcliffe-Cliffside (122),2024,144,66,48,35,7,7,307,1256.35,Assault,79.4,104,Safe
+Kingsview Village-The Westway (6),2024,137,71,23,67,18,11,327,1261.57,Assault,79.2,105,Safe
+Dufferin Grove (83),2024,165,16,47,28,16,11,283,1270.59,Assault,79.1,106,Safe
+Morningside Heights (144),2024,112,123,39,48,17,10,349,1281.81,Auto Theft,78.8,107,Safe
+Clanton Park (33),2024,126,94,43,46,16,16,341,1302.36,Assault,78.4,108,Safe
+Fort York-Liberty Village (163),2024,179,21,29,24,12,27,292,1315.99,Assault,78.1,109,Safe
+Stonegate-Queensway (16),2024,116,77,87,45,8,14,347,1319.36,Assault,78.0,110,Safe
+High Park North (88),2024,153,31,58,41,21,9,313,1328.17,Assault,77.8,111,Safe
+Trinity-Bellwoods (81),2024,154,25,78,48,7,14,326,1354.25,Assault,77.3,112,Safe
+Humber Summit (21),2024,121,105,45,53,23,17,364,1362.78,Assault,77.1,113,Safe
+Junction Area (90),2024,145,61,65,53,10,12,346,1371.56,Assault,76.9,114,Safe
+Humbermede (22),2024,162,105,23,35,14,7,346,1402.34,Assault,76.2,115,Safe
+Rockcliffe-Smythe (111),2024,170,51,35,79,9,8,352,1405.13,Assault,76.2,115,Safe
+Islington (158),2024,126,78,92,41,16,13,366,1419.01,Assault,75.9,117,Safe
+Golfdale-Cedarbrae-Woburn (141),2024,174,57,34,49,31,7,352,1484.94,Assault,74.4,118,Safe
+Banbury-Don Mills (42),2024,128,87,85,72,20,19,411,1523.43,Assault,73.6,119,Safe
+East End-Danforth (62),2024,180,41,63,44,26,8,362,1546.38,Assault,73.1,120,Safe
+Oakridge (121),2024,219,21,36,24,20,11,331,1551.4,Assault,73.0,121,Safe
+Junction-Wallace Emerson (171),2024,179,41,76,65,11,12,384,1571.19,Assault,72.6,122,Safe
+Downsview (155),2024,195,79,28,45,18,15,380,1592.2,Assault,72.1,123,Safe
+Eglinton East (138),2024,181,61,32,74,32,13,393,1592.53,Assault,72.1,123,Safe
+Agincourt South-Malvern West (128),2024,163,90,58,53,26,11,401,1596.5,Assault,72.0,125,Safe
+Don Valley Village (47),2024,150,129,46,52,28,19,424,1615.34,Assault,71.6,126,Safe
+Woburn North (142),2024,191,80,27,90,24,8,420,1658.44,Assault,70.7,127,Safe
+Harbourfront-CityPlace (165),2024,237,26,33,55,18,18,387,1723.15,Assault,69.3,128,Safe
+Milliken (130),2024,100,185,70,80,48,22,505,1730.3,Auto Theft,69.2,129,Safe
+Bendale-Glen Andrew (156),2024,179,113,23,67,50,13,445,1759.36,Assault,68.5,130,Safe
+Kennedy Park (124),2024,246,46,28,57,23,12,412,1818.18,Assault,67.3,131,Safe
+Dorset Park (126),2024,185,106,74,71,20,14,470,1832.66,Assault,67.0,132,Safe
+Black Creek (24),2024,244,65,21,54,27,11,422,1846.27,Assault,66.7,133,Safe
+North St.James Town (74),2024,252,13,46,58,30,16,415,1867.47,Assault,66.2,134,Safe
+Newtonbrook West (36),2024,218,106,30,71,34,19,478,1929.72,Assault,64.9,135,Safe
+South Parkdale (85),2024,268,42,50,37,14,14,425,1933.97,Assault,64.8,136,Safe
+Rosedale-Moore Park (98),2024,253,65,77,52,23,20,490,2100.0,Assault,61.2,137,Safe
+Weston (113),2024,240,83,54,68,48,8,501,2098.46,Assault,61.2,137,Safe
+Yorkdale-Glen Park (31),2024,190,111,71,88,57,58,575,2180.71,Assault,59.5,139,Moderate
+Mount Olive-Silverstone-Jamestown (2),2024,296,79,29,84,39,11,538,2306.01,Assault,56.8,140,Moderate
+South Riverdale (70),2024,260,82,95,103,31,27,598,2398.49,Assault,54.8,141,Moderate
+Church-Wellesley (167),2024,335,20,60,71,39,19,544,2468.31,Assault,53.3,142,Moderate
+Glenfield-Jane Heights (25),2024,335,98,36,63,26,12,570,2500.05,Assault,52.6,143,Moderate
+Clairlea-Birchmount (120),2024,330,127,57,81,12,9,616,2590.31,Assault,50.6,144,Moderate
+Etobicoke City Centre (159),2024,235,236,92,88,30,56,737,2714.79,Auto Theft,48.0,145,Moderate
+Oakdale-Beverley Heights (154),2024,373,93,57,91,34,15,663,2868.77,Assault,44.7,146,Moderate
+West Hill (136),2024,368,76,68,102,39,16,669,2880.72,Assault,44.4,147,Moderate
+Wexford/Maryvale (119),2024,325,169,68,118,39,23,742,2947.46,Assault,43.0,148,Moderate
+Wellington Place (164),2024,404,58,107,83,31,30,713,3133.25,Assault,39.0,149,Risky
+St Lawrence-East Bayfront-The Islands (166),2024,459,31,105,56,29,35,715,3311.04,Assault,35.1,150,Risky
+Annex (95),2024,385,60,148,113,37,70,813,3374.57,Assault,33.8,151,Risky
+Yonge-Bay Corridor (170),2024,478,32,94,71,57,49,781,3576.63,Assault,29.4,152,Risky
+York University Heights (27),2024,360,208,130,153,57,40,948,3660.79,Assault,27.6,153,Risky
+Kensington-Chinatown (78),2024,449,25,149,268,53,62,1006,3966.42,Assault,21.0,154,Risky
+Moss Park (73),2024,540,32,123,94,72,19,880,4041.64,Assault,19.4,155,Very Risky
+Downtown Yonge East (168),2024,537,43,88,155,101,37,961,4224.17,Assault,15.5,156,Very Risky
+West Humber-Clairville (1),2024,316,582,155,250,57,73,1433,4802.45,Auto Theft,3.0,157,Very Risky
+Mimico-Queensway (160),2024,807,63,48,45,6,17,986,4943.43,Assault,0.0,158,Very Risky
+Lambton Baby Point (114),2025,19,7,3,4,5,1,39,178.06,Assault,100.0,1,Very Safe
+Guildwood (140),2025,32,8,6,22,5,3,76,308.23,Assault,97.7,2,Very Safe
+Blake-Jones (69),2025,44,10,8,3,3,4,72,346.56,Assault,97.1,3,Very Safe
+Forest Hill South (101),2025,23,10,39,15,3,7,97,377.94,Break and Enter,96.5,4,Very Safe
+Woodbine-Lumsden (60),2025,46,15,6,19,1,4,91,388.46,Assault,96.3,5,Very Safe
+Humber Heights-Westmount (8),2025,37,21,13,10,7,4,92,394.26,Assault,96.2,6,Very Safe
+Beechborough-Greenbrook (112),2025,45,18,7,10,7,3,90,402.85,Assault,96.1,7,Very Safe
+Maple Leaf (29),2025,39,30,9,23,3,6,110,427.04,Assault,95.6,8,Very Safe
+Kingsway South (15),2025,45,12,27,5,3,6,98,443.96,Assault,95.4,9,Very Safe
+Keelesdale-Eglinton West (110),2025,39,19,14,30,9,3,114,447.11,Assault,95.3,10,Very Safe
+Bridle Path-Sunnybrook-York Mills (41),2025,23,22,47,17,6,3,118,450.22,Break and Enter,95.2,11,Very Safe
+Centennial Scarborough (133),2025,42,20,26,13,3,3,107,452.56,Assault,95.2,11,Very Safe
+Forest Hill North (102),2025,52,10,22,11,1,6,102,462.19,Assault,95.0,13,Very Safe
+Bayview Woods-Steeles (49),2025,37,17,31,27,6,4,122,478.72,Assault,94.7,14,Very Safe
+Markland Wood (12),2025,33,17,28,23,11,11,123,480.32,Assault,94.7,14,Very Safe
+Lawrence Park North (105),2025,37,15,34,29,6,3,124,484.92,Assault,94.6,16,Very Safe
+Princess-Rosethorn (10),2025,27,19,48,13,8,11,126,494.83,Break and Enter,94.5,17,Very Safe
+Lawrence Park South (103),2025,30,24,48,14,5,6,127,499.99,Break and Enter,94.4,18,Very Safe
+Broadview North (57),2025,63,18,12,13,1,3,110,506.12,Assault,94.3,19,Very Safe
+Caledonia-Fairbank (109),2025,55,25,13,16,7,1,117,511.32,Assault,94.2,20,Very Safe
+Etobicoke West Mall (13),2025,52,26,15,26,4,2,125,514.39,Assault,94.1,21,Very Safe
+Pleasant View (46),2025,52,19,15,27,7,10,130,531.89,Assault,93.8,22,Very Safe
+Yonge-St.Clair (97),2025,38,10,57,18,3,5,131,537.02,Break and Enter,93.7,23,Very Safe
+Thistletown-Beaumond Heights (3),2025,54,31,11,15,11,4,126,543.12,Assault,93.6,24,Very Safe
+Avondale (153),2025,66,10,18,16,5,3,118,548.15,Assault,93.5,25,Very Safe
+Old East York (58),2025,64,20,10,25,6,4,129,558.46,Assault,93.3,26,Very Safe
+Runnymede-Bloor West Village (89),2025,56,29,12,22,9,5,133,558.64,Assault,93.3,26,Very Safe
+Long Branch (19),2025,65,20,24,17,5,3,134,595.87,Assault,92.7,28,Very Safe
+Humewood-Cedarvale (106),2025,61,18,35,17,5,3,139,608.89,Assault,92.5,29,Very Safe
+Highland Creek (134),2025,62,28,16,26,5,12,149,614.47,Assault,92.4,30,Very Safe
+Leaside-Bennington (56),2025,38,50,34,41,2,9,174,614.39,Auto Theft,92.4,30,Very Safe
+East Willowdale (152),2025,50,25,34,31,7,9,156,616.15,Assault,92.3,32,Very Safe
+Mount Dennis (115),2025,67,20,17,25,11,2,142,622.2,Assault,92.2,33,Very Safe
+Alderwood (20),2025,58,28,27,17,7,14,151,630.88,Assault,92.1,34,Very Safe
+Weston-Pelham Park (91),2025,63,14,23,47,7,3,157,630.79,Assault,92.1,34,Very Safe
+Edenbridge-Humber Valley (9),2025,46,38,44,11,9,8,156,636.54,Assault,92.0,36,Very Safe
+Henry Farm (53),2025,62,38,14,20,11,5,150,633.54,Assault,92.0,36,Very Safe
+Mount Pleasant East (99),2025,54,36,39,19,2,8,158,641.68,Assault,91.9,38,Very Safe
+Eringate-Centennial-West Deane (11),2025,66,38,22,23,5,5,159,663.78,Assault,91.5,39,Very Safe
+Rustic (28),2025,91,21,9,11,2,3,137,666.66,Assault,91.5,39,Very Safe
+Bendale South (157),2025,71,31,9,38,11,1,161,669.01,Assault,91.4,41,Very Safe
+Casa Loma (96),2025,73,9,43,14,3,4,146,669.45,Assault,91.4,41,Very Safe
+Woodbine Corridor (64),2025,89,8,16,16,3,6,138,667.9,Assault,91.4,41,Very Safe
+Elms-Old Rexdale (5),2025,67,41,15,16,13,4,156,674.27,Assault,91.3,44,Very Safe
+North Riverdale (68),2025,70,11,36,33,5,3,158,677.41,Assault,91.3,44,Very Safe
+Danforth East York (59),2025,73,29,16,44,2,4,168,679.49,Assault,91.2,46,Very Safe
+Rexdale-Kipling (4),2025,66,34,19,20,13,7,159,678.82,Assault,91.2,46,Very Safe
+Steeles (116),2025,46,34,46,29,13,6,174,682.89,Assault,91.2,46,Very Safe
+Bathurst Manor (34),2025,69,23,20,26,13,10,161,690.97,Assault,91.0,49,Very Safe
+Pelmo Park-Humberlea (23),2025,68,40,15,28,9,11,171,700.05,Assault,90.9,50,Very Safe
+Parkwoods-O'Connor Hills (149),2025,62,39,30,30,9,7,177,713.44,Assault,90.6,51,Very Safe
+Ionview (125),2025,95,17,13,27,11,4,167,769.08,Assault,89.7,52,Very Safe
+Palmerston-Little Italy (80),2025,82,16,36,19,12,3,168,767.79,Assault,89.7,52,Very Safe
+West Rouge (143),2025,55,83,17,34,9,10,208,767.85,Auto Theft,89.7,52,Very Safe
+Greenwood-Coxwell (65),2025,88,19,20,35,9,4,175,770.58,Assault,89.6,55,Very Safe
+West Queen West (162),2025,85,12,39,27,7,3,173,776.63,Assault,89.5,56,Very Safe
+East L'Amoreaux (148),2025,65,33,54,18,15,4,189,803.03,Assault,89.1,57,Very Safe
+Yonge-Eglinton (100),2025,96,16,20,8,13,14,167,801.76,Assault,89.1,57,Very Safe
+Bedford Park-Nortown (39),2025,50,33,62,45,11,14,215,807.69,Break and Enter,89.0,59,Very Safe
+Hillcrest Village (48),2025,74,20,36,28,17,14,189,807.49,Assault,89.0,59,Very Safe
+Lansing-Westgate (38),2025,91,38,18,32,5,7,191,818.64,Assault,88.8,61,Very Safe
+Newtonbrook East (50),2025,80,38,30,30,9,9,196,820.97,Assault,88.8,61,Very Safe
+Willowdale West (37),2025,104,18,21,26,10,8,187,863.1,Assault,88.0,63,Very Safe
+Humber Bay Shores (161),2025,97,44,25,17,4,11,198,876.96,Assault,87.8,64,Very Safe
+South Eglinton-Davisville (174),2025,104,15,37,25,6,4,191,883.54,Assault,87.7,65,Very Safe
+Wychwood (94),2025,103,22,36,20,4,5,190,878.69,Assault,87.7,65,Very Safe
+Morningside (135),2025,107,37,15,20,10,5,194,889.73,Assault,87.6,67,Very Safe
+Playter Estates-Danforth (67),2025,105,19,20,58,5,3,210,892.36,Assault,87.5,68,Very Safe
+Briar Hill-Belgravia (108),2025,95,35,31,23,12,7,203,898.85,Assault,87.4,69,Very Safe
+New Toronto (18),2025,108,17,23,30,9,12,199,905.34,Assault,87.3,70,Very Safe
+Yonge-Doris (151),2025,103,22,14,48,16,13,216,927.59,Assault,86.9,71,Very Safe
+Taylor-Massey (61),2025,110,26,24,33,10,4,207,935.65,Assault,86.8,72,Very Safe
+Dovercourt Village (172),2025,119,17,30,15,9,3,193,941.52,Assault,86.6,73,Very Safe
+North Toronto (173),2025,116,13,35,13,11,4,192,942.31,Assault,86.6,73,Very Safe
+Victoria Village (43),2025,98,42,41,32,4,6,223,951.86,Assault,86.5,75,Very Safe
+Willowridge-Martingrove-Richview (7),2025,77,74,31,32,11,19,244,953.05,Assault,86.4,76,Very Safe
+Brookhaven-Amesbury (30),2025,104,34,32,30,11,9,220,966.39,Assault,86.2,77,Very Safe
+L'Amoreaux West (147),2025,86,48,38,30,20,10,232,975.44,Assault,86.1,78,Very Safe
+Agincourt North (129),2025,68,88,28,31,23,16,254,981.03,Auto Theft,86.0,79,Very Safe
+Englemount-Lawrence (32),2025,105,34,33,46,9,5,232,985.5,Assault,85.9,80,Very Safe
+Fenside-Parkwoods (150),2025,109,46,28,32,6,6,227,986.82,Assault,85.9,80,Very Safe
+Little Portugal (84),2025,117,20,33,33,6,8,217,986.25,Assault,85.9,80,Very Safe
+Malvern West (145),2025,100,59,8,36,22,11,236,997.01,Assault,85.7,83,Very Safe
+High Park-Swansea (87),2025,100,22,59,31,11,6,229,1003.46,Assault,85.6,84,Very Safe
+The Beaches (63),2025,109,32,35,51,4,12,243,1017.13,Assault,85.3,85,Very Safe
+O'Connor-Parkview (54),2025,131,28,16,38,6,8,227,1032.35,Assault,85.1,86,Very Safe
+Westminster-Branson (35),2025,123,45,17,33,9,7,234,1040.49,Assault,84.9,87,Very Safe
+Cabbagetown-South St.James Town (71),2025,123,11,42,27,15,3,221,1045.91,Assault,84.8,88,Very Safe
+Danforth (66),2025,142,22,18,32,5,0,219,1047.02,Assault,84.8,88,Very Safe
+Clanton Park (33),2025,109,36,28,38,17,17,245,1054.37,Assault,84.7,90,Very Safe
+Corso Italia-Davenport (92),2025,124,25,27,43,11,5,235,1052.5,Assault,84.7,90,Very Safe
+Oakwood Village (107),2025,134,36,25,32,3,3,233,1071.41,Assault,84.4,92,Very Safe
+St.Andrew-Windfields (40),2025,94,31,69,39,15,6,254,1069.78,Assault,84.4,92,Very Safe
+Regent Park (72),2025,144,15,26,20,13,1,219,1085.8,Assault,84.1,94,Very Safe
+Dufferin Grove (83),2025,135,11,34,27,14,9,230,1096.77,Assault,83.9,95,Very Safe
+Flemingdon Park (44),2025,125,54,16,46,8,7,256,1096.51,Assault,83.9,95,Very Safe
+Roncesvalles (86),2025,135,17,42,25,11,1,231,1102.49,Assault,83.8,97,Very Safe
+Bayview Village (52),2025,105,34,51,47,16,14,267,1115.08,Assault,83.6,98,Very Safe
+Malvern East (146),2025,116,52,22,51,19,10,270,1133.3,Assault,83.3,99,Very Safe
+Cliffcrest (123),2025,112,43,30,83,16,6,290,1150.83,Assault,83.0,100,Very Safe
+Islington (158),2025,94,45,78,40,11,15,283,1154.24,Assault,82.9,101,Very Safe
+Scarborough Village (139),2025,112,48,45,53,18,4,280,1169.17,Assault,82.7,102,Very Safe
+University (79),2025,133,14,58,26,10,9,250,1166.52,Assault,82.7,102,Very Safe
+Kingsview Village-The Westway (6),2025,131,64,28,33,8,5,269,1174.58,Assault,82.6,104,Very Safe
+Bay-Cloverhill (169),2025,122,4,68,29,16,20,259,1178.11,Assault,82.5,105,Very Safe
+Fort York-Liberty Village (163),2025,164,11,31,29,6,14,255,1234.08,Assault,81.5,106,Very Safe
+High Park North (88),2025,156,17,34,38,11,7,263,1238.29,Assault,81.5,106,Very Safe
+Thorncliffe Park (55),2025,123,75,25,49,18,11,301,1246.74,Assault,81.3,108,Very Safe
+Stonegate-Queensway (16),2025,120,51,63,35,10,18,297,1259.4,Assault,81.1,109,Very Safe
+Junction Area (90),2025,128,35,49,85,10,14,321,1292.91,Assault,80.5,110,Very Safe
+Trinity-Bellwoods (81),2025,147,12,60,45,10,12,286,1295.67,Assault,80.5,110,Very Safe
+Oakridge (121),2025,172,21,36,31,7,5,272,1311.61,Assault,80.2,112,Very Safe
+Rockcliffe-Smythe (111),2025,156,33,31,48,17,8,293,1321.54,Assault,80.0,113,Safe
+Weston (113),2025,162,43,39,26,7,7,284,1324.23,Assault,80.0,113,Safe
+Tam O'Shanter-Sullivan (118),2025,120,59,39,78,26,11,333,1332.8,Assault,79.8,115,Safe
+Morningside Heights (144),2025,106,88,39,56,33,18,340,1345.67,Assault,79.6,116,Safe
+Agincourt South-Malvern West (128),2025,116,59,64,66,27,11,343,1385.03,Assault,78.9,117,Safe
+Don Valley Village (47),2025,150,56,28,45,25,13,317,1391.07,Assault,78.8,118,Safe
+Banbury-Don Mills (42),2025,111,61,77,61,22,18,350,1398.68,Assault,78.7,119,Safe
+Humber Summit (21),2025,125,80,52,33,22,25,337,1404.27,Assault,78.6,120,Safe
+Birchcliffe-Cliffside (122),2025,150,56,46,67,16,7,342,1446.56,Assault,77.8,121,Safe
+Humbermede (22),2025,166,78,32,20,10,13,319,1445.16,Assault,77.8,121,Safe
+East End-Danforth (62),2025,177,33,46,48,13,10,327,1492.37,Assault,77.0,123,Safe
+Golfdale-Cedarbrae-Woburn (141),2025,160,66,27,51,29,14,347,1510.25,Assault,76.7,124,Safe
+Downsview (155),2025,162,71,38,42,22,18,353,1539.9,Assault,76.2,125,Safe
+Milliken (130),2025,70,143,65,90,44,31,443,1558.18,Auto Theft,75.9,126,Safe
+Junction-Wallace Emerson (171),2025,183,24,63,55,10,9,344,1561.38,Assault,75.8,127,Safe
+Bendale-Glen Andrew (156),2025,160,83,29,56,38,16,382,1627.45,Assault,74.7,128,Safe
+Dorset Park (126),2025,149,79,52,86,25,18,409,1641.13,Assault,74.4,129,Safe
+Newtonbrook West (36),2025,164,106,51,58,23,20,422,1739.98,Assault,72.7,130,Safe
+Black Creek (24),2025,234,54,22,38,11,10,369,1764.08,Assault,72.3,131,Safe
+Woburn North (142),2025,179,81,50,75,20,17,422,1766.68,Assault,72.2,132,Safe
+Eglinton East (138),2025,185,62,39,137,16,14,453,1797.92,Assault,71.7,133,Safe
+Mount Olive-Silverstone-Jamestown (2),2025,221,88,18,43,32,8,410,1876.26,Assault,70.3,134,Safe
+Harbourfront-CityPlace (165),2025,258,16,48,39,13,18,392,1924.35,Assault,69.5,135,Safe
+Kennedy Park (124),2025,245,34,30,73,20,15,417,1925.46,Assault,69.4,136,Safe
+North St.James Town (74),2025,272,16,35,31,16,8,378,1930.67,Assault,69.4,136,Safe
+Rosedale-Moore Park (98),2025,218,40,102,37,19,11,427,1981.33,Assault,68.5,138,Safe
+South Parkdale (85),2025,259,17,61,49,15,8,409,1985.75,Assault,68.4,139,Safe
+Oakdale-Beverley Heights (154),2025,246,92,38,59,35,19,489,2189.48,Assault,64.8,140,Safe
+South Riverdale (70),2025,229,61,82,104,20,26,522,2207.53,Assault,64.5,141,Safe
+Yorkdale-Glen Park (31),2025,218,96,70,64,27,50,525,2223.03,Assault,64.2,142,Safe
+Glenfield-Jane Heights (25),2025,294,66,35,29,40,19,483,2347.97,Assault,62.1,143,Safe
+Church-Wellesley (167),2025,336,12,44,53,26,32,503,2488.15,Assault,59.6,144,Moderate
+Etobicoke City Centre (159),2025,227,160,62,78,48,58,633,2585.56,Assault,57.9,145,Moderate
+Clairlea-Birchmount (120),2025,352,74,58,81,14,25,604,2789.25,Assault,54.3,146,Moderate
+West Hill (136),2025,357,41,58,112,27,20,615,2831.2,Assault,53.6,147,Moderate
+Wexford/Maryvale (119),2025,303,118,75,128,32,23,679,2870.82,Assault,52.9,148,Moderate
+St Lawrence-East Bayfront-The Islands (166),2025,413,9,70,67,37,33,629,3101.22,Assault,48.9,149,Moderate
+Wellington Place (164),2025,390,35,109,73,28,31,666,3162.7,Assault,47.8,150,Moderate
+Annex (95),2025,371,43,149,78,29,43,713,3289.65,Assault,45.6,151,Moderate
+Kensington-Chinatown (78),2025,410,26,101,168,42,50,797,3530.65,Assault,41.4,152,Moderate
+York University Heights (27),2025,375,181,125,95,35,58,869,3716.09,Assault,38.1,153,Risky
+Yonge-Bay Corridor (170),2025,497,26,90,61,46,31,751,3748.51,Assault,37.6,154,Risky
+Downtown Yonge East (168),2025,535,18,66,92,31,23,765,3823.55,Assault,36.3,155,Risky
+West Humber-Clairville (1),2025,301,433,126,185,48,88,1181,4348.27,Auto Theft,27.1,156,Risky
+Moss Park (73),2025,593,23,103,76,47,18,860,4350.72,Assault,27.0,157,Risky
+Mimico-Queensway (160),2025,946,49,32,19,9,14,1069,5896.75,Assault,0.0,158,Very Risky
