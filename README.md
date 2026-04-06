@@ -215,7 +215,7 @@ The application is also available online at:
 │   ├── outputs/               # Model bundles
 │   ├── models_train/          # Training scripts
 │   └── crime_prediction_api/  # Backend API
-├── front-end/                 # React frontend
+├── front-end/                 # NextJS frontend
 ├── PowerBI-Visualizations/
 │   ├── COSC 301 Consolidated.pbix
 │   └── COSC 301 Traffic.pbix
