@@ -41,10 +41,10 @@ MODEL_FILES = {
 
 # Display names for crimes
 CRIME_DISPLAY_NAMES = {
-    "collision": "🚗 Traffic Collision",
-    "assault": "👊 Assault",
-    "auto_theft": "🚙 Auto Theft",
-    "break_and_enter": "🏠 Break & Enter"
+    "collision": " Traffic Collision",
+    "assault": " Assault",
+    "auto_theft": " Auto Theft",
+    "break_and_enter": " Break & Enter"
 }
 
 # Colour codes for terminal output
@@ -155,7 +155,7 @@ def display_neighbourhood_list(all_neighbourhoods, page=1, page_size=20):
     start_idx = (page - 1) * page_size
     end_idx = min(start_idx + page_size, total)
     
-    print(f"\n{Colours.BOLD}🏘️ Neighbourhoods ({start_idx + 1}-{end_idx} of {total}){Colours.END}")
+    print(f"\n{Colours.BOLD} Neighbourhoods ({start_idx + 1}-{end_idx} of {total}){Colours.END}")
     print(f"{Colours.HEADER}{'-'*60}{Colours.END}")
     
     for i, nh in enumerate(all_neighbourhoods[start_idx:end_idx], start=start_idx + 1):
@@ -182,7 +182,7 @@ def interactive_neighbourhood_selection(model_bundle):
     # Create mappings
     id_to_name, name_to_id, display_list = create_neighbourhood_mappings(all_neighbourhoods)
     
-    print(f"\n{Colours.BOLD}🏘️ Neighbourhood Filter{Colours.END}")
+    print(f"\n{Colours.BOLD} Neighbourhood Filter{Colours.END}")
     print(f"{Colours.HEADER}{'-'*60}{Colours.END}")
     print(f"  You can select by:")
     print(f"    • Neighbourhood ID (e.g., '20')")
@@ -322,11 +322,11 @@ def load_all_models():
     for crime_type in MODEL_FILES.keys():
         try:
             models[crime_type] = load_model(crime_type)
-            print(f"    ✅ Loaded {CRIME_DISPLAY_NAMES[crime_type]} (window: {models[crime_type]['window_days']} days)")
+            print(f"     Loaded {CRIME_DISPLAY_NAMES[crime_type]} (window: {models[crime_type]['window_days']} days)")
         except Exception as e:
-            print(f"    ❌ Failed to load {crime_type}: {e}")
+            print(f"     Failed to load {crime_type}: {e}")
     
-    print(f"\n{Colours.GREEN}✅ Successfully loaded {len(models)} models{Colours.END}\n")
+    print(f"\n{Colours.GREEN} Successfully loaded {len(models)} models{Colours.END}\n")
     return models
 
 
@@ -344,6 +344,27 @@ def to_timestamp(date_obj):
         return date_obj
 
 
+def get_day_of_year(dt):
+    """Get day of year from datetime or Timestamp - safely handles both"""
+    if dt is None:
+        return 1
+    if hasattr(dt, 'dayofyear'):
+        # Pandas Timestamp has dayofyear as attribute
+        return dt.dayofyear
+    elif hasattr(dt, 'timetuple'):
+        # Python datetime objects
+        return dt.timetuple().tm_yday
+    elif hasattr(dt, 'day_of_year'):
+        # Alternative pandas attribute
+        return dt.day_of_year
+    else:
+        # Fallback: try to convert to pandas Timestamp
+        try:
+            return pd.Timestamp(dt).dayofyear
+        except:
+            return 1
+
+
 def create_prediction_row(neighbourhood, window_start, model_bundle, latest_state=None):
     """
     Create a feature row for a single neighbourhood and window start date.
@@ -353,6 +374,10 @@ def create_prediction_row(neighbourhood, window_start, model_bundle, latest_stat
     
     # Convert to pandas Timestamp if needed
     window_start = to_timestamp(window_start)
+    
+    # Ensure it's a proper Timestamp with dayofyear attribute
+    if not hasattr(window_start, 'dayofyear'):
+        window_start = pd.Timestamp(window_start)
     
     le = model_bundle['label_encoder']
     
@@ -389,7 +414,9 @@ def create_prediction_row(neighbourhood, window_start, model_bundle, latest_stat
     row['month_cos'] = cos(2 * pi * window_start.month / 12)
     row['period_sin'] = sin(2 * pi * window_start.isocalendar().week / 52)
     row['period_cos'] = cos(2 * pi * window_start.isocalendar().week / 52)
-    row['year_continuous'] = window_start.year + window_start.dayofyear / 365.25
+    
+    # FIXED: Use get_day_of_year() helper function to safely get day of year
+    row['year_continuous'] = window_start.year + get_day_of_year(window_start) / 365.25
     
     # Historical features (use latest_state if available, otherwise defaults)
     if latest_state is not None and neighbourhood in latest_state.index:
@@ -563,7 +590,7 @@ def display_aggregated_results(results_df, crime_display_name, neighbourhood_fil
     total_predictions = len(results_df)
     positive_predictions = results_df['predicted'].sum()
     
-    print(f"\n{Colours.BOLD}📊 Summary Statistics:{Colours.END}")
+    print(f"\n{Colours.BOLD} Summary Statistics:{Colours.END}")
     print(f"    Time periods analyzed: {total_windows}")
     print(f"    Total predictions made: {total_predictions:,}")
     print(f"    Predicted incidents: {positive_predictions:,} ({positive_predictions/total_predictions*100:.1f}%)")
@@ -575,7 +602,7 @@ def display_aggregated_results(results_df, crime_display_name, neighbourhood_fil
             'predicted': 'sum'
         }).sort_values('probability', ascending=False).head(10)
         
-        print(f"\n{Colours.BOLD}🎯 Top 10 Highest Risk Neighbourhoods:{Colours.END}")
+        print(f"\n{Colours.BOLD} Top 10 Highest Risk Neighbourhoods:{Colours.END}")
         # Extract IDs for display
         display_data = []
         for idx, row in neighbourhood_risk.reset_index().iterrows():
@@ -595,7 +622,7 @@ def display_aggregated_results(results_df, crime_display_name, neighbourhood_fil
         ))
     
     # Show results by time window
-    print(f"\n{Colours.BOLD}📅 Results by Time Window:{Colours.END}")
+    print(f"\n{Colours.BOLD} Results by Time Window:{Colours.END}")
     
     window_summary = results_df.groupby(['window_start', 'window_end']).agg({
         'probability': ['mean', 'max'],
@@ -613,7 +640,7 @@ def display_aggregated_results(results_df, crime_display_name, neighbourhood_fil
     # High-risk alerts
     high_risk = results_df[results_df['risk_level'] == 'HIGH'].sort_values('probability', ascending=False)
     if not high_risk.empty:
-        print(f"\n{Colours.RED}{Colours.BOLD}⚠️ HIGH RISK ALERTS (Probability ≥ 70%):{Colours.END}")
+        print(f"\n{Colours.RED}{Colours.BOLD} HIGH RISK ALERTS (Probability ≥ 70%):{Colours.END}")
         high_risk_display = high_risk.head(20).copy()
         high_risk_display['window_label'] = high_risk_display['window_start'].dt.strftime('%Y-%m-%d') + ' → ' + high_risk_display['window_end'].dt.strftime('%Y-%m-%d')
         
@@ -643,11 +670,11 @@ def export_results(results_df, crime_type, start_date, end_date, output_format="
     if output_format == "csv":
         filepath = output_dir / f"{filename}.csv"
         results_df.to_csv(filepath, index=False)
-        print(f"\n{Colours.GREEN}✅ Results exported to: {filepath}{Colours.END}")
+        print(f"\n{Colours.GREEN} Results exported to: {filepath}{Colours.END}")
     elif output_format == "excel":
         filepath = output_dir / f"{filename}.xlsx"
         results_df.to_excel(filepath, index=False)
-        print(f"\n{Colours.GREEN}✅ Results exported to: {filepath}{Colours.END}")
+        print(f"\n{Colours.GREEN} Results exported to: {filepath}{Colours.END}")
     
     return filepath
 
@@ -682,7 +709,7 @@ def select_crime_type(models):
 
 def get_date_range():
     """Get date range from user"""
-    print(f"\n{Colours.BOLD}📅 Date Range Selection{Colours.END}")
+    print(f"\n{Colours.BOLD} Date Range Selection{Colours.END}")
     print(f"{Colours.HEADER}{'-'*50}{Colours.END}")
     
     while True:
@@ -711,7 +738,7 @@ def get_date_range():
 
 def get_export_option():
     """Ask user if they want to export results"""
-    print(f"\n{Colours.BOLD}💾 Export Options{Colours.END}")
+    print(f"\n{Colours.BOLD} Export Options{Colours.END}")
     print(f"{Colours.HEADER}{'-'*50}{Colours.END}")
     
     choice = input(f"Do you want to export results to file? (y/n): ").strip().lower()
@@ -732,7 +759,7 @@ def get_export_option():
 def main():
     """Main orchestrator function"""
     print(f"\n{Colours.HEADER}{'='*60}{Colours.END}")
-    print(f"{Colours.BOLD}{'🔮 CRIME PREDICTION ORCHESTRATOR'.center(60)}{Colours.END}")
+    print(f"{Colours.BOLD}{' CRIME PREDICTION ORCHESTRATOR'.center(60)}{Colours.END}")
     print(f"{Colours.HEADER}{'='*60}{Colours.END}")
     
     # Load all models
@@ -760,7 +787,7 @@ def main():
             print(f"{Colours.BLUE}✓ Predicting for ALL neighbourhoods{Colours.END}")
         
         # Make predictions
-        print(f"\n{Colours.YELLOW}⏳ Generating predictions...{Colours.END}")
+        print(f"\n{Colours.YELLOW} Generating predictions...{Colours.END}")
         try:
             results_df = predict_for_date_range(
                 model_bundle, 
