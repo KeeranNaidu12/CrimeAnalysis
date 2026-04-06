@@ -28,7 +28,8 @@ DB_CONFIG = {
     'user': os.getenv('DB_USER'),
     'password': os.getenv('DB_PASSWORD'),
     'host': os.getenv('DB_HOST'),
-    'port': os.getenv('DB_PORT')
+    'port': os.getenv('DB_PORT'),
+    'sslmode': os.getenv('DB_SSLMODE', 'prefer')
 }
 
 RECORD_SEPARATOR = "*-" * 25

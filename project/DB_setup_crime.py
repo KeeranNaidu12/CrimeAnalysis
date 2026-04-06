@@ -3,6 +3,7 @@ import csv
 from datetime import datetime
 from pathlib import Path
 import psycopg2
+from psycopg2.extras import execute_values
 from dotenv import load_dotenv
 from tqdm import tqdm
 
@@ -13,7 +14,8 @@ DB_CONFIG = {
     'user': os.getenv('DB_USER'),
     'password': os.getenv('DB_PASSWORD'),
     'host': os.getenv('DB_HOST'),
-    'port': os.getenv('DB_PORT')
+    'port': os.getenv('DB_PORT'),
+    'sslmode': os.getenv('DB_SSLMODE', 'prefer')
 }
 
 CSV_PATH = Path('project') / 'DB_csv' / 'Open_Consolidated_Data_updated_deduplicated_enhanced.csv'
@@ -120,11 +122,18 @@ def main():
             cur.execute(CREATE_TABLE_SQL)
 
             print("Inserting rows …")
-            CHUNK = 500
+            CHUNK = 5000
+            values_template = "(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+            insert_query = """INSERT INTO open_consolidated_data (
+                event_unique_id, occ_date, neighbourhood_158,
+                csi_category, offence, death, injuries, event_type, premise_type,
+                week_day, season, holiday
+            ) VALUES %s"""
             with tqdm(total=len(rows), unit='rows', desc='Inserting') as pbar:
                 for i in range(0, len(rows), CHUNK):
-                    cur.executemany(INSERT_SQL, rows[i:i + CHUNK])
-                    pbar.update(min(CHUNK, len(rows) - i))
+                    batch = rows[i:i + CHUNK]
+                    execute_values(cur, insert_query, batch, page_size=CHUNK)
+                    pbar.update(len(batch))
             inserted = len(rows)
             conn.commit()
             print(f"Done — {inserted} rows inserted.")

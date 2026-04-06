@@ -11,7 +11,8 @@ DB_CONFIG = {
     'user': os.getenv('DB_USER'),
     'password': os.getenv('DB_PASSWORD'),
     'host': os.getenv('DB_HOST'),
-    'port': os.getenv('DB_PORT')
+    'port': os.getenv('DB_PORT'),
+    'sslmode': os.getenv('DB_SSLMODE', 'prefer')
 }
 
 SOURCE_TABLE = 'open_consolidated_data'
@@ -72,20 +73,13 @@ def main():
                     );
                 """)
 
-                # Count rows for progress bar (2014+ only)
+                # Use INSERT ... SELECT to copy within the database (no network transfer)
                 cur.execute(f"""
-                    SELECT COUNT(*) FROM {SOURCE_TABLE}
-                    WHERE csi_category = %s
-                      AND occ_date >= '2014-01-01';
-                """, (category,))
-                total = cur.fetchone()[0]
-
-                # Fetch in chunks using a server-side cursor to avoid
-                # loading all rows into memory at once
-                CHUNK = 1000
-                server_cur_name = f"fetch_{table_name}"
-                cur.execute(f"""
-                    DECLARE {server_cur_name} CURSOR FOR
+                    INSERT INTO {table_name} (
+                        event_unique_id, occ_date, neighbourhood_158,
+                        csi_category, offence, death, injuries,
+                        event_type, premise_type, week_day, season, holiday
+                    )
                     SELECT event_unique_id, occ_date, neighbourhood_158,
                            csi_category, offence, death, injuries,
                            event_type, premise_type, week_day, season, holiday
@@ -93,25 +87,7 @@ def main():
                     WHERE csi_category = %s
                       AND occ_date >= '2014-01-01';
                 """, (category,))
-
-                inserted = 0
-                with tqdm(total=total, unit='rows', desc=f'  Inserting') as pbar:
-                    while True:
-                        cur.execute(f"FETCH {CHUNK} FROM {server_cur_name};")
-                        batch = cur.fetchall()
-                        if not batch:
-                            break
-                        cur.executemany(f"""
-                            INSERT INTO {table_name} (
-                                event_unique_id, occ_date, neighbourhood_158,
-                                csi_category, offence, death, injuries,
-                                event_type, premise_type, week_day, season, holiday
-                            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);
-                        """, batch)
-                        inserted += len(batch)
-                        pbar.update(len(batch))
-
-                cur.execute(f"CLOSE {server_cur_name};")
+                inserted = cur.rowcount
                 print(f"  Done — {inserted} rows inserted into '{table_name}'\n")
 
             conn.commit()
