@@ -21,12 +21,20 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # Import your existing orchestrator functions
-from orchestrator import (
-    load_all_models, predict_for_date_range, 
-    CRIME_DISPLAY_NAMES, MODELS_DIR, MODEL_FILES,
-    create_neighbourhood_mappings, extract_neighbourhood_id,
-    clean_neighbourhood_name, find_neighbourhood_by_input
-)
+try:
+    from orchestrator import (
+        load_all_models, predict_for_date_range, 
+        CRIME_DISPLAY_NAMES, MODELS_DIR, MODEL_FILES,
+        create_neighbourhood_mappings, extract_neighbourhood_id,
+        clean_neighbourhood_name, find_neighbourhood_by_input
+    )
+except ImportError:
+    from crime_prediction_api.orchestrator import (
+        load_all_models, predict_for_date_range, 
+        CRIME_DISPLAY_NAMES, MODELS_DIR, MODEL_FILES,
+        create_neighbourhood_mappings, extract_neighbourhood_id,
+        clean_neighbourhood_name, find_neighbourhood_by_input
+    )
 
 # Initialize FastAPI
 app = FastAPI(

@@ -1,0 +1,8 @@
+DB_csv/
+models_train/
+*.csv
+*.png
+.env
+.env.test
+__pycache__/
+*.pyc

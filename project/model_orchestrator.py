@@ -31,7 +31,7 @@ warnings.filterwarnings("ignore")
 #  CONFIGURATION
 # ═══════════════════════════════════════════════════════════════════════════════
 
-MODELS_DIR = Path("project/outputs")
+MODELS_DIR = Path(__file__).parent / "outputs"
 MODEL_FILES = {
     "collision": "collision_model_bundle.joblib",
     "assault": "assault_model_bundle.joblib",
