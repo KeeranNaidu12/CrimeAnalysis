@@ -197,7 +197,7 @@ Then open your browser to: [http://localhost:3000/](http://localhost:3000/)
 ### Hosted Version
 
 The application is also available online at:  
-[g10-crimeanalysis.com](https://victorious-flower-0fa5e4b10.2.azurestaticapps.net/)
+[g2-crimeanalysis.com](https://victorious-flower-0fa5e4b10.2.azurestaticapps.net/)
 
 ---
 
